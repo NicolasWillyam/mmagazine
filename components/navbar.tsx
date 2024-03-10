@@ -8,7 +8,7 @@ function Navbar() {
       <div className="w-full max-w-[1440px] px-4 mx-auto h-28 grid grid-cols-3">
         <div></div>
         <div className="w-full flex justify-center">
-          <Image src="/logo.svg" alt="logo" width={100} height={100} />
+          <Image src="/logo.svg" alt="logo" width={70} height={70} />
         </div>
         <div className="flex items-center ml-auto gap-4">
           <div className="flex items-center gap-2">

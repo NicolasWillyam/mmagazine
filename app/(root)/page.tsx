@@ -1,5 +1,5 @@
-import { ArticleLayout } from "@/components/ui/article";
-import { ProductCard } from "@/components/ui/product";
+import { ArticleCard, ArticleLayout } from "@/components/ui/article";
+import { ProductCard, ProductLayout } from "@/components/ui/product";
 import React from "react";
 
 function Page() {
@@ -23,7 +23,12 @@ function Page() {
 
         <div className="w-full pt-4 pb-28 text-center border-t">
           <p className="text-xl font-semibold uppercase">tin tức mới nhất</p>
-          <ArticleLayout />
+          <ArticleLayout>
+            <ArticleCard />
+            <ArticleCard />
+            <ArticleCard />
+            <ArticleCard />
+          </ArticleLayout>
         </div>
 
         <div className="w-full pt-4 pb-28 text-center border-t">
@@ -31,13 +36,108 @@ function Page() {
             Lựa chọn hoàn hảo cho tháng 3
           </p>
 
-          <div className="flex gap-2.5 px-auto w-fit mx-auto mt-6">
+          <ProductLayout>
             <ProductCard />
             <ProductCard />
             <ProductCard />
             <ProductCard />
             <ProductCard />
-          </div>
+          </ProductLayout>
+        </div>
+
+        <div className="w-full pt-4 pb-28 text-center border-t">
+          <p className="text-xl font-semibold uppercase">tin tức mới nhất</p>
+          <ArticleLayout>
+            <ArticleCard />
+            <ArticleCard />
+            <ArticleCard />
+            <ArticleCard />
+          </ArticleLayout>
+        </div>
+
+        <div className="w-full pt-4 pb-28 text-center border-t">
+          <p className="text-xl font-semibold uppercase">
+            Lựa chọn hoàn hảo cho tháng 3
+          </p>
+
+          <ProductLayout>
+            <ProductCard />
+            <ProductCard />
+            <ProductCard />
+            <ProductCard />
+            <ProductCard />
+          </ProductLayout>
+        </div>
+
+        <div className="w-full pt-4 pb-28 text-center border-t">
+          <p className="text-xl font-semibold uppercase">tin tức mới nhất</p>
+          <ArticleLayout>
+            <ArticleCard />
+            <ArticleCard />
+            <ArticleCard />
+            <ArticleCard />
+          </ArticleLayout>
+        </div>
+
+        <div className="w-full pt-4 pb-28 text-center border-t">
+          <p className="text-xl font-semibold uppercase">
+            Lựa chọn hoàn hảo cho tháng 3
+          </p>
+
+          <ProductLayout>
+            <ProductCard />
+            <ProductCard />
+            <ProductCard />
+            <ProductCard />
+            <ProductCard />
+          </ProductLayout>
+        </div>
+
+        <div className="w-full pt-4 pb-28 text-center border-t">
+          <p className="text-xl font-semibold uppercase">tin tức mới nhất</p>
+          <ArticleLayout>
+            <ArticleCard />
+            <ArticleCard />
+            <ArticleCard />
+            <ArticleCard />
+          </ArticleLayout>
+        </div>
+
+        <div className="w-full pt-4 pb-28 text-center border-t">
+          <p className="text-xl font-semibold uppercase">
+            Lựa chọn hoàn hảo cho tháng 3
+          </p>
+
+          <ProductLayout>
+            <ProductCard />
+            <ProductCard />
+            <ProductCard />
+            <ProductCard />
+            <ProductCard />
+            <ProductCard />
+          </ProductLayout>
+        </div>
+
+        <div className="w-full pt-4 pb-28 text-center border-t">
+          <p className="text-xl font-semibold uppercase">tin tức mới nhất</p>
+          <ArticleLayout>
+            <ArticleCard />
+            <ArticleCard />
+            <ArticleCard />
+            <ArticleCard />
+            <ArticleCard />
+            <ArticleCard />
+            <ArticleCard />
+            <ArticleCard />
+            <ArticleCard />
+            <ArticleCard />
+            <ArticleCard />
+            <ArticleCard />
+          </ArticleLayout>
+
+          <button className="border-[1.5px] border-black mt-14 hover:bg-black hover:text-white duration-500">
+            <p className="uppercase text-sm px-28 py-3">XEM THÊM</p>
+          </button>
         </div>
       </div>
     </div>

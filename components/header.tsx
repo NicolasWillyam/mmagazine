@@ -5,7 +5,7 @@ import MenuBar from "./menubar";
 
 function Header() {
   return (
-    <div>
+    <div className="w-full fixed top-0 bg-white shadow-md">
       <HeaderTitle />
       <Navbar />
       <MenuBar />
