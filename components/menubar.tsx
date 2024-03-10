@@ -8,6 +8,10 @@ interface Menu {
   slug: string;
 }
 
+interface Props {
+  isScrolled: boolean;
+}
+
 const MenuList: Menu[] = [
   { id: 1, name: "thời trang", link: "/", slug: "thoi-trang" },
   { id: 1, name: "làm đẹp", link: "/", slug: "lam-dep" },
@@ -18,9 +22,20 @@ const MenuList: Menu[] = [
   { id: 1, name: "shopping", link: "/", slug: "thoi-trang" },
 ];
 
-function MenuBar() {
+{
+  /* <div
+      className={`w-full text-center bg-black text-white text-xs flex items-center justify-center transition-all duration-300 ${
+        props.isScrolled ? "h-0" : "h-6"
+      }`} */
+}
+
+const MenuBar: React.FC<Props> = (props) => {
   return (
-    <div className="w-full h-10 border-b flex items-center justify-center gap-10 uppercase text-sm ">
+    <div
+      className={`w-full h-10 border-b flex items-center justify-center gap-10 uppercase text-sm  ${
+        props.isScrolled ? "hidden" : "h-10"
+      }`}
+    >
       {MenuList.map((item) => (
         <button
           key={item.id}
@@ -31,6 +46,6 @@ function MenuBar() {
       ))}
     </div>
   );
-}
+};
 
 export default MenuBar;
