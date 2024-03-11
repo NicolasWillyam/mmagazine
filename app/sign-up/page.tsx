@@ -4,6 +4,7 @@ import backgroundImage from "../../public/sign-in-banner.png";
 import { Button } from "@/components/ui/button";
 import { Checkbox } from "@/components/ui/checkbox";
 import Link from "next/link";
+import Logo from "@/components/ui/logo";
 
 function SignUp() {
   return (
@@ -25,7 +26,7 @@ function SignUp() {
       ></div>
       <div className="flex flex-col items-start justify-center mb-16 pl-8">
         <div className="grid grid-cols-1 gap-8">
-          <Image src={"/logo.svg"} alt="logo" width={80} height={100} />
+          <Logo width={80} height={100} />
           <div className="max-w-lg">
             <p className="text-3xl">Tạo tài khoản mới</p>
             <p className="text-sm font-light mt-4">

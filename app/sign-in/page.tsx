@@ -3,6 +3,7 @@ import React from "react";
 import backgroundImage from "../../public/sign-in-banner.png";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
+import Logo from "@/components/ui/logo";
 
 function SignIn() {
   return (
@@ -24,7 +25,7 @@ function SignIn() {
       ></div>
       <div className="flex flex-col items-start justify-center mb-16 pl-8">
         <div className="grid grid-cols-1 gap-8">
-          <Image src={"/logo.svg"} alt="logo" width={80} height={100} />
+          <Logo width={80} height={100} />
           <p className="text-3xl">Đăng nhập hoặc tạo một tài khoản</p>
           <div className="">
             <label htmlFor="">
@@ -87,12 +88,12 @@ function SignIn() {
                 </div>
               </Button>
 
-              <div className="text-center text-sm mt-2 font-light">
+              {/* <div className="text-center text-sm mt-2 font-light">
                 Bạn chưa có tài khoản?{" "}
                 <span className="underline underline-offset-2">
                   <Link href={"/sign-up"}>Đăng kí ngay</Link>
                 </span>
-              </div>
+              </div> */}
             </div>
           </div>
         </div>

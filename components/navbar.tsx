@@ -4,6 +4,7 @@ import { FiUser } from "react-icons/fi";
 import { IoSearchOutline } from "react-icons/io5";
 import Image from "next/image";
 import Link from "next/link";
+import Logo from "./ui/logo";
 
 interface Props {
   isScrolled: boolean;
@@ -19,14 +20,8 @@ const Navbar: React.FC<Props> = (props) => {
     >
       <div className="w-full px-6 mx-auto h-full grid grid-cols-3">
         <div></div>
-        <div className="w-full flex justify-center">
-          <Image
-            src="/logo.svg"
-            alt="logo"
-            width={props.imageWidth}
-            height={props.imageWidth}
-            className="transition-all duration-300"
-          />
+        <div className="w-full flex items-center justify-center">
+          <Logo width={props.imageWidth} height={props.imageWidth} />
         </div>
         <div className="flex items-center ml-auto gap-4">
           <Link href={"/sign-in"}>
