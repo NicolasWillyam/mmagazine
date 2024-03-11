@@ -5,6 +5,7 @@ import { SpeedInsights } from "@vercel/speed-insights/next";
 import "./globals.css";
 import Header from "@/components/header";
 import Footer from "@/components/footer";
+import { Container } from "@/components/container";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -26,11 +27,7 @@ export default function RootLayout({
       <body className={inter.className}>
         <SpeedInsights />
         <Analytics />
-        <div className="">
-          <Header />
-          <div className="mt-44">{children}</div>
-          <Footer />
-        </div>
+        <Container>{children}</Container>
       </body>
     </html>
   );

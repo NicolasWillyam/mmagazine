@@ -1,4 +1,5 @@
 import { ArticleCard, ArticleLayout } from "@/components/ui/article";
+import { Button } from "@/components/ui/button";
 import { ProductCard, ProductLayout } from "@/components/ui/product";
 import React from "react";
 
@@ -135,10 +136,7 @@ function Page() {
             <ArticleCard />
             <ArticleCard />
           </ArticleLayout>
-
-          <button className="border-[1.5px] border-black mt-14 hover:bg-black hover:text-white duration-500">
-            <p className="uppercase text-sm px-28 py-3">XEM THÊM</p>
-          </button>
+          <Button>XEM THÊM</Button>
         </div>
       </div>
     </div>
