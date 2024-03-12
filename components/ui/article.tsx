@@ -26,6 +26,6 @@ interface ArticleLayoutProps {
 }
 
 const ArticleLayout: React.FC<ArticleLayoutProps> = ({ children }) => {
-  return <div className="grid grid-cols-4 gap-4 mt-6">{children}</div>;
+  return <div className="mx-auto grid grid-cols-4 gap-4 mt-6">{children}</div>;
 };
 export { ArticleCard, ArticleLayout };

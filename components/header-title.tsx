@@ -1,14 +1,9 @@
-import React from "react";
+import React, { ReactNode } from "react";
+import "../styles/fonts.css";
 interface Props {
   isScrolled: boolean;
 }
 
-{
-  /* <div
-      className={`w-full border-b transition-all duration-300 ${
-        props.isScrolled ? "h-16" : "h-28"
-      }`} */
-}
 const HeaderTitle: React.FC<Props> = (props) => {
   return (
     <div
@@ -21,4 +16,18 @@ const HeaderTitle: React.FC<Props> = (props) => {
   );
 };
 
-export default HeaderTitle;
+interface PageHeaderTitleProps {
+  children: ReactNode;
+}
+const PageHeaderTitle: React.FC<PageHeaderTitleProps> = ({ children }) => {
+  return (
+    <div
+      style={{ fontFamily: "TUV-Domaine-Regular" }}
+      className="w-full h-48 flex items-center justify-center"
+    >
+      <p className="text-6xl">{children}</p>
+    </div>
+  );
+};
+
+export { HeaderTitle, PageHeaderTitle };

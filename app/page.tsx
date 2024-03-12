@@ -136,7 +136,7 @@ function Page() {
             <ArticleCard />
             <ArticleCard />
           </ArticleLayout>
-          <Button>XEM THÊM</Button>
+          <Button className="mt-16">XEM THÊM</Button>
         </div>
       </div>
     </div>

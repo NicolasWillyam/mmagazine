@@ -27,7 +27,7 @@ const Navbar: React.FC<Props> = (props) => {
           <Link href={"/sign-in"}>
             <div className="flex items-center gap-2">
               <FiUser size={20} />
-              <div className="text-sm uppercase hover:underline hover:underline-offset-4">
+              <div className="text-sm uppercase hover:underline hover:underline-offset-4 ">
                 ĐĂNG NHẬP
               </div>
             </div>

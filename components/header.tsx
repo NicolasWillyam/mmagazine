@@ -1,8 +1,8 @@
 "use client";
 import React, { useState, useEffect } from "react";
-import HeaderTitle from "./header-title";
+import { HeaderTitle } from "./header-title";
 import Navbar from "./navbar";
-import MenuBar from "./menubar";
+import { MenuBar } from "./menubar";
 
 function Header() {
   const [isScrolled, setIsScrolled] = useState(false);

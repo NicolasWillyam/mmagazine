@@ -18,6 +18,9 @@ const config = {
       },
     },
     extend: {
+      fontFamily: {
+        TUV: ['TUV-Domaine-Regular'],
+      },
       colors: {
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",

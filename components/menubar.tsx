@@ -15,11 +15,11 @@ interface Props {
 const MenuList: Menu[] = [
   { id: 1, name: "thời trang", link: "/", slug: "thoi-trang" },
   { id: 1, name: "làm đẹp", link: "/", slug: "lam-dep" },
-  { id: 1, name: "văn hóa", link: "/", slug: "thoi-trang" },
-  { id: 1, name: "Living", link: "/", slug: "thoi-trang" },
-  { id: 1, name: "ruwnay", link: "/", slug: "thoi-trang" },
-  { id: 1, name: "lifestyle", link: "/", slug: "thoi-trang" },
-  { id: 1, name: "shopping", link: "/", slug: "thoi-trang" },
+  { id: 1, name: "văn hóa", link: "/", slug: "van-hoa" },
+  { id: 1, name: "Living", link: "/", slug: "living" },
+  { id: 1, name: "ruwnay", link: "/", slug: "runway" },
+  { id: 1, name: "lifestyle", link: "/", slug: "lifestyle" },
+  { id: 1, name: "shopping", link: "/", slug: "shopping" },
 ];
 
 {
@@ -41,11 +41,11 @@ const MenuBar: React.FC<Props> = (props) => {
           key={item.id}
           className="h-full uppercase border-y-[3px] border-white hover:border-b-[3px] hover:border-b-black duration-300 ease-in-out"
         >
-          <Link href={item.link}>{item.name}</Link>
+          <Link href={`/${item.slug}`}>{item.name}</Link>
         </button>
       ))}
     </div>
   );
 };
 
-export default MenuBar;
+export { MenuBar, MenuList };
