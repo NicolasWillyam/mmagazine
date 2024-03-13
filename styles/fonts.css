@@ -4,3 +4,17 @@
     font-weight: normal;
     font-style: normal;
   }
+
+  @font-face {
+    font-family: 'SFUGoudyMedium';
+    src: url('/fonts/SFUGoudyMedium.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: 'UVNSangSong';
+    src: url('/fonts/UVNSangSong.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
