@@ -3,11 +3,8 @@ import { Be_Vietnam_Pro } from "next/font/google";
 import { Analytics } from "@vercel/analytics/react";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import "./globals.css";
-import Header from "@/components/header";
-import Footer from "@/components/footer";
-import { Container } from "@/components/container";
 
-const inter = Be_Vietnam_Pro({
+const vietnampro = Be_Vietnam_Pro({
   weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
   style: ["normal", "italic"],
   subsets: ["latin"],
@@ -28,10 +25,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>
+      <body className={vietnampro.className}>
         <SpeedInsights />
         <Analytics />
-        <Container>{children}</Container>
+        {children}
       </body>
     </html>
   );

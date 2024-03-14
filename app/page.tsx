@@ -1,146 +1,525 @@
-import { ArticleCard, ArticleLayout } from "@/components/ui/article";
-import { Button } from "@/components/ui/button";
-import { ProductCard, ProductLayout } from "@/components/ui/product";
+import Header from "@/components/header";
 import React from "react";
+import homebanner from "../public/homebanner.png";
+import runwaybanner from "../public/runwaybanner.png";
 
-function Page() {
+function page() {
   return (
-    <div className="w-full">
-      <div className=""></div>
-      <div className="w-full h-[80vh] bg-cover bg-center bg-no-repeat bg-[url('https://assets.vogue.com/photos/65e8fa5676a7153ca83e0520/16:9/w_1920%2Cc_limit/PARIS-STREETSTYLE-PHILOH-DAY8-%25201.jpg')]"></div>
-      <div className="max-w-[1440px] mx-auto px-4">
-        <div className="pt-8 pb-24 text-center">
-          <div className="grid grid-cols-1 gap-4">
-            <p className="text-xs uppercase ">M MAGAZINE</p>
-            <p className="font-bold text-xl">
-              Kết nối với M - Bắt kịp nhịp đập thời trang, làm đẹp và phong cách
-              sống
+    <div>
+      <Header />
+      <div
+        style={{
+          backgroundImage: `url(${homebanner.src})`,
+          width: "100%",
+          height: "750px",
+        }}
+        className="bg-cover bg-no-repeat bg-center relative"
+      >
+        <div className="w-full text-center absolute text-white -bottom-24">
+          <div className="w-1/3 px-4  mx-auto text-center">
+            <p className="text-sm font-medium underline underline-offset-2">
+              STYLE
             </p>
-            <p className="text-xs uppercase">THỜI TRANG</p>
-            <p className="text-sm font-medium">
-              Khám phá thế giới thời trang đầy màu sắc
+            <p
+              style={{ lineHeight: "56px" }}
+              className="text-4xl font-semibold my-2.5"
+            >
+              QUIET LUXURY: Định nghĩa, sự bắt đầu và sức ảnh hưởng tới phong
+              cách phái đẹp
             </p>
+            <p>13.3.2024 by M Fashion Team</p>
+          </div>
+          <div className="w-full max-w-[1380px] mx-auto px-8 py-6 bg-white mt-8 grid grid-cols-3 gap-16">
+            <div className="flex items-start gap-4">
+              <div
+                style={{
+                  background: "#D9D9D9",
+                  width: "140px",
+                  height: "110px",
+                }}
+                className="max-w-[140px] max-h-[110px]"
+              ></div>
+              <div className="grid grid-cols-1 gap-2.5 text-black text-left max-w-[290px]">
+                <p className="text-sm underline underline-offset-2 my-1">
+                  RUNWAY
+                </p>
+                <p className="text-lg leading-snug">
+                  Nữ kiến trúc sư đầu tiên của Việt Nam giành giải thưởng Moira
+                  Gemmill
+                </p>
+                <p className="text-sm font-normal">03.10.2024 by Celia</p>
+              </div>
+            </div>
+            <div className="flex items-start gap-4">
+              <div
+                style={{
+                  background: "#D9D9D9",
+                  width: "140px",
+                  height: "110px",
+                }}
+                className="max-w-[140px] max-h-[110px]"
+              ></div>
+              <div className="grid grid-cols-1 gap-2.5 text-black text-left max-w-[290px]">
+                <p className="text-sm underline underline-offset-2 my-1">
+                  RUNWAY
+                </p>
+                <p className="text-lg leading-snug">
+                  Nữ kiến trúc sư đầu tiên của Việt Nam giành giải thưởng Moira
+                  Gemmill
+                </p>
+                <p className="text-sm font-normal">03.10.2024 by Celia</p>
+              </div>
+            </div>
+            <div className="flex items-start gap-4">
+              <div
+                style={{
+                  background: "#D9D9D9",
+                  width: "140px",
+                  height: "110px",
+                }}
+                className="max-w-[140px] max-h-[110px]"
+              ></div>
+              <div className="grid grid-cols-1 gap-2.5 text-black text-left max-w-[290px]">
+                <p className="text-sm underline underline-offset-2 my-1">
+                  RUNWAY
+                </p>
+                <p className="text-lg leading-snug">
+                  Nữ kiến trúc sư đầu tiên của Việt Nam giành giải thưởng Moira
+                  Gemmill
+                </p>
+                <p className="text-sm font-normal">03.10.2024 by Celia</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div className="max-w-[1200px] mx-auto text-black  mt-24">
+        <div className="py-16">
+          <p
+            style={{ letterSpacing: "8%" }}
+            className="text-center text-2xl mb-16"
+          >
+            OSCARS 2024
+          </p>
+          <div className="w-fit grid grid-cols-3 gap-16 mx-auto">
+            <div>
+              <div
+                style={{
+                  background: "#D9D9D9",
+                  width: "340px",
+                  height: "340px",
+                }}
+                className="max-w-[340px] max-h-[340px]"
+              ></div>
+              <div className="grid grid-cols-1 mt-4 gap-2.5 text-black text-left max-w-[290px]">
+                <p className="text-sm underline underline-offset-2 my-1">
+                  TV, MUSIC & FILM
+                </p>
+                <p className="text-xl leading-snug">
+                  Nữ kiến trúc sư đầu tiên của Việt Nam giành giải thưởng Moira
+                  Gemmill
+                </p>
+                <p className="text-sm font-normal">03.10.2024 by Celia</p>
+              </div>
+            </div>
+
+            <div>
+              <div
+                style={{
+                  background: "#D9D9D9",
+                  width: "340px",
+                  height: "340px",
+                }}
+                className="max-w-[340px] max-h-[340px]"
+              ></div>
+              <div className="grid grid-cols-1 mt-4 gap-2.5 text-black text-left max-w-[290px]">
+                <p className="text-sm underline underline-offset-2 my-1">
+                  TV, MUSIC & FILM
+                </p>
+                <p className="text-xl leading-snug">
+                  Nữ kiến trúc sư đầu tiên của Việt Nam giành giải thưởng Moira
+                  Gemmill
+                </p>
+                <p className="text-sm font-normal">03.10.2024 by Celia</p>
+              </div>
+            </div>
+
+            <div>
+              <div
+                style={{
+                  background: "#D9D9D9",
+                  width: "340px",
+                  height: "340px",
+                }}
+                className="max-w-[340px] max-h-[340px]"
+              ></div>
+              <div className="grid grid-cols-1 mt-4 gap-2.5 text-black text-left max-w-[290px]">
+                <p className="text-sm underline underline-offset-2 my-1">
+                  TV, MUSIC & FILM
+                </p>
+                <p className="text-xl leading-snug">
+                  Nữ kiến trúc sư đầu tiên của Việt Nam giành giải thưởng Moira
+                  Gemmill
+                </p>
+                <p className="text-sm font-normal">03.10.2024 by Celia</p>
+              </div>
+            </div>
           </div>
         </div>
 
-        <div className="w-full pt-4 pb-28 text-center border-t">
-          <p className="text-xl font-semibold uppercase">tin tức mới nhất</p>
-          <ArticleLayout>
-            <ArticleCard />
-            <ArticleCard />
-            <ArticleCard />
-            <ArticleCard />
-          </ArticleLayout>
-        </div>
-
-        <div className="w-full pt-4 pb-28 text-center border-t">
-          <p className="text-xl font-semibold uppercase">
-            Lựa chọn hoàn hảo cho tháng 3
+        <div className="py-16">
+          <p
+            style={{ letterSpacing: "8%" }}
+            className="text-center text-2xl mb-16 uppercase"
+          >
+            style
           </p>
+          <div className="w-fit grid grid-cols-3 gap-16 mx-auto">
+            <div>
+              <div
+                style={{
+                  background: "#D9D9D9",
+                  width: "340px",
+                  height: "340px",
+                }}
+                className="max-w-[340px] max-h-[340px]"
+              ></div>
+              <div className="grid grid-cols-1 mt-4 gap-2.5 text-black text-left max-w-[290px]">
+                <p className="text-sm underline underline-offset-2 my-1">
+                  TV, MUSIC & FILM
+                </p>
+                <p className="text-xl leading-snug">
+                  Nữ kiến trúc sư đầu tiên của Việt Nam giành giải thưởng Moira
+                  Gemmill
+                </p>
+                <p className="text-sm font-normal">03.10.2024 by Celia</p>
+              </div>
+            </div>
 
-          <ProductLayout>
-            <ProductCard />
-            <ProductCard />
-            <ProductCard />
-            <ProductCard />
-            <ProductCard />
-          </ProductLayout>
+            <div>
+              <div
+                style={{
+                  background: "#D9D9D9",
+                  width: "340px",
+                  height: "340px",
+                }}
+                className="max-w-[340px] max-h-[340px]"
+              ></div>
+              <div className="grid grid-cols-1 mt-4 gap-2.5 text-black text-left max-w-[290px]">
+                <p className="text-sm underline underline-offset-2 my-1">
+                  TV, MUSIC & FILM
+                </p>
+                <p className="text-xl leading-snug">
+                  Nữ kiến trúc sư đầu tiên của Việt Nam giành giải thưởng Moira
+                  Gemmill
+                </p>
+                <p className="text-sm font-normal">03.10.2024 by Celia</p>
+              </div>
+            </div>
+
+            <div>
+              <div
+                style={{
+                  background: "#D9D9D9",
+                  width: "340px",
+                  height: "340px",
+                }}
+                className="max-w-[340px] max-h-[340px]"
+              ></div>
+              <div className="grid grid-cols-1 mt-4 gap-2.5 text-black text-left max-w-[290px]">
+                <p className="text-sm underline underline-offset-2 my-1">
+                  TV, MUSIC & FILM
+                </p>
+                <p className="text-xl leading-snug">
+                  Nữ kiến trúc sư đầu tiên của Việt Nam giành giải thưởng Moira
+                  Gemmill
+                </p>
+                <p className="text-sm font-normal">03.10.2024 by Celia</p>
+              </div>
+            </div>
+          </div>
         </div>
 
-        <div className="w-full pt-4 pb-28 text-center border-t">
-          <p className="text-xl font-semibold uppercase">tin tức mới nhất</p>
-          <ArticleLayout>
-            <ArticleCard />
-            <ArticleCard />
-            <ArticleCard />
-            <ArticleCard />
-          </ArticleLayout>
-        </div>
-
-        <div className="w-full pt-4 pb-28 text-center border-t">
-          <p className="text-xl font-semibold uppercase">
-            Lựa chọn hoàn hảo cho tháng 3
+        <div className="py-16">
+          <p
+            style={{ letterSpacing: "8%" }}
+            className="text-center text-2xl mb-16 uppercase"
+          >
+            BUSINESS OF FASHION
           </p>
+          <div className="w-fit grid grid-cols-2 gap-16 mx-auto">
+            <div>
+              <div
+                style={{
+                  background: "#D9D9D9",
+                  width: "560px",
+                  height: "560px",
+                }}
+                className="max-w-[560px] max-h-[560px]"
+              ></div>
+              <div className="grid grid-cols-1 mt-4 gap-2.5 text-black text-left w-3/4">
+                <p className="text-lg underline underline-offset-2 my-1">
+                  BUSINESS
+                </p>
+                <p className="text-2xl leading-snug">
+                  Nữ kiến trúc sư đầu tiên của Việt Nam giành giải thưởng Moira
+                  Gemmill
+                </p>
+                <p className="text-sm font-normal">03.10.2024 by Celia</p>
+              </div>
+            </div>
 
-          <ProductLayout>
-            <ProductCard />
-            <ProductCard />
-            <ProductCard />
-            <ProductCard />
-            <ProductCard />
-          </ProductLayout>
+            <div>
+              <div
+                style={{
+                  background: "#D9D9D9",
+                  width: "560px",
+                  height: "560px",
+                }}
+                className="max-w-[560px] max-h-[560px]"
+              ></div>
+              <div className="grid grid-cols-1 mt-4 gap-2.5 text-black text-left w-3/4">
+                <p className="text-lg underline underline-offset-2 my-1">
+                  BUSINESS
+                </p>
+                <p className="text-2xl leading-snug">
+                  Nữ kiến trúc sư đầu tiên của Việt Nam giành giải thưởng Moira
+                  Gemmill
+                </p>
+                <p className="text-sm font-normal">03.10.2024 by Celia</p>
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
 
-        <div className="w-full pt-4 pb-28 text-center border-t">
-          <p className="text-xl font-semibold uppercase">tin tức mới nhất</p>
-          <ArticleLayout>
-            <ArticleCard />
-            <ArticleCard />
-            <ArticleCard />
-            <ArticleCard />
-          </ArticleLayout>
+      <div className="">
+        <p className="text-center text-2xl mb-4">RUNWAY</p>
+        <div
+          style={{
+            backgroundImage: `url(${runwaybanner.src})`,
+            width: "100%",
+            height: "480px",
+          }}
+          className="bg-cover bg-no-repeat bg-center px-12 py-8"
+        >
+          <div className="flex flex-col justify-end h-full w-1/2 ">
+            <div className="grid grid-cols-1 mt-4 gap-2.5 text-white text-left w-full">
+              <p className="text-lg underline underline-offset-2 my-1">
+                BUSINESS
+              </p>
+              <p className="text-5xl leading-snug">
+                Nữ kiến trúc sư đầu tiên của Việt Nam giành giải thưởng Moira
+                Gemmill
+              </p>
+              <p className="text-sm font-normal">03.10.2024 by Celia</p>
+            </div>
+          </div>
         </div>
+      </div>
 
-        <div className="w-full pt-4 pb-28 text-center border-t">
-          <p className="text-xl font-semibold uppercase">
-            Lựa chọn hoàn hảo cho tháng 3
+      <div className="max-w-[1200px] mx-auto text-black">
+        <div className="py-16">
+          <p
+            style={{ letterSpacing: "8%" }}
+            className="text-center text-2xl mb-16"
+          >
+            OSCARS 2024
           </p>
+          <div className="w-fit grid grid-cols-3 gap-16 mx-auto">
+            <div>
+              <div
+                style={{
+                  background: "#D9D9D9",
+                  width: "340px",
+                  height: "340px",
+                }}
+                className="max-w-[340px] max-h-[340px]"
+              ></div>
+              <div className="grid grid-cols-1 mt-4 gap-2.5 text-black text-left max-w-[290px]">
+                <p className="text-sm underline underline-offset-2 my-1">
+                  TV, MUSIC & FILM
+                </p>
+                <p className="text-xl leading-snug">
+                  Nữ kiến trúc sư đầu tiên của Việt Nam giành giải thưởng Moira
+                  Gemmill
+                </p>
+                <p className="text-sm font-normal">03.10.2024 by Celia</p>
+              </div>
+            </div>
 
-          <ProductLayout>
-            <ProductCard />
-            <ProductCard />
-            <ProductCard />
-            <ProductCard />
-            <ProductCard />
-          </ProductLayout>
+            <div>
+              <div
+                style={{
+                  background: "#D9D9D9",
+                  width: "340px",
+                  height: "340px",
+                }}
+                className="max-w-[340px] max-h-[340px]"
+              ></div>
+              <div className="grid grid-cols-1 mt-4 gap-2.5 text-black text-left max-w-[290px]">
+                <p className="text-sm underline underline-offset-2 my-1">
+                  TV, MUSIC & FILM
+                </p>
+                <p className="text-xl leading-snug">
+                  Nữ kiến trúc sư đầu tiên của Việt Nam giành giải thưởng Moira
+                  Gemmill
+                </p>
+                <p className="text-sm font-normal">03.10.2024 by Celia</p>
+              </div>
+            </div>
+
+            <div>
+              <div
+                style={{
+                  background: "#D9D9D9",
+                  width: "340px",
+                  height: "340px",
+                }}
+                className="max-w-[340px] max-h-[340px]"
+              ></div>
+              <div className="grid grid-cols-1 mt-4 gap-2.5 text-black text-left max-w-[290px]">
+                <p className="text-sm underline underline-offset-2 my-1">
+                  TV, MUSIC & FILM
+                </p>
+                <p className="text-xl leading-snug">
+                  Nữ kiến trúc sư đầu tiên của Việt Nam giành giải thưởng Moira
+                  Gemmill
+                </p>
+                <p className="text-sm font-normal">03.10.2024 by Celia</p>
+              </div>
+            </div>
+          </div>
         </div>
 
-        <div className="w-full pt-4 pb-28 text-center border-t">
-          <p className="text-xl font-semibold uppercase">tin tức mới nhất</p>
-          <ArticleLayout>
-            <ArticleCard />
-            <ArticleCard />
-            <ArticleCard />
-            <ArticleCard />
-          </ArticleLayout>
-        </div>
-
-        <div className="w-full pt-4 pb-28 text-center border-t">
-          <p className="text-xl font-semibold uppercase">
-            Lựa chọn hoàn hảo cho tháng 3
+        <div className="py-16">
+          <p
+            style={{ letterSpacing: "8%" }}
+            className="text-center text-2xl mb-16 uppercase"
+          >
+            style
           </p>
+          <div className="w-fit grid grid-cols-3 gap-16 mx-auto">
+            <div>
+              <div
+                style={{
+                  background: "#D9D9D9",
+                  width: "340px",
+                  height: "340px",
+                }}
+                className="max-w-[340px] max-h-[340px]"
+              ></div>
+              <div className="grid grid-cols-1 mt-4 gap-2.5 text-black text-left max-w-[290px]">
+                <p className="text-sm underline underline-offset-2 my-1">
+                  TV, MUSIC & FILM
+                </p>
+                <p className="text-xl leading-snug">
+                  Nữ kiến trúc sư đầu tiên của Việt Nam giành giải thưởng Moira
+                  Gemmill
+                </p>
+                <p className="text-sm font-normal">03.10.2024 by Celia</p>
+              </div>
+            </div>
 
-          <ProductLayout>
-            <ProductCard />
-            <ProductCard />
-            <ProductCard />
-            <ProductCard />
-            <ProductCard />
-            <ProductCard />
-          </ProductLayout>
+            <div>
+              <div
+                style={{
+                  background: "#D9D9D9",
+                  width: "340px",
+                  height: "340px",
+                }}
+                className="max-w-[340px] max-h-[340px]"
+              ></div>
+              <div className="grid grid-cols-1 mt-4 gap-2.5 text-black text-left max-w-[290px]">
+                <p className="text-sm underline underline-offset-2 my-1">
+                  TV, MUSIC & FILM
+                </p>
+                <p className="text-xl leading-snug">
+                  Nữ kiến trúc sư đầu tiên của Việt Nam giành giải thưởng Moira
+                  Gemmill
+                </p>
+                <p className="text-sm font-normal">03.10.2024 by Celia</p>
+              </div>
+            </div>
+
+            <div>
+              <div
+                style={{
+                  background: "#D9D9D9",
+                  width: "340px",
+                  height: "340px",
+                }}
+                className="max-w-[340px] max-h-[340px]"
+              ></div>
+              <div className="grid grid-cols-1 mt-4 gap-2.5 text-black text-left max-w-[290px]">
+                <p className="text-sm underline underline-offset-2 my-1">
+                  TV, MUSIC & FILM
+                </p>
+                <p className="text-xl leading-snug">
+                  Nữ kiến trúc sư đầu tiên của Việt Nam giành giải thưởng Moira
+                  Gemmill
+                </p>
+                <p className="text-sm font-normal">03.10.2024 by Celia</p>
+              </div>
+            </div>
+          </div>
         </div>
 
-        <div className="w-full pt-4 pb-28 text-center border-t">
-          <p className="text-xl font-semibold uppercase">tin tức mới nhất</p>
-          <ArticleLayout>
-            <ArticleCard />
-            <ArticleCard />
-            <ArticleCard />
-            <ArticleCard />
-            <ArticleCard />
-            <ArticleCard />
-            <ArticleCard />
-            <ArticleCard />
-            <ArticleCard />
-            <ArticleCard />
-            <ArticleCard />
-            <ArticleCard />
-          </ArticleLayout>
-          <Button className="mt-16">XEM THÊM</Button>
+        <div className="py-16">
+          <p
+            style={{ letterSpacing: "8%" }}
+            className="text-center text-2xl mb-16 uppercase"
+          >
+            BUSINESS OF FASHION
+          </p>
+          <div className="w-fit grid grid-cols-2 gap-16 mx-auto">
+            <div>
+              <div
+                style={{
+                  background: "#D9D9D9",
+                  width: "560px",
+                  height: "560px",
+                }}
+                className="max-w-[560px] max-h-[560px]"
+              ></div>
+              <div className="grid grid-cols-1 mt-4 gap-2.5 text-black text-left w-3/4">
+                <p className="text-lg underline underline-offset-2 my-1">
+                  BUSINESS
+                </p>
+                <p className="text-2xl leading-snug">
+                  Nữ kiến trúc sư đầu tiên của Việt Nam giành giải thưởng Moira
+                  Gemmill
+                </p>
+                <p className="text-sm font-normal">03.10.2024 by Celia</p>
+              </div>
+            </div>
+
+            <div>
+              <div
+                style={{
+                  background: "#D9D9D9",
+                  width: "560px",
+                  height: "560px",
+                }}
+                className="max-w-[560px] max-h-[560px]"
+              ></div>
+              <div className="grid grid-cols-1 mt-4 gap-2.5 text-black text-left w-3/4">
+                <p className="text-lg underline underline-offset-2 my-1">
+                  BUSINESS
+                </p>
+                <p className="text-2xl leading-snug">
+                  Nữ kiến trúc sư đầu tiên của Việt Nam giành giải thưởng Moira
+                  Gemmill
+                </p>
+                <p className="text-sm font-normal">03.10.2024 by Celia</p>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
   );
 }
 
-export default Page;
+export default page;
