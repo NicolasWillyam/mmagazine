@@ -80,7 +80,7 @@ function page() {
                   <p className="text-sm underline underline-offset-2">STYLE</p>
                   <p className="text-lg leading-snug">
                     Gương mặt mới của Versace Icons gọi tên nam diễn viên chính
-                    "Oppenheimer" - Cillian Murphy
+                    {'"'}Oppenheimer{'"'} - Cillian Murphy
                   </p>
                   <p className="text-sm font-normal">03.14.2024 by Anthea</p>
                 </div>

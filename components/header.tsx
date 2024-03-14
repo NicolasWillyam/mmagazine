@@ -11,7 +11,7 @@ function Header() {
     const handleScroll = () => {
       const scrollPosition = window.scrollY;
 
-      if (scrollPosition > 200) {
+      if (scrollPosition > 100) {
         setIsScrolled(true);
         setImageWidth(35); // Change width to 50 when scrolling down
       } else {
@@ -30,7 +30,7 @@ function Header() {
     <div
       className={`w-full fixed top-0 0 z-10 ${
         isScrolled
-          ? "h-[56px] bg-white text-black shadow-md"
+          ? "h-[58px] bg-white text-black shadow-md"
           : "h-36 text-white"
       }`}
     >
