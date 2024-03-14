@@ -2,6 +2,7 @@ import Header from "@/components/header";
 import React from "react";
 import homebanner from "../public/homebanner.png";
 import runwaybanner from "../public/runwaybanner.png";
+import { url } from "inspector";
 
 function page() {
   return (
@@ -11,7 +12,7 @@ function page() {
         style={{
           backgroundImage: `url(${homebanner.src})`,
           width: "100%",
-          height: "750px",
+          height: "800px",
         }}
         className="bg-cover bg-no-repeat bg-center relative"
       >
@@ -29,65 +30,60 @@ function page() {
             </p>
             <p>13.3.2024 by M Fashion Team</p>
           </div>
-          <div className="w-full max-w-[1380px] mx-auto px-8 py-6 bg-white mt-8 grid grid-cols-3 gap-16">
-            <div className="flex items-start gap-4">
-              <div
-                style={{
-                  background: "#D9D9D9",
-                  width: "140px",
-                  height: "110px",
-                }}
-                className="max-w-[140px] max-h-[110px]"
-              ></div>
-              <div className="grid grid-cols-1 gap-2.5 text-black text-left max-w-[290px]">
-                <p className="text-sm underline underline-offset-2 my-1">
-                  RUNWAY
-                </p>
-                <p className="text-lg leading-snug">
-                  Nữ kiến trúc sư đầu tiên của Việt Nam giành giải thưởng Moira
-                  Gemmill
-                </p>
-                <p className="text-sm font-normal">03.10.2024 by Celia</p>
+          <div className="w-full px-10">
+            <div className="px-8 py-6 bg-white mt-8 grid grid-cols-3 gap-16">
+              <div className="flex items-start gap-4">
+                <div
+                  style={{
+                    width: "140px",
+                    height: "110px",
+                  }}
+                  className="min-w-[140px] bg-cover bg-center bg-[url('https://www.lofficielvietnam.com/_next/image?url=https%3A%2F%2Fwww.datocms-assets.com%2F56778%2F1710350998-imageonline-co-noisedimage.png%3Fauto%3Dformat%252Ccompress%26cs%3Dsrgb&w=3840&q=75')]"
+                ></div>
+                <div className="grid grid-cols-1 gap-2.5 text-black text-left max-w-[290px]">
+                  <p className="text-sm underline underline-offset-2">RUNWAY</p>
+                  <p className="text-lg leading-snug">
+                    Hè này, hãy học cách phối tất cùng giày đế bệt để trở thành
+                    tín đồ thời thượng nhất
+                  </p>
+                  <p className="text-sm font-normal">03.10.2024 by Celia</p>
+                </div>
               </div>
-            </div>
-            <div className="flex items-start gap-4">
-              <div
-                style={{
-                  background: "#D9D9D9",
-                  width: "140px",
-                  height: "110px",
-                }}
-                className="max-w-[140px] max-h-[110px]"
-              ></div>
-              <div className="grid grid-cols-1 gap-2.5 text-black text-left max-w-[290px]">
-                <p className="text-sm underline underline-offset-2 my-1">
-                  RUNWAY
-                </p>
-                <p className="text-lg leading-snug">
-                  Nữ kiến trúc sư đầu tiên của Việt Nam giành giải thưởng Moira
-                  Gemmill
-                </p>
-                <p className="text-sm font-normal">03.10.2024 by Celia</p>
+
+              <div className="flex items-start gap-4">
+                <div
+                  style={{
+                    width: "140px",
+                    height: "110px",
+                  }}
+                  className="min-w-[140px] bg-cover bg-center bg-[url('https://www.lofficielvietnam.com/_next/image?url=https%3A%2F%2Fwww.datocms-assets.com%2F56778%2F1710383299-1710357987-bright-davika-mark-tuan-calvin-klein-jeans-ss-2024-2.jpg%3Fauto%3Dformat%252Ccompress%26cs%3Dsrgb&w=1920&q=75')]"
+                ></div>
+                <div className="grid grid-cols-1 gap-2.5 text-black text-left max-w-[290px]">
+                  <p className="text-sm underline underline-offset-2">STYLE</p>
+                  <p className="text-lg leading-snug">
+                    Calvin Klein Jeans kết hợp cùng Bright, Davika và Mark Tuan
+                    trong chiến dịch quảng bá mới
+                  </p>
+                  <p className="text-sm font-normal">03.14.2024 by Margot</p>
+                </div>
               </div>
-            </div>
-            <div className="flex items-start gap-4">
-              <div
-                style={{
-                  background: "#D9D9D9",
-                  width: "140px",
-                  height: "110px",
-                }}
-                className="max-w-[140px] max-h-[110px]"
-              ></div>
-              <div className="grid grid-cols-1 gap-2.5 text-black text-left max-w-[290px]">
-                <p className="text-sm underline underline-offset-2 my-1">
-                  RUNWAY
-                </p>
-                <p className="text-lg leading-snug">
-                  Nữ kiến trúc sư đầu tiên của Việt Nam giành giải thưởng Moira
-                  Gemmill
-                </p>
-                <p className="text-sm font-normal">03.10.2024 by Celia</p>
+
+              <div className="flex items-start gap-4">
+                <div
+                  style={{
+                    width: "140px",
+                    height: "110px",
+                  }}
+                  className="min-w-[140px] bg-cover bg-center bg-[url('https://www.lofficielvietnam.com/_next/image?url=https%3A%2F%2Fwww.datocms-assets.com%2F56778%2F1710392428-cillian-murphy-in-atelier-versac.jpeg%3Fauto%3Dformat%252Ccompress%26cs%3Dsrgb&w=3840&q=75')]"
+                ></div>
+                <div className="grid grid-cols-1 gap-2.5 text-black text-left max-w-[290px]">
+                  <p className="text-sm underline underline-offset-2">STYLE</p>
+                  <p className="text-lg leading-snug">
+                    Gương mặt mới của Versace Icons gọi tên nam diễn viên chính
+                    "Oppenheimer" - Cillian Murphy
+                  </p>
+                  <p className="text-sm font-normal">03.14.2024 by Anthea</p>
+                </div>
               </div>
             </div>
           </div>
@@ -253,10 +249,8 @@ function page() {
               <div
                 style={{
                   background: "#D9D9D9",
-                  width: "560px",
-                  height: "560px",
                 }}
-                className="max-w-[560px] max-h-[560px]"
+                className="w-full h-[550px]"
               ></div>
               <div className="grid grid-cols-1 mt-4 gap-2.5 text-black text-left w-3/4">
                 <p className="text-lg underline underline-offset-2 my-1">
@@ -274,10 +268,8 @@ function page() {
               <div
                 style={{
                   background: "#D9D9D9",
-                  width: "560px",
-                  height: "560px",
                 }}
-                className="max-w-[560px] max-h-[560px]"
+                className="w-full h-[550px]"
               ></div>
               <div className="grid grid-cols-1 mt-4 gap-2.5 text-black text-left w-3/4">
                 <p className="text-lg underline underline-offset-2 my-1">
