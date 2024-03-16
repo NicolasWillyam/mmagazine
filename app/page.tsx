@@ -1,13 +1,30 @@
-import Header from "@/components/header";
 import React from "react";
 import homebanner from "../public/homebanner.png";
 import runwaybanner from "../public/runwaybanner.png";
 import { url } from "inspector";
+import { client } from "@/sanity/lib/client";
+import { groq } from "next-sanity";
+import category from "@/sanity/schemaTypes/category";
+import BlogContent from "@/components/blog-content";
+import { Header } from "@/components/header";
+import { Article } from "@/components/article";
+import article1 from "../public/images/article1.webp";
+import article2 from "../public/images/article2.webp";
+import article3 from "../public/images/article3.webp";
+import article4 from "../public/images/article4.webp";
 
-function page() {
+const query = groq`*[_type == 'post'] {
+  ...,
+  author->,
+  categories[]->
+} | order(author,_createdAt asc)`;
+
+export default async function Page() {
+  const posts = await client.fetch(query);
+
   return (
     <div>
-      <Header />
+      <Header style="light" />
       <div
         style={{
           backgroundImage: `url(${homebanner.src})`,
@@ -17,21 +34,21 @@ function page() {
         className="bg-cover bg-no-repeat bg-center relative"
       >
         <div className="w-full text-center absolute text-white -bottom-24">
-          <div className="w-1/3 px-4  mx-auto text-center">
-            <p className="text-sm font-medium underline underline-offset-2">
+          <div className="w-1/3 mx-auto text-center">
+            <p className="text-base font-semibold underline underline-offset-2">
               STYLE
             </p>
             <p
               style={{ lineHeight: "56px" }}
-              className="text-4xl font-semibold my-2.5"
+              className="text-[45px] font-semibold my-2.5"
             >
               QUIET LUXURY: Định nghĩa, sự bắt đầu và sức ảnh hưởng tới phong
               cách phái đẹp
             </p>
-            <p>13.3.2024 by M Fashion Team</p>
+            <p className="font-medium">13.3.2024 by M Fashion Team</p>
           </div>
           <div className="w-full px-10">
-            <div className="px-8 py-6 bg-white mt-8 grid grid-cols-3 gap-16">
+            <div className="px-8 py-6 bg-white mt-8 grid grid-cols-3 gap-8">
               <div className="flex items-start gap-4">
                 <div
                   style={{
@@ -90,77 +107,37 @@ function page() {
         </div>
       </div>
 
-      <div className="max-w-[1200px] mx-auto text-black  mt-24">
+      <div className="max-w-[1200px]  mx-auto text-black  mt-48">
+        <BlogContent posts={posts} />
         <div className="py-16">
           <p
-            style={{ letterSpacing: "8%" }}
-            className="text-center text-2xl mb-16"
+            style={{ letterSpacing: "2.5px" }}
+            className="text-center text-[26px] font-[400] mb-16"
           >
             OSCARS 2024
           </p>
-          <div className="w-fit grid grid-cols-3 gap-16 mx-auto">
-            <div>
-              <div
-                style={{
-                  background: "#D9D9D9",
-                  width: "340px",
-                  height: "340px",
-                }}
-                className="max-w-[340px] max-h-[340px]"
-              ></div>
-              <div className="grid grid-cols-1 mt-4 gap-2.5 text-black text-left max-w-[290px]">
-                <p className="text-sm underline underline-offset-2 my-1">
-                  TV, MUSIC & FILM
-                </p>
-                <p className="text-xl leading-snug">
-                  Nữ kiến trúc sư đầu tiên của Việt Nam giành giải thưởng Moira
-                  Gemmill
-                </p>
-                <p className="text-sm font-normal">03.10.2024 by Celia</p>
-              </div>
-            </div>
-
-            <div>
-              <div
-                style={{
-                  background: "#D9D9D9",
-                  width: "340px",
-                  height: "340px",
-                }}
-                className="max-w-[340px] max-h-[340px]"
-              ></div>
-              <div className="grid grid-cols-1 mt-4 gap-2.5 text-black text-left max-w-[290px]">
-                <p className="text-sm underline underline-offset-2 my-1">
-                  TV, MUSIC & FILM
-                </p>
-                <p className="text-xl leading-snug">
-                  Nữ kiến trúc sư đầu tiên của Việt Nam giành giải thưởng Moira
-                  Gemmill
-                </p>
-                <p className="text-sm font-normal">03.10.2024 by Celia</p>
-              </div>
-            </div>
-
-            <div>
-              <div
-                style={{
-                  background: "#D9D9D9",
-                  width: "340px",
-                  height: "340px",
-                }}
-                className="max-w-[340px] max-h-[340px]"
-              ></div>
-              <div className="grid grid-cols-1 mt-4 gap-2.5 text-black text-left max-w-[290px]">
-                <p className="text-sm underline underline-offset-2 my-1">
-                  TV, MUSIC & FILM
-                </p>
-                <p className="text-xl leading-snug">
-                  Nữ kiến trúc sư đầu tiên của Việt Nam giành giải thưởng Moira
-                  Gemmill
-                </p>
-                <p className="text-sm font-normal">03.10.2024 by Celia</p>
-              </div>
-            </div>
+          <div className="w-full grid grid-cols-3 gap-16">
+            <Article
+              imgLink={article1.src}
+              category="style"
+              name="Lisa, Tóc Tiên, cùng dàn sao hội tụ tại sự kiện khai trương Bulgari Studio"
+              time="03.15.2024"
+              author="Cara"
+            />
+            <Article
+              imgLink={article2.src}
+              category="pop, music & films"
+              name="Cillian Murphy - Từ con chiên ngoan đạo đến chủ nhân tượng Oscar ở tuổi 47"
+              time="03.12.2024"
+              author="Đức Noise"
+            />
+            <Article
+              imgLink={article3.src}
+              category="style"
+              name="Khám phá tủ đồ lập dị và độc đáo của Emma Stone trong Poor Things"
+              time="03.12.2024"
+              author="Ngọc Linh"
+            />
           </div>
         </div>
 
@@ -171,69 +148,28 @@ function page() {
           >
             style
           </p>
-          <div className="w-fit grid grid-cols-3 gap-16 mx-auto">
-            <div>
-              <div
-                style={{
-                  background: "#D9D9D9",
-                  width: "340px",
-                  height: "340px",
-                }}
-                className="max-w-[340px] max-h-[340px]"
-              ></div>
-              <div className="grid grid-cols-1 mt-4 gap-2.5 text-black text-left max-w-[290px]">
-                <p className="text-sm underline underline-offset-2 my-1">
-                  TV, MUSIC & FILM
-                </p>
-                <p className="text-xl leading-snug">
-                  Nữ kiến trúc sư đầu tiên của Việt Nam giành giải thưởng Moira
-                  Gemmill
-                </p>
-                <p className="text-sm font-normal">03.10.2024 by Celia</p>
-              </div>
-            </div>
-
-            <div>
-              <div
-                style={{
-                  background: "#D9D9D9",
-                  width: "340px",
-                  height: "340px",
-                }}
-                className="max-w-[340px] max-h-[340px]"
-              ></div>
-              <div className="grid grid-cols-1 mt-4 gap-2.5 text-black text-left max-w-[290px]">
-                <p className="text-sm underline underline-offset-2 my-1">
-                  TV, MUSIC & FILM
-                </p>
-                <p className="text-xl leading-snug">
-                  Nữ kiến trúc sư đầu tiên của Việt Nam giành giải thưởng Moira
-                  Gemmill
-                </p>
-                <p className="text-sm font-normal">03.10.2024 by Celia</p>
-              </div>
-            </div>
-
-            <div>
-              <div
-                style={{
-                  background: "#D9D9D9",
-                  width: "340px",
-                  height: "340px",
-                }}
-                className="max-w-[340px] max-h-[340px]"
-              ></div>
-              <div className="grid grid-cols-1 mt-4 gap-2.5 text-black text-left max-w-[290px]">
-                <p className="text-sm underline underline-offset-2 my-1">
-                  TV, MUSIC & FILM
-                </p>
-                <p className="text-xl leading-snug">
-                  Nữ kiến trúc sư đầu tiên của Việt Nam giành giải thưởng Moira
-                  Gemmill
-                </p>
-                <p className="text-sm font-normal">03.10.2024 by Celia</p>
-              </div>
-            </div>
+          <div className="w-full grid grid-cols-3 gap-16">
+            <Article
+              imgLink={article1.src}
+              category="style"
+              name="Lisa, Tóc Tiên, cùng dàn sao hội tụ tại sự kiện khai trương Bulgari Studio"
+              time="03.15.2024"
+              author="Cara"
+            />
+            <Article
+              imgLink={article2.src}
+              category="pop, music & films"
+              name="Cillian Murphy - Từ con chiên ngoan đạo đến chủ nhân tượng Oscar ở tuổi 47"
+              time="03.12.2024"
+              author="Đức Noise"
+            />
+            <Article
+              imgLink={article3.src}
+              category="style"
+              name="Khám phá tủ đồ lập dị và độc đáo của Emma Stone trong Poor Things"
+              time="03.12.2024"
+              author="Ngọc Linh"
+            />
           </div>
         </div>
 
@@ -248,15 +184,15 @@ function page() {
             <div>
               <div
                 style={{
-                  background: "#D9D9D9",
+                  backgroundImage: `url(${article2.src})`,
                 }}
-                className="w-full h-[550px]"
+                className=" bg-cover bg-center bg-no-repeat w-full h-[550px]"
               ></div>
-              <div className="grid grid-cols-1 mt-4 gap-2.5 text-black text-left w-3/4">
+              <div className="grid grid-cols-1 mt-4 gap-4 text-black text-left w-3/4">
                 <p className="text-lg underline underline-offset-2 my-1">
                   BUSINESS
                 </p>
-                <p className="text-2xl leading-snug">
+                <p className="text-[25px] leading-snug">
                   Nữ kiến trúc sư đầu tiên của Việt Nam giành giải thưởng Moira
                   Gemmill
                 </p>
@@ -267,15 +203,15 @@ function page() {
             <div>
               <div
                 style={{
-                  background: "#D9D9D9",
+                  backgroundImage: `url(${article4.src})`,
                 }}
-                className="w-full h-[550px]"
+                className=" bg-cover bg-center bg-no-repeat w-full h-[550px]"
               ></div>
-              <div className="grid grid-cols-1 mt-4 gap-2.5 text-black text-left w-3/4">
+              <div className="grid grid-cols-1 mt-4 gap-4 text-black text-left w-3/4">
                 <p className="text-lg underline underline-offset-2 my-1">
                   BUSINESS
                 </p>
-                <p className="text-2xl leading-snug">
+                <p className="text-[25px] leading-snug">
                   Nữ kiến trúc sư đầu tiên của Việt Nam giành giải thưởng Moira
                   Gemmill
                 </p>
@@ -513,5 +449,3 @@ function page() {
     </div>
   );
 }
-
-export default page;

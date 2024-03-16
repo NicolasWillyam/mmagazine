@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import React from "react";
 
 interface Props {
@@ -7,19 +8,19 @@ interface Props {
 const Logo: React.FC<Props> = (props) => {
   if (props.isScrolled === true)
     return (
-      <div>
+      <Link href={"/"}>
         <Image
-          className="text-white -mt-2"
+          className="text-white -mt-1"
           src={"/logo.png"}
           alt="logo-image"
-          width={32}
-          height={32}
+          width={24}
+          height={24}
         />
-      </div>
+      </Link>
     );
   else
     return (
-      <div>
+      <Link href={"/"}>
         <Image
           className="text-white"
           src={"logo.svg"}
@@ -27,8 +28,35 @@ const Logo: React.FC<Props> = (props) => {
           width={100}
           height={100}
         />
-      </div>
+      </Link>
     );
 };
 
-export default Logo;
+const LogoBlack: React.FC<Props> = (props) => {
+  if (props.isScrolled === true)
+    return (
+      <Link href={"/"}>
+        <Image
+          className="text-white -mt-1"
+          src={"/logo.png"}
+          alt="logo-image"
+          width={24}
+          height={24}
+        />
+      </Link>
+    );
+  else
+    return (
+      <Link href={"/"}>
+        <Image
+          className="text-white"
+          src={"/logo.png"}
+          alt="logo-image"
+          width={100}
+          height={100}
+        />
+      </Link>
+    );
+};
+
+export { Logo, LogoBlack };
