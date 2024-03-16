@@ -19,6 +19,11 @@ export default defineType({
         maxLength: 96,
       },
     }),
+     defineField({
+      name: 'subtitle',
+      title: 'Sub Title',
+      type: 'string',
+    }),
     defineField({
       name: 'author',
       title: 'Author',
