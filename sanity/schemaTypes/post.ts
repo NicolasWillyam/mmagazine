@@ -20,8 +20,8 @@ export default defineType({
       },
     }),
     defineField({
-      name: 'description',
-      title: 'Description',
+      name: 'subtitle',
+      title: 'Sub Title',
       type: 'string',
     }),
     defineField({

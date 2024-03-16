@@ -66,9 +66,7 @@ const SlugPage = async ({ params: { slug } }: Props) => {
             style={{ lineHeight: "32px" }}
             className="sm:text-[25px] text-lg leading-[27px] sm:w-[80%] mx-auto font-light"
           >
-            Celine Beauté ra mắt với thỏi son đỏ đựng trong hộp màu vàng tràn
-            đầy cảm hứng từ nghệ thuật—trước khi mở rộng sang dòng son 15 màu
-            vào tháng 1 năm 2025.
+            {post.subtile}
           </p>
           <p>
             {post?._createdAt} by {post?.author?.name}
