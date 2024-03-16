@@ -193,7 +193,6 @@ const BrandList = [
   { id: "alberta-ferretti", name: "Balmain", link: "/" },
 ];
 
-<<<<<<< HEAD
 const MenuList = [
   { id: "fashion", name: "Fashion" },
   { id: "style", name: "Style" },
@@ -213,6 +212,3 @@ const MenuList = [
 ];
 
 export { DesignerList, BrandList, AlphabetList, MenuList };
-=======
-export { DesignerList, BrandList, AlphabetList };
->>>>>>> origin/main
