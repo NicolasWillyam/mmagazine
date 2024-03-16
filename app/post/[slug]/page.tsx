@@ -43,13 +43,14 @@ const SlugPage = async ({ params: { slug } }: Props) => {
         categories[]->
     }`;
   const post: Post = await client.fetch(query, { slug });
+  console.log(post.subtitle);
 
   return (
     <div className="">
       <Header style="dark" />
 
-      <div className="mt-56 max-w-[1044px] mx-auto sm:text-center">
-        <div className="grid grid-cols-1 gap-y-5 py-8 sm:px-0 px-4">
+      <div className="mt-56 max-w-[1044px] mx-auto ">
+        <div className=" sm:w-[90%] mx-auto grid grid-cols-1 gap-y-6 py-8 sm:px-0 px-4 sm:text-center">
           {post?.categories.map((item) => (
             <p
               key={item?._id}
@@ -64,9 +65,9 @@ const SlugPage = async ({ params: { slug } }: Props) => {
           </p>
           <p
             style={{ lineHeight: "32px" }}
-            className="sm:text-[25px] text-lg leading-[27px] sm:w-[80%] mx-auto font-light"
+            className="sm:text-2xl text-lg leading-[27px] mx-auto"
           >
-            {post.subtile}
+            {post.subtitle}
           </p>
           <p>
             {post?._createdAt} by {post?.author?.name}

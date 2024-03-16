@@ -13,7 +13,7 @@ export interface Post extends Base {
   mainImage: Image;
   slug: Slug;
   title: string;
-  subtile: string;
+  subtitle: string;
   description: string;
 }
 

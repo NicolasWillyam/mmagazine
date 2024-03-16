@@ -20,9 +20,12 @@ export const RichText = {
   ),
   block: {
     normal: ({ children }: any) => (
-      <p className="w-full mx-auto leading-[25px] font-light py-8 px-4 sm:px-0">
+      <p className="w-full text-justify leading-[25px] font-light py-8 px-4 sm:px-0">
         {children}
       </p>
+    ),
+    center: ({ children }: any) => (
+      <p className="text-base font-light text-center">{children}</p>
     ),
     h1: ({ children }: any) => (
       <h1 className="text-4xl py-10 font-bold">{children}</h1>

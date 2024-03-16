@@ -22,16 +22,16 @@ const BlogContent = ({ posts }: Props) => {
         >
           NEWS Update
         </p>
-        <div className="w-full grid grid-cols-3 gap-16 mx-auto">
+        <div className="w-full grid grid-cols-3 gap-8 gap-y-16 mx-auto">
           {posts?.map((post) => (
             <Link href={`/post/${post?.slug?.current}`} key={post?._id}>
               <div
                 style={{
                   backgroundImage: `url('${urlFor(post?.mainImage).url()}')`,
                 }}
-                className="w-full h-[349px] bg-cover bg-center bg-gray-500"
+                className="w-full h-[380px] bg-cover bg-center bg-gray-500"
               ></div>
-              <div className="grid grid-cols-1 mt-4 gap-2.5 text-black text-left w-full">
+              <div className="grid grid-cols-1 mt-4 gap-2.5 text-black text-left w-full pr-4">
                 {post?.categories?.map((item) => (
                   <p
                     key={item?._id}
@@ -41,9 +41,9 @@ const BlogContent = ({ posts }: Props) => {
                   </p>
                 ))}
                 <p className="text-[22px] leading-snug">{post.title}</p>
-                <p className="text-sm font-normal">
+                {/* <p className="text-sm font-normal">
                   {post?._createdAt} by {post?.author?.name}
-                </p>
+                </p> */}
               </div>
             </Link>
           ))}

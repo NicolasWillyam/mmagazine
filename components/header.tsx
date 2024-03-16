@@ -104,7 +104,7 @@ const Header: React.FC<Style> = (props) => {
           isScrolled ? "h-[58px] shadow-md" : "h-36 "
         }`}
       >
-        <div className="h-full px-8  flex items-start justify-between py-4 z-10">
+        <div className="h-full sm:px-8 px-4  flex items-start justify-between py-4 z-10">
           <div className="w-24 flex items-center gap-2">
             <FiMenu onClick={ChangeMenuState} size={28} />
             <p className="text font-semibold uppercase">MENU</p>

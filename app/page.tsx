@@ -15,7 +15,7 @@ import article4 from "../public/images/article4.webp";
 
 const query = groq`*[_type == 'post'] {
   ...,
-  author->,
+  // author->,
   categories[]->
 } | order(author,_createdAt asc)`;
 
