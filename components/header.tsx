@@ -29,7 +29,7 @@ const Header: React.FC<Style> = (props) => {
     const handleScroll = () => {
       const scrollPosition = window.scrollY;
 
-      if (scrollPosition > 100) {
+      if (scrollPosition > 10) {
         setIsScrolled(true);
       } else {
         setIsScrolled(false);
@@ -53,13 +53,13 @@ const Header: React.FC<Style> = (props) => {
         }`}
       >
         <div className="h-full sm:px-8 px-4 flex items-start justify-between py-4 z-10">
-          <div className="w-24 flex items-center gap-2">
+          <div className="w-24 flex items-center gap-2 -mt-0.5">
             <FiMenu onClick={ChangeMenuState} size={28} />
             <p className="text-sm sm:text-base font-semibold uppercase">MENU</p>
           </div>
           <Logo isScrolled={isScrolled} />
           <div className="w-24 flex items-center gap-2">
-            <p className="text-sm sm:text-base font-semibold uppercase ml-auto">
+            <p className="text-sm sm:text-base font-semibold uppercase ml-auto mt-0.5">
               vietnam
             </p>
           </div>
@@ -107,13 +107,13 @@ const Header: React.FC<Style> = (props) => {
         }`}
       >
         <div className="h-full sm:px-8 px-4  flex items-start justify-between py-4 z-10">
-          <div className="w-24 flex items-center gap-2">
+          <div className="w-24 flex items-center gap-2 -mt-0.5">
             <FiMenu onClick={ChangeMenuState} size={28} />
             <p className="text-sm sm:text-base font-semibold uppercase">MENU</p>
           </div>
           <LogoBlack isScrolled={isScrolled} />
           <div className="w-24 flex items-center gap-2">
-            <p className="text-sm sm:text-base ml-auto font-semibold uppercase mt-1 sm:mt-0">
+            <p className="text-sm sm:text-base ml-auto font-semibold uppercase mt-1 sm:mt-0 mt-0.5">
               vietnam
             </p>
           </div>
