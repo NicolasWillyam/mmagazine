@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Be_Vietnam_Pro } from "next/font/google";
+import { Be_Vietnam_Pro, Inter } from "next/font/google";
 import { Analytics } from "@vercel/analytics/react";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import "./globals.css";
@@ -9,6 +9,8 @@ const vietnampro = Be_Vietnam_Pro({
   style: ["normal", "italic"],
   subsets: ["latin"],
 });
+
+const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "M Magazine",
@@ -25,7 +27,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={vietnampro.className}>
+      <body className={inter.className}>
         <SpeedInsights />
         <Analytics />
         {children}

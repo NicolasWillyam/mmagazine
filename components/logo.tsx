@@ -11,7 +11,7 @@ const Logo: React.FC<Props> = (props) => {
       <Link href={"/"}>
         <Image
           className="text-white -mt-1"
-          src={"/logo.png"}
+          src={"/blacklogo.svg"}
           alt="logo-image"
           width={24}
           height={24}
@@ -38,7 +38,7 @@ const LogoBlack: React.FC<Props> = (props) => {
       <Link href={"/"}>
         <Image
           className="text-white -mt-1"
-          src={"/logo.png"}
+          src={"/blacklogo.svg"}
           alt="logo-image"
           width={24}
           height={24}
@@ -50,7 +50,7 @@ const LogoBlack: React.FC<Props> = (props) => {
       <Link href={"/"}>
         <Image
           className="text-white"
-          src={"/logo.png"}
+          src={"/blacklogo.svg"}
           alt="logo-image"
           width={100}
           height={100}

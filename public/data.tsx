@@ -207,7 +207,6 @@ const MenuList = [
   { id: "lifestyle", name: "lifestyle" },
   { id: "money-and-finance", name: "Money & Finance" },
   { id: "m-for-him", name: "M for him" },
-  { id: "m-for-her", name: "M for her" },
   { id: "shopping", name: "shopping" },
 ];
 

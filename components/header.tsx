@@ -48,18 +48,20 @@ const Header: React.FC<Style> = (props) => {
       <div
         className={`w-full fixed top-0 0 z-10 ${
           isScrolled
-            ? "h-[58px] bg-white text-black shadow-md"
+            ? "sm:h-[58px] h-[55px] bg-white text-black shadow-md"
             : "h-36 text-white"
         }`}
       >
-        <div className="h-full px-8  flex items-start justify-between py-4 z-10">
+        <div className="h-full sm:px-8 px-4 flex items-start justify-between py-4 z-10">
           <div className="w-24 flex items-center gap-2">
             <FiMenu onClick={ChangeMenuState} size={28} />
-            <p className="text font-semibold uppercase">MENU</p>
+            <p className="text-sm sm:text-base font-semibold uppercase">MENU</p>
           </div>
           <Logo isScrolled={isScrolled} />
           <div className="w-24 flex items-center gap-2">
-            <p className="text font-semibold uppercase">vietnam</p>
+            <p className="text-sm sm:text-base font-semibold uppercase ml-auto">
+              vietnam
+            </p>
           </div>
         </div>
 
@@ -101,17 +103,19 @@ const Header: React.FC<Style> = (props) => {
     return (
       <div
         className={`w-full fixed top-0 0 bg-white text-black z-10  ${
-          isScrolled ? "h-[58px] shadow-md" : "h-36 "
+          isScrolled ? "h-[55px] sm:h-[58px] shadow-md" : "h-36 "
         }`}
       >
         <div className="h-full sm:px-8 px-4  flex items-start justify-between py-4 z-10">
           <div className="w-24 flex items-center gap-2">
             <FiMenu onClick={ChangeMenuState} size={28} />
-            <p className="text font-semibold uppercase">MENU</p>
+            <p className="text-sm sm:text-base font-semibold uppercase">MENU</p>
           </div>
           <LogoBlack isScrolled={isScrolled} />
           <div className="w-24 flex items-center gap-2">
-            <p className="text font-semibold uppercase">vietnam</p>
+            <p className="text-sm sm:text-base ml-auto font-semibold uppercase mt-1 sm:mt-0">
+              vietnam
+            </p>
           </div>
         </div>
 

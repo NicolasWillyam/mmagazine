@@ -14,6 +14,7 @@ import { PortableText } from "@portabletext/react";
 import post from "@/sanity/schemaTypes/post";
 import { RichText } from "@/components/rich-text";
 import { Header } from "@/components/header";
+import Footer from "@/components/footer";
 
 interface Props {
   params: {
@@ -63,14 +64,16 @@ const SlugPage = async ({ params: { slug } }: Props) => {
           <p className="sm:text-[55px] text-[25px] sm:leading-[70px] leading-[30px]">
             {post.title}
           </p>
-          <p
-            style={{ lineHeight: "32px" }}
-            className="sm:text-2xl text-lg leading-[27px] mx-auto"
-          >
+          <p className="sm:text-2xl text-lg sm:leading-[32px] mx-auto">
             {post.subtitle}
           </p>
           <p>
-            {post?._createdAt} by {post?.author?.name}
+            {post?._createdAt.slice(5, 7) +
+              "." +
+              post?._createdAt.slice(8, 10) +
+              "." +
+              post?._createdAt.slice(0, 4)}{" "}
+            by {post?.author?.name}
           </p>
         </div>
         <img
@@ -83,6 +86,7 @@ const SlugPage = async ({ params: { slug } }: Props) => {
           <PortableText value={post?.body} components={RichText} />
         </div>
       </div>
+      <Footer />
     </div>
   );
 };

@@ -11,8 +11,12 @@ interface Props {
 }
 
 const BlogContent = ({ posts }: Props) => {
-  console.log("hello");
-  console.log(posts);
+  const date = "2024-03-15";
+  console.log(
+    "date",
+    date.slice(5, 7) + "." + date.slice(8, 10) + "." + date.slice(0, 4)
+  );
+
   return (
     <div>
       <div className="pb-16">
@@ -20,9 +24,9 @@ const BlogContent = ({ posts }: Props) => {
           style={{ letterSpacing: "8%" }}
           className="text-center text-2xl mb-16 uppercase"
         >
-          NEWS Update
+          NEWS THIS WEEK
         </p>
-        <div className="w-full grid grid-cols-3 gap-8 gap-y-16 mx-auto">
+        <div className="w-full grid sm:grid-cols-3 gap-5">
           {posts?.map((post) => (
             <Link href={`/post/${post?.slug?.current}`} key={post?._id}>
               <div
@@ -31,7 +35,7 @@ const BlogContent = ({ posts }: Props) => {
                 }}
                 className="w-full h-[380px] bg-cover bg-center bg-gray-500"
               ></div>
-              <div className="grid grid-cols-1 mt-4 gap-2.5 text-black text-left w-full pr-4">
+              <div className="grid grid-cols-1 gap-2.5 text-black text-left w-full p-4 sm:mt-4 sm:px-0">
                 {post?.categories?.map((item) => (
                   <p
                     key={item?._id}
@@ -41,9 +45,14 @@ const BlogContent = ({ posts }: Props) => {
                   </p>
                 ))}
                 <p className="text-[22px] leading-snug">{post.title}</p>
-                {/* <p className="text-sm font-normal">
-                  {post?._createdAt} by {post?.author?.name}
-                </p> */}
+                <p className="text-sm font-normal">
+                  {post?._createdAt.slice(5, 7) +
+                    "." +
+                    post?._createdAt.slice(8, 10) +
+                    "." +
+                    post?._createdAt.slice(0, 4)}{" "}
+                  by {post?.author?.name}
+                </p>
               </div>
             </Link>
           ))}
