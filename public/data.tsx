@@ -196,7 +196,9 @@ const BrandList = [
 const MenuList = [
   { id: "fashion", name: "Fashion" },
   { id: "style", name: "Style" },
+  { id: "celebrity", name: "CELEBRITY " },
   { id: "beauty", name: "Beauty" },
+  { id: "around-us", name: "around us" },
   { id: "bussiness", name: "Bussiness" },
   { id: "runway", name: "Runway" },
   { id: "watch-and-jewelry", name: "Watch & Jewelry" },
@@ -207,6 +209,9 @@ const MenuList = [
   { id: "lifestyle", name: "lifestyle" },
   { id: "money-and-finance", name: "Money & Finance" },
   { id: "m-for-him", name: "M for him" },
+  { id: "m-for-career", name: "M FOR CAREER" },
+  { id: "m-make-it", name: "M MAKE IT" },
+  { id: "m-oment", name: "M'OMENT" },
   { id: "shopping", name: "shopping" },
 ];
 
