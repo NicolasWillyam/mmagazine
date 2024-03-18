@@ -16,13 +16,15 @@ const Article: React.FC<ArticleContent> = (props) => {
         style={{
           backgroundImage: `url(${props.imgLink})`,
         }}
-        className="w-full h-[300px] sm:h-[380px] bg-cover bg-center bg-gray-500"
+        className="w-full h-[300px] sm:h-[170px] xl:h-[380px] bg-cover bg-center bg-gray-500"
       ></div>
       <div className="grid grid-cols-1 gap-2.5 text-black text-left w-full p-4 sm:mt-4 sm:px-0">
         <p className="text-base font-normal underline underline-offset-2 my-1 uppercase">
           {props.category}
         </p>
-        <p className="text-[22px] leading-snug">{props.name}</p>
+        <p className="sm:text-lg xl:text-[22px] xl:leading-snug">
+          {props.name}
+        </p>
         <p className="text-sm font-normal">
           {props.time} by {props.author}
         </p>
@@ -40,7 +42,9 @@ function ArticleLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  return <div className="w-full grid sm:grid-cols-3 gap-5">{children}</div>;
+  return (
+    <div className="w-full grid sm:grid-cols-3 gap-4 xl:gap-5">{children}</div>
+  );
 }
 
 function ArticleTitle({
@@ -63,7 +67,9 @@ function ArticleSection({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  return <div className="sm:py-16 py-8 2xl:mx-0 sm:mx-8">{children}</div>;
+  return (
+    <div className="sm:py-16 py-8 2xl:mx-0 sm:mx-4 xl:mx-8">{children}</div>
+  );
 }
 
 export { Article, ArticleLayout, ArticleTitle, ArticleSection };

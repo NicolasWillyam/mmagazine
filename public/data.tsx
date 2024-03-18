@@ -195,23 +195,23 @@ const BrandList = [
 
 const MenuList = [
   { id: "fashion", name: "Fashion" },
+  { id: "m-oment", name: "M'OMENT" },
   { id: "style", name: "Style" },
   { id: "celebrity", name: "CELEBRITY " },
   { id: "beauty", name: "Beauty" },
+  { id: "lifestyle", name: "lifestyle" },
   { id: "around-us", name: "around us" },
   { id: "bussiness", name: "Bussiness" },
   { id: "runway", name: "Runway" },
   { id: "watch-and-jewelry", name: "Watch & Jewelry" },
   { id: "art-and-design", name: "Art & Design" },
   { id: "voyage-and-gourmet", name: "Voyage & Gourmet" },
+  { id: "m-make-it", name: "M MAKE IT" },
   { id: "tv-film-and-music", name: "TV, films & music" },
   { id: "tech", name: "tech" },
-  { id: "lifestyle", name: "lifestyle" },
   { id: "money-and-finance", name: "Money & Finance" },
   { id: "m-for-him", name: "M for him" },
   { id: "m-for-career", name: "M FOR CAREER" },
-  { id: "m-make-it", name: "M MAKE IT" },
-  { id: "m-oment", name: "M'OMENT" },
   { id: "shopping", name: "shopping" },
 ];
 

@@ -36,21 +36,18 @@ export default async function Page() {
           backgroundImage: `url(${homebanner.src})`,
           width: "100%",
         }}
-        className="bg-cover bg-no-repeat bg-center relative h-[300px] sm:h-[800px]"
+        className="bg-cover bg-no-repeat bg-center relative h-[300px] sm:h-[500px] xl:h-[800px]"
       >
-        <div className="w-full text-center text-white sm:absolute  sm:-bottom-16">
+        <div className="w-full text-center text-white sm:absolute sm:bottom-8 xl:-bottom-16">
           <div className="max-w-[540px] mx-auto text-center hidden sm:block">
             <p className="text-base  underline underline-offset-2">STYLE</p>
-            <p
-              style={{ lineHeight: "56px" }}
-              className="text-[45px] font-medium my-2.5"
-            >
+            <p className="sm:text-3xl xl:text-[45px] font-medium my-2.5">
               QUIET LUXURY: Định nghĩa, sự bắt đầu và sức ảnh hưởng tới phong
               cách phái đẹp
             </p>
             <p className="font-regular">13.3.2024 by M Fashion Team</p>
           </div>
-          <div className="max-w-[1920px] px-8 mt-16 hidden sm:block">
+          <div className="max-w-[1920px] px-8 mt-16 hidden xl:block">
             <div className="px-8 py-6 bg-white grid grid-cols-3 gap-8">
               <div className="flex items-start gap-4">
                 <div
@@ -118,56 +115,53 @@ export default async function Page() {
           </p>
           <p className="text-sm">13.3.2024 by M Fashion Team</p>
         </div>
-        <div className="sm:hidden mt-6">
-          <div className="bg-white grid grid-cols-1 gap-4">
-            <div className="flex items-start gap-4">
-              <div
-                style={{
-                  width: "100px",
-                  height: "100px",
-                }}
-                className="min-w-[100px] bg-cover bg-center bg-[url('https://www.lofficielvietnam.com/_next/image?url=https%3A%2F%2Fwww.datocms-assets.com%2F56778%2F1710350998-imageonline-co-noisedimage.png%3Fauto%3Dformat%252Ccompress%26cs%3Dsrgb&w=3840&q=75')]"
-              ></div>
-              <div className="grid grid-cols-1 gap-2.5 text-black text-left w-full">
-                <p className="text-base">
+        <div className="xl:hidden mt-6 sm:mt-0 xl:mt-6">
+          <div className="bg-white grid sm:grid-cols-3 gap-6 sm:gap-4">
+            <div className="flex sm:block items-center gap-4">
+              <div className="h-[100px] w-[140px] sm:w-full sm:h-[170px] bg-cover bg-center bg-[url('https://www.lofficielvietnam.com/_next/image?url=https%3A%2F%2Fwww.datocms-assets.com%2F56778%2F1710350998-imageonline-co-noisedimage.png%3Fauto%3Dformat%252Ccompress%26cs%3Dsrgb&w=3840&q=75')]"></div>
+              <div className="grid grid-cols-1 gap-2.5 text-black text-left w-full sm:p-4">
+                <p className="sm:block hidden text-sm sm:text-base underline underline-offset-2">
+                  RUNWAY
+                </p>
+                <p className="text-base sm:text-lg">
                   Hè này, hãy học cách phối tất cùng giày đế bệt để trở thành
                   tín đồ thời thượng nhất
                 </p>
-                <p className="text-xs font-normal">03.10.2024 by Celia</p>
+                <p className="text-xs sm:text-sm font-normal">
+                  03.10.2024 by Celia
+                </p>
               </div>
             </div>
 
-            <div className="flex items-start gap-4">
-              <div
-                style={{
-                  width: "100px",
-                  height: "100px",
-                }}
-                className="min-w-[100px] bg-cover bg-center bg-[url('https://www.lofficielvietnam.com/_next/image?url=https%3A%2F%2Fwww.datocms-assets.com%2F56778%2F1710383299-1710357987-bright-davika-mark-tuan-calvin-klein-jeans-ss-2024-2.jpg%3Fauto%3Dformat%252Ccompress%26cs%3Dsrgb&w=1920&q=75')]"
-              ></div>
-              <div className="grid grid-cols-1 gap-2.5 text-black text-left w-full">
-                <p className="text-base">
-                  Calvin Klein Jeans kết hợp cùng Bright, Davika và Mark Tuan
-                  trong chiến dịch quảng bá mới
+            <div className="flex sm:block  items-center gap-4">
+              <div className="h-[100px] w-[140px] sm:w-full sm:h-[170px] bg-cover bg-center bg-[url('https://www.lofficielvietnam.com/_next/image?url=https%3A%2F%2Fwww.datocms-assets.com%2F56778%2F1710383299-1710357987-bright-davika-mark-tuan-calvin-klein-jeans-ss-2024-2.jpg%3Fauto%3Dformat%252Ccompress%26cs%3Dsrgb&w=1920&q=75')]"></div>
+              <div className="grid grid-cols-1 gap-2.5 text-black text-left w-full sm:p-4">
+                <p className="sm:block hidden text-sm sm:text-base underline underline-offset-2">
+                  RUNWAY
                 </p>
-                <p className="text-xs font-normal">03.14.2024 by Margot</p>
+                <p className="text-base sm:text-lg">
+                  Hè này, hãy học cách phối tất cùng giày đế bệt để trở thành
+                  tín đồ thời thượng nhất
+                </p>
+                <p className="text-xs sm:text-sm font-normal">
+                  03.10.2024 by Celia
+                </p>
               </div>
             </div>
 
-            <div className="flex items-start gap-4">
-              <div
-                style={{
-                  width: "100px",
-                  height: "100px",
-                }}
-                className="min-w-[100px] bg-cover bg-center bg-[url('https://www.lofficielvietnam.com/_next/image?url=https%3A%2F%2Fwww.datocms-assets.com%2F56778%2F1710392428-cillian-murphy-in-atelier-versac.jpeg%3Fauto%3Dformat%252Ccompress%26cs%3Dsrgb&w=3840&q=75')]"
-              ></div>
-              <div className="grid grid-cols-1 gap-2.5 text-black text-left w-full">
-                <p className="text-base">
-                  Gương mặt mới của Versace Icons gọi tên nam diễn viên chính
-                  {'"'}Oppenheimer{'"'} - Cillian Murphy
+            <div className="flex sm:block  items-center gap-4">
+              <div className="h-[100px] w-[140px] sm:w-full sm:h-[170px] bg-cover bg-center bg-[url('https://www.lofficielvietnam.com/_next/image?url=https%3A%2F%2Fwww.datocms-assets.com%2F56778%2F1710392428-cillian-murphy-in-atelier-versac.jpeg%3Fauto%3Dformat%252Ccompress%26cs%3Dsrgb&w=3840&q=75')]"></div>
+              <div className="grid grid-cols-1 gap-2.5 text-black text-left w-full sm:p-4">
+                <p className="sm:block hidden text-sm sm:text-base underline underline-offset-2">
+                  RUNWAY
                 </p>
-                <p className="text-xs font-normal">03.14.2024 by Anthea</p>
+                <p className="text-base sm:text-lg">
+                  Hè này, hãy học cách phối tất cùng giày đế bệt để trở thành
+                  tín đồ thời thượng nhất
+                </p>
+                <p className="text-xs sm:text-sm font-normal">
+                  03.10.2024 by Celia
+                </p>
               </div>
             </div>
           </div>
@@ -242,7 +236,7 @@ export default async function Page() {
                 style={{
                   backgroundImage: `url(${article2.src})`,
                 }}
-                className=" bg-cover bg-center bg-no-repeat w-full 2xl:h-[700px] sm:h-[550px] h-[300px]"
+                className=" bg-cover bg-center bg-no-repeat w-full 2xl:h-[700px] sm:h-[360px] xl:h-[550px] h-[300px]"
               ></div>
               <div className="grid grid-cols-1 gap-2.5 text-black text-left w-full p-4 sm:mt-4 sm:px-0">
                 <p className="text-lg underline underline-offset-2 my-1">
@@ -261,7 +255,7 @@ export default async function Page() {
                 style={{
                   backgroundImage: `url(${article4.src})`,
                 }}
-                className=" bg-cover bg-center bg-no-repeat w-full 2xl:h-[700px] sm:h-[550px] h-[300px]"
+                className=" bg-cover bg-center bg-no-repeat w-full 2xl:h-[700px] sm:h-[360px] xl:h-[550px] h-[300px]"
               ></div>
               <div className="grid grid-cols-1 gap-2.5 text-black text-left w-full p-4 sm:mt-4 sm:px-0">
                 <p className="text-lg underline underline-offset-2 my-1">
@@ -294,7 +288,7 @@ export default async function Page() {
                 <p className="text-lg underline underline-offset-2 my-1">
                   BUSINESS
                 </p>
-                <p className="sm:text-5xl text-xl leading-snug">
+                <p className="sm:text-3xl xl:text-5xl text-xl leading-snug">
                   Nữ kiến trúc sư đầu tiên của Việt Nam giành giải thưởng Moira
                   Gemmill
                 </p>
