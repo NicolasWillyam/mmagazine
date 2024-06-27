@@ -32,8 +32,6 @@ const Footer = () => {
       <div className="mt-16 text-white">
         <div className="flex items-center justify-center gap-4 ">
           <RiFacebookFill size={24} />
-          <IoLogoInstagram size={22} />
-          <RiTwitterXFill size={20} />
         </div>
         <ul className="mt-6 flex justify-center items-center gap-6 capitalize font-light">
           {footerList.map((item, idx) => (

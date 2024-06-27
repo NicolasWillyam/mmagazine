@@ -1,6 +1,7 @@
 /* eslint-disable @next/next/no-img-element */
 import { urlForImage } from 'lib/sanity.image'
 import { Post } from 'lib/sanity.queries'
+import Date from 'components/PostDate'
 import Link from 'next/link'
 import React from 'react'
 
@@ -28,7 +29,11 @@ export function ArticleSuggestCard({
           </p>
           <p className="text-xl leading-[24px]">{title}</p>
           <p className="text-sm">
-            <span>06.19.2024</span> by <span>{author.name}</span>
+            <span>
+              {' '}
+              <Date dateString={date} />
+            </span>{' '}
+            by <span>{author.name}</span>
           </p>
         </div>
       </div>

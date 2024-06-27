@@ -21,7 +21,7 @@ export default function PostPreview({
           style={{
             backgroundImage: `url('${urlForImage(coverImage).url()}')`,
           }}
-          className="w-full h-[380px] bg-cover bg-no-repeat bg-center"
+          className="w-full h-[230px] bg-cover bg-no-repeat bg-center"
         />
 
         <div className="grid grid-cols-1 gap-3  py-6 px-4">

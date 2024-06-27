@@ -1,7 +1,7 @@
 'use client'
 import Image from 'next/image'
 import Link from 'next/link'
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import { IoMdClose } from 'react-icons/io'
 import { RiSearchLine } from 'react-icons/ri'
 
@@ -64,9 +64,34 @@ const NavBar = ({ state }: { state: string }) => {
     setMenuState(!menuState)
   }
 
+  const [show, setShow] = useState(true)
+  const [lastScrollY, setLastScrollY] = useState(0)
+
+  const controlNavbar = () => {
+    if (window.scrollY > lastScrollY) {
+      // if scroll down hide the navbar
+      setShow(false)
+    } else {
+      // if scroll up show the navbar
+      setShow(true)
+    }
+    setLastScrollY(window.scrollY)
+  }
+
+  useEffect(() => {
+    window.addEventListener('scroll', controlNavbar)
+    return () => {
+      window.removeEventListener('scroll', controlNavbar)
+    }
+  })
+
   return (
-    <div className="w-full fixed top-0">
-      <div className="h-20 max-w-[1440px] mx-auto flex items-center justify-end relative z-10">
+    <div className="w-full fixed top-0 px-10">
+      <div
+        className={`h-20 max-w-[1440px] mx-auto flex items-center justify-end relative transition-opacity duration-300 ${
+          show ? 'opacity-100' : 'opacity-0'
+        }`}
+      >
         <Link href={'/'}>
           <Image
             src={`/logo-${state}.svg`}
@@ -78,7 +103,7 @@ const NavBar = ({ state }: { state: string }) => {
         </Link>
         <div
           onClick={handleMenuState}
-          className={`uppercase font-semibold text-xl cursor-pointer text-${state}`}
+          className={`uppercase font-semibold text-xl mr-8 cursor-pointer text-${state}`}
         >
           MENU
         </div>

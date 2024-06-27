@@ -14,11 +14,11 @@ export default function PostHeader(
   props: Pick<Post, 'title' | 'coverImage' | 'date' | 'author' | 'slug'>,
 ) {
   const { title, coverImage, date, author, slug } = props
-  const postImage = urlForImage(coverImage).height(1000).width(2000).url()
+  const postImage = urlForImage(coverImage).height(1500).width(1000).url()
   return (
     <>
       <div className="max-w-[1560px] mx-auto flex">
-        <div className="w-2/5 h-auto mt-48 flex items-center">
+        <div className="w-[42%] h-auto mt-48 flex items-center">
           <div className="text-center py-auto px-16">
             <p className="font-medium text-sm">FASHION</p>
             <p className="mt-8 mb-12 text-[52px] leading-[54px] font-regular">
@@ -28,7 +28,9 @@ export default function PostHeader(
               <span className="text-sm italic mr-2">by</span>
               <span className="text-base font-bold">{author.name}</span>
             </p>
-            <p className="text-base font-light italic">{date}</p>
+            <p className="text-base font-light italic">
+              <Date dateString={date} />
+            </p>
             <div className="mx-auto flex w-fit mt-8 gap-4">
               <div className="h-8 w-8 rounded-full border border-black flex items-center justify-center">
                 <RiFacebookFill size={24} />
@@ -46,34 +48,16 @@ export default function PostHeader(
           </div>
         </div>
 
-        <div className="w-3/5">
-          <div
+        <div className="w-[58%]">
+          <img src={postImage} alt="image" className="w-full h-auto" />
+          {/* <div
             style={{
               backgroundImage: `url('${postImage}')`,
             }}
-            className="w-full h-screen bg-cover bg-no-repeat bg-center"
-          ></div>
-          <p className="text-right text-xs my-4 mx-16 font-regular">
-            Malgosia Bela wears a Valentino Couture dress. Photographed by Jamie
-            Hawkesworth, styled by Joe McKenna.
-          </p>
+            className="w-full h-full bg-cover bg-no-repeat bg-center"
+          ></div> */}
         </div>
       </div>
-      {/* <PostTitle>{title}</PostTitle>
-      <div className="hidden md:mb-12 md:block">
-        {author && <Avatar name={author.name} picture={author.picture} />}
-      </div>
-      <div className="mb-8 sm:mx-0 md:mb-16">
-        <CoverImage title={title} image={coverImage} priority slug={slug} />
-      </div>
-      <div className="mx-auto max-w-2xl">
-        <div className="mb-6 block md:hidden">
-          {author && <Avatar name={author.name} picture={author.picture} />}
-        </div>
-        <div className="mb-6 text-lg">
-          <Date dateString={date} />
-        </div>
-      </div> */}
     </>
   )
 }

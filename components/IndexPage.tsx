@@ -27,7 +27,7 @@ export default function IndexPage(props: IndexPageProps) {
 
   return (
     <>
-      <NavBar state="white" />
+      <NavBar state="black" />
       {/* <IndexPageHead settings={settings} /> */}
 
       <Layout preview={preview} loading={loading}>

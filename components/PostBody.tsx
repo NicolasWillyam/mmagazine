@@ -38,6 +38,14 @@ const myPortableTextComponents: Partial<PortableTextReactComponents> = {
       return <SanityImage {...value} />
     },
   },
+  block: {
+    h1: ({ children }) => <h1 className="text-3xl font-bold">{children}</h1>,
+    h2: ({ children }) => (
+      <h2 className="text-2xl font-semibold">{children}</h2>
+    ),
+    h3: ({ children }) => <h3 className="text-xl font-medium">{children}</h3>,
+    normal: ({ children }) => <p className="text-lg my-3">{children}</p>,
+  },
 }
 
 export default function PostBody({ content }) {
@@ -45,21 +53,21 @@ export default function PostBody({ content }) {
     // <div className={`mx-auto max-w-2xl ${styles.portableText}`}>
     //   <PortableText value={content} components={myPortableTextComponents} />
     // </div>
-    <div className="max-w-[1440px] mx-auto flex">
+    <div className="max-w-[1440px] mx-auto flex mt-20">
       <div className="w-2/5 h-auto mt-48">
         <EmailForm />
       </div>
 
       <div className="w-3/5">
-        <div className="text-2xl font-[300] grid grid-cols-1 gap-6 pr-14 tracking-tight">
-          <div className={garamond.className}>
+        <div className="text-lg font-[300] grid grid-cols-1 gap-6 pr-14">
+          <div className={inter.className}>
             <PortableText
               value={content}
               components={myPortableTextComponents}
             />
           </div>
 
-          <div className={inter.className}>
+          {/* <div className={inter.className}>
             <div className="w-full py-6 grid grid-cols-1 gap-6">
               <div className="border-y-[1px] border-black py-6 mt-6">
                 <p className="text-[40px] leading-[54px]">Sleek Dresses</p>
@@ -113,7 +121,7 @@ export default function PostBody({ content }) {
                 </div>
               </div>
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
     </div>
