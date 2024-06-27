@@ -15,6 +15,8 @@
     "singleQuote": true
   },
   "dependencies": {
+    "@radix-ui/react-slot": "^1.1.0",
+    "@react-icons/all-files": "^4.1.0",
     "@sanity/client": "6.20.1",
     "@sanity/image-url": "1.0.2",
     "@sanity/preview-url-secret": "1.6.17",
@@ -22,19 +24,25 @@
     "@sanity/visual-editing": "1.8.22",
     "@sanity/webhook": "4.0.4",
     "@vercel/og": "0.6.2",
+    "class-variance-authority": "^0.7.0",
     "classnames": "2.5.1",
+    "clsx": "^2.1.1",
     "date-fns": "3.6.0",
     "intl-segmenter-polyfill": "0.4.4",
+    "lucide-react": "^0.397.0",
     "next": "14.2.4",
     "next-sanity": "9.3.10",
     "next-sanity-image": "6.1.1",
     "react": "18.3.1",
     "react-dom": "18.3.1",
+    "react-icons": "^5.2.1",
     "sanity": "3.47.1",
     "sanity-plugin-asset-source-unsplash": "3.0.1",
     "sanity-plugin-iframe-pane": "3.1.6",
     "styled-components": "6.1.11",
-    "swr": "2.2.5"
+    "swr": "2.2.5",
+    "tailwind-merge": "^2.3.0",
+    "tailwindcss-animate": "^1.0.7"
   },
   "devDependencies": {
     "@types/react": "18.3.3",

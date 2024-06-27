@@ -3,6 +3,8 @@ import { format, parseISO } from 'date-fns'
 import { defineField, defineType } from 'sanity'
 
 import authorType from './author'
+import categoryType from './category'
+import category from './category'
 
 /**
  * This file is the schema definition for a post.
@@ -67,11 +69,7 @@ export default defineType({
         },
       ],
     }),
-    defineField({
-      name: 'excerpt',
-      title: 'Excerpt',
-      type: 'text',
-    }),
+
     defineField({
       name: 'coverImage',
       title: 'Cover Image',
@@ -92,11 +90,18 @@ export default defineType({
       type: 'reference',
       to: [{ type: authorType.name }],
     }),
+    defineField({
+      name: 'category',
+      title: 'Category',
+      type: 'reference',
+      to: [{ type: categoryType.name }],
+    }),
   ],
   preview: {
     select: {
       title: 'title',
       author: 'author.name',
+      category: 'category',
       date: 'date',
       media: 'coverImage',
     },

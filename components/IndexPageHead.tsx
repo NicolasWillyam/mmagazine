@@ -4,6 +4,8 @@ import { Settings } from 'lib/sanity.queries'
 import Head from 'next/head'
 import { toPlainText } from 'next-sanity'
 
+import NavBar from './NavBar'
+
 export interface IndexPageHeadProps {
   settings: Settings
 }

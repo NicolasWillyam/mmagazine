@@ -48,6 +48,7 @@ export interface Author {
 export interface Post {
   _id: string
   title?: string
+  category?: string
   coverImage?: any
   date?: string
   _updatedAt?: string

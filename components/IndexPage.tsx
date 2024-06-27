@@ -8,6 +8,11 @@ import IntroTemplate from 'intro-template'
 import * as demo from 'lib/demo.data'
 import type { Post, Settings } from 'lib/sanity.queries'
 
+import { ArticleSuggestCard } from './ArticleCard'
+import Footer from './Footer'
+import NavBar from './NavBar'
+import SuggestPost from './SuggestPost'
+
 export interface IndexPageProps {
   preview?: boolean
   loading?: boolean
@@ -22,14 +27,16 @@ export default function IndexPage(props: IndexPageProps) {
 
   return (
     <>
-      <IndexPageHead settings={settings} />
+      <NavBar state="white" />
+      {/* <IndexPageHead settings={settings} /> */}
 
       <Layout preview={preview} loading={loading}>
         <Container>
-          <BlogHeader title={title} description={description} level={1} />
+          {/* <BlogHeader title={title} description={description} level={1} /> */}
           {heroPost && (
             <HeroPost
               title={heroPost.title}
+              category={heroPost.category}
               coverImage={heroPost.coverImage}
               date={heroPost.date}
               author={heroPost.author}
@@ -37,10 +44,13 @@ export default function IndexPage(props: IndexPageProps) {
               excerpt={heroPost.excerpt}
             />
           )}
+
+          <SuggestPost posts={morePosts} />
           {morePosts.length > 0 && <MoreStories posts={morePosts} />}
         </Container>
-        <IntroTemplate />
+        {/* <IntroTemplate /> */}
       </Layout>
+      <Footer />
     </>
   )
 }

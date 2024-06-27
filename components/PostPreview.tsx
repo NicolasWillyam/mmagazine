@@ -1,6 +1,8 @@
+/* eslint-disable @next/next/no-img-element */
 import Avatar from 'components/AuthorAvatar'
 import CoverImage from 'components/CoverImage'
 import Date from 'components/PostDate'
+import { urlForImage } from 'lib/sanity.image'
 import type { Post } from 'lib/sanity.queries'
 import Link from 'next/link'
 
@@ -13,27 +15,48 @@ export default function PostPreview({
   slug,
 }: Omit<Post, '_id'>) {
   return (
-    <div>
-      <div className="mb-5">
-        <CoverImage
-          slug={slug}
-          title={title}
-          image={coverImage}
-          priority={false}
+    <Link href={`/posts/${slug}`}>
+      <div className="w-full">
+        <div
+          style={{
+            backgroundImage: `url('${urlForImage(coverImage).url()}')`,
+          }}
+          className="w-full h-[380px] bg-cover bg-no-repeat bg-center"
         />
+
+        <div className="grid grid-cols-1 gap-3  py-6 px-4">
+          <p className="uppercase text-lg">Style</p>
+          <p className="text-2xl leading-[30px]">{title}</p>
+          <p className="text-sm">
+            <span>
+              <Date dateString={date} />
+            </span>{' '}
+            by <span>{author.name}</span>
+          </p>
+        </div>
       </div>
-      <h3 className="mb-3 text-3xl leading-snug text-balance">
-        <Link href={`/posts/${slug}`} className="hover:underline">
-          {title}
-        </Link>
-      </h3>
-      <div className="mb-4 text-lg">
-        <Date dateString={date} />
-      </div>
-      {excerpt && (
-        <p className="mb-4 text-lg leading-relaxed text-pretty">{excerpt}</p>
-      )}
-      {author && <Avatar name={author.name} picture={author.picture} />}
-    </div>
+    </Link>
+    // <div>
+    //   <div className="mb-5">
+    //     <CoverImage
+    //       slug={slug}
+    //       title={title}
+    //       image={coverImage}
+    //       priority={false}
+    //     />
+    //   </div>
+    //   <h3 className="mb-3 text-3xl leading-snug text-balance">
+    //     <Link href={`/posts/${slug}`} className="hover:underline">
+    //       {title}
+    //     </Link>
+    //   </h3>
+    //   <div className="mb-4 text-lg">
+    //     <Date dateString={date} />
+    //   </div>
+    //   {excerpt && (
+    //     <p className="mb-4 text-lg leading-relaxed text-pretty">{excerpt}</p>
+    //   )}
+    //   {/* {author && <Avatar name={author.name} picture={author.picture} />} */}
+    // </div>
   )
 }

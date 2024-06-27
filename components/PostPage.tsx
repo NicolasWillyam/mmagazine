@@ -10,6 +10,23 @@ import SectionSeparator from 'components/SectionSeparator'
 import * as demo from 'lib/demo.data'
 import type { Post, Settings } from 'lib/sanity.queries'
 import Error from 'next/error'
+import NavBar from './NavBar'
+import React from 'react'
+import { RiFacebookFill } from 'react-icons/ri'
+import { RiTwitterXFill } from 'react-icons/ri'
+import { ImLink } from 'react-icons/im'
+import { TbMailFilled } from 'react-icons/tb'
+import { Inter, Cormorant_Garamond } from 'next/font/google'
+import Image from 'next/image'
+
+const garamond = Cormorant_Garamond({
+  subsets: ['latin', 'vietnamese'],
+  weight: ['300', '400', '500', '600', '700'],
+})
+const inter = Inter({ subsets: ['latin'] })
+import Link from 'next/link'
+import { HiArrowLongRight } from 'react-icons/hi2'
+import { Button } from './ui/button'
 
 export interface PostPageProps {
   preview?: boolean
@@ -33,11 +50,12 @@ export default function PostPage(props: PostPageProps) {
 
   return (
     <>
-      <PostPageHead settings={settings} post={post} />
+      <NavBar state="black" />
+      {/* <PostPageHead settings={settings} post={post} /> */}
 
       <Layout preview={preview} loading={loading}>
         <Container>
-          <BlogHeader title={title} level={2} />
+          {/* <BlogHeader title={title} level={2} /> */}
           {preview && !post ? (
             <PostTitle>Loading…</PostTitle>
           ) : (
