@@ -11,7 +11,7 @@ import type { Post, Settings } from 'lib/sanity.queries'
 import { ArticleSuggestCard } from './ArticleCard'
 import Footer from './Footer'
 import NavBar from './NavBar'
-import SuggestPost from './SuggestPost'
+import { SuggestPost } from './SuggestPost'
 
 export interface IndexPageProps {
   preview?: boolean

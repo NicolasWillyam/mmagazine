@@ -1,0 +1,100 @@
+// pages/[slug].tsx
+
+import Layout from 'app/layout'
+import Footer from 'components/Footer'
+import HeroPost from 'components/HeroPost'
+import MoreBlogInCategory from 'components/MoreBlogInCategory'
+import NavBar from 'components/NavBar'
+import { SuggestPost } from 'components/SuggestPost'
+import { fetchCategories, getPostsByCategory } from 'lib/sanity.client' // Adjust import path as per your project structure
+import { GetStaticPaths, GetStaticProps } from 'next'
+import { useRouter } from 'next/router'
+
+export default function CategoryPosts({
+  category,
+  posts,
+}: {
+  category: string
+  posts: any[]
+}) {
+  const router = useRouter()
+
+  // Show loading message while fetching data
+  if (router.isFallback) {
+    return <div>Loading...</div>
+  }
+  const [heroPost, ...morePosts] = posts || []
+
+  return (
+    // <div>
+    //   <h1>Posts in Category: {category}</h1>
+    //   <ul>
+    //     {posts.map((post) => (
+    //       <li key={post._id}>
+    //         <h2>{post.title}</h2>
+    //         <p>{post.excerpt}</p>
+    //         {/* Render other post details as needed */}
+    //       </li>
+    //     ))}
+    //   </ul>
+    // </div>
+    <>
+      <NavBar state="black" />
+      <Layout>
+        <div className="w-full mx-auto">
+          {heroPost && (
+            <HeroPost
+              title={heroPost.title}
+              category={heroPost.category}
+              coverImage={heroPost.coverImage}
+              date={heroPost.date}
+              author={heroPost.author}
+              slug={heroPost.slug}
+              excerpt={heroPost.excerpt}
+            />
+          )}
+        </div>
+        <SuggestPost posts={morePosts} />
+        {morePosts.length > 3 && <MoreBlogInCategory posts={morePosts} />}
+      </Layout>
+      <Footer />
+    </>
+  )
+}
+// Assuming you have a function to fetch all categories for dynamic paths
+export const getStaticPaths: GetStaticPaths = async () => {
+  const categories = await fetchCategories() // Fetch all categories
+  const paths = categories.map((category) => ({
+    params: { slug: category.name.toLowerCase().replace(/\s+/g, '-') }, // Adjust as per your category slug format
+  }))
+
+  return {
+    paths,
+    fallback: true, // Set fallback to true to render on-demand (incremental static regeneration)
+  }
+}
+
+// This function gets called at build time
+export const getStaticProps: GetStaticProps = async ({ params }) => {
+  const category = params?.slug as string
+
+  try {
+    // Fetch posts by category using the function you defined
+    const { posts } = await getPostsByCategory({ params: category })
+
+    // Return props containing category and posts
+    return {
+      props: {
+        category,
+        posts,
+      },
+      revalidate: 60, // Optional: regenerate page every 60 seconds (for incremental static regeneration)
+    }
+  } catch (error) {
+    console.error('Error fetching posts:', error)
+    // Handle error state if needed
+    return {
+      notFound: true, // Set notFound to true to render 404 page
+    }
+  }
+}

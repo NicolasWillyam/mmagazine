@@ -31,6 +31,8 @@ import EmailForm from './EmailForm'
 import styles from './PostBody.module.css'
 import { SanityImage } from './SanityImage'
 import { Button } from './ui/button'
+import { Post } from 'lib/sanity.queries'
+import { SuggestPostInPostBody } from './SuggestPost'
 
 const myPortableTextComponents: Partial<PortableTextReactComponents> = {
   types: {
@@ -44,18 +46,27 @@ const myPortableTextComponents: Partial<PortableTextReactComponents> = {
       <h2 className="text-2xl font-semibold">{children}</h2>
     ),
     h3: ({ children }) => <h3 className="text-xl font-medium">{children}</h3>,
-    normal: ({ children }) => <p className="text-lg my-3">{children}</p>,
+    normal: ({ children }) => <p className="text-lg my-6">{children}</p>,
   },
 }
 
-export default function PostBody({ content }) {
+export default function PostBody({
+  posts,
+  content,
+}: {
+  posts: Post[]
+  content: any
+}) {
   return (
     // <div className={`mx-auto max-w-2xl ${styles.portableText}`}>
     //   <PortableText value={content} components={myPortableTextComponents} />
     // </div>
-    <div className="max-w-[1440px] mx-auto flex mt-20">
+    <div className="max-w-[1280px] mx-auto flex mt-20">
       <div className="w-2/5 h-auto mt-48">
-        <EmailForm />
+        <div className="text-left py-auto max-w-[350px] mx-auto">
+          <EmailForm />
+          <SuggestPostInPostBody posts={posts} />
+        </div>
       </div>
 
       <div className="w-3/5">

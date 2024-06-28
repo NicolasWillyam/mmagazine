@@ -4,19 +4,6 @@ import { defineField, defineType } from 'sanity'
 
 import authorType from './author'
 import categoryType from './category'
-import category from './category'
-
-/**
- * This file is the schema definition for a post.
- *
- * Here you'll be able to edit the different fields that appear when you 
- * create or edit a post in the studio.
- * 
- * Here you can see the different schema types that are available:
-
-  https://www.sanity.io/docs/schema-types
-
- */
 
 export default defineType({
   name: 'post',
@@ -63,13 +50,12 @@ export default defineType({
               name: 'alt',
               type: 'string',
               title: 'Alternative text',
-              description: 'Important for SEO and accessiblity.',
+              description: 'Important for SEO and accessibility.',
             },
           ],
         },
       ],
     }),
-
     defineField({
       name: 'coverImage',
       title: 'Cover Image',
@@ -101,13 +87,14 @@ export default defineType({
     select: {
       title: 'title',
       author: 'author.name',
-      category: 'category',
+      category: 'category.title', // Fetching category title
       date: 'date',
       media: 'coverImage',
     },
-    prepare({ title, media, author, date }) {
+    prepare({ title, media, author, date, category }) {
       const subtitles = [
         author && `by ${author}`,
+        category && `in ${category}`, // Displaying category in preview
         date && `on ${format(parseISO(date), 'LLL d, yyyy')}`,
       ].filter(Boolean)
 

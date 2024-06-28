@@ -43,7 +43,7 @@ async function getPostsByCategoryName(cate: string) {
   }
 }
 
-export default function MoreStories({ posts }: { posts: Post[] }) {
+export default function MoreBlogInCategory({ posts }: { posts: Post[] }) {
   const [categoriesWithPosts, setCategoriesWithPosts] = useState<
     { category: Category; posts: Post[] }[]
   >([])

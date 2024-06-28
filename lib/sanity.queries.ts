@@ -1,6 +1,6 @@
 import { groq } from 'next-sanity'
 
-const postFields = groq`
+export const postFields = groq`
   _id,
   title,
   date,
@@ -9,6 +9,7 @@ const postFields = groq`
   coverImage,
   "slug": slug.current,
   "author": author->{name, picture},
+  "category": category->{name},
 `
 
 export const settingsQuery = groq`*[_type == "settings"][0]`
@@ -39,21 +40,45 @@ export const postBySlugQuery = groq`
   ${postFields}
 }
 `
+// Query to filter posts by category name
+export const postsByCategoryQuery = groq`
+  *[_type == "post" && category->name == 'Style'] | order(date desc) {
+     _id,
+    title,
+    date,
+    _updatedAt,
+    excerpt,
+    coverImage,
+    "slug": slug.current,
+    "author": author->{name},
+    "category": category->{name},
+    }
+`
+export const categoriesQuery = groq`
+  *[_type == "category"] {
+    _id,
+    name
+  }
+`
 
 export interface Author {
   name?: string
   picture?: any
 }
 
+export interface Category {
+  name: string
+}
+
 export interface Post {
   _id: string
   title?: string
-  category?: string
   coverImage?: any
   date?: string
   _updatedAt?: string
   excerpt?: string
   author?: Author
+  category?: Category
   slug?: string
   content?: any
 }
