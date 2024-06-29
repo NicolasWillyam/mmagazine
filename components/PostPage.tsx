@@ -60,10 +60,6 @@ export default function PostPage(props: PostPageProps) {
           content={post.excerpt || 'M MAGAZINE Vietnam'}
         />
         <meta property="og:title" content={post.title} />
-        <meta
-          property="og:description"
-          content={post.excerpt || 'M MAGAZINE Vietnam'}
-        />
         <meta property="og:image" content={post?.coverImage?.url} />
         <meta
           property="og:url"
@@ -75,10 +71,7 @@ export default function PostPage(props: PostPageProps) {
           name="twitter:description"
           content={post.excerpt || 'M MAGAZINE Vietnam'}
         />
-        <meta
-          name="twitter:image"
-          content={post.coverImage?.url || '/logo-black.svg'}
-        />
+        <meta name="twitter:image" content={post.coverImage?.url} />
       </Head>
       <NavBar state="black" />
       <Layout preview={preview} loading={loading}>
