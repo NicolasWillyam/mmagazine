@@ -6,8 +6,8 @@ const EmailForm = () => {
   return (
     <>
       <div className="text-4xl leading-[36px]">
-        <p className="italic">Đăng Kí</p>
-        <p>Email</p>
+        <p className="italic">Đăng Ký Email</p>
+        {/* <p>Đăng Kí Email</p> */}
       </div>
       <div className="mt-6 flex gap-4 ">
         <div className="w-full ">

@@ -24,15 +24,15 @@ const garamond = Cormorant_Garamond({
   weight: ['300', '400', '500', '600', '700'],
 })
 const inter = Inter({ subsets: ['latin'] })
+import { Post } from 'lib/sanity.queries'
 import Link from 'next/link'
 import { HiArrowLongRight } from 'react-icons/hi2'
 
 import EmailForm from './EmailForm'
 import styles from './PostBody.module.css'
 import { SanityImage } from './SanityImage'
-import { Button } from './ui/button'
-import { Post } from 'lib/sanity.queries'
 import { SuggestPostInPostBody } from './SuggestPost'
+import { Button } from './ui/button'
 
 const myPortableTextComponents: Partial<PortableTextReactComponents> = {
   types: {
@@ -46,7 +46,9 @@ const myPortableTextComponents: Partial<PortableTextReactComponents> = {
       <h2 className="text-2xl font-semibold">{children}</h2>
     ),
     h3: ({ children }) => <h3 className="text-xl font-medium">{children}</h3>,
-    normal: ({ children }) => <p className="text-lg my-6">{children}</p>,
+    normal: ({ children }) => (
+      <p className="text-base my-4 sm:text-lg sm:my-6">{children}</p>
+    ),
   },
 }
 
@@ -61,16 +63,16 @@ export default function PostBody({
     // <div className={`mx-auto max-w-2xl ${styles.portableText}`}>
     //   <PortableText value={content} components={myPortableTextComponents} />
     // </div>
-    <div className="max-w-[1280px] mx-auto flex mt-20">
-      <div className="w-2/5 h-auto mt-48">
+    <div className="max-w-[1280px] mx-auto flex mt-6 sm:mt-20">
+      <div className="hidden sm:block sm:w-2/5 h-auto mt-48">
         <div className="text-left py-auto max-w-[350px] mx-auto">
           <EmailForm />
           <SuggestPostInPostBody posts={posts} />
         </div>
       </div>
 
-      <div className="w-3/5">
-        <div className="text-lg font-[300] grid grid-cols-1 gap-6 pr-14">
+      <div className="sm:w-3/5 px-4 sm:px-0">
+        <div className="text-lg font-light grid grid-cols-1 gap-6 sm:pr-14">
           <div className={inter.className}>
             <PortableText
               value={content}

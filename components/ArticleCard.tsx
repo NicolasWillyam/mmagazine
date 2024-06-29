@@ -7,6 +7,7 @@ import React from 'react'
 
 export function ArticleSuggestCard({
   title,
+  category,
   coverImage,
   date,
   excerpt,
@@ -15,20 +16,22 @@ export function ArticleSuggestCard({
 }: Omit<Post, '_id'>) {
   return (
     <Link href={`/posts/${slug}`}>
-      <div className="w-full flex gap-5">
+      <div className="w-full flex sm:gap-5 gap-4">
         <div
           style={{
             backgroundImage: `url('${urlForImage(coverImage).url()}')`,
           }}
-          className="w-[150px] h-[100px] bg-cover bg-no-repeat bg-center"
+          className="w-[120px] h-[80px] sm:w-[150px] sm:h-[100px] bg-cover bg-no-repeat bg-center"
         />
 
-        <div className="w-4/5 grid grid-cols-1 gap-2">
-          <p className="uppercase text-sm underline underline-offset-2">
-            Style
+        <div className="w-2/3 sm:w-4/5 grid grid-cols-1 gap-2">
+          <p className="sm:block hidden uppercase text-sm underline underline-offset-2">
+            {category.name}
           </p>
-          <p className="text-xl leading-[24px]">{title}</p>
-          <p className="text-sm">
+          <p className="text-base leading-[20px] sm:text-xl sm:leading-[24px]">
+            {title}
+          </p>
+          <p className=" text-xs sm:text-sm">
             <span>
               {' '}
               <Date dateString={date} />

@@ -10,14 +10,15 @@ import SectionSeparator from 'components/SectionSeparator'
 import * as demo from 'lib/demo.data'
 import type { Post, Settings } from 'lib/sanity.queries'
 import Error from 'next/error'
-import NavBar from './NavBar'
+import { Cormorant_Garamond, Inter } from 'next/font/google'
+import Image from 'next/image'
 import React from 'react'
+import { ImLink } from 'react-icons/im'
 import { RiFacebookFill } from 'react-icons/ri'
 import { RiTwitterXFill } from 'react-icons/ri'
-import { ImLink } from 'react-icons/im'
 import { TbMailFilled } from 'react-icons/tb'
-import { Inter, Cormorant_Garamond } from 'next/font/google'
-import Image from 'next/image'
+
+import NavBar from './NavBar'
 
 const garamond = Cormorant_Garamond({
   subsets: ['latin', 'vietnamese'],
@@ -26,6 +27,7 @@ const garamond = Cormorant_Garamond({
 const inter = Inter({ subsets: ['latin'] })
 import Link from 'next/link'
 import { HiArrowLongRight } from 'react-icons/hi2'
+
 import { Button } from './ui/button'
 
 export interface PostPageProps {
@@ -51,18 +53,21 @@ export default function PostPage(props: PostPageProps) {
   return (
     <>
       <NavBar state="black" />
-      {/* <PostPageHead settings={settings} post={post} /> */}
 
       <Layout preview={preview} loading={loading}>
         <Container>
-          {/* <BlogHeader title={title} level={2} /> */}
           {preview && !post ? (
-            <PostTitle>Loading…</PostTitle>
+            <PostTitle>
+              <div className="w-full h-screen flex items-center justify-center text-2xl">
+                Loading…
+              </div>
+            </PostTitle>
           ) : (
             <>
               <article>
                 <PostHeader
                   title={post.title}
+                  category={post.category}
                   coverImage={post.coverImage}
                   date={post.date}
                   author={post.author}

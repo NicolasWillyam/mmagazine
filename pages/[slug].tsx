@@ -26,37 +26,28 @@ export default function CategoryPosts({
   const [heroPost, ...morePosts] = posts || []
 
   return (
-    // <div>
-    //   <h1>Posts in Category: {category}</h1>
-    //   <ul>
-    //     {posts.map((post) => (
-    //       <li key={post._id}>
-    //         <h2>{post.title}</h2>
-    //         <p>{post.excerpt}</p>
-    //         {/* Render other post details as needed */}
-    //       </li>
-    //     ))}
-    //   </ul>
-    // </div>
     <>
       <NavBar state="black" />
-      <Layout>
-        <div className="w-full mx-auto">
-          {heroPost && (
-            <HeroPost
-              title={heroPost.title}
-              category={heroPost.category}
-              coverImage={heroPost.coverImage}
-              date={heroPost.date}
-              author={heroPost.author}
-              slug={heroPost.slug}
-              excerpt={heroPost.excerpt}
-            />
-          )}
+
+      <div className="min-h-screen w-full mx-auto">
+        {/* <BlogHeader title={title} description={description} level={1} /> */}
+        {heroPost && (
+          <HeroPost
+            title={heroPost.title}
+            category={heroPost.category}
+            coverImage={heroPost.coverImage}
+            date={heroPost.date}
+            author={heroPost.author}
+            slug={heroPost.slug}
+            excerpt={heroPost.excerpt}
+          />
+        )}
+
+        <div className="max-w-[1440px] mx-auto">
+          <SuggestPost posts={morePosts} />
+          {morePosts.length > 3 && <MoreBlogInCategory posts={morePosts} />}
         </div>
-        <SuggestPost posts={morePosts} />
-        {morePosts.length > 3 && <MoreBlogInCategory posts={morePosts} />}
-      </Layout>
+      </div>
       <Footer />
     </>
   )

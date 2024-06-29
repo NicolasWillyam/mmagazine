@@ -30,7 +30,8 @@ export default function IndexPage(props: IndexPageProps) {
       <NavBar state="black" />
       {/* <IndexPageHead settings={settings} /> */}
 
-      <Layout preview={preview} loading={loading}>
+      {/* <Layout preview={preview} loading={loading}> */}
+      <div className="h-auto sm:min-h-screen w-full mx-auto">
         <Container>
           {/* <BlogHeader title={title} description={description} level={1} /> */}
           {heroPost && (
@@ -45,11 +46,17 @@ export default function IndexPage(props: IndexPageProps) {
             />
           )}
 
-          <SuggestPost posts={morePosts} />
-          {morePosts.length > 0 && <MoreStories posts={morePosts} />}
+          <div className="max-w-[1920px] mx-auto">
+            <SuggestPost posts={morePosts} />
+          </div>
+          <div className="xl:max-w-[1440px] 2xl:max-w-[1920px] mx-auto">
+            {morePosts.length > 0 && <MoreStories posts={morePosts} />}
+          </div>
         </Container>
-        {/* <IntroTemplate /> */}
-      </Layout>
+      </div>
+
+      {/* <IntroTemplate /> */}
+
       <Footer />
     </>
   )

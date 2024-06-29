@@ -21,18 +21,37 @@ export default function HeroPost(
           style={{
             backgroundImage: `url('${img}')`,
           }}
-          className="w-full h-[800px] bg-cover bg-no-repeat bg-center"
+          className="w-full lg:h-[800px] h-[300px] bg-cover bg-no-repeat bg-center"
         >
-          <div className="w-full h-full bg-black/30 flex items-center justify-center">
+          <div className="hidden lg:flex w-full h-full bg-black/30 items-center justify-center">
             <div className="w-[540px] text-center text-white p-6 grid grid-cols-1 gap-3">
-              <p className="uppercase text-base font-light">{category.name}</p>
+              <p className="uppercase text-base underline underline-offset-2">
+                {category.name}
+              </p>
               <p className="text-[45px] leading-[54px]">
                 {title || 'Untitled'}
               </p>
               <p className="text-base font-light">
-                <span>06.19.2024</span> by <span>{author.name}</span>
+                <span>
+                  {' '}
+                  <Date dateString={date} />
+                </span>{' '}
+                by <span>{author.name}</span>
               </p>
             </div>
+          </div>
+        </div>
+        <div className="lg:hidden w-full h-full flex items-center justify-center">
+          <div className="w-full py-6 px-4 grid grid-cols-1 gap-3">
+            <p className="uppercase text-base">{category.name}</p>
+            <p className="text-[20px] leading-[24px]">{title}</p>
+            <p className="text-sm font-light">
+              <span>
+                {' '}
+                <Date dateString={date} />
+              </span>{' '}
+              by <span>{author.name}</span>
+            </p>
           </div>
         </div>
       </Link>

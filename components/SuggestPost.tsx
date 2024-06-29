@@ -4,17 +4,19 @@ import { ArticleSuggestCard } from './ArticleCard'
 import { Post } from 'lib/sanity.queries'
 import Link from 'next/link'
 import { urlForImage } from 'lib/sanity.image'
+import category from 'schemas/category'
 
 export const SuggestPost = ({ posts }: { posts: Post[] }) => {
   return (
-    <div className="mx-10 h-auto -mt-32">
-      <div className="w-full h-full px-9 py-6 bg-white grid grid-cols-3 gap-5 z-10">
+    <div className="sm:mx-10 h-auto lg:-mt-32">
+      <div className="w-full h-full sm:px-9 px-4 sm:py-6 bg-white grid sm:grid-cols-3 gap-5 z-10">
         {posts.map((post, idx) => {
           if (idx < 3) {
             return (
               <ArticleSuggestCard
                 key={post._id}
                 title={post.title}
+                category={post.category}
                 coverImage={post.coverImage}
                 date={post.date}
                 author={post.author}

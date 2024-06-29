@@ -6,6 +6,7 @@ import { getPostsByCategory } from 'lib/sanity.client'
 import { Category, type Post, postFields } from 'lib/sanity.queries'
 import { groq } from 'next-sanity'
 import React, { useEffect, useState } from 'react'
+import post from 'schemas/post'
 
 export async function fetchCategories() {
   const query = `*[_type == "category"] { name }`
@@ -77,15 +78,15 @@ export default function MoreBlogInCategory({ posts }: { posts: Post[] }) {
   console.log(posts[0])
 
   return (
-    <section className="max-w-[1920px] mx-auto px-8 my-20 grid grid-cols-1 gap-y-20">
-      {categoriesWithPosts.map(({ category, posts }, index) => {
+    <section className="max-w-[1920px] mx-auto sm:px-9 my-20 grid grid-cols-1 gap-y-20">
+      {/* {categoriesWithPosts.map(({ category, posts }, index) => {
         if (index % 2 == 0) {
           return (
             <div key={index}>
-              <h2 className="text-xl leading-tight tracking-tighter mb-6 uppercase">
+              <h2 className="text-xl ml-4 sm:ml-0 leading-tight mb-6 uppercase">
                 {category.name}
               </h2>
-              <div className="grid grid-cols-1 gap-y-20 md:grid-cols-3 gap-4">
+              <div className="grid grid-cols-1 gap-y-20 sm:grid-cols-3 gap-4">
                 {posts.map((post, index) => {
                   if (index < 3) {
                     return (
@@ -108,11 +109,11 @@ export default function MoreBlogInCategory({ posts }: { posts: Post[] }) {
         } else {
           return (
             <div key={index}>
-              <h2 className="text-xl leading-tight tracking-tighter mb-6 uppercase">
+              <h2 className="text-xl ml-4 leading-tight mb-6 uppercase">
                 {category.name}
               </h2>
 
-              <div className="max-w-[1200px] mx-auto mt-6 grid grid-cols-2 gap-[72px]">
+              <div className="max-w-[1200px] mx-auto mt-6 grid sm:grid-cols-2 gap-[72px]">
                 {posts.map((post, index) => {
                   if (index < 2) {
                     return (
@@ -133,7 +134,43 @@ export default function MoreBlogInCategory({ posts }: { posts: Post[] }) {
             </div>
           )
         }
-      })}
+      })} */}
+      <div className="grid grid-cols-1 gap-y-20">
+        {posts.map((post, index) => {
+          // Determine the appropriate grid class based on the index
+          let gridClass = ''
+          let PostComponent = PostPreview
+          if (index % 5 < 3) {
+            gridClass = 'grid grid-cols-1 gap-y-20 sm:grid-cols-3 gap-4'
+          } else {
+            gridClass =
+              'max-w-[1200px] mx-auto mt-6 grid sm:grid-cols-2 gap-[72px]'
+            PostComponent = PostPreviewLarge
+          }
+
+          // Determine if a new grid should start
+          const isStartOfNewGrid = index % 5 === 0 || index % 5 === 3
+
+          return isStartOfNewGrid ? (
+            <div key={post._id} className={gridClass}>
+              {posts
+                .slice(index, index + (index % 5 < 3 ? 3 : 2))
+                .map((subPost) => (
+                  <PostComponent
+                    key={subPost._id}
+                    title={subPost.title}
+                    category={subPost.category}
+                    coverImage={subPost.coverImage}
+                    date={subPost.date}
+                    author={subPost.author}
+                    slug={subPost.slug}
+                    excerpt={subPost.excerpt}
+                  />
+                ))}
+            </div>
+          ) : null
+        })}
+      </div>
     </section>
   )
 }

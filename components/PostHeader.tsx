@@ -9,46 +9,53 @@ import { ImLink } from 'react-icons/im'
 import { RiFacebookFill } from 'react-icons/ri'
 import { RiTwitterXFill } from 'react-icons/ri'
 import { TbMailFilled } from 'react-icons/tb'
+import category from 'schemas/category'
+import { AiOutlineMail } from 'react-icons/ai'
+import { FaPinterest } from 'react-icons/fa'
+import { FaLinkedinIn } from 'react-icons/fa6'
+import { FaWhatsapp } from 'react-icons/fa6'
+import { LiaTelegram } from 'react-icons/lia'
 
 export default function PostHeader(
-  props: Pick<Post, 'title' | 'coverImage' | 'date' | 'author' | 'slug'>,
+  props: Pick<
+    Post,
+    'title' | 'category' | 'coverImage' | 'date' | 'author' | 'slug'
+  >,
 ) {
   const { title, coverImage, date, author, slug } = props
   const postImage = urlForImage(coverImage).height(1500).width(1000).url()
   return (
     <>
-      <div className="max-w-[1560px] mx-auto flex">
-        <div className="w-[42%] h-auto mt-48 flex items-center">
-          <div className="text-center py-auto px-16">
-            <p className="font-medium text-sm">FASHION</p>
-            <p className="mt-8 mb-12 text-[52px] leading-[54px] font-regular">
+      <div className="max-w-[1560px] mx-auto sm:flex">
+        <div className="w-full sm:w-[42%] h-auto sm:mt-48 mt-24 flex items-center">
+          <div className="sm:text-center py-auto sm:px-16 px-4">
+            <p className="sm:font-medium sm:text-sm text-lg uppercase">
+              {category.name}
+            </p>
+            <p className=" mt-4 sm:mt-8 mb-24 sm:mb-12 mr-8 sm:mr-0 text-2xl leading-[30px] sm:text-[52px] sm:leading-[54px]">
               {title}
             </p>
-            <p>
-              <span className="text-sm italic mr-2">by</span>
-              <span className="text-base font-bold">{author.name}</span>
-            </p>
-            <p className="text-base font-light italic">
-              <Date dateString={date} />
-            </p>
-            <div className="mx-auto flex w-fit mt-8 gap-4">
-              <div className="h-8 w-8 rounded-full border border-black flex items-center justify-center">
-                <RiFacebookFill size={24} />
-              </div>
-              <div className="h-8 w-8 rounded-full border border-black flex items-center justify-center">
-                <RiTwitterXFill size={20} />
-              </div>
-              <div className="h-8 w-8 rounded-full border border-black flex items-center justify-center">
-                <ImLink size={18} />
-              </div>
-              <div className="h-8 w-8 rounded-full border border-black flex items-center justify-center">
-                <TbMailFilled size={22} />
-              </div>
+            <div className="flex flex-row-reverse gap-1 justify-end sm:block">
+              <p>
+                <span className="text-sm italic sm:mr-2 mr-1">by</span>
+                <span className="text-base font-bold">{author.name}</span>
+              </p>
+              <p className="text-base font-light italic">
+                <Date dateString={date} />
+              </p>
+            </div>
+            <div className="sm:mx-auto flex items-center w-fit sm:mt-8 sm:mb-0 my-4 gap-4">
+              <AiOutlineMail size={20} />
+              <RiFacebookFill size={24} />
+              <FaPinterest size={20} />
+              <FaLinkedinIn size={20} />
+              <FaWhatsapp size={20} />
+              <LiaTelegram size={20} />
             </div>
           </div>
         </div>
 
-        <div className="w-[58%]">
+        <div className="w-full sm:w-[58%]">
           <img src={postImage} alt="image" className="w-full h-auto" />
           {/* <div
             style={{

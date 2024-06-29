@@ -86,9 +86,9 @@ const NavBar = ({ state }: { state: string }) => {
   })
 
   return (
-    <div className="w-full fixed top-0 px-10">
+    <div className="w-full fixed top-0 sm:px-10 px-6">
       <div
-        className={`h-20 max-w-[1440px] mx-auto flex items-center justify-end relative transition-opacity duration-300 ${
+        className={`sm:h-20 h-16 xl:max-w-[1440px] 2xl:max-w-[1920px] mx-auto flex items-center justify-end relative transition-opacity duration-300 ${
           show ? 'opacity-100' : 'opacity-0'
         }`}
       >
@@ -96,71 +96,72 @@ const NavBar = ({ state }: { state: string }) => {
           <Image
             src={`/logo-${state}.svg`}
             alt="logo"
-            width={104}
-            height={140}
-            className="absolute top-0 left-0 mt-5 cursor-pointer"
+            width={28}
+            height={40}
+            className="absolute top-0 left-0 sm:mt-5 mt-3 cursor-pointer sm:w-[104px] sm:h-[140px]"
           />
         </Link>
         <div
           onClick={handleMenuState}
-          className={`uppercase font-semibold text-xl mr-8 cursor-pointer text-${state}`}
+          className={`uppercase font-semibold text-sm sm:text-xl mr-4 sm:mr-8 cursor-pointer text-${state}`}
         >
           MENU
         </div>
       </div>
       <div
-        className={`${
-          menuState ? 'block' : 'hidden'
-        } absolute w-[300px] h-screen top-0 right-0 overflow-y-auto bg-white shadow-xl `}
+        onClick={handleMenuState}
+        className={`${menuState ? 'block' : 'hidden'} w-full h-screen `}
       >
-        <div className="w-full p-9">
-          <IoMdClose
-            size={24}
-            onClick={handleMenuState}
-            className="ml-auto cursor-pointer"
-          />
-          <div className="mt-6 w-full flex justify-between items-center py-4 ">
-            <input
-              type="text"
-              placeholder="Search"
-              // value={"SEARCH"}
-              className="w-44 uppercase text-lg outline-none text-black"
+        <div className="absolute w-[300px] h-screen top-0 right-0 overflow-y-auto bg-white shadow-xl">
+          <div className="w-full p-9">
+            <IoMdClose
+              size={24}
+              onClick={handleMenuState}
+              className="ml-auto cursor-pointer"
             />
-            <RiSearchLine size={20} />
+            <div className="mt-6 w-full flex justify-between items-center py-4 ">
+              <input
+                type="text"
+                placeholder="Search"
+                // value={"SEARCH"}
+                className="w-44 uppercase text-lg outline-none text-black"
+              />
+              <RiSearchLine size={20} />
+            </div>
+            <div className="mt-4 w-full pb-48">
+              <p className="text-sm text-gray-500 uppercase">Categories</p>
+              <ul className="w-full text-lg uppercase py-2 ">
+                {menuList.map((item, idx) => (
+                  <li
+                    key={idx}
+                    className="py-1.5 hover:underline hover:underline-offset-4"
+                  >
+                    <Link href={`/${item.category}`}>{item.category}</Link>
+                  </li>
+                ))}
+              </ul>
+            </div>
           </div>
-          <div className="mt-4 w-full pb-48">
-            <p className="text-lg uppercase">Categories</p>
-            <ul className="w-full text-lg uppercase py-2 ">
-              {menuList.map((item, idx) => (
-                <li
-                  key={idx}
-                  className="py-2 hover:underline hover:underline-offset-4"
-                >
-                  <Link href={`/${item.category}`}>{item.category}</Link>
-                </li>
-              ))}
+          <div className="w-full bg-black text-white p-9 mb-0">
+            <Image
+              src={'./logo-white.svg'}
+              alt="logo"
+              width={60}
+              height={80}
+              className="text-black"
+            />
+            <ul className="text-lg uppercase mt-9">
+              <li className="py-1.5 hover:underline hover:underline-offset-4">
+                <Link href={`/`}>about</Link>
+              </li>
+              <li className="py-1.5 hover:underline hover:underline-offset-4">
+                <Link href={`/`}>contact</Link>
+              </li>
+              <li className="py-1.5 hover:underline hover:underline-offset-4">
+                <Link href={`/`}>follow us</Link>
+              </li>
             </ul>
           </div>
-        </div>
-        <div className="w-full bg-black text-white p-9 mb-0">
-          <Image
-            src={'./logo-white.svg'}
-            alt="logo"
-            width={60}
-            height={80}
-            className="text-black"
-          />
-          <ul className="text-lg uppercase mt-9">
-            <li className="py-1.5 hover:underline hover:underline-offset-4">
-              <Link href={`/`}>about</Link>
-            </li>
-            <li className="py-1.5 hover:underline hover:underline-offset-4">
-              <Link href={`/`}>contact</Link>
-            </li>
-            <li className="py-1.5 hover:underline hover:underline-offset-4">
-              <Link href={`/`}>follow us</Link>
-            </li>
-          </ul>
         </div>
       </div>
     </div>

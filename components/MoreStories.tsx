@@ -77,15 +77,15 @@ export default function MoreStories({ posts }: { posts: Post[] }) {
   console.log(posts[0])
 
   return (
-    <section className="max-w-[1920px] mx-auto px-8 my-20 grid grid-cols-1 gap-y-20">
+    <section className="max-w-[1920px] mx-auto sm:px-9 my-20 grid grid-cols-1 gap-y-20">
       {categoriesWithPosts.map(({ category, posts }, index) => {
         if (index % 2 == 0) {
           return (
             <div key={index}>
-              <h2 className="text-xl leading-tight tracking-tighter mb-6 uppercase">
+              <h2 className="text-xl ml-4 sm:ml-0 leading-tight mb-6 uppercase">
                 {category.name}
               </h2>
-              <div className="grid grid-cols-1 gap-y-20 md:grid-cols-3 gap-4">
+              <div className="grid grid-cols-1 gap-y-20 sm:grid-cols-3 gap-4">
                 {posts.map((post, index) => {
                   if (index < 3) {
                     return (
@@ -108,11 +108,11 @@ export default function MoreStories({ posts }: { posts: Post[] }) {
         } else {
           return (
             <div key={index}>
-              <h2 className="text-xl leading-tight tracking-tighter mb-6 uppercase">
+              <h2 className="text-xl ml-4 leading-tight mb-6 uppercase">
                 {category.name}
               </h2>
 
-              <div className="max-w-[1200px] mx-auto mt-6 grid grid-cols-2 gap-[72px]">
+              <div className="max-w-[1200px] mx-auto mt-6 grid sm:grid-cols-2 gap-[72px]">
                 {posts.map((post, index) => {
                   if (index < 2) {
                     return (

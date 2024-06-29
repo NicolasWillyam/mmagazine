@@ -33,7 +33,7 @@ const Footer = () => {
         <div className="flex items-center justify-center gap-4 ">
           <RiFacebookFill size={24} />
         </div>
-        <ul className="mt-6 flex justify-center items-center gap-6 capitalize font-light">
+        <ul className="mt-6 flex flex-col sm:flex-row justify-center items-center gap-4 sm:gap-6 capitalize font-light">
           {footerList.map((item, idx) => (
             <li className="underline underline-offset-[12px]" key={idx}>
               {item.name}
