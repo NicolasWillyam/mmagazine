@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-title-in-document-head */
 import { Head, Html, Main, NextScript } from 'next/document'
 
 export default function Document() {
@@ -5,7 +6,8 @@ export default function Document() {
     <Html lang="en">
       <Head>
         <link rel="icon" href="/logo-black.svg" />
-        <meta name="description" content="MMAGAZINE Vietnam" />
+        <title>M MAGAZINE Vietnam</title>
+        <meta name="description" content="M MAGAZINE Vietnam" />
         <meta property="og:image" content="/logo-black.svg" />
         <meta name="twitter:image" content="/logo-black.svg" />
       </Head>

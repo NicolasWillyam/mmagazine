@@ -1,6 +1,6 @@
 import Image from 'next/image'
 import Link from 'next/link'
-import React, { useEffect, useState } from 'react'
+import React, { useCallback, useEffect, useState } from 'react'
 import { IoMdClose } from 'react-icons/io'
 import { RiSearchLine } from 'react-icons/ri'
 
@@ -19,10 +19,10 @@ const menuList: Menu[] = [
     category: 'Lifestyle',
   },
   {
-    category: 'CULTURE',
+    category: 'Culture',
   },
   {
-    category: 'CELEBRITY',
+    category: 'Celebrity',
   },
   {
     category: 'Watches & Jewelry',
@@ -43,7 +43,7 @@ const menuList: Menu[] = [
     category: 'Technology',
   },
   {
-    category: 'M for career',
+    category: 'M for Career',
   },
   {
     category: 'M for MEN',
@@ -52,37 +52,38 @@ const menuList: Menu[] = [
     category: 'Money & Finance',
   },
   {
-    category: 'add to cart',
+    category: 'Add to Cart',
   },
 ]
 
 const NavBar = ({ state }: { state: string }) => {
-  const [menuState, setMenuState] = useState<Boolean>(false)
+  const [menuState, setMenuState] = useState(false)
   const handleMenuState = () => {
-    console.log(1)
     setMenuState(!menuState)
   }
 
   const [show, setShow] = useState(true)
   const [lastScrollY, setLastScrollY] = useState(0)
 
-  const controlNavbar = () => {
-    if (window.scrollY > lastScrollY) {
-      // if scroll down hide the navbar
-      setShow(false)
+  const controlNavbar = useCallback(() => {
+    if (window.scrollY > 50) {
+      if (window.scrollY > lastScrollY) {
+        setShow(false)
+      } else if (window.scrollY < lastScrollY - 50) {
+        setShow(true)
+      }
     } else {
-      // if scroll up show the navbar
       setShow(true)
     }
     setLastScrollY(window.scrollY)
-  }
+  }, [lastScrollY])
 
   useEffect(() => {
     window.addEventListener('scroll', controlNavbar)
     return () => {
       window.removeEventListener('scroll', controlNavbar)
     }
-  })
+  }, [controlNavbar])
 
   return (
     <div className="w-full fixed top-0 sm:px-10 px-6">
@@ -102,7 +103,7 @@ const NavBar = ({ state }: { state: string }) => {
         </Link>
         <div
           onClick={handleMenuState}
-          className={`uppercase font-semibold text-sm sm:text-xl mr-4 sm:mr-8 cursor-pointer text-${state}`}
+          className={`uppercase font-semibold text-base sm:text-xl mr-4 sm:mr-8 cursor-pointer text-${state}`}
         >
           MENU
         </div>

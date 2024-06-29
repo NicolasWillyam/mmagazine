@@ -4,6 +4,7 @@ import { TfiHeadphoneAlt } from 'react-icons/tfi'
 import { RiFacebookFill } from 'react-icons/ri'
 import { IoLogoInstagram } from 'react-icons/io5'
 import { RiTwitterXFill } from 'react-icons/ri'
+import Link from 'next/link'
 
 interface Footer {
   name: string
@@ -31,8 +32,12 @@ const Footer = () => {
       </div>
       <div className="mt-16 text-white">
         <div className="flex items-center justify-center gap-4 ">
-          <RiFacebookFill size={24} />
-          <IoLogoInstagram size={24} />
+          <Link href={'https://www.facebook.com/mmagazinevietnam/'}>
+            <RiFacebookFill size={24} />
+          </Link>
+          <Link href={'https://www.instagram.com/mmagvietnam/'}>
+            <IoLogoInstagram size={24} />
+          </Link>
         </div>
         <ul className="mt-6 flex flex-col sm:flex-row justify-center items-center gap-4 sm:gap-6 capitalize font-light">
           {footerList.map((item, idx) => (

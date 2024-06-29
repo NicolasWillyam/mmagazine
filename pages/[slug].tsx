@@ -7,7 +7,9 @@ import MoreBlogInCategory from 'components/MoreBlogInCategory'
 import NavBar from 'components/NavBar'
 import { SuggestPost } from 'components/SuggestPost'
 import { fetchCategories, getPostsByCategory } from 'lib/sanity.client' // Adjust import path as per your project structure
+import { Post } from 'lib/sanity.queries'
 import { GetStaticPaths, GetStaticProps } from 'next'
+import Head from 'next/head'
 import { useRouter } from 'next/router'
 
 export default function CategoryPosts({
@@ -15,7 +17,7 @@ export default function CategoryPosts({
   posts,
 }: {
   category: string
-  posts: any[]
+  posts: Post[]
 }) {
   const router = useRouter()
 
@@ -27,6 +29,36 @@ export default function CategoryPosts({
 
   return (
     <>
+      <Head>
+        <title>{category}</title>
+        <meta
+          property="og:image"
+          content={heroPost?.coverImage?.url || '/logo-black.svg'}
+        />
+        <meta name="description" content={'M MAGAZINE Vietnam'} />
+        {/* <meta
+          name="description"
+          content={heroPost.excerpt || 'M MAGAZINE Vietnam'}
+        />
+        <meta property="og:title" content={heroPost.title} />
+        <meta
+          property="og:description"
+          content={heroPost.excerpt || 'M MAGAZINE Vietnam'}
+        />
+        <meta
+          property="og:image"
+          content={heroPost.coverImage?.url || '/logo-black.svg'}
+        />
+        <meta name="twitter:title" content={heroPost.title} />
+        <meta
+          name="twitter:description"
+          content={heroPost.excerpt || 'M MAGAZINE Vietnam'}
+        />
+        <meta
+          name="twitter:image"
+          content={heroPost.coverImage?.url || '/logo-black.svg'}
+        /> */}
+      </Head>
       <NavBar state="black" />
 
       <div className="min-h-screen w-full mx-auto">
