@@ -55,6 +55,7 @@ export default defineType({
           ],
         },
       ],
+      validation: (rule) => rule.required(),
     }),
     defineField({
       name: 'coverImage',
@@ -63,24 +64,28 @@ export default defineType({
       options: {
         hotspot: true,
       },
+      validation: (rule) => rule.required(),
     }),
     defineField({
       name: 'date',
       title: 'Date',
       type: 'datetime',
       initialValue: () => new Date().toISOString(),
+      validation: (rule) => rule.required(),
     }),
     defineField({
       name: 'author',
       title: 'Author',
       type: 'reference',
       to: [{ type: authorType.name }],
+      validation: (rule) => rule.required(),
     }),
     defineField({
       name: 'category',
       title: 'Category',
       type: 'reference',
       to: [{ type: categoryType.name }],
+      validation: (rule) => rule.required(),
     }),
   ],
   preview: {
