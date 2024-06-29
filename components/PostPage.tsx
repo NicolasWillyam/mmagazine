@@ -64,16 +64,12 @@ export default function PostPage(props: PostPageProps) {
           property="og:description"
           content={post.excerpt || 'M MAGAZINE Vietnam'}
         />
-        <meta
-          property="og:image"
-          content={post.coverImage?.url || '/logo-black.svg'}
-        />
+        <meta property="og:image" content={post?.coverImage?.url} />
         <meta
           property="og:url"
           content={`https://www.mmagazinevietnam.com/posts/${post.slug}`}
         />
         <meta property="og:type" content="article" />
-        <meta property="fb:app_id" content="your-facebook-app-id" />
         <meta name="twitter:title" content={post.title} />
         <meta
           name="twitter:description"
