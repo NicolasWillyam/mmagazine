@@ -15,6 +15,7 @@ import { FaPinterest } from 'react-icons/fa'
 import { FaLinkedinIn } from 'react-icons/fa6'
 import { FaWhatsapp } from 'react-icons/fa6'
 import { LiaTelegram } from 'react-icons/lia'
+import { CategoryNameComponent } from './PostDetailComponents'
 
 export default function PostHeader(
   props: Pick<
@@ -22,22 +23,21 @@ export default function PostHeader(
     'title' | 'category' | 'coverImage' | 'date' | 'author' | 'slug'
   >,
 ) {
-  const { title, coverImage, date, author, slug } = props
+  const { title, category, coverImage, date, author, slug } = props
   const postImage = urlForImage(coverImage).height(1500).width(1000).url()
+
   return (
     <>
       <div className="max-w-[1560px] mx-auto sm:flex">
         <div className="w-full sm:w-[42%] h-auto sm:mt-48 mt-24 flex items-center">
           <div className="sm:text-center py-auto sm:px-16 px-4">
-            <p className="sm:font-medium sm:text-sm text-lg uppercase">
-              {category.name}
-            </p>
+            <CategoryNameComponent category={category.name} />
             <p className=" mt-4 sm:mt-8 mb-24 sm:mb-12 mr-8 sm:mr-0 text-2xl leading-[30px] sm:text-[52px] sm:leading-[54px]">
               {title}
             </p>
             <div className="flex flex-row-reverse gap-1 justify-end sm:block">
               <p>
-                <span className="text-sm italic sm:mr-2 mr-1">by</span>
+                <span className="text-sm italic mr-1">by</span>
                 <span className="text-base font-bold">{author.name}</span>
               </p>
               <p className="text-base font-light italic">

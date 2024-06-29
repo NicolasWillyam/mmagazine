@@ -53,7 +53,6 @@ export default function PostPage(props: PostPageProps) {
   return (
     <>
       <NavBar state="black" />
-
       <Layout preview={preview} loading={loading}>
         <Container>
           {preview && !post ? (
@@ -72,6 +71,7 @@ export default function PostPage(props: PostPageProps) {
                   date={post.date}
                   author={post.author}
                 />
+
                 <PostBody content={post.content} posts={morePosts} />
               </article>
               <SectionSeparator />

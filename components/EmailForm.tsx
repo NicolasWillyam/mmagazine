@@ -17,7 +17,7 @@ const EmailForm = () => {
             className="w-full py-2 pb-4 border-b-[1px] border-black/50 text-sm font-light outline-none"
           />
           <p className="text-black/50 text-xs mt-2">
-            Bằng cách đăng ký nhận bản tin BDG này, bạn đồng ý với{' '}
+            Bằng cách đăng ký nhận bản tin này, bạn đồng ý với{' '}
             <span className="font-semibold underline underline-offset-2">
               <Link href={'/'}>Điều Khoản Dịch Vụ</Link>
             </span>{' '}

@@ -1,4 +1,3 @@
-'use client'
 import Image from 'next/image'
 import Link from 'next/link'
 import React, { useEffect, useState } from 'react'
@@ -38,10 +37,10 @@ const menuList: Menu[] = [
     category: 'Art & Design',
   },
   {
-    category: 'Voyage & Gourmet',
+    category: 'Voyages & Gourmet',
   },
   {
-    category: 'Tech',
+    category: 'Technology',
   },
   {
     category: 'M for career',
@@ -128,13 +127,13 @@ const NavBar = ({ state }: { state: string }) => {
               />
               <RiSearchLine size={20} />
             </div>
-            <div className="mt-4 w-full pb-48">
+            <div className="mt-4 w-full">
               <p className="text-sm text-gray-500 uppercase">Categories</p>
               <ul className="w-full text-lg uppercase py-2 ">
                 {menuList.map((item, idx) => (
                   <li
                     key={idx}
-                    className="py-1.5 hover:underline hover:underline-offset-4"
+                    className="py-1 hover:underline hover:underline-offset-4"
                   >
                     <Link href={`/${item.category}`}>{item.category}</Link>
                   </li>
@@ -144,20 +143,20 @@ const NavBar = ({ state }: { state: string }) => {
           </div>
           <div className="w-full bg-black text-white p-9 mb-0">
             <Image
-              src={'./logo-white.svg'}
+              src={'/logo-white.svg'}
               alt="logo"
               width={60}
               height={80}
               className="text-black"
             />
-            <ul className="text-lg uppercase mt-9">
-              <li className="py-1.5 hover:underline hover:underline-offset-4">
+            <ul className="text-sm uppercase mt-6 mb-12">
+              <li className="py-1 hover:underline hover:underline-offset-4">
                 <Link href={`/`}>about</Link>
               </li>
-              <li className="py-1.5 hover:underline hover:underline-offset-4">
+              <li className="py-1 hover:underline hover:underline-offset-4">
                 <Link href={`/`}>contact</Link>
               </li>
-              <li className="py-1.5 hover:underline hover:underline-offset-4">
+              <li className="py-1 hover:underline hover:underline-offset-4">
                 <Link href={`/`}>follow us</Link>
               </li>
             </ul>

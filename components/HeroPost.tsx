@@ -31,7 +31,7 @@ export default function HeroPost(
               <p className="text-[45px] leading-[54px]">
                 {title || 'Untitled'}
               </p>
-              <p className="text-base font-light">
+              <p className="text-base">
                 <span>
                   {' '}
                   <Date dateString={date} />
