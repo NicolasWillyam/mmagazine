@@ -91,6 +91,7 @@ export async function getPostsByCategory({ params }: { params: string }) {
       `*[_type == "post" && category->name == '${params}'] | order(date desc) {
         _id,
         title,
+        content,
         date,
         _updatedAt,
         excerpt,
@@ -114,6 +115,31 @@ export async function getPostsByCategory({ params }: { params: string }) {
       status: 500,
       body: new Error('Internal Server Error'),
     }
+  }
+}
+
+export async function getPostsByCategoryName(categoryName: string) {
+  const query = `
+    *[_type == "post" && category->name == $categoryName] | order(date desc) {
+     _id,
+        title,
+        date,
+        content,
+        _updatedAt,
+        excerpt,
+        coverImage,
+        "slug": slug.current,
+        "author": author->{name},
+        "category": category->{name},
+    }
+  `
+  const params = { categoryName }
+  try {
+    const posts = await client.fetch(query, params)
+    return posts
+  } catch (error) {
+    console.error('Failed to fetch posts:', error)
+    return []
   }
 }
 

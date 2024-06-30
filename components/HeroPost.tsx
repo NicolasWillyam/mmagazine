@@ -43,7 +43,9 @@ export default function HeroPost(
         </div>
         <div className="lg:hidden w-full h-full flex items-center justify-center">
           <div className="w-full py-6 px-4 grid grid-cols-1 gap-3">
-            <p className="uppercase text-base">{category.name}</p>
+            <p className="uppercase text-base underline underline-offset-2">
+              {category.name}
+            </p>
             <p className="text-[20px] leading-[24px]">{title}</p>
             <p className="text-sm font-light">
               <span>

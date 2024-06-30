@@ -14,7 +14,7 @@ export async function fetchCategories() {
   return data
 }
 
-const categoryList: Category[] = [
+export const categoryList: Category[] = [
   { name: 'M for Men' },
   { name: 'Style' },
   { name: 'Beauty' },

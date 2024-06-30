@@ -3,6 +3,8 @@ import Link from 'next/link'
 import React, { useCallback, useEffect, useState } from 'react'
 import { IoMdClose } from 'react-icons/io'
 import { RiSearchLine } from 'react-icons/ri'
+import { RiFacebookFill } from 'react-icons/ri'
+import { IoLogoInstagram } from 'react-icons/io5'
 
 interface Menu {
   category: string
@@ -152,14 +154,22 @@ const NavBar = ({ state }: { state: string }) => {
             />
             <ul className="text-sm uppercase mt-6 mb-12">
               <li className="py-1 hover:underline hover:underline-offset-4">
-                <Link href={`/`}>about</Link>
+                <Link href={`/about`}>about</Link>
               </li>
               <li className="py-1 hover:underline hover:underline-offset-4">
-                <Link href={`/`}>contact</Link>
+                <Link href={`/contacts`}>contact</Link>
               </li>
-              <li className="py-1 hover:underline hover:underline-offset-4">
+              <li className="py-1 hover:underline hover:underline-offset-4 mt-4">
                 <Link href={`/`}>follow us</Link>
               </li>
+              <div className="flex gap-4 mt-2">
+                <Link href={'https://www.facebook.com/mmagazinevietnam/'}>
+                  <RiFacebookFill size={24} />
+                </Link>
+                <Link href={'https://www.instagram.com/mmagvietnam/'}>
+                  <IoLogoInstagram size={24} />
+                </Link>
+              </div>
             </ul>
           </div>
         </div>

@@ -8,19 +8,20 @@ import Link from 'next/link'
 
 interface Footer {
   name: string
+  link: string
 }
 const footerList: Footer[] = [
   {
     name: 'about',
+    link: '/about',
   },
   {
     name: 'Contacts',
+    link: '/contacts',
   },
   {
     name: 'Privacy Policy',
-  },
-  {
-    name: 'Cookie Policy',
+    link: '/privacy-policy',
   },
 ]
 
@@ -39,11 +40,13 @@ const Footer = () => {
             <IoLogoInstagram size={24} />
           </Link>
         </div>
-        <ul className="mt-6 flex flex-col sm:flex-row justify-center items-center gap-4 sm:gap-6 capitalize font-light">
+        <ul className="mt-6 flex justify-center items-center gap-4 sm:gap-6 capitalize font-light">
           {footerList.map((item, idx) => (
-            <li className="underline underline-offset-[12px]" key={idx}>
-              {item.name}
-            </li>
+            <Link key={idx} href={item.link}>
+              <li className="underline underline-offset-[12px]" key={idx}>
+                {item.name}
+              </li>
+            </Link>
           ))}
         </ul>
       </div>

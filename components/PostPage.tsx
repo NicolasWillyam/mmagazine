@@ -1,3 +1,4 @@
+'use client'
 import Container from 'components/BlogContainer'
 import BlogHeader from 'components/BlogHeader'
 import Layout from 'components/BlogLayout'
@@ -12,7 +13,7 @@ import type { Post, Settings } from 'lib/sanity.queries'
 import Error from 'next/error'
 import { Cormorant_Garamond, Inter } from 'next/font/google'
 import Image from 'next/image'
-import React from 'react'
+import React, { Dispatch, SetStateAction, useEffect, useState } from 'react'
 import { ImLink } from 'react-icons/im'
 import { RiFacebookFill } from 'react-icons/ri'
 import { RiTwitterXFill } from 'react-icons/ri'
@@ -37,13 +38,42 @@ export interface PostPageProps {
   post: Post
   morePosts: Post[]
   settings: Settings
+  loadedStatus: Boolean
+  setLoadedStatus: Dispatch<SetStateAction<Boolean>>
 }
 
 const NO_POSTS: Post[] = []
 
 export default function PostPage(props: PostPageProps) {
-  const { preview, loading, morePosts = NO_POSTS, post, settings } = props
-  const { title = demo.title } = settings || {}
+  const {
+    preview,
+    loading,
+    morePosts = NO_POSTS,
+    post,
+    settings,
+    loadedStatus,
+    setLoadedStatus,
+  } = props
+
+  console.log(loadedStatus)
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (
+        window.innerHeight + window.scrollY >=
+        document.documentElement.scrollHeight
+      ) {
+        console.log('End')
+        setLoadedStatus((prev) => true)
+      }
+    }
+
+    window.addEventListener('scroll', handleScroll)
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll)
+    }
+  }, [setLoadedStatus])
 
   const slug = post?.slug
 
@@ -51,56 +81,58 @@ export default function PostPage(props: PostPageProps) {
     return <Error statusCode={404} />
   }
 
-  return (
-    <>
-      <Head>
-        <title>{post.title}</title>
-        <meta
-          name="description"
-          content={post.excerpt || 'M MAGAZINE Vietnam'}
-        />
-        <meta property="og:title" content={post.title} />
-        <meta property="og:image" content={post?.coverImage?.url} />
-        <meta
-          property="og:url"
-          content={`https://www.mmagazinevietnam.com/posts/${post.slug}`}
-        />
-        <meta property="og:type" content="article" />
-        <meta name="twitter:title" content={post.title} />
-        <meta
-          name="twitter:description"
-          content={post.excerpt || 'M MAGAZINE Vietnam'}
-        />
-        <meta name="twitter:image" content={post.coverImage?.url} />
-      </Head>
-      <NavBar state="black" />
-      <Layout preview={preview} loading={loading}>
-        <Container>
-          {preview && !post ? (
-            <PostTitle>
-              <div className="w-full h-screen flex items-center justify-center text-2xl">
-                Loading…
-              </div>
-            </PostTitle>
-          ) : (
-            <>
-              <article>
-                <PostHeader
-                  title={post.title}
-                  category={post.category}
-                  coverImage={post.coverImage}
-                  date={post.date}
-                  author={post.author}
-                />
+  if (loadedStatus == true) {
+    return (
+      <>
+        <Head>
+          <title>{post.title}</title>
+          <meta
+            name="description"
+            content={post.excerpt || 'M MAGAZINE Vietnam'}
+          />
+          <meta property="og:title" content={post.title} />
+          <meta property="og:image" content={post?.coverImage?.url} />
+          <meta
+            property="og:url"
+            content={`https://www.mmagazinevietnam.com/posts/${post.slug}`}
+          />
+          <meta property="og:type" content="article" />
+          <meta name="twitter:title" content={post.title} />
+          <meta
+            name="twitter:description"
+            content={post.excerpt || 'M MAGAZINE Vietnam'}
+          />
+          <meta name="twitter:image" content={post.coverImage?.url} />
+        </Head>
+        <NavBar state="black" />
+        <Layout preview={preview} loading={loading}>
+          <Container>
+            {preview && !post ? (
+              <PostTitle>
+                <div className="w-full h-screen flex items-center justify-center text-2xl">
+                  Loading…
+                </div>
+              </PostTitle>
+            ) : (
+              <>
+                <article>
+                  <PostHeader
+                    title={post.title}
+                    category={post.category}
+                    coverImage={post.coverImage}
+                    date={post.date}
+                    author={post.author}
+                  />
 
-                <PostBody content={post.content} posts={morePosts} />
-              </article>
-              <SectionSeparator />
-              {/* {morePosts?.length > 0 && <MoreStories posts={morePosts} />} */}
-            </>
-          )}
-        </Container>
-      </Layout>
-    </>
-  )
+                  <PostBody content={post.content} posts={morePosts} />
+                </article>
+                <SectionSeparator />
+                {/* {morePosts?.length > 0 && <MoreStories posts={morePosts} />} */}
+              </>
+            )}
+          </Container>
+        </Layout>
+      </>
+    )
+  }
 }
