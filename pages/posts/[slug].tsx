@@ -11,8 +11,10 @@ import {
   getPostsByCategoryName,
   getSettings,
 } from 'lib/sanity.client'
+import { urlForImage } from 'lib/sanity.image'
 import { Category, Post, Settings } from 'lib/sanity.queries'
 import { GetStaticProps } from 'next'
+import Head from 'next/head'
 import type { SharedPageProps } from 'pages/_app'
 import { useEffect, useState } from 'react'
 
@@ -56,18 +58,59 @@ export default function ProjectSlugRoute(props: PageProps) {
     fetchPostsByCategory(post.category.name, setCategoriesWithPosts)
   }, [post.category.name])
 
-  console.log(loadedStatus)
+  const postImage = urlForImage(post.coverImage).url()
+
+  console.log('img', postImage)
 
   return (
-    <div>
-      <PostPage
-        post={post}
-        morePosts={morePosts}
-        settings={{}} // Pass your settings here
-        loadedStatus={loadedStatus}
-        setLoadedStatus={setLoadedStatus} // Update loadedStatus to false
-      />
-    </div>
+    <>
+      <Head>
+        {/* <title>{post.title}</title>
+          <meta
+            name="description"
+            content={post.excerpt || 'M MAGAZINE Vietnam'}
+          />
+          <meta property="og:title" content={post.title} />
+          <meta property="og:image" content={post?.coverImage?.url} />
+          <meta
+            property="og:url"
+            content={`https://www.mmagazinevietnam.com/posts/${post.slug}`}
+          />
+          <meta property="og:type" content="article" />
+          <meta name="twitter:title" content={post.title} />
+          <meta
+            name="twitter:description"
+            content={post.excerpt || 'M MAGAZINE Vietnam'}
+          />
+          <meta name="twitter:image" content={post.coverImage?.url} /> */}
+        <title>{post.title}</title>
+        <meta name="description" content="M MAGAZINE Vietnam" />
+        <meta
+          property="og:url"
+          content={`https://www.mmagazinevietnam.com/posts/${post.slug}`}
+        />
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content={post.title} />
+        <meta property="og:description" content={post?.description || ''} />
+        <meta property="og:image" content={postImage} />
+
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta property="twitter:domain" content="mmagazinevietnam.com" />
+        <meta property="twitter:url" content={post.slug} />
+        <meta name="twitter:title" content={post.title} />
+        <meta name="twitter:description" content={post?.description || ''} />
+        <meta name="twitter:image" content={postImage} />
+      </Head>
+      <div>
+        <PostPage
+          post={post}
+          morePosts={morePosts}
+          settings={{}} // Pass your settings here
+          loadedStatus={loadedStatus}
+          setLoadedStatus={setLoadedStatus} // Update loadedStatus to false
+        />
+      </div>
+    </>
   )
 }
 

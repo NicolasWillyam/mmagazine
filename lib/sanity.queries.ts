@@ -73,6 +73,7 @@ export interface Category {
 export interface Post {
   _id: string
   title?: string
+  description?: string
   coverImage?: any
   date?: string
   _updatedAt?: string

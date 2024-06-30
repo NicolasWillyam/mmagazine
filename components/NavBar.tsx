@@ -145,13 +145,15 @@ const NavBar = ({ state }: { state: string }) => {
             </div>
           </div>
           <div className="w-full bg-black text-white p-9 mb-0">
-            <Image
-              src={'/logo-white.svg'}
-              alt="logo"
-              width={60}
-              height={80}
-              className="text-black"
-            />
+            <Link href={'/'}>
+              <Image
+                src={'/logo-white.svg'}
+                alt="logo"
+                width={60}
+                height={80}
+                className="text-black"
+              />
+            </Link>
             <ul className="text-sm uppercase mt-6 mb-12">
               <li className="py-1 hover:underline hover:underline-offset-4">
                 <Link href={`/about`}>about</Link>
