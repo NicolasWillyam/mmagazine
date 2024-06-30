@@ -84,7 +84,7 @@ export default function ProjectSlugRoute(props: PageProps) {
           />
           <meta name="twitter:image" content={post.coverImage?.url} /> */}
         <title>{post.title}</title>
-        <meta name="description" content="M MAGAZINE Vietnam" />
+        {/* <meta name="description" content="M MAGAZINE Vietnam" /> */}
         <meta
           property="og:url"
           content={`https://www.mmagazinevietnam.com/posts/${post.slug}`}
