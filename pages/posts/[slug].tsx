@@ -58,7 +58,7 @@ export default function ProjectSlugRoute(props: PageProps) {
     fetchPostsByCategory(post.category.name, setCategoriesWithPosts)
   }, [post.category.name])
 
-  const postImage = urlForImage(post.coverImage).url()
+  const postImage = urlForImage(post.coverImage).height(1500).width(1000).url()
 
   console.log('img', postImage)
 
