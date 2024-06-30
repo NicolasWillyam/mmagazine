@@ -33,10 +33,13 @@ const Footer = () => {
       </div>
       <div className="mt-16 text-white">
         <div className="flex items-center justify-center gap-4 ">
-          <Link href={'https://www.facebook.com/mmagazinevietnam/'}>
+          <Link
+            target="_blank"
+            href={'https://www.facebook.com/mmagazinevietnam/'}
+          >
             <RiFacebookFill size={24} />
           </Link>
-          <Link href={'https://www.instagram.com/mmagvietnam/'}>
+          <Link target="_blank" href={'https://www.instagram.com/mmagvietnam/'}>
             <IoLogoInstagram size={24} />
           </Link>
         </div>

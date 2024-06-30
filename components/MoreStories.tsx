@@ -54,7 +54,7 @@ export default function MoreStories({ posts }: { posts: Post[] }) {
         const results = await Promise.all(
           categoryList.map(async (category) => {
             const posts = await getPostsByCategoryName(category.name)
-            console.log('posts', posts)
+            // console.log('posts', posts)
             return posts ? { category, posts } : null
           }),
         )
@@ -74,7 +74,7 @@ export default function MoreStories({ posts }: { posts: Post[] }) {
     fetchCategoriesWithPosts()
   }, [])
 
-  console.log(posts[0])
+  // console.log(posts[0])
 
   return (
     <section className="max-w-[1920px] mx-auto sm:px-9 my-20 grid grid-cols-1 gap-y-20">

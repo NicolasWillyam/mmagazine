@@ -65,24 +65,6 @@ export default function ProjectSlugRoute(props: PageProps) {
   return (
     <>
       <Head>
-        {/* <title>{post.title}</title>
-          <meta
-            name="description"
-            content={post.excerpt || 'M MAGAZINE Vietnam'}
-          />
-          <meta property="og:title" content={post.title} />
-          <meta property="og:image" content={post?.coverImage?.url} />
-          <meta
-            property="og:url"
-            content={`https://www.mmagazinevietnam.com/posts/${post.slug}`}
-          />
-          <meta property="og:type" content="article" />
-          <meta name="twitter:title" content={post.title} />
-          <meta
-            name="twitter:description"
-            content={post.excerpt || 'M MAGAZINE Vietnam'}
-          />
-          <meta name="twitter:image" content={post.coverImage?.url} /> */}
         <title>{post.title}</title>
         {/* <meta name="description" content="M MAGAZINE Vietnam" /> */}
         <meta
