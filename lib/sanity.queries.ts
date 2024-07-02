@@ -14,9 +14,23 @@ export const postFields = groq`
 
 export const settingsQuery = groq`*[_type == "settings"][0]`
 
+// export const indexQuery = groq`
+// *[_type == "post"] | order(date desc, _updatedAt desc) {
+//   ${postFields}
+// }`
+
+// Config by William
 export const indexQuery = groq`
 *[_type == "post"] | order(date desc, _updatedAt desc) {
-  ${postFields}
+   _id,
+  title,
+  date,
+  _updatedAt,
+  excerpt,
+  coverImage,
+  "slug": slug.current,
+  "author": author->{name, picture},
+  "category": category->{name},
 }`
 
 export const postAndMoreStoriesQuery = groq`

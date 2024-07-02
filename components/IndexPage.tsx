@@ -28,7 +28,7 @@ export default function IndexPage(props: IndexPageProps) {
   return (
     <>
       <NavBar state="black" />
-      {/* <IndexPageHead settings={settings} /> */}
+      <IndexPageHead settings={settings} />
 
       {/* <Layout preview={preview} loading={loading}> */}
       <div className="h-auto sm:min-h-screen w-full mx-auto">
