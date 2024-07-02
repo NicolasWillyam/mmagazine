@@ -85,6 +85,39 @@ export async function getPostAndMoreStories(
 //   return posts
 // }
 
+export async function getAllOfPosts() {
+  try {
+    const data = await client.fetch(
+      `*[_type == "post"] | order(date desc, _updatedAt desc) {
+        _id,
+        title,
+        date,
+        _updatedAt,
+        excerpt,
+        coverImage,
+        "slug": slug.current,
+        "author": author->{name, picture},
+        "category": category->{name},
+      }
+    `,
+    )
+
+    if (data) {
+      return {
+        posts: data,
+      }
+    } else {
+      throw new Error('No data found')
+    }
+  } catch (error) {
+    console.error('Error fetching posts by category:', error)
+    return {
+      status: 500,
+      body: new Error('Internal Server Error'),
+    }
+  }
+}
+
 export async function getPostsByCategory({ params }: { params: string }) {
   try {
     const data = await client.fetch(

@@ -36,28 +36,6 @@ export default function CategoryPosts({
           content={heroPost?.coverImage?.url || '/logo-black.svg'}
         />
         <meta name="description" content={'M MAGAZINE Vietnam'} />
-        {/* <meta
-          name="description"
-          content={heroPost.excerpt || 'M MAGAZINE Vietnam'}
-        />
-        <meta property="og:title" content={heroPost.title} />
-        <meta
-          property="og:description"
-          content={heroPost.excerpt || 'M MAGAZINE Vietnam'}
-        />
-        <meta
-          property="og:image"
-          content={heroPost.coverImage?.url || '/logo-black.svg'}
-        />
-        <meta name="twitter:title" content={heroPost.title} />
-        <meta
-          name="twitter:description"
-          content={heroPost.excerpt || 'M MAGAZINE Vietnam'}
-        />
-        <meta
-          name="twitter:image"
-          content={heroPost.coverImage?.url || '/logo-black.svg'}
-        /> */}
       </Head>
       <NavBar state="black" />
 

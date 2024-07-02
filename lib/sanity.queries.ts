@@ -31,7 +31,8 @@ export const indexQuery = groq`
   "slug": slug.current,
   "author": author->{name, picture},
   "category": category->{name},
-}`
+}
+  `
 
 export const postAndMoreStoriesQuery = groq`
 {

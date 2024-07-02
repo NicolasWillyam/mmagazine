@@ -12,6 +12,8 @@ import { ArticleSuggestCard } from './ArticleCard'
 import Footer from './Footer'
 import NavBar from './NavBar'
 import { SuggestPost } from './SuggestPost'
+import { useEffect, useState } from 'react'
+import { getAllOfPosts } from 'lib/sanity.client'
 
 export interface IndexPageProps {
   preview?: boolean
@@ -22,8 +24,26 @@ export interface IndexPageProps {
 
 export default function IndexPage(props: IndexPageProps) {
   const { preview, loading, posts, settings } = props
-  const [heroPost, ...morePosts] = posts || []
+
   const { title = demo.title, description = demo.description } = settings || {}
+
+  const [allPosts, setAllPosts] = useState<Post[]>([])
+
+  useEffect(() => {
+    async function fetchPosts() {
+      try {
+        const { posts } = await getAllOfPosts()
+        setAllPosts(posts)
+      } catch (error) {
+        console.error('Error fetching posts:', error)
+        // Handle error state if needed
+      }
+    }
+
+    fetchPosts()
+  }, [])
+  console.log('All Post', allPosts)
+  const [heroPost, ...morePosts] = allPosts || []
 
   return (
     <>
