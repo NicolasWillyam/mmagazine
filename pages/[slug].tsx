@@ -1,6 +1,7 @@
 // pages/[slug].tsx
 
 import Layout from 'app/layout'
+import { Container } from 'components/BlogContainer'
 import Footer from 'components/Footer'
 import HeroPost from 'components/HeroPost'
 import MoreBlogInCategory from 'components/MoreBlogInCategory'
@@ -23,7 +24,13 @@ export default function CategoryPosts({
 
   // Show loading message while fetching data
   if (router.isFallback) {
-    return <div>Loading...</div>
+    return (
+      <div className="min-h-screen w-full flex items-center justify-center">
+        <div className="text-center">
+          <p className="text-4xl">Loading...</p>
+        </div>
+      </div>
+    )
   }
   const [heroPost, ...morePosts] = posts || []
 
@@ -39,25 +46,40 @@ export default function CategoryPosts({
       </Head>
       <NavBar state="black" />
 
-      <div className="min-h-screen w-full mx-auto">
-        {/* <BlogHeader title={title} description={description} level={1} /> */}
-        {heroPost && (
-          <HeroPost
-            title={heroPost.title}
-            category={heroPost.category}
-            coverImage={heroPost.coverImage}
-            date={heroPost.date}
-            author={heroPost.author}
-            slug={heroPost.slug}
-            excerpt={heroPost.excerpt}
-          />
-        )}
+      {posts.length > 0 ? (
+        <div className="min-h-screen w-full mx-auto">
+          {/* <BlogHeader title={title} description={description} level={1} /> */}
+          {heroPost && (
+            <HeroPost
+              title={heroPost.title}
+              category={heroPost.category}
+              coverImage={heroPost.coverImage}
+              date={heroPost.date}
+              author={heroPost.author}
+              slug={heroPost.slug}
+              excerpt={heroPost.excerpt}
+            />
+          )}
 
-        <div className="max-w-[1440px] mx-auto">
-          <SuggestPost posts={morePosts} />
-          {morePosts.length > 3 && <MoreBlogInCategory posts={morePosts} />}
+          <Container>
+            <SuggestPost posts={morePosts} />
+            {morePosts.length > 3 && <MoreBlogInCategory posts={morePosts} />}
+          </Container>
         </div>
-      </div>
+      ) : (
+        <div className="min-h-screen w-full flex items-center justify-center">
+          <div className="text-center">
+            <p className="uppercase text-4xl font-semibold mb-2">
+              comming soon
+            </p>
+            <p>
+              Hãy chờ đợi những bài viết chất lượng về {category} đến từ chúng
+              tôi.
+            </p>
+          </div>
+        </div>
+      )}
+
       <Footer />
     </>
   )

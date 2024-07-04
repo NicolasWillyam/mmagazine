@@ -1,10 +1,11 @@
 import Image from 'next/image'
 import Link from 'next/link'
+import { useRouter } from 'next/router'
 import React, { useCallback, useEffect, useState } from 'react'
 import { IoMdClose } from 'react-icons/io'
+import { IoLogoInstagram } from 'react-icons/io5'
 import { RiSearchLine } from 'react-icons/ri'
 import { RiFacebookFill } from 'react-icons/ri'
-import { IoLogoInstagram } from 'react-icons/io5'
 
 interface Menu {
   category: string
@@ -54,12 +55,15 @@ const menuList: Menu[] = [
     category: 'Money & Finance',
   },
   {
-    category: 'Add to Cart',
+    category: 'Shopping',
   },
 ]
 
 const NavBar = ({ state }: { state: string }) => {
   const [menuState, setMenuState] = useState(false)
+  const [searchQuery, setSearchQuery] = useState('')
+  const router = useRouter()
+
   const handleMenuState = () => {
     setMenuState(!menuState)
   }
@@ -87,6 +91,17 @@ const NavBar = ({ state }: { state: string }) => {
     }
   }, [controlNavbar])
 
+  const handleSearchSubmit = (event: React.FormEvent<HTMLFormElement>) => {
+    event.preventDefault()
+    if (searchQuery.trim() !== '') {
+      router.push(`/search?q=${encodeURIComponent(searchQuery)}`)
+    }
+  }
+
+  const handleSearchChange = (event: React.ChangeEvent<HTMLInputElement>) => {
+    setSearchQuery(event.target.value)
+  }
+
   return (
     <div className="w-full fixed top-0 sm:px-10 px-6">
       <div
@@ -110,25 +125,31 @@ const NavBar = ({ state }: { state: string }) => {
           MENU
         </div>
       </div>
-      <div
-        onClick={handleMenuState}
-        className={`${menuState ? 'block' : 'hidden'} w-full h-screen `}
-      >
+      <div className={`${menuState ? 'flex' : 'hidden'} w-full h-screen`}>
+        <div
+          onClick={handleMenuState}
+          className="w-full h-screen absolute top-0 left-0"
+        ></div>
         <div className="absolute w-[300px] h-screen top-0 right-0 overflow-y-auto bg-white shadow-xl">
-          <div className="w-full p-9">
+          <div className="fixed p-9 pt-12 w-[300px] bg-white flex items-center justify-end">
             <IoMdClose
-              size={24}
+              size={32}
               onClick={handleMenuState}
-              className="ml-auto cursor-pointer"
+              className="cursor-pointer fixed"
             />
+          </div>
+          <div className="w-full p-9 mt-3">
             <div className="mt-6 w-full flex justify-between items-center py-4 ">
-              <input
-                type="text"
-                placeholder="Search"
-                // value={"SEARCH"}
-                className="w-44 uppercase text-lg outline-none text-black"
-              />
-              <RiSearchLine size={20} />
+              <form onSubmit={handleSearchSubmit}>
+                <input
+                  type="text"
+                  placeholder="Search"
+                  value={searchQuery}
+                  onChange={handleSearchChange}
+                  className="w-44 uppercase text-lg outline-none text-black"
+                />
+              </form>
+              <RiSearchLine size={18} />
             </div>
             <div className="mt-4 w-full">
               <p className="text-sm text-gray-500 uppercase">Categories</p>
@@ -136,6 +157,7 @@ const NavBar = ({ state }: { state: string }) => {
                 {menuList.map((item, idx) => (
                   <li
                     key={idx}
+                    onClick={handleMenuState}
                     className="py-1 hover:underline hover:underline-offset-4"
                   >
                     <Link href={`/${item.category}`}>{item.category}</Link>

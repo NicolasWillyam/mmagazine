@@ -62,7 +62,7 @@ export function PostPreviewLarge({
             style={{
               backgroundImage: `url('${urlForImage(coverImage).url()}')`,
             }}
-            className="w-full h-[300px] sm:h-[550px] bg-cover bg-no-repeat bg-center"
+            className="w-full h-[300px] sm:h-[550px] 2xl:h-[700px] bg-cover bg-no-repeat bg-center"
           />
         </Link>
 

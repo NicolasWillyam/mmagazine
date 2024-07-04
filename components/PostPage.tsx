@@ -1,5 +1,5 @@
 'use client'
-import Container from 'components/BlogContainer'
+
 import BlogHeader from 'components/BlogHeader'
 import Layout from 'components/BlogLayout'
 import MoreStories from 'components/MoreStories'
@@ -31,6 +31,7 @@ import { HiArrowLongRight } from 'react-icons/hi2'
 
 import { Button } from './ui/button'
 import Head from 'next/head'
+import { BlogContainer } from './BlogContainer'
 
 export interface PostPageProps {
   preview?: boolean
@@ -86,7 +87,7 @@ export default function PostPage(props: PostPageProps) {
       <>
         <NavBar state="black" />
         <Layout preview={preview} loading={loading}>
-          <Container>
+          <BlogContainer>
             {preview && !post ? (
               <PostTitle>
                 <div className="w-full h-screen flex items-center justify-center text-2xl">
@@ -110,7 +111,7 @@ export default function PostPage(props: PostPageProps) {
                 {/* {morePosts?.length > 0 && <MoreStories posts={morePosts} />} */}
               </>
             )}
-          </Container>
+          </BlogContainer>
         </Layout>
       </>
     )

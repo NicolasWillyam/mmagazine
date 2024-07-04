@@ -1,4 +1,4 @@
-import Container from 'components/BlogContainer'
+import { BlogContainer, Container } from 'components/BlogContainer'
 import BlogHeader from 'components/BlogHeader'
 import Layout from 'components/BlogLayout'
 import HeroPost from 'components/HeroPost'
@@ -6,14 +6,14 @@ import IndexPageHead from 'components/IndexPageHead'
 import MoreStories from 'components/MoreStories'
 import IntroTemplate from 'intro-template'
 import * as demo from 'lib/demo.data'
+import { getAllOfPosts } from 'lib/sanity.client'
 import type { Post, Settings } from 'lib/sanity.queries'
+import { useEffect, useState } from 'react'
 
 import { ArticleSuggestCard } from './ArticleCard'
 import Footer from './Footer'
 import NavBar from './NavBar'
 import { SuggestPost } from './SuggestPost'
-import { useEffect, useState } from 'react'
-import { getAllOfPosts } from 'lib/sanity.client'
 
 export interface IndexPageProps {
   preview?: boolean
@@ -45,6 +45,10 @@ export default function IndexPage(props: IndexPageProps) {
   console.log('All Post', allPosts)
   const [heroPost, ...morePosts] = allPosts || []
 
+  if (loading) {
+    return <>loading</>
+  }
+
   return (
     <>
       <NavBar state="black" />
@@ -52,7 +56,7 @@ export default function IndexPage(props: IndexPageProps) {
 
       {/* <Layout preview={preview} loading={loading}> */}
       <div className="h-auto sm:min-h-screen w-full mx-auto">
-        <Container>
+        <BlogContainer>
           {/* <BlogHeader title={title} description={description} level={1} /> */}
           {heroPost && (
             <HeroPost
@@ -70,9 +74,9 @@ export default function IndexPage(props: IndexPageProps) {
             <SuggestPost posts={morePosts} />
           </div>
           <div className="xl:max-w-[1440px] 2xl:max-w-[1920px] mx-auto">
-            {morePosts.length > 0 && <MoreStories posts={morePosts} />}
+            {morePosts.length > 0 && <MoreStories />}
           </div>
-        </Container>
+        </BlogContainer>
       </div>
 
       {/* <IntroTemplate /> */}
