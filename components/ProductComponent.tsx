@@ -40,12 +40,14 @@ export const ProductComponent = (props: Props) => {
 
   return (
     <>
-      <div className="w-full py-6 grid grid-cols-1 gap-6">
-        <div className="border-y-[1px] border-black py-6 mt-6">
-          <p className="text-[40px] leading-[54px] font-normal">{caption}</p>
+      <div className="w-full py-3 sm:py-6 grid grid-cols-1 gap-6">
+        <div className="border-y-[1px] border-black py-3 sm:py-6 mt-6">
+          <p className="text-xl sm:text-[40px] sm:leading-[54px] font-normal">
+            {caption}
+          </p>
         </div>
         {product.length === 1 ? (
-          <div className="w-1/2 mx-auto grid grid-cols-1 gap-6">
+          <div className="w-full sm:w-1/2 mx-auto grid grid-cols-1 gap-6">
             {product.map((product) => (
               <div key={product._key}>
                 <ProductCard
@@ -60,7 +62,7 @@ export const ProductComponent = (props: Props) => {
             ))}
           </div>
         ) : (
-          <div className="w-full grid grid-cols-2 gap-6">
+          <div className="w-full grid sm:grid-cols-2 gap-6">
             {product.map((product) => (
               <div key={product._key}>
                 <ProductCard
