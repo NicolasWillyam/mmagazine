@@ -24,7 +24,7 @@ export const SanityImage = (props: Props) => {
         className="my-6"
       />
       {caption && (
-        <figcaption className="mb-6 text-sm font-light text-pretty">
+        <figcaption className="mb-6 text-sm font-normal text-[#86868b] text-pretty">
           {caption}
         </figcaption>
       )}

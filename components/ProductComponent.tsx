@@ -1,94 +1,82 @@
-/**
- * This component uses Portable Text to render a post body.
- *
- * You can learn more about Portable Text on:
- * https://www.sanity.io/docs/block-content
- * https://github.com/portabletext/react-portabletext
- * https://portabletext.org/
- *
- */
-import Error from 'next/error'
-import { Cormorant_Garamond, Inter } from 'next/font/google'
+import type { SanityImageSource } from '@sanity/image-url/lib/types/types'
+import { getSanityImageConfig } from 'lib/sanity.client'
 import Image from 'next/image'
-import { PortableText, type PortableTextReactComponents } from 'next-sanity'
-import React from 'react'
-import { ImLink } from 'react-icons/im'
-import { RiFacebookFill } from 'react-icons/ri'
-import { RiTwitterXFill } from 'react-icons/ri'
-import { TbMailFilled } from 'react-icons/tb'
-
-import NavBar from './NavBar'
-
-const garamond = Cormorant_Garamond({
-  subsets: ['latin', 'vietnamese'],
-  weight: ['300', '400', '500', '600', '700'],
-})
-const inter = Inter({ subsets: ['latin'] })
-import { Post } from 'lib/sanity.queries'
-import Link from 'next/link'
+import { useNextSanityImage } from 'next-sanity-image'
 import { HiArrowLongRight } from 'react-icons/hi2'
-
-import EmailForm from './EmailForm'
-import styles from './PostBody.module.css'
-import { ProductComponent } from './ProductComponent'
-import { SanityImage } from './SanityImage'
-import SanityVideo from './SanityVideo'
-import { SuggestPostInPostBody } from './SuggestPost'
 import { Button } from './ui/button'
+import Link from 'next/link'
+import ProductCard from './ProductCard'
 
-const myPortableTextComponents: Partial<PortableTextReactComponents> = {
-  types: {
-    image: ({ value }) => {
-      return <SanityImage {...value} />
-    },
-    video: ({ value }) => {
-      return <SanityVideo {...value} />
-    },
-    product: ({ value }) => {
-      return <ProductComponent {...value} />
-    },
-    // product: ProductComponent,
-  },
-  block: {
-    h1: ({ children }) => <h1 className="text-3xl font-bold">{children}</h1>,
-    h2: ({ children }) => <h2 className="text-2xl font-normal">{children}</h2>,
-    h3: ({ children }) => <h3 className="text-1xl font-normal">{children}</h3>,
-    normal: ({ children }) => (
-      <p className="text-base my-4 sm:text-lg sm:my-6">{children}</p>
-    ),
-  },
+export interface ProductProps {
+  _key?: string
+  _type?: string
+  type?: string
+  name: string
+  brand: string
+  price: number
+  product_link?: string
+  order_link?: string
+  image: {
+    _type: string
+    asset: {
+      /* asset details */
+    }
+  }
+  // Add other fields as needed
 }
 
-export default function PostBody({
-  posts,
-  content,
-}: {
-  posts: Post[]
-  content: any
-}) {
-  console.log(content)
+interface Props {
+  caption: string
+  product: ProductProps[]
+}
+
+export const ProductComponent = (props: Props) => {
+  const { caption, product } = props
+  // const imageProps = useNextSanityImage(getSanityImageConfig(), asset)
+
+  // if (!imageProps) return null
+
+  console.log(product)
+
   return (
-    // <div className={`mx-auto max-w-2xl ${styles.portableText}`}>
-    //   <PortableText value={content} components={myPortableTextComponents} />
-    // </div>
-    <div className="max-w-[1280px] mx-auto flex mt-6 sm:mt-20">
-      <div className="hidden sm:block sm:w-2/5 h-auto mt-48">
-        <div className="text-left py-auto max-w-[350px] mx-auto">
-          <EmailForm />
-          <SuggestPostInPostBody posts={posts} />
+    <>
+      <div className="w-full py-6 grid grid-cols-1 gap-6">
+        <div className="border-y-[1px] border-black py-6 mt-6">
+          <p className="text-[40px] leading-[54px] font-normal">{caption}</p>
         </div>
-      </div>
-
-      <div className="sm:w-3/5 px-4 sm:px-0">
-        <div className="text-lg font-light grid grid-cols-1 gap-6 sm:pr-14">
-          <div className={inter.className}>
-            <PortableText
-              value={content}
-              components={myPortableTextComponents}
-            />
+        {product.length === 1 ? (
+          <div className="w-1/2 mx-auto grid grid-cols-1 gap-6">
+            {product.map((product) => (
+              <div key={product._key}>
+                <ProductCard
+                  name={product.name}
+                  brand={product.brand}
+                  price={product.price}
+                  product_link={product.product_link}
+                  order_link={product.order_link}
+                  image={product.image}
+                />
+              </div>
+            ))}
           </div>
-
-          {/* <div className={inter.className}>
+        ) : (
+          <div className="w-full grid grid-cols-2 gap-6">
+            {product.map((product) => (
+              <div key={product._key}>
+                <ProductCard
+                  name={product.name}
+                  brand={product.brand}
+                  price={product.price}
+                  product_link={product.product_link}
+                  order_link={product.order_link}
+                  image={product.image}
+                />
+              </div>
+            ))}
+          </div>
+        )}
+      </div>
+      {/* <div className={inter.className}>
             <div className="w-full py-6 grid grid-cols-1 gap-6">
               <div className="border-y-[1px] border-black py-6 mt-6">
                 <p className="text-[40px] leading-[54px]">Sleek Dresses</p>
@@ -143,8 +131,6 @@ export default function PostBody({
               </div>
             </div>
           </div> */}
-        </div>
-      </div>
-    </div>
+    </>
   )
 }
