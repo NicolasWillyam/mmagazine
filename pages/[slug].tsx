@@ -12,12 +12,13 @@ import { Post } from 'lib/sanity.queries'
 import { GetStaticPaths, GetStaticProps } from 'next'
 import Head from 'next/head'
 import { useRouter } from 'next/router'
+import { slugToCategory } from 'utils/function'
 
 export default function CategoryPosts({
   category,
   posts,
 }: {
-  category: string
+  category: string;
   posts: Post[]
 }) {
   const router = useRouter()
@@ -37,7 +38,7 @@ export default function CategoryPosts({
   return (
     <>
       <Head>
-        <title>{category}</title>
+        <title>{slugToCategory(category)}</title>
         <meta
           property="og:image"
           content={heroPost?.coverImage?.url || '/logo-black.svg'}
@@ -73,7 +74,7 @@ export default function CategoryPosts({
               comming soon
             </p>
             <p>
-              Hãy chờ đợi những bài viết chất lượng về {category} đến từ chúng
+              Hãy chờ đợi những bài viết chất lượng về {slugToCategory(category)} đến từ chúng
               tôi.
             </p>
           </div>
