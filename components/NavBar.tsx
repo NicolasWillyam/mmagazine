@@ -1,3 +1,4 @@
+import { fetchCategories } from 'lib/sanity.client'
 import Image from 'next/image'
 import Link from 'next/link'
 import { useRouter } from 'next/router'
@@ -6,15 +7,14 @@ import { IoMdClose } from 'react-icons/io'
 import { IoLogoInstagram } from 'react-icons/io5'
 import { RiSearchLine } from 'react-icons/ri'
 import { RiFacebookFill } from 'react-icons/ri'
-import { fetchCategories } from 'lib/sanity.client'
 
 export interface Menu {
-  name: string;
-  slug?: Slug;
+  name: string
+  slug?: Slug
 }
 
 type Slug = {
-  current: string;
+  current: string
   _type: 'slug'
 }
 
@@ -68,10 +68,10 @@ const NavBar = ({ state }: { state: string }) => {
 
   const handleGetCategories = async () => {
     const categories = await fetchCategories()
-    if(!categories) return
+    if (!categories) return
     setMenuList(categories)
   }
-  
+
   return (
     <div className="w-full fixed top-0 sm:px-10 px-6">
       <div

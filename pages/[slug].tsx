@@ -18,7 +18,7 @@ export default function CategoryPosts({
   category,
   posts,
 }: {
-  category: string;
+  category: string
   posts: Post[]
 }) {
   const router = useRouter()
@@ -74,8 +74,8 @@ export default function CategoryPosts({
               comming soon
             </p>
             <p>
-              Hãy chờ đợi những bài viết chất lượng về {slugToCategory(category)} đến từ chúng
-              tôi.
+              Hãy chờ đợi những bài viết chất lượng về{' '}
+              {slugToCategory(category)} đến từ chúng tôi.
             </p>
           </div>
         </div>

@@ -12,6 +12,6 @@ export default defineType({
       title: 'Email',
       type: 'string',
       validation: (rule) => rule.required(),
-    })
+    }),
   ],
 })

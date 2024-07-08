@@ -1,10 +1,10 @@
-import React from 'react'
-
-import { ArticleSuggestCard } from './ArticleCard'
+import { urlForImage } from 'lib/sanity.image'
 import { Post } from 'lib/sanity.queries'
 import Link from 'next/link'
-import { urlForImage } from 'lib/sanity.image'
+import React from 'react'
 import category from 'schemas/category'
+
+import { ArticleSuggestCard } from './ArticleCard'
 
 export const SuggestPost = ({ posts }: { posts: Post[] }) => {
   return (

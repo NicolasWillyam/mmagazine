@@ -45,7 +45,7 @@ async function getPostsByCategoryName(cate: string) {
 }
 
 export default function MoreBlogInCategory({ posts }: { posts: Post[] }) {
-  console.log("first", posts)
+  console.log('first', posts)
   const [categoriesWithPosts, setCategoriesWithPosts] = useState<
     { category: Category; posts: Post[] }[]
   >([])

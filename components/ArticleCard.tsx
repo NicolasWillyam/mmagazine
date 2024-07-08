@@ -1,7 +1,7 @@
 /* eslint-disable @next/next/no-img-element */
+import Date from 'components/PostDate'
 import { urlForImage } from 'lib/sanity.image'
 import { Post } from 'lib/sanity.queries'
-import Date from 'components/PostDate'
 import Link from 'next/link'
 import React from 'react'
 

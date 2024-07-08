@@ -1,10 +1,10 @@
 import Image from 'next/image'
-import React from 'react'
-import { TfiHeadphoneAlt } from 'react-icons/tfi'
-import { RiFacebookFill } from 'react-icons/ri'
-import { IoLogoInstagram } from 'react-icons/io5'
-import { RiTwitterXFill } from 'react-icons/ri'
 import Link from 'next/link'
+import React from 'react'
+import { IoLogoInstagram } from 'react-icons/io5'
+import { RiFacebookFill } from 'react-icons/ri'
+import { RiTwitterXFill } from 'react-icons/ri'
+import { TfiHeadphoneAlt } from 'react-icons/tfi'
 
 interface Footer {
   name: string

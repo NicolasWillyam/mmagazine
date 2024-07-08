@@ -6,18 +6,19 @@ import {
   useCdn,
 } from 'lib/sanity.api'
 import {
+  categoriesQuery,
+  Category,
   indexQuery,
   type Post,
   postAndMoreStoriesQuery,
   postBySlugQuery,
+  postsByCategoryQuery,
   postSlugsQuery,
   type Settings,
   settingsQuery,
-  postsByCategoryQuery,
-  categoriesQuery,
-  Category,
 } from 'lib/sanity.queries'
 import { createClient, type SanityClient } from 'next-sanity'
+
 import { client } from './sanity'
 
 export function getClient(preview?: { token: string }): SanityClient {
@@ -212,7 +213,6 @@ export async function addUserToList(email: string) {
     console.error('Failed to add user to list:', error)
     return []
   }
-
 }
 
 // export async function fetchCategories(): Promise<Category[]> {
