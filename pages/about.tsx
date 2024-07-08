@@ -48,8 +48,8 @@ const PrivacyPolicy = () => {
             <p className="font-bold text-lg ">
               Mọi thông tin quảng cáo, xin vui lòng liên hệ:
             </p>
-            <p>Mr. Ngô Quốc Sơn</p>
-            <p>Email: sonngo@mmagazinevietnam.com</p>
+            <p>Mrs. Trần Thanh Thảo</p>
+            <p>Email: thaotran@mmagazinevietnam.com</p>
           </div>
         </div>
       </div>

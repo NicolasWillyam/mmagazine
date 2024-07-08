@@ -29,7 +29,8 @@ const PrivacyPolicy = () => {
           <p className="font-bold text-lg">
             Mọi thông tin quảng cáo, xin vui lòng liên hệ:
           </p>
-          <p>sonngo@mmagazinevietnam.com</p>
+          <p>Mrs. Trần Thanh Thảo</p>
+          <p>Email: thaotran@mmagazinevietnam.com</p>
           <p>0703538930</p>
           <p>108 Mai Thị Lựu, phường Đa Kao, quận 1, thành phố Hồ Chí Minh</p>
         </div>

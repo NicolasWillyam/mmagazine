@@ -40,7 +40,7 @@ export const ProductComponent = (props: Props) => {
 
   return (
     <>
-      <div className="w-full py-3 sm:py-6 grid grid-cols-1 gap-6">
+      <div className="w-full py-3s sm:py-6 grid grid-cols-1 gap-6">
         <div className="border-y-[1px] border-black py-3 sm:py-6 mt-6">
           <p className="text-xl sm:text-[40px] sm:leading-[54px] font-normal">
             {caption}
