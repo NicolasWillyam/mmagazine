@@ -45,12 +45,15 @@ const NavBar = ({ state }: { state: string }) => {
   }, [lastScrollY])
 
   useEffect(() => {
-    handleGetCategories()
     window.addEventListener('scroll', controlNavbar)
     return () => {
       window.removeEventListener('scroll', controlNavbar)
     }
   }, [controlNavbar])
+
+  useEffect(() => {
+    handleGetCategories()
+  }, [])
 
   const handleSearchSubmit = (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault()

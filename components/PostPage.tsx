@@ -31,7 +31,7 @@ import { HiArrowLongRight } from 'react-icons/hi2'
 
 import { Button } from './ui/button'
 import Head from 'next/head'
-import { BlogContainer } from './BlogContainer'
+import BlogContainer from './BlogContainer'
 
 export interface PostPageProps {
   preview?: boolean

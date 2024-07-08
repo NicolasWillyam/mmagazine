@@ -201,6 +201,20 @@ export async function getCategoryBySlug(slug: string) {
   }
 }
 
+export async function addUserToList(email: string) {
+  try {
+    const data = await client.create({
+      _type: 'user',
+      email: email,
+    })
+    return data
+  } catch (error) {
+    console.error('Failed to add user to list:', error)
+    return []
+  }
+
+}
+
 // export async function fetchCategories(): Promise<Category[]> {
 //   const categories = await client.fetch(categoriesQuery)
 //   return categories

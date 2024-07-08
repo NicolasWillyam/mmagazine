@@ -55,7 +55,6 @@ export function PostPreviewLarge({
   slug,
 }: Omit<Post, '_id'>) {
   return (
-    <Link href={`/posts/${slug}`}>
       <div className="w-full">
         <Link href={`/posts/${slug}`}>
           <div
@@ -76,6 +75,5 @@ export function PostPreviewLarge({
           />
         </div>
       </div>
-    </Link>
   )
 }
