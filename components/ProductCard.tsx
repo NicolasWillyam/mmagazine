@@ -1,6 +1,5 @@
 import type { SanityImageSource } from '@sanity/image-url/lib/types/types'
 import { getSanityImageConfig } from 'lib/sanity.client'
-import { urlForImage } from 'lib/sanity.image'
 import Image from 'next/image'
 import Link from 'next/link'
 import { useNextSanityImage } from 'next-sanity-image'
@@ -8,15 +7,35 @@ import { HiArrowLongRight } from 'react-icons/hi2'
 
 import { ProductProps } from './ProductComponent'
 import { Button } from './ui/button'
-
-const ProductCard: React.FC<ProductProps> = (props) => {
+import { urlForImage } from 'lib/sanity.image'
+interface Props {
+  name: string
+  brand: string
+  price: number
+  product_link?: string
+  order_link?: string
+  image: {
+    _type: string
+    asset: {
+      _ref: string
+      _type: string
+    }
+  }
+  // Add other fields as needed
+}
+const ProductCard = (props: Props) => {
   const { name, brand, price, product_link, order_link, image } = props
   //   const imageProps = useNextSanityImage(getSanityImageConfig(), image.asset)
+  // const img = urlForImage(image).height(1000).width(1000).url()
+
+  // Check if image is defined and has the asset property
+  if (!image || !image.asset) {
+    return null // or some fallback UI if image is not available
+  }
+
   const img = urlForImage(image).height(1000).width(1000).url()
+  if (!img) return null
 
-  console.log(order_link)
-
-  if (!image) return null
   return (
     <>
       <div className="w-full border-black/50 mb-6">
