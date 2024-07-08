@@ -20,7 +20,8 @@ export interface ProductProps {
   image: {
     _type: string
     asset: {
-      /* asset details */
+      _ref: string
+      _type: string
     }
   }
   // Add other fields as needed
@@ -37,17 +38,19 @@ export const ProductComponent = (props: Props) => {
 
   // if (!imageProps) return null
 
-  console.log(product)
+  console.log(product[0].image.asset)
 
   return (
     <>
       <div className="w-full py-3s sm:py-6 grid grid-cols-1 gap-6">
-        <div className="border-y-[1px] border-black py-3 sm:py-6 mt-6">
-          <p className="text-xl sm:text-[40px] sm:leading-[54px] font-normal">
-            {caption}
-          </p>
-        </div>
-        {product.length === 1 ? (
+        {caption != null && (
+          <div className="border-y-[1px] border-black py-3 sm:py-6 mt-6">
+            <p className="text-xl sm:text-[40px] sm:leading-[54px] font-normal">
+              {caption}
+            </p>
+          </div>
+        )}
+        {product.length == 1 ? (
           <div className="w-full sm:w-1/2 mx-auto grid grid-cols-1 gap-6">
             {product.map((product) => (
               <div key={product._key}>
