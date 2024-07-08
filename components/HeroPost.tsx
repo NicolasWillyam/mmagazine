@@ -13,6 +13,7 @@ export default function HeroPost(
 ) {
   const { title, category, coverImage, date, excerpt, author, slug } = props
   const img = urlForImage(coverImage).height(1000).width(2000).url()
+  console.log(coverImage)
 
   return (
     <section>
