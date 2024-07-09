@@ -1,13 +1,12 @@
 import type { SanityImageSource } from '@sanity/image-url/lib/types/types'
 import { getSanityImageConfig } from 'lib/sanity.client'
+import { urlForImage } from 'lib/sanity.image'
 import Image from 'next/image'
 import Link from 'next/link'
 import { useNextSanityImage } from 'next-sanity-image'
 import { HiArrowLongRight } from 'react-icons/hi2'
 
-import { ProductProps } from './ProductComponent'
 import { Button } from './ui/button'
-import { urlForImage } from 'lib/sanity.image'
 interface Props {
   name: string
   brand: string
