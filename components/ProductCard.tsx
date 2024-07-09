@@ -24,8 +24,6 @@ interface Props {
 }
 const ProductCard = (props: Props) => {
   const { name, brand, price, product_link, order_link, image } = props
-  //   const imageProps = useNextSanityImage(getSanityImageConfig(), image.asset)
-  // const img = urlForImage(image).height(1000).width(1000).url()
 
   // Check if image is defined and has the asset property
   if (!image || !image.asset) {
