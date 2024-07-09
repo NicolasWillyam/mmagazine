@@ -35,17 +35,19 @@ const ProductCard = (props: Props) => {
 
   return (
     <>
-      <div className="w-full border-black/50 mb-6">
+      <div className="w-full border-black/50 my-3 sm:my-6 h-auto">
         <div className="grid grid-cols-1 gap-6">
           <Link href={product_link} target="blank">
             <Image src={img} alt={'alt'} width={500} height={500} />
           </Link>
           <div>
-            <p className="text-base mb-3">{name}</p>
+            <p className="text-base mb-3 h-12">{name}</p>
             <p className="font-medium">${price}</p>
-            <p className="text-sm font-semibold uppercase underline underline-offset-2">
-              {brand}
-            </p>
+            <Link href={product_link} target="blank">
+              <p className="text-sm font-semibold uppercase underline underline-offset-2">
+                {brand}
+              </p>
+            </Link>
           </div>
           <Link href={order_link} target="blank">
             <Button

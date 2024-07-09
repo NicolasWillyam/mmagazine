@@ -16,13 +16,13 @@ export default function HeroPost(
   console.log(coverImage)
 
   return (
-    <section>
+    <section className="px-4 pt-16">
       <Link href={`/posts/${slug}`}>
         <div
           style={{
             backgroundImage: `url('${img}')`,
           }}
-          className="w-full lg:h-[800px] h-[300px] bg-cover bg-no-repeat bg-center"
+          className="w-full lg:h-[800px] h-[450px] bg-cover bg-no-repeat bg-center"
         >
           <div className="hidden lg:flex w-full h-full bg-black/30 items-center justify-center">
             <div className="w-[540px] text-center text-white p-6 grid grid-cols-1 gap-3">
@@ -43,7 +43,7 @@ export default function HeroPost(
           </div>
         </div>
         <div className="lg:hidden w-full h-full flex items-center justify-center">
-          <div className="w-full py-6 px-4 grid grid-cols-1 gap-3">
+          <div className="w-full py-6 grid grid-cols-1 gap-3">
             <p className="uppercase text-base underline underline-offset-2">
               {category.name}
             </p>
