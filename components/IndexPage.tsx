@@ -42,7 +42,7 @@ export default function IndexPage(props: IndexPageProps) {
 
     fetchPosts()
   }, [])
-  console.log('All Post', allPosts)
+
   const [heroPost, ...morePosts] = allPosts || []
 
   if (loading) {

@@ -6,7 +6,6 @@ import Link from 'next/link'
 import { useNextSanityImage } from 'next-sanity-image'
 import { HiArrowLongRight } from 'react-icons/hi2'
 
-import { ProductProps } from './ProductComponent'
 import { Button } from './ui/button'
 interface Props {
   name: string

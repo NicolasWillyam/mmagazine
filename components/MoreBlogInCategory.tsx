@@ -80,62 +80,6 @@ export default function MoreBlogInCategory({ posts }: { posts: Post[] }) {
 
   return (
     <section className="max-w-[1920px] mx-auto sm:px-9 my-20 grid grid-cols-1 gap-y-20">
-      {/* {categoriesWithPosts.map(({ category, posts }, index) => {
-        if (index % 2 == 0) {
-          return (
-            <div key={index}>
-              <h2 className="text-xl ml-4 sm:ml-0 leading-tight mb-6 uppercase">
-                {category.name}
-              </h2>
-              <div className="grid grid-cols-1 gap-y-20 sm:grid-cols-3 gap-4">
-                {posts.map((post, index) => {
-                  if (index < 3) {
-                    return (
-                      <PostPreview
-                        key={post._id}
-                        title={post.title}
-                        category={post.category}
-                        coverImage={post.coverImage}
-                        date={post.date}
-                        author={post.author}
-                        slug={post.slug}
-                        excerpt={post.excerpt}
-                      />
-                    )
-                  }
-                })}
-              </div>
-            </div>
-          )
-        } else {
-          return (
-            <div key={index}>
-              <h2 className="text-xl ml-4 leading-tight mb-6 uppercase">
-                {category.name}
-              </h2>
-
-              <div className="max-w-[1200px] mx-auto mt-6 grid sm:grid-cols-2 gap-[72px]">
-                {posts.map((post, index) => {
-                  if (index < 2) {
-                    return (
-                      <PostPreviewLarge
-                        key={post._id}
-                        title={post.title}
-                        category={post.category}
-                        coverImage={post.coverImage}
-                        date={post.date}
-                        author={post.author}
-                        slug={post.slug}
-                        excerpt={post.excerpt}
-                      />
-                    )
-                  }
-                })}
-              </div>
-            </div>
-          )
-        }
-      })} */}
       <div className="grid grid-cols-1 gap-y-20">
         {posts.map((post, index) => {
           // Determine the appropriate grid class based on the index
