@@ -90,7 +90,7 @@ const NavBar = ({ state }: { state: string }) => {
         </Link>
         <div
           onClick={handleMenuState}
-          className={`uppercase font-semibold text-base sm:text-xl mr-4 sm:mr-8 cursor-pointer text-${state}`}
+          className={`uppercase font-semibold text-base sm:text-xl sm:mr-8 cursor-pointer text-${state}`}
         >
           MENU
         </div>
