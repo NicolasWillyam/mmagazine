@@ -77,14 +77,24 @@ export async function getPostAndMoreStories(
   return await client.fetch(postAndMoreStoriesQuery, { slug })
 }
 
-// Update function signature and return type
-// export async function getPostsByCategory(
-//   client: SanityClient,
-//   categoryName: string,
-// ): Promise<Post[]> {
-//   const posts = await client.fetch(postsByCategoryQuery, { categoryName })
-//   return posts
-// }
+export async function fetchCategories() {
+  const query = `*[_type == "category"] | order(_updatedAt desc) {
+    name,
+    slug
+  }`
+  const data: Category[] = await client.fetch(query)
+  return data
+}
+
+export async function getPostsByCategoryName(cate: string) {
+  try {
+    const result = await getPostsByCategory({ params: cate })
+    return result.posts.length > 0 ? result.posts : null
+  } catch (error) {
+    console.error(error)
+    return null
+  }
+}
 
 export async function getAllOfPosts() {
   try {
@@ -122,7 +132,7 @@ export async function getAllOfPosts() {
 export async function getPostsByCategory({ params }: { params: string }) {
   try {
     const data = await client.fetch(
-      `*[_type == "post" && category->slug.current == '${params}'] | order(date desc) {
+      `*[_type == "post" && category->name == '${params}'] | order(date desc) {
         _id,
         title,
         content,
@@ -150,41 +160,6 @@ export async function getPostsByCategory({ params }: { params: string }) {
       body: new Error('Internal Server Error'),
     }
   }
-}
-
-export async function getPostsByCategoryName(categoryName: string) {
-  const query = `
-    *[_type == "post" && category->name == $categoryName] | order(date desc) {
-     _id,
-        title,
-        date,
-        content,
-        _updatedAt,
-        excerpt,
-        coverImage,
-        "slug": slug.current,
-        "author": author->{name},
-        "category": category->{name},
-    }
-  `
-  const params = { categoryName }
-  try {
-    const posts = await client.fetch(query, params)
-    return posts
-  } catch (error) {
-    console.error('Failed to fetch posts:', error)
-    return []
-  }
-}
-
-export async function fetchCategories() {
-  const categories = await client.fetch(
-    `*[_type == "category"] {
-    name,
-    slug
-  }`,
-  )
-  return categories
 }
 
 export async function getCategoryBySlug(slug: string) {

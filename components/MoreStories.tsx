@@ -2,60 +2,35 @@
 import { createClient } from '@sanity/client'
 import { PostPreview, PostPreviewLarge } from 'components/PostPreview'
 import { client } from 'lib/sanity'
-import { getPostsByCategory } from 'lib/sanity.client'
+import {
+  fetchCategories,
+  getPostsByCategory,
+  getPostsByCategoryName,
+} from 'lib/sanity.client'
 import { Category, type Post, postFields } from 'lib/sanity.queries'
 import { groq } from 'next-sanity'
 import React, { useEffect, useState } from 'react'
 
-export async function fetchCategories() {
-  const query = `*[_type == "category"] { name }`
-  const data = await client.fetch(query)
-  return data
-}
-
-const categoryList: Category[] = [
-  { name: 'M for Men' },
-  { name: 'Style' },
-  { name: 'Beauty' },
-  { name: 'Lifestyle' },
-  { name: 'Add to cart' },
-  { name: 'Money & Finance' },
-  { name: 'Celebrity' },
-  { name: 'M for Career' },
-  { name: 'Watches & Jewelry' },
-  { name: 'Runway' },
-  { name: 'Opinion' },
-  { name: 'Technology' },
-  { name: 'Art & Design' },
-  { name: 'M Make It' },
-  { name: 'Business' },
-  { name: 'Culture' },
-  { name: 'Voyage & Gourmet' },
-]
-
-async function getPostsByCategoryName(cate: string) {
-  try {
-    const result = await getPostsByCategory({ params: cate })
-    return result.posts.length > 0 ? result.posts : null
-  } catch (error) {
-    console.error(error)
-    return null
-  }
-}
-
-export default function MoreStories() {
+export default function MoreStories({ posts }: { posts: Post[] }) {
   const [categoriesWithPosts, setCategoriesWithPosts] = useState<
     { category: Category; posts: Post[] }[]
   >([])
 
+  const [categoryList, setCategoryList] = useState<Category[]>([])
+
   useEffect(() => {
     const fetchCategoriesWithPosts = async () => {
       try {
+        const categories: Category[] = await fetchCategories() // Fetch categories
+        setCategoryList(categories) // Update categoryList state with fetched categories
+
+        console.log(categories)
+
+        // Fetch posts for each category in parallel
         const results = await Promise.all(
-          categoryList.map(async (category) => {
+          categories.map(async (category) => {
             const posts = await getPostsByCategoryName(category.name)
-            // console.log('posts', posts)
-            return posts ? { category, posts } : null
+            return posts ? { category, posts } : null // Return category and associated posts if posts exist
           }),
         )
 
@@ -73,8 +48,6 @@ export default function MoreStories() {
 
     fetchCategoriesWithPosts()
   }, [])
-
-  // console.log(posts[0])
 
   return (
     <section className="max-w-[1920px] mx-auto sm:px-9 my-20 grid grid-cols-1 gap-y-20">

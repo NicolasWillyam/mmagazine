@@ -43,7 +43,10 @@ export default function IndexPage(props: IndexPageProps) {
     fetchPosts()
   }, [])
 
-  const [heroPost, ...morePosts] = allPosts || []
+  const [heroPost, ...suggestPosts] = allPosts || []
+  const morePosts = allPosts.slice(3)
+
+  console.log(morePosts)
 
   if (loading) {
     return <>loading</>
@@ -71,10 +74,10 @@ export default function IndexPage(props: IndexPageProps) {
           )}
 
           <div className="max-w-[1920px] mx-auto">
-            <SuggestPost posts={morePosts} />
+            <SuggestPost posts={suggestPosts} />
           </div>
           <div className="xl:max-w-[1440px] 2xl:max-w-[1920px] mx-auto">
-            {morePosts.length > 0 && <MoreStories />}
+            {suggestPosts.length > 0 && <MoreStories posts={morePosts} />}
           </div>
         </BlogContainer>
       </div>

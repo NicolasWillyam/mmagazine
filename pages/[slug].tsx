@@ -4,6 +4,7 @@ import Layout from 'app/layout'
 import { Container } from 'components/BlogContainer'
 import Footer from 'components/Footer'
 import HeroPost from 'components/HeroPost'
+import LoadingSpinner from 'components/LoadingSpinner'
 import MoreBlogInCategory from 'components/MoreBlogInCategory'
 import NavBar from 'components/NavBar'
 import { SuggestPost } from 'components/SuggestPost'
@@ -70,13 +71,10 @@ export default function CategoryPosts({
       ) : (
         <div className="min-h-screen w-full flex items-center justify-center">
           <div className="text-center">
-            <p className="uppercase text-4xl font-semibold mb-2">
-              comming soon
-            </p>
-            <p>
-              Hãy chờ đợi những bài viết chất lượng về{' '}
-              {slugToCategory(category)} đến từ chúng tôi.
-            </p>
+            <div className=" flex items-center gap-3">
+              <LoadingSpinner />
+              <p className="text-2xl font-light">Loading...</p>
+            </div>
           </div>
         </div>
       )}
