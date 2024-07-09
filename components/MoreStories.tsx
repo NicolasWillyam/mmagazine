@@ -29,7 +29,7 @@ export default function MoreStories({ posts }: { posts: Post[] }) {
         // Fetch posts for each category in parallel
         const results = await Promise.all(
           categories.map(async (category) => {
-            const posts = await getPostsByCategoryName(category.name)
+            const posts = await getPostsByCategoryName(category.slug)
             return posts ? { category, posts } : null // Return category and associated posts if posts exist
           }),
         )
@@ -65,7 +65,7 @@ export default function MoreStories({ posts }: { posts: Post[] }) {
                       <PostPreview
                         key={post._id}
                         title={post.title}
-                        category={post.category}
+                        category={category}
                         coverImage={post.coverImage}
                         date={post.date}
                         author={post.author}
@@ -92,7 +92,7 @@ export default function MoreStories({ posts }: { posts: Post[] }) {
                       <PostPreviewLarge
                         key={post._id}
                         title={post.title}
-                        category={post.category}
+                        category={category}
                         coverImage={post.coverImage}
                         date={post.date}
                         author={post.author}

@@ -12,7 +12,6 @@ import {
   type Post,
   postAndMoreStoriesQuery,
   postBySlugQuery,
-  postsByCategoryQuery,
   postSlugsQuery,
   type Settings,
   settingsQuery,
@@ -80,7 +79,7 @@ export async function getPostAndMoreStories(
 export async function fetchCategories() {
   const query = `*[_type == "category"] | order(_updatedAt desc) {
     name,
-    slug
+    "slug": slug.current,
   }`
   const data: Category[] = await client.fetch(query)
   return data
@@ -132,7 +131,7 @@ export async function getAllOfPosts() {
 export async function getPostsByCategory({ params }: { params: string }) {
   try {
     const data = await client.fetch(
-      `*[_type == "post" && category->name == '${params}'] | order(date desc) {
+      `*[_type == "post" && category->slug.current == '${params}'] | order(date desc) {
         _id,
         title,
         content,

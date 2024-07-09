@@ -21,6 +21,7 @@ export function PostPreview({
   author,
   slug,
 }: Omit<Post, '_id'>) {
+  // console.log('category', category)
   return (
     <div className="w-full">
       <Link href={`/posts/${slug}`}>
@@ -34,7 +35,7 @@ export function PostPreview({
 
       <div className="grid grid-cols-1 gap-3 py-6 px-4">
         <PostDetails
-          category={category.name}
+          category={category}
           title={title}
           slug={slug}
           date={date}
@@ -54,6 +55,7 @@ export function PostPreviewLarge({
   author,
   slug,
 }: Omit<Post, '_id'>) {
+  // console.log('category', category)
   return (
     <div className="w-full">
       <Link href={`/posts/${slug}`}>
@@ -67,7 +69,7 @@ export function PostPreviewLarge({
 
       <div className="grid grid-cols-1 gap-3  py-6 px-4">
         <PostDetails
-          category={category.name}
+          category={category}
           title={title}
           slug={slug}
           date={date}

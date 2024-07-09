@@ -10,7 +10,7 @@ import { RiFacebookFill } from 'react-icons/ri'
 
 export interface Menu {
   name: string
-  slug?: Slug
+  slug: string
 }
 
 type Slug = {
@@ -130,7 +130,7 @@ const NavBar = ({ state }: { state: string }) => {
                     onClick={handleMenuState}
                     className="py-1 hover:underline hover:underline-offset-4"
                   >
-                    <Link href={`/${item.slug.current}`}>{item.name}</Link>
+                    <Link href={`/${item.slug}`}>{item.name}</Link>
                   </li>
                 ))}
               </ul>

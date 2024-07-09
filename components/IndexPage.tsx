@@ -8,12 +8,14 @@ import IntroTemplate from 'intro-template'
 import * as demo from 'lib/demo.data'
 import { getAllOfPosts } from 'lib/sanity.client'
 import type { Post, Settings } from 'lib/sanity.queries'
+import { useRouter } from 'next/router'
 import { useEffect, useState } from 'react'
 
 import { ArticleSuggestCard } from './ArticleCard'
 import Footer from './Footer'
 import NavBar from './NavBar'
 import { SuggestPost } from './SuggestPost'
+import LoadingSpinner from './LoadingSpinner'
 
 export interface IndexPageProps {
   preview?: boolean
@@ -23,10 +25,9 @@ export interface IndexPageProps {
 }
 
 export default function IndexPage(props: IndexPageProps) {
-  const { preview, loading, posts, settings } = props
-
+  const router = useRouter()
+  const { settings } = props
   const { title = demo.title, description = demo.description } = settings || {}
-
   const [allPosts, setAllPosts] = useState<Post[]>([])
 
   useEffect(() => {
@@ -39,7 +40,6 @@ export default function IndexPage(props: IndexPageProps) {
         // Handle error state if needed
       }
     }
-
     fetchPosts()
   }, [])
 
@@ -48,8 +48,15 @@ export default function IndexPage(props: IndexPageProps) {
 
   console.log(morePosts)
 
-  if (loading) {
-    return <>loading</>
+  if (router.isFallback) {
+    return (
+      <div className="min-h-screen w-full flex items-center justify-center">
+        <div className=" flex items-center gap-3">
+          <LoadingSpinner />
+          <p className="text-2xl font-light">Loading...</p>
+        </div>
+      </div>
+    )
   }
 
   return (

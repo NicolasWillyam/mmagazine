@@ -1,13 +1,14 @@
 'use client'
 import Date from 'components/PostDate'
+import { Category } from 'lib/sanity.queries'
 import Link from 'next/link'
 import React, { useEffect, useState } from 'react'
 
-export function CategoryNameComponent({ category }: { category: string }) {
+export function CategoryNameComponent({ category }: { category: Category }) {
   return (
-    <Link href={`/${category}`}>
+    <Link href={`/${category.slug}`}>
       <p className="uppercase text-base sm:text-lg underline underline-offset-2">
-        {category}
+        {category.name}
       </p>
     </Link>
   )
@@ -53,7 +54,7 @@ export function PostDetails({
   date,
   author,
 }: {
-  category: string
+  category: Category
   title: string
   slug: string
   date: string

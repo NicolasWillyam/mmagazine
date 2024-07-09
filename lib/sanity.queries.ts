@@ -55,20 +55,7 @@ export const postBySlugQuery = groq`
   ${postFields}
 }
 `
-// Query to filter posts by category name
-export const postsByCategoryQuery = groq`
-  *[_type == "post" && category->name == 'Style'] | order(date desc) {
-     _id,
-    title,
-    date,
-    _updatedAt,
-    excerpt,
-    coverImage,
-    "slug": slug.current,
-    "author": author->{name},
-    "category": category->{name},
-    }
-`
+
 export const categoriesQuery = groq`
   *[_type == "category"] {
     _id,
@@ -83,6 +70,7 @@ export interface Author {
 
 export interface Category {
   name: string
+  slug: string
 }
 
 export interface Post {
