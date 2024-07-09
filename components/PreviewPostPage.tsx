@@ -30,6 +30,8 @@ export default function PreviewPostPage(props: PostPageProps) {
       post={postPreview}
       morePosts={morePosts}
       settings={settings}
+      loadedStatus={null}
+      setLoadedStatus={null}
     />
   )
 }

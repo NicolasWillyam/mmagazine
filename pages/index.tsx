@@ -16,15 +16,7 @@ interface Query {
 }
 
 export default function Page(props: PageProps) {
-  const { posts, settings, draftMode } = props
-
-  console.log('POST', posts)
-  console.log('SETTING', settings)
-  console.log('DRAWFMODE', draftMode)
-
-  // if (draftMode) {
-  //   return <PreviewIndexPage posts={posts} settings={settings} />
-  // }
+  const { posts, settings } = props
 
   return <IndexPage posts={posts} settings={settings} />
 }
