@@ -26,12 +26,12 @@ const garamond = Cormorant_Garamond({
   weight: ['300', '400', '500', '600', '700'],
 })
 const inter = Inter({ subsets: ['latin'] })
+import Head from 'next/head'
 import Link from 'next/link'
 import { HiArrowLongRight } from 'react-icons/hi2'
 
+import BlogContainer from './BlogContainer'
 import { Button } from './ui/button'
-import Head from 'next/head'
-import { BlogContainer } from './BlogContainer'
 
 export interface PostPageProps {
   preview?: boolean
@@ -39,8 +39,8 @@ export interface PostPageProps {
   post: Post
   morePosts: Post[]
   settings: Settings
-  loadedStatus: Boolean
-  setLoadedStatus: Dispatch<SetStateAction<Boolean>>
+  loadedStatus?: Boolean
+  setLoadedStatus?: Dispatch<SetStateAction<Boolean>>
 }
 
 const NO_POSTS: Post[] = []

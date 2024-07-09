@@ -5,16 +5,25 @@ import Date from 'components/PostDate'
 import PostTitle from 'components/PostTitle'
 import { urlForImage } from 'lib/sanity.image'
 import type { Post } from 'lib/sanity.queries'
-import { ImLink } from 'react-icons/im'
-import { RiFacebookFill } from 'react-icons/ri'
-import { RiTwitterXFill } from 'react-icons/ri'
-import { TbMailFilled } from 'react-icons/tb'
-import category from 'schemas/category'
+import { usePathname } from 'next/navigation'
+import {
+  FacebookShareButton,
+  LinkedinShareButton,
+  PinterestShareButton,
+  TelegramShareButton,
+  WhatsappShareButton,
+} from 'next-share'
 import { AiOutlineMail } from 'react-icons/ai'
 import { FaPinterest } from 'react-icons/fa'
 import { FaLinkedinIn } from 'react-icons/fa6'
 import { FaWhatsapp } from 'react-icons/fa6'
+import { ImLink } from 'react-icons/im'
 import { LiaTelegram } from 'react-icons/lia'
+import { RiFacebookFill, RiInstagramFill } from 'react-icons/ri'
+import { RiTwitterXFill } from 'react-icons/ri'
+import { TbMailFilled } from 'react-icons/tb'
+import category from 'schemas/category'
+
 import { CategoryNameComponent } from './PostDetailComponents'
 
 export default function PostHeader(
@@ -25,6 +34,8 @@ export default function PostHeader(
 ) {
   const { title, category, coverImage, date, author, slug } = props
   const postImage = urlForImage(coverImage).height(1500).width(1000).url()
+  const pathname = usePathname()
+  const url = `${process.env.NEXT_PUBLIC_BASE_URL}${pathname}`
 
   return (
     <>
@@ -45,12 +56,22 @@ export default function PostHeader(
               </p>
             </div>
             <div className="sm:mx-auto flex items-center w-fit sm:mt-8 sm:mb-0 my-4 gap-4">
-              <AiOutlineMail size={20} />
-              <RiFacebookFill size={24} />
-              <FaPinterest size={20} />
-              <FaLinkedinIn size={20} />
-              <FaWhatsapp size={20} />
-              <LiaTelegram size={20} />
+              {/* <AiOutlineMail size={20} /> */}
+              <FacebookShareButton url={url}>
+                <RiFacebookFill size={24} />
+              </FacebookShareButton>
+              <PinterestShareButton url={url} media="">
+                <FaPinterest size={20} />
+              </PinterestShareButton>
+              <LinkedinShareButton url={url}>
+                <FaLinkedinIn size={20} />
+              </LinkedinShareButton>
+              <WhatsappShareButton url={url}>
+                <FaWhatsapp size={20} />
+              </WhatsappShareButton>
+              <TelegramShareButton url={url}>
+                <LiaTelegram size={20} />
+              </TelegramShareButton>
             </div>
           </div>
         </div>

@@ -1,3 +1,4 @@
+import { fetchCategories } from 'lib/sanity.client'
 import Image from 'next/image'
 import Link from 'next/link'
 import { useRouter } from 'next/router'
@@ -7,61 +8,20 @@ import { IoLogoInstagram } from 'react-icons/io5'
 import { RiSearchLine } from 'react-icons/ri'
 import { RiFacebookFill } from 'react-icons/ri'
 
-interface Menu {
-  category: string
+export interface Menu {
+  name: string
+  slug?: Slug
 }
 
-const menuList: Menu[] = [
-  {
-    category: 'Style',
-  },
-  {
-    category: 'Beauty',
-  },
-  {
-    category: 'Lifestyle',
-  },
-  {
-    category: 'Culture',
-  },
-  {
-    category: 'Celebrity',
-  },
-  {
-    category: 'Watches & Jewelry',
-  },
-  {
-    category: 'Business',
-  },
-  {
-    category: 'Runway',
-  },
-  {
-    category: 'Art & Design',
-  },
-  {
-    category: 'Voyages & Gourmet',
-  },
-  {
-    category: 'Technology',
-  },
-  {
-    category: 'M for Career',
-  },
-  {
-    category: 'M for MEN',
-  },
-  {
-    category: 'Money & Finance',
-  },
-  {
-    category: 'Shopping',
-  },
-]
+type Slug = {
+  current: string
+  _type: 'slug'
+}
 
 const NavBar = ({ state }: { state: string }) => {
   const [menuState, setMenuState] = useState(false)
   const [searchQuery, setSearchQuery] = useState('')
+  const [menuList, setMenuList] = useState<Menu[]>([])
   const router = useRouter()
 
   const handleMenuState = () => {
@@ -91,6 +51,10 @@ const NavBar = ({ state }: { state: string }) => {
     }
   }, [controlNavbar])
 
+  useEffect(() => {
+    handleGetCategories()
+  }, [])
+
   const handleSearchSubmit = (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault()
     if (searchQuery.trim() !== '') {
@@ -100,6 +64,12 @@ const NavBar = ({ state }: { state: string }) => {
 
   const handleSearchChange = (event: React.ChangeEvent<HTMLInputElement>) => {
     setSearchQuery(event.target.value)
+  }
+
+  const handleGetCategories = async () => {
+    const categories = await fetchCategories()
+    if (!categories) return
+    setMenuList(categories)
   }
 
   return (
@@ -154,13 +124,13 @@ const NavBar = ({ state }: { state: string }) => {
             <div className="mt-4 w-full">
               <p className="text-sm text-gray-500 uppercase">Categories</p>
               <ul className="w-full text-lg uppercase py-2 ">
-                {menuList.map((item, idx) => (
+                {menuList?.map((item, idx) => (
                   <li
                     key={idx}
                     onClick={handleMenuState}
                     className="py-1 hover:underline hover:underline-offset-4"
                   >
-                    <Link href={`/${item.category}`}>{item.category}</Link>
+                    <Link href={`/${item.slug.current}`}>{item.name}</Link>
                   </li>
                 ))}
               </ul>

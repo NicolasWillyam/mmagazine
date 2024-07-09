@@ -6,18 +6,19 @@ import {
   useCdn,
 } from 'lib/sanity.api'
 import {
+  categoriesQuery,
+  Category,
   indexQuery,
   type Post,
   postAndMoreStoriesQuery,
   postBySlugQuery,
+  postsByCategoryQuery,
   postSlugsQuery,
   type Settings,
   settingsQuery,
-  postsByCategoryQuery,
-  categoriesQuery,
-  Category,
 } from 'lib/sanity.queries'
 import { createClient, type SanityClient } from 'next-sanity'
+
 import { client } from './sanity'
 
 export function getClient(preview?: { token: string }): SanityClient {
@@ -121,7 +122,7 @@ export async function getAllOfPosts() {
 export async function getPostsByCategory({ params }: { params: string }) {
   try {
     const data = await client.fetch(
-      `*[_type == "post" && category->name == '${params}'] | order(date desc) {
+      `*[_type == "post" && category->slug.current == '${params}'] | order(date desc) {
         _id,
         title,
         content,
@@ -179,10 +180,39 @@ export async function getPostsByCategoryName(categoryName: string) {
 export async function fetchCategories() {
   const categories = await client.fetch(
     `*[_type == "category"] {
-    name
+    name,
+    slug
   }`,
   )
   return categories
+}
+
+export async function getCategoryBySlug(slug: string) {
+  const query = `
+    *[_type == "category" && slug.current == $slug] {
+      name
+    }`
+  const params = { slug }
+  try {
+    const category = await client.fetch(query, params)
+    return category
+  } catch (error) {
+    console.error('Failed to fetch category:', error)
+    return []
+  }
+}
+
+export async function addUserToList(email: string) {
+  try {
+    const data = await client.create({
+      _type: 'user',
+      email: email,
+    })
+    return data
+  } catch (error) {
+    console.error('Failed to add user to list:', error)
+    return []
+  }
 }
 
 // export async function fetchCategories(): Promise<Category[]> {

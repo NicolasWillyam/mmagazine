@@ -1,7 +1,7 @@
 'use client'
+import Date from 'components/PostDate'
 import Link from 'next/link'
 import React, { useEffect, useState } from 'react'
-import Date from 'components/PostDate'
 
 export function CategoryNameComponent({ category }: { category: string }) {
   return (
