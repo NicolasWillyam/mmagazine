@@ -5,6 +5,7 @@ import PostPageHead from 'components/PostPageHead'
 import PreviewPostPage from 'components/PreviewPostPage'
 import { readToken } from 'lib/sanity.api'
 import {
+  getAllPostsByCategory,
   getAllPostsSlugs,
   getClient,
   getPostAndMoreStories,
@@ -31,10 +32,12 @@ interface Query {
 
 const fetchPostsByCategory = async (
   categoryName: string,
+  title: string,
   setCategoriesWithPosts: Function,
 ) => {
   try {
-    const result = await getPostsByCategory({ params: categoryName })
+    console.log(categoryName, title)
+    const result = await getAllPostsByCategory({ categoryName, title })
     if (result?.posts?.length > 0) {
       setCategoriesWithPosts(result.posts)
     } else {
@@ -59,7 +62,11 @@ export default function ProjectSlugRoute(props: PageProps) {
   useEffect(() => {
     try {
       setTimeout(() => {
-        fetchPostsByCategory(post.category.name, setCategoriesWithPosts)
+        fetchPostsByCategory(
+          post.category.name,
+          post.title,
+          setCategoriesWithPosts,
+        )
         // setLoading(false)
       }, 10)
     } catch (error) {
@@ -67,7 +74,7 @@ export default function ProjectSlugRoute(props: PageProps) {
       // Handle error state if needed
       // setLoading(false)
     }
-  }, [post.category.name])
+  }, [post.category.name, post.title])
 
   // Loading state
 
@@ -90,6 +97,8 @@ export default function ProjectSlugRoute(props: PageProps) {
     )
   }
 
+  console.log(categoriesWithPosts)
+
   return (
     <>
       <PostPageHead post={post} />
@@ -100,6 +109,17 @@ export default function ProjectSlugRoute(props: PageProps) {
         loadedStatus={loadedStatus}
         setLoadedStatus={setLoadedStatus} // Update loadedStatus to false
       />
+      {categoriesWithPosts?.slice(0, 5)?.map((post, index) => (
+        <div key={index}>
+          <PostPage
+            post={post}
+            morePosts={morePosts}
+            settings={{}} // Pass your settings here
+            loadedStatus={loadedStatus}
+            setLoadedStatus={setLoadedStatus} // Update loadedStatus to false
+          />
+        </div>
+      ))}
     </>
   )
 }
