@@ -43,7 +43,7 @@ const SearchPage = () => {
   const fetchSearchResults = async (query: string) => {
     try {
       // Simulating a delay of 500ms before fetching results
-      await new Promise((resolve) => setTimeout(resolve, 500))
+      await new Promise((resolve) => setTimeout(resolve, 100))
 
       const results: Post[] = await filterPostsbyTitle(query)
       setSearchResults(results)

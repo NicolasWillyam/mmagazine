@@ -143,7 +143,7 @@ export async function getPostsByCategory({ params }: { params: string }) {
         coverImage,
         "slug": slug.current,
         "author": author->{name},
-        "category": category->{name},
+        "category": category->{name, "slug": slug.current},
         }`,
     )
 
