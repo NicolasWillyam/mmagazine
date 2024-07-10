@@ -16,8 +16,8 @@ export default function BlogMeta() {
       <meta name="msapplication-TileColor" content="#000000" />
       <meta name="msapplication-config" content="/favicon/browserconfig.xml" />
       <meta name="theme-color" content="#000" />
-      <meta property="og:image" content="/logo-black.svg" />
-      <meta name="twitter:image" content="/logo-black.svg" />
+      <meta property="og:image" content={logo_href} />
+      <meta name="twitter:image" content={logo_href} />
     </>
   )
 }

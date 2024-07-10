@@ -66,11 +66,7 @@ export default function PostBody({
   posts: Post[]
   content: any
 }) {
-  console.log(content)
   return (
-    // <div className={`mx-auto max-w-2xl ${styles.portableText}`}>
-    //   <PortableText value={content} components={myPortableTextComponents} />
-    // </div>
     <div className="max-w-[1280px] mx-auto flex mt-6 sm:mt-20">
       <div className="hidden sm:block sm:w-2/5 h-auto mt-48">
         <div className="text-left py-auto max-w-[350px] mx-auto">

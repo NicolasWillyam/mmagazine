@@ -56,8 +56,6 @@ export default function IndexPage(props: IndexPageProps) {
     )
   }
 
-  console.log(heroPost)
-
   return (
     <>
       <NavBar state="black" />

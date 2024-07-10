@@ -36,7 +36,6 @@ const SearchPage = () => {
   useEffect(() => {
     const { q } = router.query // Retrieve the query parameter 'q' from router
     setSearchQuery(q as string) // Set searchQuery state with the retrieved value
-    console.log('Call')
     fetchSearchResults(q as string) // Fetch initial search results
   }, [router.query])
 
@@ -48,7 +47,6 @@ const SearchPage = () => {
 
       const results: Post[] = await filterPostsbyTitle(query)
       setSearchResults(results)
-      console.log(results) // Fetch search results when search query changes
     } catch (error) {
       console.error('Error filtering posts:', error)
       // Handle error state or notify the user
@@ -61,7 +59,6 @@ const SearchPage = () => {
   ) => {
     const query = event.target.value
 
-    console.log(query) // Fetch search results when search query changes
     router.push(`/search?q=${query}`)
   }
 

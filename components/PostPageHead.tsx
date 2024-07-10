@@ -14,6 +14,7 @@ export default function PostPageHead({ post }: PostPageHeadProps) {
     <Head>
       <title>{post.title}</title>
       {/* <meta name="description" content="M MAGAZINE Vietnam" /> */}
+      <meta charSet="UTF-8" />
       <meta
         property="og:url"
         content={`https://www.mmagazinevietnam.com/posts/${post.slug}`}

@@ -2,7 +2,6 @@
 
 import BlogHeader from 'components/BlogHeader'
 import Layout from 'components/BlogLayout'
-import MoreStories from 'components/MoreStories'
 import PostBody from 'components/PostBody'
 import PostHeader from 'components/PostHeader'
 import PostPageHead from 'components/PostPageHead'
@@ -56,15 +55,13 @@ export default function PostPage(props: PostPageProps) {
     setLoadedStatus,
   } = props
 
-  console.log(post)
-
   useEffect(() => {
     const handleScroll = () => {
       if (
         window.innerHeight + window.scrollY >=
         document.documentElement.scrollHeight
       ) {
-        console.log('End')
+        // console.log('End')
         setLoadedStatus((prev) => true)
       }
     }

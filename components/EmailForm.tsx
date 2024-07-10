@@ -8,7 +8,6 @@ import { SuggestPostInPostBody } from './SuggestPost'
 const EmailForm = () => {
   const [email, setEmail] = useState<string>('')
   const handleSendMail = async (tmp: string) => {
-    console.log(tmp)
     // const res = await addUserToList(tmp)
   }
 

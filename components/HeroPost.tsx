@@ -9,7 +9,6 @@ import { CategoryNameComponent } from './PostDetailComponents'
 
 export default function HeroPost({ posts }: { posts: Post }) {
   const img = urlForImage(posts?.coverImage).height(1000).width(2000).url()
-  console.log(posts.category)
 
   return (
     <section>

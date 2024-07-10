@@ -34,11 +34,6 @@ interface Props {
 
 export const ProductComponent = (props: Props) => {
   const { caption, product } = props
-  // const imageProps = useNextSanityImage(getSanityImageConfig(), asset)
-
-  // if (!imageProps) return null
-
-  console.log(product[0].image.asset)
 
   return (
     <>

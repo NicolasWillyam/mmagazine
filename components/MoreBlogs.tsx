@@ -47,8 +47,6 @@ export default function MoreBlogs({ posts }: { posts: Post[] }) {
     fetchCategoriesWithPosts()
   }, [])
 
-  console.log(categoriesWithPosts)
-
   return (
     <section className="max-w-[1920px] mx-auto sm:px-4 xl:px-9 my-20 grid grid-cols-1 sm:gap-y-20">
       {categoriesWithPosts.map(({ category, posts }, index) => {

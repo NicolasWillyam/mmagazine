@@ -92,7 +92,7 @@ export interface Post {
 
 export interface Settings {
   title?: string
-  description?: any[]
+  description?: string
   ogImage?: {
     title?: string
   }

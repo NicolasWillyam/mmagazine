@@ -22,7 +22,6 @@ export function PostPreview({
   author,
   slug,
 }: Omit<Post, '_id'>) {
-  // console.log('category', category)
   return (
     <div className="w-full">
       <Link href={`/posts/${slug}`}>
@@ -58,7 +57,6 @@ export function PostPreviewLarge({
   author,
   slug,
 }: Omit<Post, '_id'>) {
-  // console.log('category', category)
   return (
     <div className="w-full">
       <Link href={`/posts/${slug}`}>
