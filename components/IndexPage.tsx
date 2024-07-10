@@ -62,7 +62,7 @@ export default function IndexPage(props: IndexPageProps) {
       <IndexPageHead settings={settings} />
 
       {/* <Layout preview={preview} loading={loading}> */}
-      <div className="h-auto sm:min-h-screen w-full mx-auto">
+      <div className="h-auto min-h-screen w-full mx-auto">
         <BlogContainer>
           {/* <BlogHeader title={title} description={description} level={1} /> */}
           {heroPost && <HeroPost posts={heroPost} />}
