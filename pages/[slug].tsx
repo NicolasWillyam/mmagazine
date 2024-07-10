@@ -5,16 +5,22 @@ import { Container } from 'components/BlogContainer'
 import Footer from 'components/Footer'
 import HeroPost from 'components/HeroPost'
 import LoadingSpinner from 'components/LoadingSpinner'
-import MoreBlogInCategory from 'components/MoreBlogInCategory'
 import NavBar from 'components/NavBar'
 import { SuggestPost } from 'components/SuggestPost'
+import useEventListener from 'hooks/userEventListener'
 import { fetchCategories, getPostsByCategory } from 'lib/sanity.client' // Adjust import path as per your project structure
 import { Post } from 'lib/sanity.queries'
 import { GetStaticPaths, GetStaticProps } from 'next'
+import dynamic from 'next/dynamic'
 import Head from 'next/head'
 import { useRouter } from 'next/router'
-import { useEffect, useState } from 'react'
+import { useCallback,useEffect, useState } from 'react'
 import { slugToCategory } from 'utils/function'
+
+const MoreBlogInCategory = dynamic(
+  () => import('components/MoreBlogInCategory'),
+  { ssr: false },
+)
 
 export default function CategoryPosts({
   category,
@@ -25,6 +31,15 @@ export default function CategoryPosts({
 }) {
   const router = useRouter()
   const [loading, setLoading] = useState(true) // Loading state
+  const [isShow, setIsShow] = useState(false)
+  const onScroll = useCallback((event) => {
+    if (typeof window === 'undefined') return
+    if (Math.round(window.scrollY) > 100) {
+      setIsShow(true)
+    }
+  }, [])
+
+  useEventListener('scroll', onScroll)
 
   useEffect(() => {
     const timer = setTimeout(() => {
@@ -65,7 +80,9 @@ export default function CategoryPosts({
 
           <Container>
             <SuggestPost posts={morePosts} />
-            {morePosts.length > 3 && <MoreBlogInCategory posts={morePosts} />}
+            {morePosts.length > 3 && isShow && (
+              <MoreBlogInCategory posts={morePosts} />
+            )}
           </Container>
         </div>
       ) : (
