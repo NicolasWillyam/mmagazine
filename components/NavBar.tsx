@@ -8,6 +8,8 @@ import { IoLogoInstagram } from 'react-icons/io5'
 import { RiSearchLine } from 'react-icons/ri'
 import { RiFacebookFill } from 'react-icons/ri'
 
+import styles from './styles.module.css'
+
 export interface Menu {
   name: string
   slug: string
@@ -22,7 +24,12 @@ const NavBar = ({ state }: { state: string }) => {
   const [menuState, setMenuState] = useState(false)
   const [searchQuery, setSearchQuery] = useState('')
   const [menuList, setMenuList] = useState<Menu[]>([])
+  const [menuOpen, setMenuOpen] = useState(false)
   const router = useRouter()
+
+  const toggleMenu = () => {
+    setMenuOpen(!menuOpen)
+  }
 
   const handleMenuState = () => {
     setMenuState(!menuState)
@@ -73,7 +80,7 @@ const NavBar = ({ state }: { state: string }) => {
   }
 
   return (
-    <div className="w-full fixed top-0 xl:px-10 px-6">
+    <div className="w-full fixed top-0 xl:px-10 px-6 z-[999px]">
       <div
         className={`sm:h-16 h-16 xl:max-w-[1440px] 2xl:max-w-[1920px] mx-auto flex items-center justify-end relative transition-opacity duration-300 ${
           show ? 'opacity-100' : 'opacity-0'
@@ -89,26 +96,27 @@ const NavBar = ({ state }: { state: string }) => {
           />
         </Link>
         <div
-          onClick={handleMenuState}
+          onClick={toggleMenu}
           className={`uppercase font-semibold text-base sm:text-xl cursor-pointer text-${state}`}
         >
           MENU
         </div>
       </div>
-      <div className={`${menuState ? 'flex' : 'hidden'} w-full h-screen`}>
-        <div
-          onClick={handleMenuState}
-          className="w-full h-screen absolute top-0 left-0"
-        ></div>
+      {/* Sidebar menu */}
+      <div
+        onClick={toggleMenu}
+        className={`${menuOpen ? 'bg-black/70 w-full h-screen absolute  top-0 left-0 ' : 'hidden'} `}
+      ></div>
+      <div className={`${styles.sidebar} ${menuOpen ? styles.open : ''}`}>
         <div className="absolute w-[300px] h-screen top-0 right-0 overflow-y-auto bg-white shadow-xl">
-          <div className="fixed p-9 pt-12 w-[300px] bg-white flex items-center justify-end">
+          <div className="fixed p-9 w-[300px] bg-white flex items-center justify-end">
             <IoMdClose
               size={32}
-              onClick={handleMenuState}
+              onClick={toggleMenu}
               className="cursor-pointer fixed"
             />
           </div>
-          <div className="w-full p-9 mt-3">
+          <div className="w-full p-9">
             <div className="mt-6 w-full flex justify-between items-center py-4 ">
               <form onSubmit={handleSearchSubmit}>
                 <input
@@ -127,7 +135,7 @@ const NavBar = ({ state }: { state: string }) => {
                 {menuList?.map((item, idx) => (
                   <li
                     key={idx}
-                    onClick={handleMenuState}
+                    onClick={toggleMenu}
                     className="py-1 hover:underline hover:underline-offset-4"
                   >
                     <Link href={`/${item.slug}`}>{item.name}</Link>

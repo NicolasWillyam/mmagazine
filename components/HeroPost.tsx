@@ -38,18 +38,22 @@ export default function HeroPost({ posts }: { posts: Post }) {
       </div>
       <div className="md:hidden w-full h-full flex items-center justify-center">
         <div className="w-full py-6 grid grid-cols-1 gap-3 px-4">
-          <p className="uppercase text-base underline underline-offset-2">
-            {posts.category.name}
-          </p>
-          <p className="text-[20px] leading-[24px]">{posts.title}</p>
-          <p className="text-base">{posts.description}</p>
-          <p className="text-sm font-light">
-            <span>
-              {' '}
-              <Date dateString={posts.date} />
-            </span>{' '}
-            by <span>{posts.author.name}</span>
-          </p>
+          <Link href={`/${posts.category.slug}`}>
+            <p className="uppercase text-base underline underline-offset-2">
+              {posts.category.name}
+            </p>
+          </Link>
+          <Link href={`/posts/${posts.slug}`}>
+            <p className="text-[20px] leading-[24px]">{posts.title}</p>
+            <p className="text-base">{posts.description}</p>
+            <p className="text-sm font-light">
+              <span>
+                {' '}
+                <Date dateString={posts.date} />
+              </span>{' '}
+              by <span>{posts.author.name}</span>
+            </p>
+          </Link>
         </div>
       </div>
     </section>
