@@ -31,6 +31,7 @@
     "date-fns": "3.6.0",
     "intl-segmenter-polyfill": "0.4.4",
     "lucide-react": "^0.397.0",
+    "mdb-react-ui-kit": "^8.0.0",
     "next": "14.2.4",
     "next-sanity": "9.3.10",
     "next-sanity-image": "6.1.1",

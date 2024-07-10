@@ -101,13 +101,14 @@ export async function getAllOfPosts() {
       `*[_type == "post"] | order(date desc, _updatedAt desc) {
         _id,
         title,
+        description,
         date,
         _updatedAt,
         excerpt,
         coverImage,
         "slug": slug.current,
         "author": author->{name, picture},
-        "category": category->{name},
+        "category": category->{name, "slug": slug.current},
       }
     `,
     )
@@ -134,6 +135,7 @@ export async function getPostsByCategory({ params }: { params: string }) {
       `*[_type == "post" && category->slug.current == '${params}'] | order(date desc) {
         _id,
         title,
+        description,
         content,
         date,
         _updatedAt,

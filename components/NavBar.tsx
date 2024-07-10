@@ -35,7 +35,7 @@ const NavBar = ({ state }: { state: string }) => {
     if (window.scrollY > 50) {
       if (window.scrollY > lastScrollY) {
         setShow(false)
-      } else if (window.scrollY < lastScrollY - 50) {
+      } else if (window.scrollY < lastScrollY - 20) {
         setShow(true)
       }
     } else {
@@ -73,9 +73,9 @@ const NavBar = ({ state }: { state: string }) => {
   }
 
   return (
-    <div className="w-full fixed top-0 sm:px-10 px-6">
+    <div className="w-full fixed top-0 xl:px-10 px-6">
       <div
-        className={`sm:h-20 h-16 xl:max-w-[1440px] 2xl:max-w-[1920px] mx-auto flex items-center justify-end relative transition-opacity duration-300 ${
+        className={`sm:h-16 h-16 xl:max-w-[1440px] 2xl:max-w-[1920px] mx-auto flex items-center justify-end relative transition-opacity duration-300 ${
           show ? 'opacity-100' : 'opacity-0'
         }`}
       >
@@ -83,14 +83,14 @@ const NavBar = ({ state }: { state: string }) => {
           <Image
             src={`/logo-${state}.svg`}
             alt="logo"
-            width={28}
+            width={40}
             height={40}
             className="absolute top-0 left-0 sm:mt-5 mt-3 cursor-pointer sm:w-[104px] sm:h-[140px]"
           />
         </Link>
         <div
           onClick={handleMenuState}
-          className={`uppercase font-semibold text-base sm:text-xl sm:mr-8 cursor-pointer text-${state}`}
+          className={`uppercase font-semibold text-base sm:text-xl cursor-pointer text-${state}`}
         >
           MENU
         </div>

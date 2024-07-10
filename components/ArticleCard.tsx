@@ -16,22 +16,22 @@ export function ArticleSuggestCard({
 }: Omit<Post, '_id'>) {
   return (
     <Link href={`/posts/${slug}`}>
-      <div className="w-full flex sm:gap-5 gap-4">
+      <div className="w-full flex md:flex-col lg:flex-row sm:gap-5 gap-4">
         <div
           style={{
             backgroundImage: `url('${urlForImage(coverImage).url()}')`,
           }}
-          className="w-[120px] h-[80px] sm:w-[150px] sm:h-[100px] bg-cover bg-no-repeat bg-center"
+          className="md:w-full md:h-[170px] w-[100px] h-[80px] lg:w-[100px] lg:h-[80px] xl:w-[150px] xl:h-[100px] lg:mt-4 xl:mt-0 bg-cover bg-no-repeat bg-center"
         />
 
-        <div className="w-2/3 sm:w-4/5 grid grid-cols-1 gap-2">
-          <p className="sm:block hidden uppercase text-sm underline underline-offset-2">
+        <div className="md:w-full lg:w-2/3 w-4/5 grid grid-cols-1 gap-2 md:px-4 lg:p-0">
+          <p className="sm:block hidden uppercase md:text-base lg:text-sm underline underline-offset-2">
             {category.name}
           </p>
-          <p className="text-base leading-[20px] sm:text-xl sm:leading-[24px]">
+          <p className="text-base leading-[20px] md:text-xl lg:text-lg xl:text-xl">
             {title}
           </p>
-          <p className=" text-xs sm:text-sm">
+          <p className=" text-xs md:text-sm">
             <span>
               {' '}
               <Date dateString={date} />
@@ -41,29 +41,6 @@ export function ArticleSuggestCard({
         </div>
       </div>
     </Link>
-  )
-}
-
-export const ArticleCard = () => {
-  return (
-    <div className="w-full">
-      <img
-        src="https://static.lvrcdn.com/content/uploads/2024/05/diary/header-4.jpg"
-        alt="image"
-        className="w-full h-[380px]"
-      />
-
-      <div className="grid grid-cols-1 gap-3  py-6 px-4">
-        <p className="uppercase text-lg">M FOR MEN</p>
-        <p className="text-2xl leading-[30px]">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiuagna aliqua
-        </p>
-        <p className="text-sm">
-          <span>06.19.2024</span> by <span>Hằng Nga</span>
-        </p>
-      </div>
-    </div>
   )
 }
 

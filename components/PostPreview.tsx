@@ -14,6 +14,7 @@ import {
 
 export function PostPreview({
   title,
+  description,
   category,
   coverImage,
   date,
@@ -29,7 +30,7 @@ export function PostPreview({
           style={{
             backgroundImage: `url('${urlForImage(coverImage).url()}')`,
           }}
-          className="w-full h-[300px] xl:h-[230px] 2xl:h-[380px] bg-cover bg-no-repeat bg-center"
+          className="w-full h-[300px] md:h-[170px] xl:h-[230px] 2xl:h-[380px] bg-cover bg-no-repeat bg-center"
         />
       </Link>
 
@@ -37,6 +38,7 @@ export function PostPreview({
         <PostDetails
           category={category}
           title={title}
+          description={description}
           slug={slug}
           date={date}
           author={author.name}
@@ -48,6 +50,7 @@ export function PostPreview({
 
 export function PostPreviewLarge({
   title,
+  description,
   category,
   coverImage,
   date,
@@ -63,7 +66,7 @@ export function PostPreviewLarge({
           style={{
             backgroundImage: `url('${urlForImage(coverImage).url()}')`,
           }}
-          className="w-full h-[300px] sm:h-[550px] 2xl:h-[700px] bg-cover bg-no-repeat bg-center"
+          className="w-full h-[300px] md:h-[360px] xl:h-[550px] 2xl:h-[700px] bg-cover bg-no-repeat bg-center"
         />
       </Link>
 
@@ -71,6 +74,7 @@ export function PostPreviewLarge({
         <PostDetails
           category={category}
           title={title}
+          description={description}
           slug={slug}
           date={date}
           author={author.name}

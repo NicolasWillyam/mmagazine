@@ -29,7 +29,7 @@ export default function CategoryPosts({
     return (
       <div className="min-h-screen w-full flex items-center justify-center">
         <div className="text-center">
-          <p className="text-4xl">Loading...</p>
+          <LoadingSpinner />
         </div>
       </div>
     )
@@ -51,17 +51,7 @@ export default function CategoryPosts({
       {posts.length > 0 ? (
         <div className="min-h-screen w-full mx-auto">
           {/* <BlogHeader title={title} description={description} level={1} /> */}
-          {heroPost && (
-            <HeroPost
-              title={heroPost.title}
-              category={heroPost.category}
-              coverImage={heroPost.coverImage}
-              date={heroPost.date}
-              author={heroPost.author}
-              slug={heroPost.slug}
-              excerpt={heroPost.excerpt}
-            />
-          )}
+          {heroPost && <HeroPost posts={posts[0]} />}
 
           <Container>
             <SuggestPost posts={morePosts} />
@@ -73,7 +63,6 @@ export default function CategoryPosts({
           <div className="text-center">
             <div className=" flex items-center gap-3">
               <LoadingSpinner />
-              <p className="text-2xl font-light">Loading...</p>
             </div>
           </div>
         </div>
@@ -87,7 +76,7 @@ export default function CategoryPosts({
 export const getStaticPaths: GetStaticPaths = async () => {
   const categories = await fetchCategories() // Fetch all categories
   const paths = categories.map((category) => ({
-    params: { slug: category.name.toLowerCase().replace(/\s+/g, '-') }, // Adjust as per your category slug format
+    params: { slug: category.slug }, // Adjust as per your category slug format
   }))
 
   return {

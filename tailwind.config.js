@@ -14,6 +14,17 @@ module.exports = {
       padding: '2rem',
       screens: {
         '2xl': '1400px',
+        md: '768px',
+      },
+      screens: {
+        tablet: '640px',
+        // => @media (min-width: 640px) { ... }
+
+        laptop: '1024px',
+        // => @media (min-width: 1024px) { ... }
+
+        desktop: '1280px',
+        // => @media (min-width: 1280px) { ... }
       },
     },
     extend: {
@@ -46,6 +57,9 @@ module.exports = {
         popover: {
           DEFAULT: 'hsl(var(--popover))',
           foreground: 'hsl(var(--popover-foreground))',
+        },
+        padding: {
+          18: '72px', // Add or modify the padding as needed
         },
         card: {
           DEFAULT: 'hsl(var(--card))',

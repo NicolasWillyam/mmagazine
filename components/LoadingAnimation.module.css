@@ -1,0 +1,35 @@
+styles.module.css
+
+.conatainer {
+    padding: 0;
+    margin: 0;
+    background-color: #000!important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+  }
+  
+  .title {
+    font-size: 30px!important;
+    cursor: pointer;
+    text-transform: uppercase;
+    padding: 64px;
+    background: linear-gradient(to right, hsl(0, 0%, 30%) 0, hsl(0, 0%, 100%) 0%, hsl(0, 0%, 30%) 60%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: shine 3s infinite linear;
+  }
+  
+  @keyframes shine {
+    0% {
+      background-position: 0;
+    }
+    60% {
+      background-position: 400px;
+    }
+    100% {
+      background-position: 600px;
+    }
+  }
+  

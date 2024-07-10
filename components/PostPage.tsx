@@ -56,7 +56,7 @@ export default function PostPage(props: PostPageProps) {
     setLoadedStatus,
   } = props
 
-  console.log(loadedStatus)
+  console.log(post)
 
   useEffect(() => {
     const handleScroll = () => {
@@ -99,6 +99,7 @@ export default function PostPage(props: PostPageProps) {
                 <article>
                   <PostHeader
                     title={post.title}
+                    description={post.description}
                     category={post.category}
                     coverImage={post.coverImage}
                     date={post.date}

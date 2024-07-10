@@ -1,6 +1,6 @@
 'use client'
-import { categoryList } from 'components/MoreBlogInCategory'
 import PostPage from 'components/PostPage'
+import PostPageHead from 'components/PostPageHead'
 import PreviewPostPage from 'components/PreviewPostPage'
 import { readToken } from 'lib/sanity.api'
 import {
@@ -58,40 +58,16 @@ export default function ProjectSlugRoute(props: PageProps) {
     fetchPostsByCategory(post.category.name, setCategoriesWithPosts)
   }, [post.category.name])
 
-  const postImage = urlForImage(post.coverImage).height(1000).width(1500).url()
-
-  console.log('img', postImage)
-
   return (
     <>
-      <Head>
-        <title>{post.title}</title>
-        {/* <meta name="description" content="M MAGAZINE Vietnam" /> */}
-        <meta
-          property="og:url"
-          content={`https://www.mmagazinevietnam.com/posts/${post.slug}`}
-        />
-        <meta property="og:type" content="website" />
-        <meta property="og:title" content={post.title} />
-        <meta property="og:description" content={post?.description || ''} />
-        <meta property="og:image" content={postImage} />
-
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta property="twitter:domain" content="mmagazinevietnam.com" />
-        <meta property="twitter:url" content={post.slug} />
-        <meta name="twitter:title" content={post.title} />
-        <meta name="twitter:description" content={post?.description || ''} />
-        <meta name="twitter:image" content={postImage} />
-      </Head>
-      <div>
-        <PostPage
-          post={post}
-          morePosts={morePosts}
-          settings={{}} // Pass your settings here
-          loadedStatus={loadedStatus}
-          setLoadedStatus={setLoadedStatus} // Update loadedStatus to false
-        />
-      </div>
+      <PostPageHead post={post} />
+      <PostPage
+        post={post}
+        morePosts={morePosts}
+        settings={{}} // Pass your settings here
+        loadedStatus={loadedStatus}
+        setLoadedStatus={setLoadedStatus} // Update loadedStatus to false
+      />
     </>
   )
 }

@@ -14,26 +14,6 @@ export async function fetchCategories() {
   return data
 }
 
-export const categoryList: Category[] = [
-  { name: 'M for Men' },
-  { name: 'Style' },
-  { name: 'Beauty' },
-  { name: 'Lifestyle' },
-  { name: 'Add to cart' },
-  { name: 'Money & Finance' },
-  { name: 'Celebrity' },
-  { name: 'M for Career' },
-  { name: 'Watches & Jewelry' },
-  { name: 'Runway' },
-  { name: 'Opinion' },
-  { name: 'Technology' },
-  { name: 'Art & Design' },
-  { name: 'M Make It' },
-  { name: 'Business' },
-  { name: 'Culture' },
-  { name: 'Voyage & Gourmet' },
-]
-
 async function getPostsByCategoryName(cate: string) {
   try {
     const result = await getPostsByCategory({ params: cate })
@@ -45,51 +25,18 @@ async function getPostsByCategoryName(cate: string) {
 }
 
 export default function MoreBlogInCategory({ posts }: { posts: Post[] }) {
-  console.log('first', posts)
-  const [categoriesWithPosts, setCategoriesWithPosts] = useState<
-    { category: Category; posts: Post[] }[]
-  >([])
-
-  useEffect(() => {
-    const fetchCategoriesWithPosts = async () => {
-      try {
-        const results = await Promise.all(
-          categoryList.map(async (category) => {
-            const posts = await getPostsByCategoryName(category.name)
-            console.log('posts', posts)
-            return posts ? { category, posts } : null
-          }),
-        )
-
-        const filteredResults = results.filter((result) => result !== null) as {
-          category: Category
-          posts: Post[]
-        }[]
-
-        setCategoriesWithPosts(filteredResults)
-      } catch (error) {
-        console.error('Error fetching posts:', error)
-        // Handle error state if needed
-      }
-    }
-
-    fetchCategoriesWithPosts()
-  }, [])
-
-  console.log(posts[0])
-
   return (
-    <section className="max-w-[1920px] mx-auto sm:px-9 my-20 grid grid-cols-1 gap-y-20">
-      <div className="grid grid-cols-1 gap-y-20">
+    <section className="max-w-[1920px] mx-auto sm:px-4 xl:px-9 my-20 grid grid-cols-1 sm:gap-y-20">
+      <div className="grid grid-cols-1 sm:gap-y-20">
         {posts.map((post, index) => {
           // Determine the appropriate grid class based on the index
           let gridClass = ''
           let PostComponent = PostPreview
           if (index % 5 < 3) {
-            gridClass = 'grid grid-cols-1 gap-y-20 sm:grid-cols-3 gap-4'
+            gridClass = 'grid grid-cols-1 sm:gap-y-20 sm:grid-cols-3 gap-4'
           } else {
             gridClass =
-              'max-w-[1200px] mx-auto mt-6 grid sm:grid-cols-2 gap-[72px]'
+              'max-w-[1200px] mx-auto grid sm:grid-cols-2 sm:gap-[72px] md:px-[72px] xl:px-0'
             PostComponent = PostPreviewLarge
           }
 
@@ -104,6 +51,7 @@ export default function MoreBlogInCategory({ posts }: { posts: Post[] }) {
                   <PostComponent
                     key={subPost._id}
                     title={subPost.title}
+                    description={subPost.description}
                     category={subPost.category}
                     coverImage={subPost.coverImage}
                     date={subPost.date}

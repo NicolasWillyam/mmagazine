@@ -4,7 +4,7 @@ import CoverImage from 'components/CoverImage'
 import Date from 'components/PostDate'
 import PostTitle from 'components/PostTitle'
 import { urlForImage } from 'lib/sanity.image'
-import type { Post } from 'lib/sanity.queries'
+import type { Category, Post } from 'lib/sanity.queries'
 import { usePathname } from 'next/navigation'
 import {
   FacebookShareButton,
@@ -26,13 +26,8 @@ import category from 'schemas/category'
 
 import { CategoryNameComponent } from './PostDetailComponents'
 
-export default function PostHeader(
-  props: Pick<
-    Post,
-    'title' | 'category' | 'coverImage' | 'date' | 'author' | 'slug'
-  >,
-) {
-  const { title, category, coverImage, date, author, slug } = props
+export default function PostHeader(props: Post) {
+  const { title, description, category, coverImage, date, author, slug } = props
   const postImage = urlForImage(coverImage).height(1500).width(1000).url()
   const pathname = usePathname()
   const url = `${process.env.NEXT_PUBLIC_BASE_URL}${pathname}`
@@ -42,10 +37,11 @@ export default function PostHeader(
       <div className="max-w-[1560px] mx-auto sm:flex">
         <div className="w-full sm:w-[42%] h-auto sm:mt-48 mt-24 flex items-center">
           <div className="sm:text-center py-auto sm:px-16 px-4">
-            <CategoryNameComponent category={category.name} />
-            <p className=" mt-4 sm:mt-8 mb-24 sm:mb-12 mr-8 sm:mr-0 text-2xl leading-[30px] sm:text-[52px] sm:leading-[54px]">
+            <CategoryNameComponent category={category} />
+            <p className=" mt-4 sm:mt-8  mr-8 sm:mr-0 text-2xl leading-[30px] sm:text-[52px] sm:leading-[54px]">
               {title}
             </p>
+            <p className="text-lg my-4 sm:my-6 sm:text-xl">{description}</p>
             <div className="flex flex-row-reverse gap-1 justify-end sm:block">
               <p>
                 <span className="text-sm italic mr-1">by</span>

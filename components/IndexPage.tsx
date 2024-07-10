@@ -3,7 +3,6 @@ import BlogHeader from 'components/BlogHeader'
 import Layout from 'components/BlogLayout'
 import HeroPost from 'components/HeroPost'
 import IndexPageHead from 'components/IndexPageHead'
-import MoreStories from 'components/MoreStories'
 import IntroTemplate from 'intro-template'
 import * as demo from 'lib/demo.data'
 import { getAllOfPosts } from 'lib/sanity.client'
@@ -13,9 +12,10 @@ import { useEffect, useState } from 'react'
 
 import { ArticleSuggestCard } from './ArticleCard'
 import Footer from './Footer'
+import LoadingSpinner from './LoadingSpinner'
+import MoreBlogs from './MoreBlogs'
 import NavBar from './NavBar'
 import { SuggestPost } from './SuggestPost'
-import LoadingSpinner from './LoadingSpinner'
 
 export interface IndexPageProps {
   preview?: boolean
@@ -44,9 +44,6 @@ export default function IndexPage(props: IndexPageProps) {
   }, [])
 
   const [heroPost, ...suggestPosts] = allPosts || []
-  const morePosts = allPosts.slice(3)
-
-  console.log(morePosts)
 
   if (router.isFallback) {
     return (
@@ -59,6 +56,8 @@ export default function IndexPage(props: IndexPageProps) {
     )
   }
 
+  console.log(heroPost)
+
   return (
     <>
       <NavBar state="black" />
@@ -68,23 +67,12 @@ export default function IndexPage(props: IndexPageProps) {
       <div className="h-auto sm:min-h-screen w-full mx-auto">
         <BlogContainer>
           {/* <BlogHeader title={title} description={description} level={1} /> */}
-          {heroPost && (
-            <HeroPost
-              title={heroPost.title}
-              category={heroPost.category}
-              coverImage={heroPost.coverImage}
-              date={heroPost.date}
-              author={heroPost.author}
-              slug={heroPost.slug}
-              excerpt={heroPost.excerpt}
-            />
-          )}
+          {heroPost && <HeroPost posts={heroPost} />}
 
-          <div className="max-w-[1920px] mx-auto">
-            <SuggestPost posts={suggestPosts} />
-          </div>
+          <SuggestPost posts={suggestPosts} />
+
           <div className="xl:max-w-[1440px] 2xl:max-w-[1920px] mx-auto">
-            {suggestPosts.length > 0 && <MoreStories posts={morePosts} />}
+            {suggestPosts.length > 0 && <MoreBlogs posts={suggestPosts} />}
           </div>
         </BlogContainer>
       </div>

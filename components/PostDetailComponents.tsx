@@ -7,7 +7,7 @@ import React, { useEffect, useState } from 'react'
 export function CategoryNameComponent({ category }: { category: Category }) {
   return (
     <Link href={`/${category.slug}`}>
-      <p className="uppercase text-base sm:text-lg underline underline-offset-2">
+      <p className="uppercase text-base sm:text-lg md:text-base xl:text-lg underline underline-offset-2">
         {category.name}
       </p>
     </Link>
@@ -17,15 +17,18 @@ export function CategoryNameComponent({ category }: { category: Category }) {
 export function TitleComponent({
   slug,
   title,
+  description,
 }: {
   slug: string
   title: string
+  description: string
 }) {
   return (
     <Link href={`/posts/${slug}`}>
-      <p className="text-[20px] leading-[24px] sm:text-2xl sm:leading-[30px]">
+      <p className="text-[20px] leading-[24px] sm:text-2xl sm:leading-[30px] md:text-xl xl:text-2xl xl:leading-[30px] ">
         {title}
       </p>
+      <p className="my-3 sm:hidden">{description}</p>
     </Link>
   )
 }
@@ -50,12 +53,14 @@ export function PostedComponent({
 export function PostDetails({
   category,
   title,
+  description,
   slug,
   date,
   author,
 }: {
   category: Category
   title: string
+  description: string
   slug: string
   date: string
   author: string
@@ -63,7 +68,7 @@ export function PostDetails({
   return (
     <>
       <CategoryNameComponent category={category} />
-      <TitleComponent title={title} slug={slug} />
+      <TitleComponent title={title} description={description} slug={slug} />
       <PostedComponent date={date} author={author} />
     </>
   )

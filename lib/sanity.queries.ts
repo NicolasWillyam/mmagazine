@@ -3,13 +3,14 @@ import { groq } from 'next-sanity'
 export const postFields = groq`
   _id,
   title,
+  description,
   date,
   _updatedAt,
   excerpt,
   coverImage,
   "slug": slug.current,
   "author": author->{name, picture},
-  "category": category->{name},
+  "category": category->{name, slug},
 `
 
 export const settingsQuery = groq`*[_type == "settings"][0]`
@@ -24,13 +25,14 @@ export const indexQuery = groq`
 *[_type == "post"] | order(date desc, _updatedAt desc) {
    _id,
   title,
+  description,
   date,
   _updatedAt,
   excerpt,
   coverImage,
   "slug": slug.current,
   "author": author->{name, picture},
-  "category": category->{name},
+  "category": category->{name, slug},
 }
   `
 
@@ -59,7 +61,8 @@ export const postBySlugQuery = groq`
 export const categoriesQuery = groq`
   *[_type == "category"] {
     _id,
-    name
+    name,
+    slug,
   }
 `
 
@@ -74,7 +77,7 @@ export interface Category {
 }
 
 export interface Post {
-  _id: string
+  _id?: string
   title?: string
   description?: string
   coverImage?: any
