@@ -1,4 +1,5 @@
 'use client'
+import LoadingSpinner from 'components/LoadingSpinner'
 import PostPage from 'components/PostPage'
 import PostPageHead from 'components/PostPageHead'
 import PreviewPostPage from 'components/PreviewPostPage'
@@ -34,7 +35,7 @@ const fetchPostsByCategory = async (
 ) => {
   try {
     const result = await getPostsByCategory({ params: categoryName })
-    if (result.posts.length > 0) {
+    if (result?.posts?.length > 0) {
       setCategoriesWithPosts(result.posts)
     } else {
       setCategoriesWithPosts([])
@@ -53,10 +54,41 @@ export default function ProjectSlugRoute(props: PageProps) {
   const [filterPosts, setFilterPosts] = useState<Post[]>([])
 
   const [categoriesWithPosts, setCategoriesWithPosts] = useState<Post[]>([])
+  const [loading, setLoading] = useState(true)
 
   useEffect(() => {
-    fetchPostsByCategory(post.category.name, setCategoriesWithPosts)
+    try {
+      setTimeout(() => {
+        fetchPostsByCategory(post.category.name, setCategoriesWithPosts)
+        // setLoading(false)
+      }, 10)
+    } catch (error) {
+      console.error('Error fetching posts:', error)
+      // Handle error state if needed
+      // setLoading(false)
+    }
   }, [post.category.name])
+
+  // Loading state
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setLoading(false) // Hide loading after 2 seconds
+    }, 1000)
+
+    return () => clearTimeout(timer)
+  }, [])
+
+  // Show loading message while fetching data
+  if (loading) {
+    return (
+      <div className="min-h-screen w-full flex items-center justify-center">
+        <div className="text-center">
+          <LoadingSpinner />
+        </div>
+      </div>
+    )
+  }
 
   return (
     <>

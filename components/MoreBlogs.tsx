@@ -15,12 +15,14 @@ export default function MoreBlogs({ posts }: { posts: Post[] }) {
   const [categoriesWithPosts, setCategoriesWithPosts] = useState<
     { category: Category; posts: Post[] }[]
   >([])
+  const [loading, setLoading] = useState(true)
 
   const [categoryList, setCategoryList] = useState<Category[]>([])
 
   useEffect(() => {
     const fetchCategoriesWithPosts = async () => {
       try {
+        setLoading(false)
         const categories: Category[] = await fetchCategories() // Fetch categories
         setCategoryList(categories) // Update categoryList state with fetched categories
 
@@ -39,6 +41,7 @@ export default function MoreBlogs({ posts }: { posts: Post[] }) {
 
         setCategoriesWithPosts(filteredResults)
       } catch (error) {
+        setLoading(false)
         console.error('Error fetching posts:', error)
         // Handle error state if needed
       }

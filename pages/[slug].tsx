@@ -13,6 +13,7 @@ import { Post } from 'lib/sanity.queries'
 import { GetStaticPaths, GetStaticProps } from 'next'
 import Head from 'next/head'
 import { useRouter } from 'next/router'
+import { useEffect, useState } from 'react'
 import { slugToCategory } from 'utils/function'
 
 export default function CategoryPosts({
@@ -23,9 +24,18 @@ export default function CategoryPosts({
   posts: Post[]
 }) {
   const router = useRouter()
+  const [loading, setLoading] = useState(true) // Loading state
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setLoading(false) // Hide loading after 2 seconds
+    }, 1000)
+
+    return () => clearTimeout(timer)
+  }, [])
 
   // Show loading message while fetching data
-  if (router.isFallback) {
+  if (router.isFallback || loading) {
     return (
       <div className="min-h-screen w-full flex items-center justify-center">
         <div className="text-center">

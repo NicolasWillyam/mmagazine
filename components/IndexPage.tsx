@@ -19,13 +19,13 @@ import { SuggestPost } from './SuggestPost'
 
 export interface IndexPageProps {
   preview?: boolean
-  loading?: boolean
   posts: Post[]
   settings: Settings
 }
 
 export default function IndexPage(props: IndexPageProps) {
   const router = useRouter()
+  const [loading, setLoading] = useState(true) // Loading state
   const { settings } = props
   const { title = demo.title, description = demo.description } = settings || {}
   const [allPosts, setAllPosts] = useState<Post[]>([])
@@ -34,24 +34,28 @@ export default function IndexPage(props: IndexPageProps) {
     async function fetchPosts() {
       try {
         const { posts } = await getAllOfPosts()
-        setAllPosts(posts)
+
+        setTimeout(() => {
+          setAllPosts(posts)
+          setLoading(false) // Set loading to false after data is fetched
+        }, 1000)
       } catch (error) {
         console.error('Error fetching posts:', error)
         // Handle error state if needed
+        setLoading(false) // Ensure loading state is updated on error
       }
     }
+
     fetchPosts()
   }, [])
 
   const [heroPost, ...suggestPosts] = allPosts || []
 
-  if (router.isFallback) {
+  if (loading) {
+    // Show loading spinner while waiting for data
     return (
-      <div className="min-h-screen w-full flex items-center justify-center">
-        <div className=" flex items-center gap-3">
-          <LoadingSpinner />
-          <p className="text-2xl font-light">Loading...</p>
-        </div>
+      <div className="min-h-screen flex items-center justify-center">
+        <LoadingSpinner />
       </div>
     )
   }
@@ -61,21 +65,20 @@ export default function IndexPage(props: IndexPageProps) {
       <NavBar state="black" />
       <IndexPageHead settings={settings} />
 
-      {/* <Layout preview={preview} loading={loading}> */}
-      <div className="h-auto min-h-screen w-full mx-auto">
+      <div className="min-h-screen w-full mx-auto">
         <BlogContainer>
-          {/* <BlogHeader title={title} description={description} level={1} /> */}
+          {/* Render HeroPost if exists */}
           {heroPost && <HeroPost posts={heroPost} />}
 
+          {/* Render SuggestPost with suggestPosts */}
           <SuggestPost posts={suggestPosts} />
 
           <div className="xl:max-w-[1440px] 2xl:max-w-[1920px] mx-auto">
+            {/* Render MoreBlogs component if suggestPosts exist */}
             {suggestPosts.length > 0 && <MoreBlogs posts={suggestPosts} />}
           </div>
         </BlogContainer>
       </div>
-
-      {/* <IntroTemplate /> */}
 
       <Footer />
     </>
