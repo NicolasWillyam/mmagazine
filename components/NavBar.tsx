@@ -138,7 +138,7 @@ const NavBar = ({ state }: { state: string }) => {
                     onClick={toggleMenu}
                     className="py-1 hover:underline hover:underline-offset-4"
                   >
-                    <Link href={`/${item.slug}`}>{item.name}</Link>
+                    <Link href={`${item.slug}`}>{item.name}</Link>
                   </li>
                 ))}
               </ul>
@@ -182,70 +182,69 @@ const NavBar = ({ state }: { state: string }) => {
 
 export default NavBar
 
-
 const MENU = [
   {
-      name: "Style",
-      slug: "/style"
+    name: 'Style',
+    slug: '/style',
   },
   {
-      name: "Beauty",
-      slug: "/beauty"
+    name: 'Beauty',
+    slug: '/beauty',
   },
   {
-      name: "Lifestyle",
-      slug: "/lifestyle"
+    name: 'Lifestyle',
+    slug: '/lifestyle',
   },
   {
-    name: "Culture",
-    slug: "/culture"
-},
-{
-  name: "Celebrity",
-  slug: "/celebrity"
-},
-{
-  name: "Watches & Jewellery",
-  slug: "/watches-jewellery"
-},
-{
-  name: "Business",
-  slug: "/business"
-}, 
-{
-  name: "M Make It",
-  slug: "/m-make-it"
-},
-{
-  name: "Runway",
-  slug: "/runway"
-},
-{
-  name: "Art & Design",
-  slug: "/art-design"
-},
-  {
-      name: "Voyages & Gourmet",
-      slug: "/voyages-gourmet"
+    name: 'Culture',
+    slug: '/culture',
   },
   {
-    name: "Tech",
-    slug: "/tech"
+    name: 'Celebrity',
+    slug: '/celebrity',
   },
   {
-    name: "M For Career",
-    slug: "/m-for-career"
+    name: 'Watches & Jewellery',
+    slug: '/watches-jewellery',
   },
   {
-    name: "M For Men",
-    slug: "/m-for-men"
+    name: 'Business',
+    slug: '/business',
   },
   {
-    name: "Money & Finance",
-    slug: "/money-finance"
+    name: 'M Make It',
+    slug: '/m-make-it',
   },
   {
-    name: "Shopping",
-    slug: "/shopping"
+    name: 'Runway',
+    slug: '/runway',
+  },
+  {
+    name: 'Art & Design',
+    slug: '/art-design',
+  },
+  {
+    name: 'Voyages & Gourmet',
+    slug: '/voyages-gourmet',
+  },
+  {
+    name: 'Tech',
+    slug: '/tech',
+  },
+  {
+    name: 'M For Career',
+    slug: '/m-for-career',
+  },
+  {
+    name: 'M For Men',
+    slug: '/m-for-men',
+  },
+  {
+    name: 'Money & Finance',
+    slug: '/money-finance',
+  },
+  {
+    name: 'Shopping',
+    slug: '/shopping',
   },
 ]

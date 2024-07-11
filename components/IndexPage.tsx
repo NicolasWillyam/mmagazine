@@ -10,7 +10,7 @@ import { getAllOfPosts } from 'lib/sanity.client'
 import type { Post, Settings } from 'lib/sanity.queries'
 import dynamic from 'next/dynamic'
 import { useRouter } from 'next/router'
-import { useCallback,useEffect, useState } from 'react'
+import { useCallback, useEffect, useState } from 'react'
 
 import { ArticleSuggestCard } from './ArticleCard'
 import Footer from './Footer'
