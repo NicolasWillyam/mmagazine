@@ -8,7 +8,7 @@ import { IoLogoInstagram } from 'react-icons/io5'
 import { RiSearchLine } from 'react-icons/ri'
 import { RiFacebookFill } from 'react-icons/ri'
 
-import styles from './styles.module.css'
+import styles from '../styles.module.css'
 
 export interface Menu {
   name: string
@@ -80,9 +80,9 @@ const NavBar = ({ state }: { state: string }) => {
   }
 
   return (
-    <div className="w-full fixed top-0 xl:px-10 px-6 z-[999px]">
+    <div className="w-full fixed top-0 z-[999px]">
       <div
-        className={`sm:h-16 h-16 xl:max-w-[1440px] 2xl:max-w-[1920px] mx-auto flex items-center justify-end relative transition-opacity duration-300 ${
+        className={`sm:h-16 h-16 w-3/4 mx-auto justify-between flex items-center relative transition-opacity duration-300 ${
           show ? 'opacity-100' : 'opacity-0'
         }`}
       >
@@ -132,7 +132,7 @@ const NavBar = ({ state }: { state: string }) => {
             <div className="mt-4 w-full">
               <p className="text-sm text-gray-500 uppercase">Categories</p>
               <ul className="w-full text-lg uppercase py-2 ">
-                {MENU?.map((item, idx) => (
+                {menuList?.map((item, idx) => (
                   <li
                     key={idx}
                     onClick={toggleMenu}
@@ -181,71 +181,3 @@ const NavBar = ({ state }: { state: string }) => {
 }
 
 export default NavBar
-
-
-const MENU = [
-  {
-      name: "Style",
-      slug: "/style"
-  },
-  {
-      name: "Beauty",
-      slug: "/beauty"
-  },
-  {
-      name: "Lifestyle",
-      slug: "/lifestyle"
-  },
-  {
-    name: "Culture",
-    slug: "/culture"
-},
-{
-  name: "Celebrity",
-  slug: "/celebrity"
-},
-{
-  name: "Watches & Jewellery",
-  slug: "/watches-jewellery"
-},
-{
-  name: "Business",
-  slug: "/business"
-}, 
-{
-  name: "M Make It",
-  slug: "/m-make-it"
-},
-{
-  name: "Runway",
-  slug: "/runway"
-},
-{
-  name: "Art & Design",
-  slug: "/art-design"
-},
-  {
-      name: "Voyages & Gourmet",
-      slug: "/voyages-gourmet"
-  },
-  {
-    name: "Tech",
-    slug: "/tech"
-  },
-  {
-    name: "M For Career",
-    slug: "/m-for-career"
-  },
-  {
-    name: "M For Men",
-    slug: "/m-for-men"
-  },
-  {
-    name: "Money & Finance",
-    slug: "/money-finance"
-  },
-  {
-    name: "Shopping",
-    slug: "/shopping"
-  },
-]
