@@ -12,7 +12,7 @@ type PostProps = {
   isMain?: boolean
 }
 
-const PostCard = (props: PostProps) => {
+const OverviewPostCard = (props: PostProps) => {
   const { title, slug, category, coverImage, isMain } = props
 
   const { push } = useRouter()
@@ -33,12 +33,12 @@ const PostCard = (props: PostProps) => {
 
   if (isMain)
     return (
-      <div className="flex flex-col space-y-4 w-[600px]">
+      <div className="flex flex-col space-y-4 w-[400px]">
         <Image
           src={url}
           alt="thumbnail"
-          width={600}
-          height={780}
+          width={400}
+          height={520}
           className="cursor-pointer"
           onClick={onGoPost}
         />
@@ -51,12 +51,12 @@ const PostCard = (props: PostProps) => {
       </div>
     )
   return (
-    <div className="flex flex-row space-x-4 w-[600px]">
+    <div className="flex flex-row space-x-4 w-[400px]">
       <Image
         src={url}
         alt="thumbnail"
-        width={300}
-        height={390}
+        width={200}
+        height={260}
         className="cursor-pointer"
         onClick={onGoPost}
       />
@@ -72,4 +72,4 @@ const PostCard = (props: PostProps) => {
   )
 }
 
-export default PostCard
+export default OverviewPostCard

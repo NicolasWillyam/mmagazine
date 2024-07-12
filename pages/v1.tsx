@@ -1,3 +1,4 @@
+import ListLatestPost from 'components/v1/LatestPost'
 import NavBar from 'components/v1/NavBar'
 import Overview from 'components/v1/Overview'
 import PostByCategory from 'components/v1/PostByCategory'
@@ -5,13 +6,22 @@ import PostByCategory from 'components/v1/PostByCategory'
 const Home = () => {
   return (
     <>
-      <div className="w-full">
+      <div className="w-full space-y-16">
         <NavBar state="black" />
         <div className="w-full flex justify-center">
           <Overview />
         </div>
-        <div>
-          <PostByCategory category="style" quantity={4} />
+        <div className="w-full flex flex-col items-center space-y-16">
+          {LIST_CATEGORY.map((item, index) =>
+            index % 2 == 0 ? (
+              <PostByCategory key={index} category={item} quantity={6} />
+            ) : (
+              <PostByCategory key={index} category={item} quantity={4} />
+            ),
+          )}
+        </div>
+        <div className="w-full flex flex-col items-center">
+          <ListLatestPost />
         </div>
       </div>
     </>
@@ -19,3 +29,5 @@ const Home = () => {
 }
 
 export default Home
+
+const LIST_CATEGORY = ['Style', 'Beauty', 'Culture', 'Lifestyle']

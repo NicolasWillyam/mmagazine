@@ -9,6 +9,7 @@ import { RiSearchLine } from 'react-icons/ri'
 import { RiFacebookFill } from 'react-icons/ri'
 
 import styles from '../styles.module.css'
+import ModalMenu from './ModalMenu'
 
 export interface Menu {
   name: string
@@ -82,7 +83,7 @@ const NavBar = ({ state }: { state: string }) => {
   return (
     <div className="w-full fixed top-0 z-[999px]">
       <div
-        className={`sm:h-16 h-16 w-3/4 mx-auto justify-between flex items-center relative transition-opacity duration-300 ${
+        className={`sm:h-16 h-16 max-w-[1232px] mx-auto justify-between flex items-center relative transition-opacity duration-300 ${
           show ? 'opacity-100' : 'opacity-0'
         }`}
       >
@@ -104,10 +105,10 @@ const NavBar = ({ state }: { state: string }) => {
       </div>
       {/* Sidebar menu */}
       <div
-        onClick={toggleMenu}
-        className={`${menuOpen ? 'bg-black/70 w-full h-screen absolute  top-0 left-0 ' : 'hidden'} `}
-      ></div>
-      <div className={`${styles.sidebar} ${menuOpen ? styles.open : ''}`}>
+        // onClick={toggleMenu}
+        className={`${menuOpen ? 'bg-white w-full h-screen absolute  top-0 left-0 ' : 'hidden'} `}
+      >
+        {/* <div className={`${styles.sidebar} ${menuOpen ? styles.open : ''}`}>
         <div className="absolute w-[300px] h-screen top-0 right-0 overflow-y-auto bg-white shadow-xl">
           <div className="fixed p-9 w-[300px] bg-white flex items-center justify-end">
             <IoMdClose
@@ -175,6 +176,8 @@ const NavBar = ({ state }: { state: string }) => {
             </ul>
           </div>
         </div>
+        </div> */}
+        <ModalMenu onClose={toggleMenu} />
       </div>
     </div>
   )
