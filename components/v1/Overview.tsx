@@ -2,17 +2,22 @@ import { getAllOfPosts } from 'lib/sanity.client'
 import { Category, Post } from 'lib/sanity.queries'
 import Link from 'next/link'
 import { useEffect, useState } from 'react'
-
 import OverviewPostCard from './OverviewPostCard'
 
-type PostProps = {
-  title?: string
-  category?: Category
-  coverImage?: any
-  direct?: number
+type OverviewProps = {
+  isOverview?: boolean
+  category?: string
 }
-const Overview = (props) => {
+
+const Overview = (props: OverviewProps) => {
+  
+  const { isOverview, category } = props
+
   const [posts, setPosts] = useState<Post[]>([])
+
+  const checkPath = (path: string) => {
+    return path === category
+  }
 
   useEffect(() => {
     async function fetchPosts() {
@@ -24,23 +29,36 @@ const Overview = (props) => {
   }, [])
 
   return (
-    <div className="w-[1232px] min-h-screen flex flex-col">
+    <div className="w-[1232px] h-fit flex flex-col">
       <div className="flex flex-row space-x-8">
         <div className="flex flex-col mt-60">
           {LIST_CATEGORY.map((item, index) => (
             <Link href={item.href} key={index} className="w-fit">
-              <h3 className="text-[36px] hover:underline">{item.label}</h3>
+              <h3 className={`${checkPath(item.label) || !category ? "text-[56px]" : "text-[36px]"} hover:underline`}>{item.label}</h3>
             </Link>
           ))}
         </div>
         <div>
-          <div className="flex flex-row space-x-8">
+          {
+            !isOverview ? (
+            <div className="flex flex-row space-x-8">
             <OverviewPostCard {...posts[0]} isMain />
             <div className="flex flex-col space-y-8">
               <OverviewPostCard {...posts[1]} />
               <OverviewPostCard {...posts[2]} />
             </div>
           </div>
+            ) : (
+              <div className='flex flex-col space-y-4'>
+              <h2 className='text-5xl font-semibold text-end'>{category}</h2>
+              <div className="flex flex-row space-x-8">
+                  <OverviewPostCard {...posts[0]} isMain />
+                  <OverviewPostCard {...posts[1]} isMain />
+              </div>
+              </div>
+            )
+          }
+          
         </div>
       </div>
       <div className="h-[20vh] bg-neutral-400 mt-16">gan ads</div>

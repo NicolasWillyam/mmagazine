@@ -106,7 +106,7 @@ const NavBar = ({ state }: { state: string }) => {
       {/* Sidebar menu */}
       <div
         // onClick={toggleMenu}
-        className={`${menuOpen ? 'bg-white w-full h-screen absolute  top-0 left-0 ' : 'hidden'} `}
+        className={`${menuOpen ? 'bg-white w-full h-screen absolute items-center top-0 left-0 ' : 'hidden'} `}
       >
         {/* <div className={`${styles.sidebar} ${menuOpen ? styles.open : ''}`}>
         <div className="absolute w-[300px] h-screen top-0 right-0 overflow-y-auto bg-white shadow-xl">

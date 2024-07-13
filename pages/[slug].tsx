@@ -5,8 +5,9 @@ import { Container } from 'components/BlogContainer'
 import Footer from 'components/Footer'
 import HeroPost from 'components/HeroPost'
 import LoadingSpinner from 'components/LoadingSpinner'
-import NavBar from 'components/NavBar'
+import NavBar from 'components/v1/NavBar'
 import { SuggestPost } from 'components/SuggestPost'
+import Overview from 'components/v1/Overview'
 import useEventListener from 'hooks/userEventListener'
 import { fetchCategories, getPostsByCategory } from 'lib/sanity.client' // Adjust import path as per your project structure
 import { Post } from 'lib/sanity.queries'
@@ -16,6 +17,8 @@ import Head from 'next/head'
 import { useRouter } from 'next/router'
 import { useCallback, useEffect, useState } from 'react'
 import { slugToCategory } from 'utils/function'
+import { List } from 'lucide-react'
+import ListLatestPost from 'components/v1/LatestPost'
 
 const MoreBlogInCategory = dynamic(
   () => import('components/MoreBlogInCategory'),
@@ -71,19 +74,27 @@ export default function CategoryPosts({
         />
         <meta name="description" content={'M MAGAZINE Vietnam'} />
       </Head>
-      <NavBar state="black" />
+      {/* <NavBar state="black" /> */}
+      <div className="w-full space-y-16">
+        <NavBar state="black"/>
+        <div className="w-full flex justify-center">
+          <Overview category={slugToCategory(category)} isOverview/>
+        </div>
+      </div>
+      
 
       {posts.length > 0 ? (
-        <div className="min-h-screen w-full mx-auto">
+        <div className="w-full flex flex-col items-center my-8">
           {/* <BlogHeader title={title} description={description} level={1} /> */}
-          {heroPost && <HeroPost posts={posts[0]} />}
+          {/* {heroPost && <HeroPost posts={posts[0]} />}
 
           <Container>
             <SuggestPost posts={morePosts} />
             {morePosts.length > 3 && isShow && (
               <MoreBlogInCategory posts={morePosts} />
             )}
-          </Container>
+          </Container> */}
+          <ListLatestPost posts={posts}/>
         </div>
       ) : (
         <div className="min-h-screen w-full flex items-center justify-center">

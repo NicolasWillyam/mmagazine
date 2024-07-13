@@ -3,7 +3,8 @@ import Link from 'next/link'
 import { useRouter } from 'next/router'
 import { useState } from 'react'
 import { RiSearchLine } from 'react-icons/ri'
-import { set } from 'sanity'
+import { IoLogoInstagram } from 'react-icons/io5'
+import { RiFacebookFill } from 'react-icons/ri'
 
 const ModalMenu = (props) => {
   const { onClose } = props
@@ -29,10 +30,10 @@ const ModalMenu = (props) => {
   }
 
   return (
-    <div className="w-full fixed top-0 z-[999px]">
+    <div className="w-full h-fit items-center flex flex-col fixed top-0 z-[999px]">
       {!isSearch ? (
         <div
-          className={`sm:h-16 h-16 max-w-[1232px] mx-auto justify-between flex items-center relative transition-opacity duration-300}`}
+          className={`sm:h-40 h-40 min-w-[1232px] mx-auto justify-between flex flex-row items-center relative transition-opacity duration-300}`}
         >
           <Link href={'/'}>
             <Image
@@ -59,8 +60,9 @@ const ModalMenu = (props) => {
           </div>
         </div>
       ) : (
-        <div className="sm:h-16 h-16 max-w-[1232px] border-b-[1px] border-black justify-between mx-auto flex items-center relative transition-opacity duration-300">
-          <div className="flex flex-row items-center space-x-2">
+        <div className="sm:h-40 h-40 min-w-[1232px] justify-between mx-auto flex items-center relative transition-opacity duration-300">
+          <div className="flex flex-row w-full items-center justify-between border-b-[1px] border-black">
+            <div className='flex flex-row space-x-2 items-center'>
             <RiSearchLine size={18} />
             <form onSubmit={handleSearchSubmit}>
               <input
@@ -72,20 +74,43 @@ const ModalMenu = (props) => {
                 className="w-[980px] uppercase text-lg outline-none text-black"
               />
             </form>
-          </div>
-          <button onClick={() => setIsSearch(false)} className="text-3xl">
+            </div>
+            <button onClick={() => setIsSearch(false)} className="text-3xl">
             X
           </button>
+          </div>
         </div>
       )}
 
-      <div className="flex flex-col mt-60">
+      <div className="flex flex-col min-w-[1232px]">
         {MENU.map((item, index) => (
           <Link href={item.slug} key={index} className="w-fit">
             <h3 className="text-[36px] hover:underline">{item.name}</h3>
           </Link>
         ))}
       </div>
+      <div className='flex flex-row justify-between mt-6 min-w-[1232px]'>
+        <ul className="text-sm flex flex-row uppercase space-x-8">
+              <li className="py-1 hover:underline hover:underline-offset-4">
+                <Link href={`/about`}>about</Link>
+              </li>
+              <li className="py-1 hover:underline hover:underline-offset-4">
+                <Link href={`/contacts`}>contact</Link>
+              </li>
+              <li className="py-1 hover:underline hover:underline-offset-4">
+                <Link href={`/`}>follow us</Link>
+              </li>
+            </ul>
+        <div className="flex flex-row space-x-2">
+                <Link href={'https://www.facebook.com/mmagazinevietnam/'}>
+                  <RiFacebookFill size={24} />
+                </Link>
+                <Link href={'https://www.instagram.com/mmagvietnam/'}>
+                  <IoLogoInstagram size={24} />
+                </Link>
+              </div>
+        </div>
+
     </div>
   )
 }
@@ -118,28 +143,12 @@ const MENU = [
     slug: '/watches-jewellery',
   },
   {
-    name: 'Business',
-    slug: '/business',
-  },
-  {
     name: 'M Make It',
     slug: '/m-make-it',
   },
   {
-    name: 'Runway',
-    slug: '/runway',
-  },
-  {
     name: 'Art & Design',
     slug: '/art-design',
-  },
-  {
-    name: 'Voyages & Gourmet',
-    slug: '/voyages-gourmet',
-  },
-  {
-    name: 'Tech',
-    slug: '/tech',
   },
   {
     name: 'M For Career',
@@ -148,13 +157,5 @@ const MENU = [
   {
     name: 'M For Men',
     slug: '/m-for-men',
-  },
-  {
-    name: 'Money & Finance',
-    slug: '/money-finance',
-  },
-  {
-    name: 'Shopping',
-    slug: '/shopping',
   },
 ]

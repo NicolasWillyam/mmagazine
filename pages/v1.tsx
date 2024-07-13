@@ -2,8 +2,23 @@ import ListLatestPost from 'components/v1/LatestPost'
 import NavBar from 'components/v1/NavBar'
 import Overview from 'components/v1/Overview'
 import PostByCategory from 'components/v1/PostByCategory'
+import { useState, useEffect } from 'react'
+import { getAllOfPosts } from 'lib/sanity.client'
+import { Post } from 'lib/sanity.queries'
 
 const Home = () => {
+
+  const [posts, setPosts] = useState<Post[]>([])
+
+  useEffect(() => {
+    async function fetchPosts() {
+      const { posts } = await getAllOfPosts()
+      if (!posts) return
+      setPosts(posts.slice(0, 6))
+    }
+    fetchPosts()
+  }, [])
+
   return (
     <>
       <div className="w-full space-y-16">
@@ -21,7 +36,7 @@ const Home = () => {
           )}
         </div>
         <div className="w-full flex flex-col items-center">
-          <ListLatestPost />
+          <ListLatestPost posts={posts} isLatest/>
         </div>
       </div>
     </>
