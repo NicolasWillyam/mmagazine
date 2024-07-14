@@ -81,9 +81,9 @@ const NavBar = ({ state }: { state: string }) => {
   }
 
   return (
-    <div className="w-full fixed top-0 z-[999px]">
+    <div className="w-full max-w-[1920px] fixed top-0 z-[999px]">
       <div
-        className={`sm:h-16 h-16 max-w-[1232px] mx-auto justify-between flex items-center relative transition-opacity duration-300 ${
+        className={`sm:h-16 h-16 w-3/4 mx-auto justify-between flex items-center relative transition-opacity duration-300 ${
           show ? 'opacity-100' : 'opacity-0'
         }`}
       >

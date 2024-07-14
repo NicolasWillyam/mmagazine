@@ -33,38 +33,38 @@ const PostCard = (props: PostProps) => {
 
   if (isMain)
     return (
-      <div className="flex flex-col space-y-4 w-[600px]">
+      <div className="flex flex-col space-y-4 sm:items-center">
         <Image
           src={url}
           alt="thumbnail"
           width={600}
           height={780}
-          className="cursor-pointer"
+          className="cursor-pointer justify-self-center"
           onClick={onGoPost}
         />
-        <h6 className="text-xl cursor-pointer" onClick={onGoCategory}>
+        <h6 className="sm:text-md md:text-xl cursor-pointer" onClick={onGoCategory}>
           {category.name}
         </h6>
-        <h2 className="text-2xl font-medium cursor-pointer" onClick={onGoPost}>
+        <h2 className="sm:text-xl md:text-2xl font-medium cursor-pointer" onClick={onGoPost}>
           {title}
         </h2>
       </div>
     )
   return (
-    <div className="flex flex-row space-x-4 w-[600px]">
+    <div className="sm:flex flex-col md:flex-row md:space-x-4 w-full sm:justify-around">
       <Image
         src={url}
         alt="thumbnail"
-        width={300}
-        height={390}
+        width={440}
+        height={370}
         className="cursor-pointer"
         onClick={onGoPost}
       />
       <div className="flex flex-col space-y-4">
-        <h6 className="text-xl cursor-pointer" onClick={onGoCategory}>
+        <h6 className="sm:text-md md:text-xl cursor-pointer" onClick={onGoCategory}>
           {category.name}
         </h6>
-        <h2 className="text-2xl font-medium cursor-pointer" onClick={onGoPost}>
+        <h2 className="sm:text-xl md:text-2xl font-medium cursor-pointer" onClick={onGoPost}>
           {title}
         </h2>
       </div>

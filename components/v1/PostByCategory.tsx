@@ -25,9 +25,9 @@ const PostByCategory = ({
 
   if (quantity == 4)
     return (
-      <section className="space-y-4">
+      <section className="space-y-4 w-3/4">
         <h2 className="text-4xl">{category}</h2>
-        <div className="grid grid-cols-2 gap-8">
+        <div className="sm:flex sm:flex-col md:grid md:grid-cols-2 gap-8">
           {listPost.map((item, index) => (
             <PostCard {...item} key={index} />
           ))}
@@ -36,21 +36,26 @@ const PostByCategory = ({
     )
 
   return (
-    <section className="space-y-8">
+    <section className="space-y-8 w-3/4">
       <h2 className="text-4xl">{category}</h2>
-      <div className="flex flex-row space-x-8">
+      <div className="grid grid-cols-12 w-full space-x-8">
+        <div className="flex flex-col col-span-5 space-y-8">
         <PostCard {...listPost[0]} isMain={true} />
-        <div className="flex flex-col space-y-8">
+        </div>
+        <div className="flex flex-col col-span-7 space-y-8">
           <PostCard {...listPost[1]} />
           <PostCard {...listPost[2]} />
         </div>
       </div>
-      <div className="flex flex-row space-x-8">
-        <div className="flex flex-col space-y-8">
+      <div className="grid grid-cols-12 w-full space-x-8">
+        <div className="flex flex-col col-span-7 space-y-8">
           <PostCard {...listPost[3]} />
           <PostCard {...listPost[4]} />
         </div>
+        <div className="flex flex-col col-span-5 space-y-8">
         <PostCard {...listPost[5]} isMain={true} />
+
+        </div>
       </div>
     </section>
   )

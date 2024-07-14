@@ -16,6 +16,7 @@ const Overview = (props: OverviewProps) => {
   const [posts, setPosts] = useState<Post[]>([])
 
   const checkPath = (path: string) => {
+    if (!category) return false
     return path === category
   }
 
@@ -29,21 +30,24 @@ const Overview = (props: OverviewProps) => {
   }, [])
 
   return (
-    <div className="w-[1232px] h-fit flex flex-col">
-      <div className="flex flex-row space-x-8">
-        <div className="flex flex-col mt-60">
+    <div className="w-3/4 h-fit flex flex-col">
+      <div className="flex flex-row space-x-8 w-full">
+        <div className="flex flex-col mt-40">
           {LIST_CATEGORY.map((item, index) => (
             <Link href={item.href} key={index} className="w-fit">
-              <h3 className={`${checkPath(item.label) || !category ? "text-[56px]" : "text-[36px]"} hover:underline`}>{item.label}</h3>
+              <h3 className={`${checkPath(item.label) ? "text-[56px]" : "text-[36px]"} hover:underline`}>{item.label}</h3>
             </Link>
           ))}
         </div>
-        <div>
+        <div className='w-full'>
           {
             !isOverview ? (
-            <div className="flex flex-row space-x-8">
+            <div className="grid grid-cols-12 space-x-8">
+              <div className='col-span-6'>
             <OverviewPostCard {...posts[0]} isMain />
-            <div className="flex flex-col space-y-8">
+
+                </div>
+            <div className="flex flex-col col-span-6 space-y-8">
               <OverviewPostCard {...posts[1]} />
               <OverviewPostCard {...posts[2]} />
             </div>

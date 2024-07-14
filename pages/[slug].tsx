@@ -65,7 +65,7 @@ export default function CategoryPosts({
   const [heroPost, ...morePosts] = posts || []
 
   return (
-    <>
+    <div className='flex flex-col justify-center'>
       <Head>
         <title>{slugToCategory(category)}</title>
         <meta
@@ -75,7 +75,7 @@ export default function CategoryPosts({
         <meta name="description" content={'M MAGAZINE Vietnam'} />
       </Head>
       {/* <NavBar state="black" /> */}
-      <div className="w-full space-y-16">
+      <div className="w-full max-w-[1920px] justify-self-center space-y-16">
         <NavBar state="black"/>
         <div className="w-full flex justify-center">
           <Overview category={slugToCategory(category)} isOverview/>
@@ -107,7 +107,7 @@ export default function CategoryPosts({
       )}
 
       <Footer />
-    </>
+    </div>
   )
 }
 // Assuming you have a function to fetch all categories for dynamic paths

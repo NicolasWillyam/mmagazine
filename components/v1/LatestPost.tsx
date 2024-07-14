@@ -15,7 +15,7 @@ type PostProps = {
 
 const ListLatestPost = ({posts, isLatest}: {posts: Post[], isLatest?: boolean}) => {
   return (
-    <section>
+    <section className='w-3/4'>
       {
         !!isLatest && <h2 className="text-4xl">Latest</h2>
       }

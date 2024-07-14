@@ -33,12 +33,12 @@ const OverviewPostCard = (props: PostProps) => {
 
   if (isMain)
     return (
-      <div className="flex flex-col space-y-4 w-[400px]">
+      <div className="flex flex-col space-y-4 w-full">
         <Image
           src={url}
           alt="thumbnail"
-          width={400}
-          height={520}
+          width={492}
+          height={640}
           className="cursor-pointer"
           onClick={onGoPost}
         />
@@ -51,12 +51,12 @@ const OverviewPostCard = (props: PostProps) => {
       </div>
     )
   return (
-    <div className="flex flex-row space-x-4 w-[400px]">
+    <div className="flex flex-row space-x-4 w-full">
       <Image
         src={url}
         alt="thumbnail"
-        width={200}
-        height={260}
+        width={295}
+        height={368}
         className="cursor-pointer"
         onClick={onGoPost}
       />
