@@ -80,9 +80,9 @@ const NavBar = ({ state }: { state: string }) => {
   }
 
   return (
-    <div className="w-full fixed top-0 xl:px-10 px-6 z-[999px]">
+    <div className="w-full fixed top-0 xl:px-14 px-6 z-[999px]">
       <div
-        className={`sm:h-16 h-16 xl:max-w-[1440px] 2xl:max-w-[1920px] mx-auto flex items-center justify-end relative transition-opacity duration-300 ${
+        className={`sm:h-24 h-16 xl:max-w-[1440px] 2xl:max-w-[1920px] mx-auto flex items-center justify-end relative transition-opacity duration-300 ${
           show ? 'opacity-100' : 'opacity-0'
         }`}
       >
@@ -97,7 +97,7 @@ const NavBar = ({ state }: { state: string }) => {
         </Link>
         <div
           onClick={toggleMenu}
-          className={`uppercase font-semibold text-base sm:text-xl cursor-pointer text-${state}`}
+          className={`uppercase text-base sm:text-2xl cursor-pointer text-${state}`}
         >
           MENU
         </div>

@@ -115,13 +115,7 @@ export default defineType({
                         ],
                       },
                     },
-                    // {
-                    //   name: 'image',
-                    //   type: 'image',
-                    //   title: 'Image',
-                    //   hidden: ({ parent }) => parent.type !== 'image', // Only show if type is 'image'
-                    // },
-                    // Add fields specific to each type of content item
+
                     {
                       name: 'image',
                       type: 'image',
@@ -142,6 +136,21 @@ export default defineType({
                       type: 'string',
                       title: 'Brand',
                       hidden: ({ parent }) => parent.type !== 'product', // Only show if type is 'product'
+                    },
+                    {
+                      name: 'currency',
+                      type: 'string',
+                      title: 'Currency',
+                      options: {
+                        list: [
+                          // { title: 'Image', value: 'image' },
+                          { title: '€', value: '€' },
+                          { title: '$', value: '$' },
+                          { title: '¥', value: '¥' },
+                          { title: 'đ', value: 'đ' },
+                          // Add other content types as needed
+                        ],
+                      },
                     },
                     {
                       name: 'price',
