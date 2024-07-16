@@ -108,10 +108,12 @@ export default function ProjectSlugRoute(props: PageProps) {
         settings={{}} // Pass your settings here
         loadedStatus={loadedStatus}
         setLoadedStatus={setLoadedStatus} // Update loadedStatus to false
+        order={0}
       />
       {categoriesWithPosts?.slice(0, 5)?.map((post, index) => (
         <div key={index}>
           <PostPage
+            order={1}
             post={post}
             morePosts={morePosts}
             settings={{}} // Pass your settings here

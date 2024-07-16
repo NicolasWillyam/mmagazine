@@ -220,6 +220,29 @@ export default defineType({
       },
       validation: (rule) => rule.required(),
     }),
+
+    defineField({
+      name: 'coverVideo',
+      title: 'Cover Video',
+      type: 'file',
+      options: {
+        accept: 'video/*', // Ensures that only video files can be uploaded
+      },
+      fields: [
+        {
+          name: 'caption',
+          type: 'string',
+          title: 'Video Caption',
+          description: 'Caption displayed below the video.',
+        },
+        {
+          name: 'alt',
+          type: 'string',
+          title: 'Alternative text',
+          description: 'Important for SEO and accessibility.',
+        },
+      ],
+    }),
     defineField({
       name: 'date',
       title: 'Date',

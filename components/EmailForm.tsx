@@ -45,7 +45,6 @@ const EmailForm = () => {
           </form>
         </div>
       </div>
-      <hr className="my-6 border-t-[2px] border-black" />
     </>
   )
 }

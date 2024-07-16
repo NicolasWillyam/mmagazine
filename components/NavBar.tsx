@@ -82,7 +82,7 @@ const NavBar = ({ state }: { state: string }) => {
   return (
     <div className="w-full fixed top-0 xl:px-14 px-6 z-[999px]">
       <div
-        className={`sm:h-24 h-16 xl:max-w-[1440px] 2xl:max-w-[1920px] mx-auto flex items-center justify-end relative transition-opacity duration-300 ${
+        className={`sm:h-24 h-16 xl:max-w-[1440px] mx-auto flex items-center justify-end relative transition-opacity duration-300 ${
           show ? 'opacity-100' : 'opacity-0'
         }`}
       >
@@ -92,7 +92,7 @@ const NavBar = ({ state }: { state: string }) => {
             alt="logo"
             width={40}
             height={40}
-            className="absolute top-0 left-0 sm:mt-5 mt-3 cursor-pointer sm:w-[104px] sm:h-[140px]"
+            className="absolute top-0 left-0 sm:mt-8 mt-3 cursor-pointer sm:w-[104px] sm:h-[140px]"
           />
         </Link>
         <div

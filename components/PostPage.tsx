@@ -31,8 +31,10 @@ import { HiArrowLongRight } from 'react-icons/hi2'
 
 import BlogContainer from './BlogContainer'
 import { Button } from './ui/button'
+import PortraitPost from './PortraitPostHead'
 
 export interface PostPageProps {
+  order: number
   preview?: boolean
   loading?: boolean
   post: Post
@@ -46,6 +48,7 @@ const NO_POSTS: Post[] = []
 
 export default function PostPage(props: PostPageProps) {
   const {
+    order,
     preview,
     loading,
     morePosts = NO_POSTS,
@@ -105,10 +108,13 @@ export default function PostPage(props: PostPageProps) {
                     author={post.author}
                   />
 
-                  <PostBody content={post.content} posts={morePosts} />
+                  <PostBody
+                    order={order}
+                    content={post.content}
+                    posts={morePosts}
+                  />
                 </article>
                 <SectionSeparator />
-                {/* {morePosts?.length > 0 && <MoreStories posts={morePosts} />} */}
               </>
             )}
           </BlogContainer>

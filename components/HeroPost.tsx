@@ -1,17 +1,49 @@
 import AuthorAvatar from 'components/AuthorAvatar'
 import CoverImage from 'components/CoverImage'
 import Date from 'components/PostDate'
+import { client } from 'lib/sanity'
 import { urlForImage } from 'lib/sanity.image'
 import type { Post } from 'lib/sanity.queries'
 import Link from 'next/link'
+import { useEffect, useState } from 'react'
 
 import { CategoryNameComponent } from './PostDetailComponents'
 
 export default function HeroPost({ posts }: { posts: Post }) {
+  const [videoUrl, setVideoUrl] = useState<string | null>(null)
+
+  useEffect(() => {
+    const fetchVideoUrl = async () => {
+      if (posts.coverVideo._ref) {
+        try {
+          const document = await client.getDocument(posts.coverVideo._ref)
+          console.log(document) // For debugging
+          if (document && document.url) {
+            setVideoUrl(document.url)
+          }
+        } catch (error) {
+          console.error('Error fetching video URL:', error)
+        }
+      }
+    }
+
+    fetchVideoUrl()
+  }, [posts.coverVideo._ref])
+
+  useEffect(() => {
+    console.log(videoUrl) // For debugging
+  }, [videoUrl])
+
   const img = urlForImage(posts?.coverImage).height(1000).width(2000).url()
 
   return (
     <section>
+      {/* <div className="video-container">
+        <video autoPlay loop>
+          <source src={videoUrl} type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+      </div> */}
       <div
         style={{
           backgroundImage: `url('${img}')`,

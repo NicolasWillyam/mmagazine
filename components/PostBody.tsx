@@ -60,19 +60,23 @@ const myPortableTextComponents: Partial<PortableTextReactComponents> = {
 }
 
 export default function PostBody({
+  order,
   posts,
   content,
 }: {
+  order: number
   posts: Post[]
   content: any
 }) {
   return (
     <div className="w-full flex mt-6 sm:mt-12">
       <div className="hidden sm:block sm:w-2/5 h-auto mt-48 mr-[60px]">
-        <div className="text-left py-auto max-w-[350px] mx-auto">
-          <EmailForm />
-          <SuggestPostInPostBody posts={posts} />
-        </div>
+        {order == 0 && (
+          <div className="text-left py-auto max-w-[350px] mx-auto">
+            <EmailForm />
+            <SuggestPostInPostBody posts={posts} />
+          </div>
+        )}
       </div>
 
       <div className="sm:w-3/5 px-4 sm:px-0">

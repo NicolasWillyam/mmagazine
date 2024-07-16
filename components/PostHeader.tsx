@@ -25,100 +25,62 @@ import { TbMailFilled } from 'react-icons/tb'
 import category from 'schemas/category'
 
 import { CategoryNameComponent } from './PostDetailComponents'
+import { useEffect, useState } from 'react'
+import { client } from 'lib/sanity'
+import PortraitPostHead from './PortraitPostHead'
+import LandscapePostHead from './LandscapePostHead'
 
 export default function PostHeader(props: Post) {
   const { title, description, category, coverImage, date, author, slug } = props
   const postImage = urlForImage(coverImage).url()
+  console.log(coverImage)
   const pathname = usePathname()
   const url = `${process.env.NEXT_PUBLIC_BASE_URL}${pathname}`
 
+  const [postLayout, setPostLayout] = useState<String>('')
+
+  useEffect(() => {
+    // Fetch image asset metadata
+    client
+      .getDocument(coverImage.asset._ref)
+      .then((asset) => {
+        if (asset && asset.metadata && asset.metadata.dimensions) {
+          console.log('Dimensions:', asset.metadata.dimensions.height)
+          console.log('Dimensions:', asset.metadata.dimensions.width)
+          const imgWidth = asset.metadata.dimensions.width
+          const imgHeigh = asset.metadata.dimensions.height
+          if (imgWidth > imgHeigh) {
+            setPostLayout('landscape')
+          } else {
+            setPostLayout('portrait')
+          }
+        }
+      })
+      .catch((error) => console.error('Error fetching asset metadata:', error))
+  }, [coverImage])
+
   return (
     <>
-      <div className="max-w-[1560px] mx-auto sm:flex">
-        <div className="w-full sm:w-2/5 h-full sm:mt-24 mr-10 sm:border-t-[1px] sm:px-0 px-4 pb-8 sm:pb-0">
-          <div className="py-5 flex justify-center sm:justify-between items-center">
-            <CategoryNameComponent category={category} />
-            <p className="text-sm font-light italic hidden sm:block">
-              <Date dateString={date} />
-            </p>
-          </div>
-          <p className="mt-5 mb-8 text-4xl leading-[36px] sm:text-[52px] sm:leading-none text-center sm:text-left">
-            {title}
-          </p>
-          <div className="w-full grid grid-cols-1 gap-5">
-            <p className="text-lg sm:text-xl font-normal leading-[22px] text-center sm:text-left">
-              {description}
-            </p>
-            <p className="text-center sm:text-left">
-              <span className="text-sm italic mr-1">by</span>
-              <span className="text-base font-bold">{author.name}</span>
-            </p>
-            <p className="text-sm text-center font-light italic sm:hidden">
-              <Date dateString={date} />
-            </p>
-            <div className="w-full flex items-center justify-center sm:mb-0 gap-4 sm:justify-start">
-              <FacebookShareButton url={url}>
-                <RiFacebookFill size={24} />
-              </FacebookShareButton>
-              <PinterestShareButton url={url} media="">
-                <FaPinterest size={20} />
-              </PinterestShareButton>
-              <LinkedinShareButton url={url}>
-                <FaLinkedinIn size={20} />
-              </LinkedinShareButton>
-              <WhatsappShareButton url={url}>
-                <FaWhatsapp size={20} />
-              </WhatsappShareButton>
-              <TelegramShareButton url={url}>
-                <LiaTelegram size={20} />
-              </TelegramShareButton>
-            </div>
-          </div>
-          {/* <div className="sm:text-center sm:px-16 px-4">
-            <CategoryNameComponent category={category} />
-            <p className=" mt-4 sm:mt-8  mr-8 sm:mr-0 text-2xl leading-[30px] sm:text-[52px] sm:leading-[54px]">
-              {title}
-            </p>
-            <p className="text-lg my-4 sm:my-6 sm:text-xl">{description}</p>
-            <div className="flex flex-row-reverse gap-1 justify-end sm:block">
-              <p>
-                <span className="text-sm italic mr-1">by</span>
-                <span className="text-base font-bold">{author.name}</span>
-              </p>
-              <p className="text-base font-light italic">
-                <Date dateString={date} />
-              </p>
-            </div>
-            <div className="sm:mx-auto flex items-center w-fit sm:mt-8 sm:mb-0 my-4 gap-4">
-              <FacebookShareButton url={url}>
-                <RiFacebookFill size={24} />
-              </FacebookShareButton>
-              <PinterestShareButton url={url} media="">
-                <FaPinterest size={20} />
-              </PinterestShareButton>
-              <LinkedinShareButton url={url}>
-                <FaLinkedinIn size={20} />
-              </LinkedinShareButton>
-              <WhatsappShareButton url={url}>
-                <FaWhatsapp size={20} />
-              </WhatsappShareButton>
-              <TelegramShareButton url={url}>
-                <LiaTelegram size={20} />
-              </TelegramShareButton>
-            </div>
-          </div> */}
-        </div>
-
-        <div className="w-full sm:w-3/5">
-          <img src={postImage} alt="image" className="w-full h-auto" />
-          {/* <div
-            style={{
-              backgroundImage: `url('${postImage}')`,
-            }}
-            className="w-full h-full bg-cover bg-no-repeat bg-center"
-          ></div> */}
-        </div>
-      </div>
+      {postLayout == 'portrait' && (
+        <PortraitPostHead
+          title={title}
+          description={description}
+          category={category}
+          coverImage={coverImage}
+          date={date}
+          author={author}
+        />
+      )}
+      {postLayout == 'landscape' && (
+        <LandscapePostHead
+          title={title}
+          description={description}
+          category={category}
+          coverImage={coverImage}
+          date={date}
+          author={author}
+        />
+      )}
     </>
   )
 }

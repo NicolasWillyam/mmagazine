@@ -1,4 +1,5 @@
 import 'tailwindcss/tailwind.css'
+import '../styles/fonts.css'
 
 import { VisualEditing } from '@sanity/visual-editing/next-pages-router'
 import { AppProps } from 'next/app'

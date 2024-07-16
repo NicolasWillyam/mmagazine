@@ -106,6 +106,7 @@ export async function getAllOfPosts() {
         _updatedAt,
         excerpt,
         coverImage,
+        "coverVideo": coverVideo.asset,
         "slug": slug.current,
         "author": author->{name, picture},
         "category": category->{name, "slug": slug.current},
