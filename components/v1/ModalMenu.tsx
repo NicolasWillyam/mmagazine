@@ -2,7 +2,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import { useRouter } from 'next/router'
 import { useState } from 'react'
-import { RiSearchLine } from 'react-icons/ri'
+import { RiSearchLine, RiCloseFill } from 'react-icons/ri'
 import { IoLogoInstagram } from 'react-icons/io5'
 import { RiFacebookFill } from 'react-icons/ri'
 
@@ -30,7 +30,7 @@ const ModalMenu = (props) => {
   }
 
   return (
-    <div className="w-full h-fit items-center flex flex-col fixed top-0 z-[999px]">
+    <div className="animate-slideIn w-full h-fit items-center flex flex-col fixed top-0 z-[999px]">
       {!isSearch ? (
         <div
           className={`sm:h-40 h-40 min-w-[1232px] mx-auto justify-between flex flex-row items-center relative transition-opacity duration-300}`}
@@ -71,13 +71,13 @@ const ModalMenu = (props) => {
                 placeholder="Search Magazine..."
                 value={searchQuery}
                 onChange={handleSearchChange}
-                className="w-[980px] uppercase text-lg outline-none text-black"
+                className="w-[980px] uppercase text-lg outline-none text-black placeholder-black"
               />
             </form>
             </div>
             <button onClick={() => setIsSearch(false)} className="text-3xl">
-            X
-          </button>
+            <RiCloseFill />
+            </button>
           </div>
         </div>
       )}
@@ -85,7 +85,7 @@ const ModalMenu = (props) => {
       <div className="flex flex-col min-w-[1232px]">
         {MENU.map((item, index) => (
           <Link href={item.slug} key={index} className="w-fit">
-            <h3 className="text-[36px] hover:underline">{item.name}</h3>
+            <h3 className="text-[38px] leading-[48px] hover:underline hover:italic">{item.name}</h3>
           </Link>
         ))}
       </div>

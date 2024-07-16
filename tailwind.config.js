@@ -31,6 +31,10 @@ module.exports = {
       },
     },
     extend: {
+      fontFamily: {
+        arial: ['Arial', 'sans-serif'],
+        narrow: ['Narrow', 'sans-serif'],
+      },
       colors: {
         border: 'hsl(var(--border))',
         input: 'hsl(var(--input))',
@@ -75,6 +79,10 @@ module.exports = {
         sm: 'calc(var(--radius) - 4px)',
       },
       keyframes: {
+        slideIn: {
+          '0%': { transform: 'translateX(100%)' },
+          '100%': { transform: 'translateX(0)' },
+        },
         'accordion-down': {
           from: { height: '0' },
           to: { height: 'var(--radix-accordion-content-height)' },
@@ -85,6 +93,7 @@ module.exports = {
         },
       },
       animation: {
+        slideIn: 'slideIn 1s ease-out forwards',
         'accordion-down': 'accordion-down 0.2s ease-out',
         'accordion-up': 'accordion-up 0.2s ease-out',
         'animate-pulser':

@@ -33,7 +33,7 @@ const OverviewPostCard = (props: PostProps) => {
 
   if (isMain)
     return (
-      <div className="flex flex-col space-y-4 w-full">
+      <div className="flex flex-col space-y-4 w-full max-w-[492px]">
         <Image
           src={url}
           alt="thumbnail"

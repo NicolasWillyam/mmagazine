@@ -38,21 +38,21 @@ const PostByCategory = ({
   return (
     <section className="space-y-8 w-3/4">
       <h2 className="text-4xl">{category}</h2>
-      <div className="grid grid-cols-12 w-full space-x-8">
-        <div className="flex flex-col col-span-5 space-y-8">
+      <div className="grid grid-cols-12 w-full space-x-16">
+        <div className="flex flex-col col-span-5">
         <PostCard {...listPost[0]} isMain={true} />
         </div>
-        <div className="flex flex-col col-span-7 space-y-8">
+        <div className="flex flex-col col-span-7 space-y-16">
           <PostCard {...listPost[1]} />
           <PostCard {...listPost[2]} />
         </div>
       </div>
-      <div className="grid grid-cols-12 w-full space-x-8">
-        <div className="flex flex-col col-span-7 space-y-8">
+      <div className="grid grid-cols-12 w-full space-x-16">
+        <div className="flex flex-col col-span-7 space-y-16">
           <PostCard {...listPost[3]} />
           <PostCard {...listPost[4]} />
         </div>
-        <div className="flex flex-col col-span-5 space-y-8">
+        <div className="flex flex-col col-span-5 space-y-16">
         <PostCard {...listPost[5]} isMain={true} />
 
         </div>

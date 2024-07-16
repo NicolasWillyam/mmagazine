@@ -30,12 +30,12 @@ const Overview = (props: OverviewProps) => {
   }, [])
 
   return (
-    <div className="w-3/4 h-fit flex flex-col">
-      <div className="flex flex-row space-x-8 w-full">
+    <div className="w-full h-fit flex flex-col items-center">
+      <div className="w-3/4 flex flex-row space-x-8">
         <div className="flex flex-col mt-40">
           {LIST_CATEGORY.map((item, index) => (
             <Link href={item.href} key={index} className="w-fit">
-              <h3 className={`${checkPath(item.label) ? "text-[56px]" : "text-[36px]"} hover:underline`}>{item.label}</h3>
+              <h3 className={`${checkPath(item.label) ? "text-[56px]" : "text-[38px]"} leading-[48px] hover:italic hover:underline`}>{item.label}</h3>
             </Link>
           ))}
         </div>
@@ -62,10 +62,11 @@ const Overview = (props: OverviewProps) => {
               </div>
             )
           }
-          
         </div>
       </div>
-      <div className="h-[20vh] bg-neutral-400 mt-16">gan ads</div>
+      <div className='w-screen mt-8 h-[20vh] bg-gray-500 ads'>
+          gan ads
+      </div>
     </div>
   )
 }
