@@ -81,7 +81,7 @@ export default function PostBody({
 
       <div className="sm:w-3/5 px-4 sm:px-0">
         <div className="text-lg font-light grid grid-cols-1 gap-6">
-          <div className={inter.className}>
+          <div>
             <PortableText
               value={content}
               components={myPortableTextComponents}
