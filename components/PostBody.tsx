@@ -54,7 +54,7 @@ const myPortableTextComponents: Partial<PortableTextReactComponents> = {
     h2: ({ children }) => <h2 className="text-2xl font-normal">{children}</h2>,
     h3: ({ children }) => <h3 className="text-1xl font-normal">{children}</h3>,
     normal: ({ children }) => (
-      <p className="text-base my-4 sm:text-lg sm:my-6">{children}</p>
+      <p className="text-base my-4 sm:text-xl sm:my-6">{children}</p>
     ),
   },
 }
