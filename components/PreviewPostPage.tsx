@@ -26,6 +26,7 @@ export default function PreviewPostPage(props: PostPageProps) {
   return (
     <PostPage
       preview
+      order={null}
       loading={loadingPost || loadingSettings}
       post={postPreview}
       morePosts={morePosts}

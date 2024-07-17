@@ -26,6 +26,7 @@ import HoverCard from './HoverCard'
 
 export interface IndexPageProps {
   preview?: boolean
+  loading?: any
   posts: Post[]
   settings: Settings
 }

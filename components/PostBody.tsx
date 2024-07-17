@@ -80,7 +80,7 @@ export default function PostBody({
       </div>
 
       <div className="sm:w-3/5 px-4 sm:px-0">
-        <div className="text-lg font-light grid grid-cols-1 gap-6 sfu-font">
+        <div className="text-lg font-light grid grid-cols-1 gap-6 sfu-font text-justify">
           <div>
             <PortableText
               value={content}
