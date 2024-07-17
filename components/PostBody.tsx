@@ -54,7 +54,7 @@ const myPortableTextComponents: Partial<PortableTextReactComponents> = {
     h2: ({ children }) => <h2 className="text-2xl font-normal">{children}</h2>,
     h3: ({ children }) => <h3 className="text-1xl font-normal">{children}</h3>,
     normal: ({ children }) => (
-      <p className="text-base my-4 sm:text-xl sm:my-6">{children}</p>
+      <p className="text-base my-4 sm:text-2xl sm:my-6">{children}</p>
     ),
   },
 }
@@ -80,7 +80,7 @@ export default function PostBody({
       </div>
 
       <div className="sm:w-3/5 px-4 sm:px-0">
-        <div className="text-lg font-light grid grid-cols-1 gap-6">
+        <div className="text-lg font-light grid grid-cols-1 gap-6 sfu-font">
           <div>
             <PortableText
               value={content}

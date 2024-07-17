@@ -1,17 +1,22 @@
 // pages/[slug].tsx
 
+import { cn } from '@/lib/utils'
 import Layout from 'app/layout'
-import { Container } from 'components/BlogContainer'
+import BlogContainer, { Container } from 'components/BlogContainer'
 import Footer from 'components/Footer'
 import HeroPost from 'components/HeroPost'
+import HoverCard from 'components/HoverCard'
 import LoadingSpinner from 'components/LoadingSpinner'
+import MenuBar from 'components/MenuBar'
 import MoreBlogInCategory from 'components/MoreBlogInCategory'
 import NavBar from 'components/NavBar'
 import { SuggestPost } from 'components/SuggestPost'
 import { fetchCategories, getPostsByCategory } from 'lib/sanity.client' // Adjust import path as per your project structure
+import { urlForImage } from 'lib/sanity.image'
 import { Post } from 'lib/sanity.queries'
 import { GetStaticPaths, GetStaticProps } from 'next'
 import Head from 'next/head'
+import Link from 'next/link'
 import { useRouter } from 'next/router'
 import { useEffect, useState } from 'react'
 import { slugToCategory } from 'utils/function'
@@ -46,6 +51,9 @@ export default function CategoryPosts({
   }
   const [heroPost, ...morePosts] = posts || []
 
+  const headerPosts = posts.slice(0, 2) || []
+  const bodyPosts = posts || []
+
   return (
     <>
       <Head>
@@ -59,14 +67,89 @@ export default function CategoryPosts({
       <NavBar state="black" />
 
       {posts.length > 0 ? (
-        <div className="min-h-screen w-full mx-auto">
-          {/* <BlogHeader title={title} description={description} level={1} /> */}
-          {heroPost && <HeroPost posts={posts[0]} />}
+        <div className="w-full mx-auto pt-24">
+          <BlogContainer>
+            {/* <HeroPost posts={posts} /> */}
 
-          <Container>
-            <SuggestPost posts={morePosts} />
-            {morePosts.length > 3 && <MoreBlogInCategory posts={morePosts} />}
-          </Container>
+            <div className="w-full flex items-start mb-12">
+              <MenuBar inActive={category} />
+              <div className="w-full">
+                <div className="w-full text-right capitalize tracking-tight text-[116px] -mt-12">
+                  {category}
+                </div>
+                <div className="w-full grid grid-cols-2 gap-12 mt-10">
+                  {headerPosts.map((_, id) => (
+                    <div key={id}>
+                      <Link href={`/posts/${_.slug}`}>
+                        <div
+                          style={{
+                            backgroundImage: `url('${urlForImage(_.coverImage).url()}')`,
+                          }}
+                          className="w-full h-[590px] bg-cover bg-no-repeat bg-center"
+                        >
+                          <HoverCard />
+                        </div>
+
+                        <div className="mt-8">
+                          <p className="uppercase text-lg ">
+                            {_.category.name}
+                          </p>
+                        </div>
+                        <div className="mt-6">
+                          <p className="text-[32px] leading-none">{_.title}</p>
+                        </div>
+                      </Link>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            </div>
+          </BlogContainer>
+          <div className="w-full h-[330px] bg-gray-200 text-center p-4">
+            <p className="text-gray-400 text-[10px] tracking-tight">
+              ADVERTISEMENT
+            </p>
+          </div>
+          <BlogContainer>
+            <div className="grid grid-cols-1 gap-[136px] my-10">
+              {bodyPosts.map((_, id) => {
+                if (id > 2) {
+                  return (
+                    <div key={id}>
+                      <Link href={`/posts/${_.slug}`}>
+                        <div
+                          className={cn(
+                            id % 2 == 0 ? '' : 'flex-row-reverse',
+                            'flex gap-8 h-full',
+                          )}
+                        >
+                          <div
+                            style={{
+                              backgroundImage: `url('${urlForImage(_.coverImage).url()}')`,
+                            }}
+                            className="w-1/2 h-[350px] bg-cover bg-no-repeat bg-center"
+                          >
+                            <HoverCard />
+                          </div>
+
+                          <div className="w-1/2 h-full flex flex-col justify-center items-center text-center px-8 ">
+                            <div className="mt-8">
+                              <p className="uppercase text-lg ">
+                                {_.category.name}
+                              </p>
+                            </div>
+                            <div className="mt-6">
+                              <p className="text-5xl leading-none">{_.title}</p>
+                            </div>
+                          </div>
+                        </div>
+                      </Link>
+                    </div>
+                  )
+                }
+              })}
+            </div>
+          </BlogContainer>
         </div>
       ) : (
         <div className="min-h-screen w-full flex items-center justify-center">
@@ -77,8 +160,6 @@ export default function CategoryPosts({
           </div>
         </div>
       )}
-
-      <Footer />
     </>
   )
 }

@@ -30,7 +30,7 @@ interface Query {
   [key: string]: string
 }
 
-const fetchPostsByCategory = async (
+export const fetchPostsByCategory = async (
   categoryName: string,
   title: string,
   setCategoriesWithPosts: Function,

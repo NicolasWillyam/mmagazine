@@ -28,7 +28,7 @@ export function ArticleSuggestCard({
           <p className="sm:block hidden uppercase md:text-base lg:text-sm underline underline-offset-2">
             {category.name}
           </p>
-          <p className="text-base leading-[20px] md:text-xl lg:text-lg xl:text-xl">
+          <p className="text-base leading-[20px] md:text-xl lg:text-lg xl:text-xl sfu-font">
             {title}
           </p>
           <p className=" text-xs md:text-sm">

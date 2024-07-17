@@ -40,21 +40,21 @@ const LandscapePostHead = (props: Post) => {
         <div className="w-full h-full sm:mt-24 mr-10 sm:border-y-[1px] sm:px-0 px-4 pb-8 mb-14">
           <div className="grid grid-cols-2 pt-8 pb-14">
             <CategoryNameComponent category={category} />
-            <p className="text-sm font-light italic hidden sm:block text-right">
+            <p className="text-2xl font-light italic hidden sm:block text-right shelley-font">
               <Date dateString={date} />
             </p>
           </div>
 
           <div className="grid grid-cols-2">
             <div>
-              <p className="mb-4 text-4xl leading-[36px] sm:text-[52px] sm:leading-none text-center sm:text-left">
+              <p className="mb-4 text-4xl leading-[36px] sm:text-[52px] sm:leading-none text-center sm:text-left sfu-font">
                 {title}
               </p>
             </div>
             <div className="text-right">
               <div className="w-3/4 ml-auto grid grid-cols-1 gap-5">
                 <p className="text-center sm:text-right">
-                  <span className="text-sm italic mr-1">by</span>
+                  <span className="text-2xl italic mr-2 shelley-font">by</span>
                   <span className="text-base font-bold">{author.name}</span>
                 </p>
                 <p className="text-lg sm:text-xl font-normal leading-[22px] text-center sm:text-right">

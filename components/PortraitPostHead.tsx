@@ -38,11 +38,11 @@ const PortraitPostHead = (props: Post) => {
       <div className="w-full sm:w-2/5 h-full sm:mt-24 mr-10 sm:border-t-[1px] sm:px-0 px-4 pb-8 sm:pb-0">
         <div className="py-5 flex justify-center sm:justify-between items-center">
           <CategoryNameComponent category={category} />
-          <p className="text-sm font-light italic hidden sm:block">
+          <p className="text-2xl font-light italic hidden sm:block shelley-font">
             <Date dateString={date} />
           </p>
         </div>
-        <p className="mt-5 mb-8 text-4xl leading-[36px] sm:text-[52px] sm:leading-none text-center sm:text-left">
+        <p className="mt-5 mb-8 text-4xl leading-[36px] sm:text-[52px] sm:leading-none text-center sm:text-left sfu-font">
           {title}
         </p>
         <div className="w-full grid grid-cols-1 gap-5">
@@ -50,7 +50,7 @@ const PortraitPostHead = (props: Post) => {
             {description}
           </p>
           <p className="text-center sm:text-left">
-            <span className="text-sm italic mr-1">by</span>
+            <span className="text-2xl italic mr-2 shelley-font">by</span>
             <span className="text-base font-bold">{author.name}</span>
           </p>
           <p className="text-sm text-center font-light italic sm:hidden">

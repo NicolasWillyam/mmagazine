@@ -5,7 +5,7 @@ import styles from './LoadingAnimation.module.css'
 
 const LoadingSpinner: React.FC = () => {
   return (
-    <div className="uppercase text-4xl font-light tracking-wide  animate-pulse">
+    <div className="uppercase text-4xl font-light tracking-wide  animate-pulse sfu-font">
       Loading
     </div>
   )

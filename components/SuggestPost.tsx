@@ -37,9 +37,9 @@ export const SuggestPost = ({ posts }: { posts: Post[] }) => {
 export const SuggestPostInPostBody = ({ posts }: { posts: Post[] }) => {
   return (
     <div>
-      <hr className="my-6 border-t-[2px] border-black" />
-      <p className="text-[28px] font-semibold">Có thể bạn sẽ thích</p>
-      <div className="mt-6 w-full grid grid-cols-2 gap-6">
+      <hr className="my-6 border-t-[1.5px] border-black" />
+      <p className="text-[28px] font-semibold  sfu-font">Có thể bạn sẽ thích</p>
+      <div className="mt-6 w-full grid grid-cols-2 gap-6  sfu-font">
         {posts.map((post) => (
           <PostSuggested
             key={post._id}
@@ -72,7 +72,7 @@ function PostSuggested({
           }}
           className="w-full h-[170px] bg-cover bg-no-repeat bg-center"
         />
-        <p className="mt-4 text-sm font-light">{title}</p>
+        <p className="mt-4">{title}</p>
       </div>
     </Link>
   )

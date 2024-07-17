@@ -16,6 +16,13 @@ import LoadingSpinner from './LoadingSpinner'
 import MoreBlogs from './MoreBlogs'
 import NavBar from './NavBar'
 import { SuggestPost } from './SuggestPost'
+import MenuBar from './MenuBar'
+import CategoryPostsLayout from './CategoryPostsLayout'
+import CategoryContainer from './CategoryContainer'
+import Link from 'next/link'
+import { urlForImage } from 'lib/sanity.image'
+import { cn } from '@/lib/utils'
+import HoverCard from './HoverCard'
 
 export interface IndexPageProps {
   preview?: boolean
@@ -29,6 +36,7 @@ export default function IndexPage(props: IndexPageProps) {
   const { settings } = props
   const { title = demo.title, description = demo.description } = settings || {}
   const [allPosts, setAllPosts] = useState<Post[]>([])
+  const [posts, setPosts] = useState<Post[]>([])
 
   useEffect(() => {
     async function fetchPosts() {
@@ -37,6 +45,7 @@ export default function IndexPage(props: IndexPageProps) {
 
         setTimeout(() => {
           setAllPosts(posts)
+          setPosts(posts.slice(0, 3))
           setLoading(false) // Set loading to false after data is fetched
         }, 1000)
       } catch (error) {
@@ -60,27 +69,36 @@ export default function IndexPage(props: IndexPageProps) {
     )
   }
 
+  console.log(posts)
+
   return (
     <>
       <NavBar state="black" />
       <IndexPageHead settings={settings} />
 
-      <div className="min-h-screen w-full mx-auto">
+      <div className="w-full mx-auto pt-24">
         <BlogContainer>
           {/* Render HeroPost if exists */}
-          {heroPost && <HeroPost posts={heroPost} />}
+          {/* {heroPost && <HeroPost posts={heroPost} />} */}
 
+          <HeroPost posts={posts} />
           {/* Render SuggestPost with suggestPosts */}
-          <SuggestPost posts={suggestPosts} />
+          {/* <SuggestPost posts={suggestPosts} /> */}
 
-          <div className="xl:max-w-[1440px] 2xl:max-w-[1920px] mx-auto">
-            {/* Render MoreBlogs component if suggestPosts exist */}
+          {/* <div className="xl:max-w-[1440px] 2xl:max-w-[1920px] mx-auto">
             {suggestPosts.length > 0 && <MoreBlogs posts={suggestPosts} />}
-          </div>
+          </div> */}
+        </BlogContainer>
+        <div className="w-full h-[330px] bg-gray-200 text-center p-4">
+          <p className="text-gray-400 text-[10px] tracking-tight">
+            ADVERTISEMENT
+          </p>
+        </div>
+
+        <BlogContainer>
+          <CategoryContainer />
         </BlogContainer>
       </div>
-
-      <Footer />
     </>
   )
 }
