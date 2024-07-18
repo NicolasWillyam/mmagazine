@@ -27,11 +27,11 @@ export const menuList: Menu[] = [
   },
   {
     name: 'Voyages & Gourmet',
-    slug: 'voyages-gourmet',
+    slug: 'voyage-and-gourmet',
   },
   {
     name: 'Art & Design',
-    slug: 'art-design',
+    slug: 'art-and-design',
   },
   {
     name: 'Business',
@@ -67,7 +67,7 @@ const MenuBar = ({ inActive }: { inActive: String }) => {
           if (_.slug == inActive) {
             return (
               <Link key={id} href={`/${_.slug}`}>
-                <li className="italic tracking w-fit cursor-pointer flex items-end gap-2 text-red-700">
+                <li className="italic tracking w-fit cursor-pointer flex items-end gap-2 text-red-600">
                   <div className="w-14 h-[1px] bg-black/50 -ml-16 mb-2.5 "></div>
                   {_.name}
                 </li>

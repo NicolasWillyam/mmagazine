@@ -121,11 +121,19 @@ const NavBar = ({ state }: { state: string }) => {
                 className="absolute top-0 left-0 sm:mt-8 mt-3 cursor-pointer sm:w-[104px] sm:h-[140px]"
               />
             </Link>
-            <div
-              onClick={toggleMenu}
-              className={`uppercase text-base sm:text-2xl cursor-pointer arial-font text-${state}`}
-            >
-              Close
+            <div className="flex items-center gap-10">
+              <div
+                onClick={toggleMenu}
+                className={`uppercase text-base sm:text-2xl cursor-pointer arial-font text-${state}`}
+              >
+                <Link href={'/search'}>Search</Link>
+              </div>{' '}
+              <div
+                onClick={toggleMenu}
+                className={`uppercase text-base sm:text-2xl cursor-pointer arial-font text-${state}`}
+              >
+                Close
+              </div>
             </div>
           </div>
 

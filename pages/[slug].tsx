@@ -74,8 +74,8 @@ export default function CategoryPosts({
             <div className="w-full flex items-start mb-12">
               <MenuBar inActive={category} />
               <div className="w-full">
-                <div className="w-full text-right capitalize tracking-tighter text-[50px] sm:text-[116px] -mt-6 sm:-mt-12 sfu-font">
-                  {category}
+                <div className="w-full text-right capitalize tracking-tighter text-[50px] sm:text-[116px] -mt-6 sm:-mt-12 sfu-font italic text-red-600">
+                  {slugToCategory(category)}
                 </div>
                 <div className="w-full grid sm:grid-cols-2 gap-12 mt-5 sm:mt-10">
                   {headerPosts.map((_, id) => (
