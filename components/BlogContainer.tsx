@@ -1,7 +1,7 @@
 export function Container({ children }) {
   return (
     <>
-      <div className="sm:max-w-[1440px] 2xl:max-w-[1920px] mx-auto min-h-screen">
+      <div className="sm:max-w-[1440px] 2xl:max-w-[1920px] mx-auto ">
         <main>{children}</main>
       </div>
     </>

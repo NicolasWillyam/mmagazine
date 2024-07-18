@@ -96,11 +96,11 @@ const NavBar = ({ state, category }: { state: string; category: string }) => {
               return (
                 <Link key={id} href={`/${_.slug}`}>
                   <li
-                    className="italic tracking w-fit cursor-pointer flex items-end gap-2 hover:text-red-600 transition duration-100"
+                    className="italic tracking w-fit cursor-pointer flex items-end hover:text-red-600 transition duration-100"
                     onClick={() => setMenuOpen(false)}
                   >
-                    <div className="w-14 h-[1px] bg-black/50 -ml-16 mb-2.5 "></div>
-                    {_.name}
+                    <div className="w-16 h-[1px] bg-black/50 -ml-16 mb-2 xl:mb-2.5 "></div>
+                    <p className="-ml-1">{_.name}</p>
                   </li>
                 </Link>
               )
@@ -139,20 +139,21 @@ const NavBar = ({ state, category }: { state: string; category: string }) => {
               className="absolute top-0 left-0 sm:mt-8 mt-3 cursor-pointer sm:w-[104px] sm:h-[140px]"
             />
           </Link>
+
           <div
             onClick={toggleMenu}
-            className={`uppercase text-base sm:text-2xl cursor-pointer arial-font text-${state}`}
+            className={`uppercase text-lg sm:text-2xl cursor-pointer arial-font`}
           >
-            MENU
+            menu
           </div>
         </div>
         {/* Sidebar menu */}
         <div
           onClick={toggleMenu}
-          className={`${menuOpen ? 'bg-white/70 w-full h-screen absolute  top-0 left-0 ' : 'hidden'} `}
+          className={`${menuOpen ? 'bg-white/70 w-full h-screen absolute backdrop-blur-sm top-0 left-0 ' : 'hidden'} `}
         ></div>
         <div className={`${styles.sidebar} ${menuOpen ? styles.open : ''}`}>
-          <div className="absolute z-[999px] h-full w-full  top-0 right-0 overflow-y-auto bg-white shadow-xl px-5 xl:px-[60px]">
+          <div className="absolute z-[999px] h-full w-full  top-0 right-0 overflow-y-auto bg-white shadow-xl px-5 sm:px-10 xl:px-[60px]">
             <div
               className={`sm:h-24 h-16 xl:max-w-[1440px] mx-auto flex items-center justify-end relative transition-opacity duration-300 `}
             >

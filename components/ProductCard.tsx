@@ -75,7 +75,7 @@ const ProductCard = (props: Props) => {
                 <div className="text-xl mb-3 text-left">
                   {name},
                   <span className="font-semibold arial-font ml-2">
-                    {currency}
+                    <span className="mr-0.5">{currency}</span>
                     {price}
                   </span>
                 </div>

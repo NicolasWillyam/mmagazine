@@ -75,10 +75,10 @@ export default function CategoryPosts({
             <div className="w-full flex items-start mb-12">
               <MenuBar inActive={category} />
               <div className="w-full">
-                <div className="w-full text-right capitalize tracking-tighter text-[50px] sm:text-[86px] xl:text-[116px] sm:-mt-12 s sfu-font hover:italic hover:text-red-600 cursor-pointer transition duration-100">
+                <div className="w-fit ml-auto text-right capitalize leading-none tracking-tighter text-[50px] sm:text-[86px] xl:text-[116px]  sm:-mt-4 sfu-font   cursor-pointer transition duration-100">
                   {slugToCategory(category)}
                 </div>
-                <div className="w-full grid lg:grid-cols-2 gap-12 mt-8 sm:mt-10">
+                <div className="w-full grid xl:grid-cols-2 gap-12 mt-6 lg:mt-10 xl:mt-16">
                   {headerPosts.map((_, id) => (
                     <div key={id}>
                       <Link href={`/posts/${_.slug}`}>
@@ -86,7 +86,7 @@ export default function CategoryPosts({
                           style={{
                             backgroundImage: `url('${urlForImage(_.coverImage).url()}')`,
                           }}
-                          className="w-full h-[506px] sm:h-[590px] bg-cover bg-no-repeat bg-center"
+                          className="w-full h-[506px] sm:h-[590px] lg:h-[860px] bg-cover bg-no-repeat bg-center"
                         >
                           <HoverCard />
                         </div>
@@ -128,7 +128,7 @@ export default function CategoryPosts({
                             style={{
                               backgroundImage: `url('${urlForImage(_.coverImage).url()}')`,
                             }}
-                            className="w-full xl:w-1/2 sm:h-[350px] h-[210px] bg-cover bg-no-repeat bg-center"
+                            className="w-full xl:w-1/2 sm:h-[350px] lg:h-[510px] xl:h-[350px] h-[210px] bg-cover bg-no-repeat bg-top"
                           >
                             <HoverCard />
                           </div>

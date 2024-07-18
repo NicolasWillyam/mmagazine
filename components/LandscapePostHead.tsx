@@ -60,7 +60,7 @@ const LandscapePostHead = (props: Post) => {
                   <span className="text-2xl italic mr-2 shelley-font">by</span>
                   <span className="text-base font-bold">{author.name}</span>
                 </p>
-                <p className="text-lg sm:text-xl font-normal leading-[22px] text-center sm:text-right">
+                <p className="text-lg sm:text-xl font-normal leading-[22px] text-center sm:text-right sfu-font">
                   {description}
                 </p>
 
@@ -95,9 +95,9 @@ const LandscapePostHead = (props: Post) => {
       </div>
 
       <div className="sm:hidden block">
-        <div className="max-w-[1560px] mx-auto sm:flex">
+        <div className="w-full mx-auto sm:flex">
           <div className="w-full sm:w-2/5 h-full sm:mt-24 mr-10 sm:border-t-[1px] sm:px-0 px-4 pb-8 sm:pb-0">
-            <div className="py-5 flex justify-center sm:justify-between items-center">
+            <div className="sm:py-5 flex justify-center sm:justify-between items-center">
               <CategoryNameComponent category={category} />
               <p className="text-2xl font-light italic hidden sm:block shelley-font">
                 <Date dateString={date} />
@@ -107,14 +107,16 @@ const LandscapePostHead = (props: Post) => {
               {title}
             </p>
             <div className="w-full grid grid-cols-1 gap-5">
-              <p className="text-lg sm:text-xl font-normal leading-[22px] text-center sm:text-left">
+              <p className="text-lg sm:text-xl font-normal leading-[22px] text-center sm:text-left sfu-font">
                 {description}
               </p>
               <p className="text-center sm:text-left">
-                <span className="text-2xl italic mr-2 shelley-font">by</span>
+                <span className="text-xl sm:text-2xl italic mr-1 sm:mr-2 shelley-font">
+                  by
+                </span>
                 <span className="text-base font-bold">{author.name}</span>
               </p>
-              <p className="text-sm text-center font-light italic sm:hidden">
+              <p className="text-xl text-center font-light italic sm:hidden shelley-font -mt-5 sm:mt-0">
                 <Date dateString={date} />
               </p>
               <div className="w-full flex items-center justify-center sm:mb-0 gap-4 sm:justify-start">

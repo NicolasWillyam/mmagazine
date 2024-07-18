@@ -58,8 +58,6 @@ export default function PostPage(props: PostPageProps) {
     setLoadedStatus,
   } = props
 
-  console.log(post)
-
   useEffect(() => {
     const handleScroll = () => {
       if (

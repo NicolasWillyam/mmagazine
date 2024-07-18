@@ -48,9 +48,9 @@ export default function HeroPost({ posts }: { posts: Post[] }) {
       </div> */}
       <div className="w-full sm:flex items-start mb-12">
         <MenuBar inActive={null} />
-        <div className="w-full grid sm:grid-cols-2 sm:gap-16 gap-10">
+        <div className="w-full grid xl:grid-cols-2 xl:gap-16 gap-10">
           <BigHeroPostLayout id={0} post={posts[0]} />
-          <div className="grid grid-cols-1 sm:gap-16 gap-10">
+          <div className="grid lg:grid-cols-2 xl:grid-cols-1 sm:gap-16 gap-10 lg:gap-8 xl:gap-10">
             <SmallHeroPostLayout id={1} post={posts[1]} />
             <SmallHeroPostLayout id={2} post={posts[2]} />
           </div>
@@ -72,7 +72,7 @@ const BigHeroPostLayout = ({ post, id }: { post: Post; id: number }) => {
           style={{
             backgroundImage: `url('${img}')`,
           }}
-          className="h-[506px] sm:h-[580px] w-full bg-cover bg-no-repeat bg-center"
+          className="h-[506px] lg:h-[860px] xl:h-[580px] w-full bg-cover bg-no-repeat bg-center"
         >
           <HoverCard />
         </div>
@@ -94,8 +94,8 @@ const SmallHeroPostLayout = ({ post, id }: { post: Post; id: number }) => {
   const img = urlForImage(post.coverImage).url()
   return (
     <Link href={`/posts/${post.slug}`}>
-      <div className="w-full sm:flex ">
-        <div className="w-full px-12 sm:px-0 sm:w-3/5">
+      <div className="w-full sm:flex lg:block xl:flex ">
+        <div className="w-full px-12 sm:px-0 sm:w-3/5 lg:w-full xl:w-3/5">
           <div
             style={{
               backgroundImage: `url('${img}')`,
@@ -106,7 +106,7 @@ const SmallHeroPostLayout = ({ post, id }: { post: Post; id: number }) => {
           </div>
         </div>
 
-        <div className="w-full sm:w-2/5 sm:pl-6 mt-6 sm:mt-0">
+        <div className="w-full sm:w-2/5 lg:w-full xl:w-2/5 sm:pl-6 lg:pl-0 xl:pl-6 lg:mt-6 xl:mt-0">
           <CategoryNameComponent category={post.category} />
           <div className="mt-4">
             <p className="text-2xl leading-none sfu-font">{post.title}</p>

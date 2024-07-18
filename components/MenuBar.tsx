@@ -30,8 +30,16 @@ export const menuList: Menu[] = [
     slug: 'watches-and-jewelry',
   },
   {
+    name: 'Voyage & Gourmet',
+    slug: 'voyage-and-gourmet',
+  },
+  {
     name: 'Business',
     slug: 'business',
+  },
+  {
+    name: 'Add to Cart',
+    slug: 'add-to-cart',
   },
   {
     name: 'M Make It',
@@ -44,10 +52,6 @@ export const menuList: Menu[] = [
   {
     name: 'Art & Design',
     slug: 'art-and-design',
-  },
-  {
-    name: 'Voyages & Gourmet',
-    slug: 'voyages-and-gourmet',
   },
   {
     name: 'Technology',
@@ -65,23 +69,19 @@ export const menuList: Menu[] = [
     name: 'Money & Finance',
     slug: 'money-and-finance',
   },
-  {
-    name: 'Add to Cart',
-    slug: 'add-to-cart',
-  },
 ]
 
 const MenuBar = ({ inActive }: { inActive: String }) => {
   return (
     <div className="hidden sm:block">
-      <ul className="text-[24px]  leading-[32px]  lg:text-[38px] w-[208px] xl:w-[365px] lg:leading-[48px] mt-28 pr-10 sfu-font tracking-tighter">
+      <ul className="text-[28px]  leading-[36px]  xl:text-[38px] w-[208px] lg:w-[280px] xl:w-[365px] xl:leading-[48px] mt-28 pr-10 sfu-font tracking-tighter">
         {menuList.slice(0, 9).map((_, id) => {
           if (_.slug == inActive) {
             return (
               <Link key={id} href={`/${_.slug}`}>
-                <li className="italic tracking w-fit cursor-pointer flex items-end gap-2 hover:text-red-600 transition duration-100">
-                  <div className="w-14 h-[1px] bg-black/50 -ml-16 mb-2.5 "></div>
-                  {_.name}
+                <li className="italic tracking w-fit cursor-pointer flex items-end hover:text-red-600 transition duration-100">
+                  <div className="w-16 h-[1px] bg-black/50 -ml-16 mb-1.5 xl:mb-2.5 "></div>
+                  <p className="-ml-1">{_.name}</p>
                 </li>
               </Link>
             )
