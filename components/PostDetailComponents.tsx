@@ -7,7 +7,7 @@ import React, { useEffect, useState } from 'react'
 export function CategoryNameComponent({ category }: { category: Category }) {
   return (
     <Link href={`/${category.slug}`}>
-      <p className="uppercase text-base sm:text-lg md:text-base xl:text-lg">
+      <p className="uppercase text-sm sm:text-lg epilogue-300">
         {category.name}
       </p>
     </Link>

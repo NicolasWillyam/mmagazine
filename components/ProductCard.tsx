@@ -54,7 +54,7 @@ const ProductCard = (props: Props) => {
               : `grid grid-cols-2 gap-6`
           }
         >
-          <Link href={product_link} target="blank">
+          <Link href={product_link || undefined} target="blank">
             <Image src={img} alt={'alt'} width={500} height={500} />
           </Link>
           <div
@@ -64,30 +64,67 @@ const ProductCard = (props: Props) => {
                 : 'h-full flex flex-col items-center justify-center'
             }
           >
-            <div className="">
+            <div className="w-4/5 mx-auto">
               <div>
-                <p className="text-base mb-3 h-12">{name}</p>
-                <p className="font-medium">
-                  {currency}
-                  {price}
+                <p className="text-xl mb-3 h-12">
+                  {name},{' '}
+                  <span className="font-semibold arial-font">
+                    {currency}
+                    {price}
+                  </span>
                 </p>
-                <Link href={product_link} target="blank">
-                  <p className="text-sm font-semibold uppercase underline underline-offset-2">
-                    {brand}
-                  </p>
-                </Link>
               </div>
-              <Link href={order_link} target="blank">
-                <Button
-                  variant={'outline'}
-                  className="w-full flex items-center justify-between"
-                >
-                  <p className="text-sm underline underline-offset-4 ">
-                    Order Now
-                  </p>
-                  <HiArrowLongRight size={20} />
-                </Button>
-              </Link>
+              <div className="mt-10">
+                {product_link ? (
+                  <Link href={product_link} target="_blank">
+                    <Button
+                      variant={'outline'}
+                      className="w-full flex items-center justify-between"
+                    >
+                      <p className="text-sm arial-font tracking-normal">
+                        See On {brand}
+                      </p>
+                      <HiArrowLongRight size={20} />
+                    </Button>
+                  </Link>
+                ) : (
+                  <Button
+                    variant={'outline'}
+                    className="w-full flex items-center justify-between"
+                  >
+                    <p className="text-sm arial-font tracking-normal">
+                      See On {brand}
+                    </p>
+                    <HiArrowLongRight size={20} />
+                  </Button>
+                )}
+              </div>
+
+              <div className="mt-2">
+                {product_link ? (
+                  <Link href={product_link} target="_blank">
+                    <Button
+                      variant={'outline'}
+                      className="w-full flex items-center justify-between"
+                    >
+                      <p className="text-sm arial-font tracking-normal">
+                        Chat with a Personal Shopper
+                      </p>
+                      <HiArrowLongRight size={20} />
+                    </Button>
+                  </Link>
+                ) : (
+                  <Button
+                    variant={'outline'}
+                    className="w-full flex items-center justify-between"
+                  >
+                    <p className="text-sm arial-font  tracking-normal">
+                      Chat with a Personal Shopper
+                    </p>
+                    <HiArrowLongRight size={20} />
+                  </Button>
+                )}
+              </div>
             </div>
           </div>
         </div>

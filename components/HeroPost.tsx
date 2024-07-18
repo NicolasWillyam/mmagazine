@@ -77,7 +77,7 @@ const BigHeroPostLayout = ({ post, id }: { post: Post; id: number }) => {
           <HoverCard />
         </div>
         <div className="mt-8">
-          <p className="uppercase text-sm sm:text-lg ">{post.category.name}</p>
+          <CategoryNameComponent category={post.category} />
         </div>
         <div className="mt-6">
           <p className="text-[32px] leading-none sfu-font">{post.title}</p>
@@ -107,7 +107,7 @@ const SmallHeroPostLayout = ({ post, id }: { post: Post; id: number }) => {
         </div>
 
         <div className="w-full sm:w-2/5 sm:pl-6 mt-6 sm:mt-0">
-          <p className="uppercase text-sm sm:text-lg ">{post.category.name}</p>
+          <CategoryNameComponent category={post.category} />
           <div className="mt-6">
             <p className="text-2xl leading-none sfu-font">{post.title}</p>
           </div>

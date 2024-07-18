@@ -10,6 +10,7 @@ import LoadingSpinner from 'components/LoadingSpinner'
 import MenuBar from 'components/MenuBar'
 import MoreBlogInCategory from 'components/MoreBlogInCategory'
 import NavBar from 'components/NavBar'
+import { CategoryNameComponent } from 'components/PostDetailComponents'
 import { SuggestPost } from 'components/SuggestPost'
 import { fetchCategories, getPostsByCategory } from 'lib/sanity.client' // Adjust import path as per your project structure
 import { urlForImage } from 'lib/sanity.image'
@@ -64,7 +65,7 @@ export default function CategoryPosts({
         />
         <meta name="description" content={'M MAGAZINE Vietnam'} />
       </Head>
-      <NavBar state="black" />
+      <NavBar state="black" category={category} />
 
       {posts.length > 0 ? (
         <div className="w-full mx-auto pt-24 sm:px-0 px-5">
@@ -74,10 +75,10 @@ export default function CategoryPosts({
             <div className="w-full flex items-start mb-12">
               <MenuBar inActive={category} />
               <div className="w-full">
-                <div className="w-full text-right capitalize tracking-tighter text-[50px] sm:text-[116px] -mt-6 sm:-mt-12 sfu-font italic text-red-600">
+                <div className="w-full text-right capitalize tracking-tighter text-[50px] sm:text-[86px] xl:text-[116px] sm:-mt-12 s sfu-font hover:italic hover:text-red-600 cursor-pointer transition duration-100">
                   {slugToCategory(category)}
                 </div>
-                <div className="w-full grid sm:grid-cols-2 gap-12 mt-5 sm:mt-10">
+                <div className="w-full grid lg:grid-cols-2 gap-12 mt-8 sm:mt-10">
                   {headerPosts.map((_, id) => (
                     <div key={id}>
                       <Link href={`/posts/${_.slug}`}>
@@ -91,9 +92,7 @@ export default function CategoryPosts({
                         </div>
 
                         <div className="mt-8">
-                          <p className="uppercase text-sm sm:text-lg ">
-                            {_.category.name}
-                          </p>
+                          <CategoryNameComponent category={_.category} />
                         </div>
                         <div className="mt-6">
                           <p className="text-[32px] leading-none sfu-font">
@@ -113,7 +112,7 @@ export default function CategoryPosts({
             </p>
           </div>
           <BlogContainer>
-            <div className="grid grid-cols-1 gap-10 sm:gap-[136px] my-10">
+            <div className="grid grid-cols-1 gap-10 sm:gap-12 xl:gap-[136px] my-10">
               {bodyPosts.map((_, id) => {
                 if (id > 2) {
                   return (
@@ -122,26 +121,24 @@ export default function CategoryPosts({
                         <div
                           className={cn(
                             id % 2 == 0 ? '' : 'flex-row-reverse',
-                            'sm:flex gap-8 h-full',
+                            'xl:flex gap-8 h-full',
                           )}
                         >
                           <div
                             style={{
                               backgroundImage: `url('${urlForImage(_.coverImage).url()}')`,
                             }}
-                            className="w-full sm:w-1/2 sm:h-[350px] h-[210px] bg-cover bg-no-repeat bg-center"
+                            className="w-full xl:w-1/2 sm:h-[350px] h-[210px] bg-cover bg-no-repeat bg-center"
                           >
                             <HoverCard />
                           </div>
 
-                          <div className="w-full sm:w-1/2 sm:h-full flex flex-col justify-center items-center text-center sm:px-8 ">
-                            <div className="mt-6 sm:mt-8">
-                              <p className="uppercase text-sm sm:text-lg ">
-                                {_.category.name}
-                              </p>
+                          <div className="w-full xl:w-1/2 xl:h-full flex flex-col justify-center items-center text-center xl:px-8 ">
+                            <div className="mt-6 sm:mt-10 xl:mt-0">
+                              <CategoryNameComponent category={_.category} />
                             </div>
                             <div className="mt-6">
-                              <p className="text-2xl sm:text-5xl leading-none sfu-font">
+                              <p className="text-2xl sm:text-[40px] xl:text-5xl leading-none sfu-font">
                                 {_.title}
                               </p>
                             </div>

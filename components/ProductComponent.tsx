@@ -55,9 +55,9 @@ export const ProductComponent = (props: Props) => {
                   brand={product.brand}
                   currency={product.currency}
                   price={product.price}
-                  product_link={product.product_link}
-                  order_link={product.order_link}
-                  image={product.image}
+                  product_link={product?.product_link}
+                  order_link={product?.order_link}
+                  image={product?.image}
                   type="one"
                 />
               </div>
@@ -72,9 +72,9 @@ export const ProductComponent = (props: Props) => {
                   brand={product.brand}
                   currency={product.currency}
                   price={product.price}
-                  product_link={product.product_link}
-                  order_link={product.order_link}
-                  image={product.image}
+                  product_link={product?.product_link}
+                  order_link={product?.order_link}
+                  image={product?.image}
                   type="group"
                 />
               </div>

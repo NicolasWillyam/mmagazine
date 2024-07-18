@@ -6,6 +6,7 @@ import { urlForImage } from 'lib/sanity.image'
 import Link from 'next/link'
 import { cn } from '@/lib/utils'
 import HoverCard from './HoverCard'
+import { CategoryNameComponent } from './PostDetailComponents'
 
 interface Prop {
   category: Menu
@@ -104,7 +105,7 @@ const BigPostLayout = ({ post, id }: { post: Post; id: number }) => {
         </div>
 
         <div className="mt-8">
-          <p className="uppercase text-sm sm:text-lg">{post.category.name}</p>
+          <CategoryNameComponent category={post.category} />
         </div>
         <div className="mt-6">
           <p className="text-2xl sm:text-[32px] leading-none tracking-tight sfu-font">
@@ -136,7 +137,7 @@ const SmallPostLayout = ({ post, id }: { post: Post; id: number }) => {
         </div>
 
         <div className="w-full sm:w-2/5 sm:pl-6 mt-6 sm:mt-0">
-          <p className="uppercase text-sm sm:text-lg ">{post.category.name}</p>
+          <CategoryNameComponent category={post.category} />
           <div className="mt-6">
             <p className="text-2xl leading-none sfu-font">{post.title}</p>
           </div>

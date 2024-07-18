@@ -74,7 +74,7 @@ export default function IndexPage(props: IndexPageProps) {
 
   return (
     <>
-      <NavBar state="black" />
+      <NavBar state="black" category={null} />
       <IndexPageHead settings={settings} />
 
       <div className="w-full mx-auto pt-24 px-5 sm:px-0">

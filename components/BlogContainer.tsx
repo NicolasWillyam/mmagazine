@@ -1,7 +1,7 @@
 export function Container({ children }) {
   return (
     <>
-      <div className="xl:max-w-[1440px] 2xl:max-w-[1920px] mx-auto min-h-screen">
+      <div className="sm:max-w-[1440px] 2xl:max-w-[1920px] mx-auto min-h-screen">
         <main>{children}</main>
       </div>
     </>
@@ -10,7 +10,7 @@ export function Container({ children }) {
 
 export default function BlogContainer({ children }) {
   return (
-    <div className="w-full xl:max-w-[1440px] mx-auto sm:px-[60px] 2xl:px-0">
+    <div className="w-full xl:max-w-[1440px] mx-auto sm:px-10 xl:px-[60px]  2xl:px-0">
       {children}
     </div>
   )
