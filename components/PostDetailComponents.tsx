@@ -3,11 +3,12 @@ import Date from 'components/PostDate'
 import { Category } from 'lib/sanity.queries'
 import Link from 'next/link'
 import React, { useEffect, useState } from 'react'
+import { nameToSlug } from 'utils/function'
 
 export function CategoryNameComponent({ category }: { category: Category }) {
   return (
-    <Link href={`/${category.slug}`}>
-      <p className="uppercase text-sm sm:text-lg epilogue-300">
+    <Link href={`/${nameToSlug(category.name)}`}>
+      <p className="uppercase text-sm sm:text-lg epilogue-300 hover:text-black/70 duration-300">
         {category.name}
       </p>
     </Link>

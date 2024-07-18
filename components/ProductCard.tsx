@@ -51,11 +51,17 @@ const ProductCard = (props: Props) => {
           className={
             type == 'group'
               ? `grid grid-cols-1 gap-6`
-              : `grid grid-cols-2 gap-6`
+              : `grid xl:grid-cols-2 gap-6`
           }
         >
           <Link href={product_link || undefined} target="blank">
-            <Image src={img} alt={'alt'} width={500} height={500} />
+            <Image
+              src={img}
+              alt={'alt'}
+              width={500}
+              height={500}
+              className="mx-auto"
+            />
           </Link>
           <div
             className={
@@ -66,15 +72,15 @@ const ProductCard = (props: Props) => {
           >
             <div className="w-4/5 mx-auto">
               <div>
-                <p className="text-xl mb-3 h-12">
-                  {name},{' '}
-                  <span className="font-semibold arial-font">
+                <div className="text-xl mb-3 text-left">
+                  {name},
+                  <span className="font-semibold arial-font ml-2">
                     {currency}
                     {price}
                   </span>
-                </p>
+                </div>
               </div>
-              <div className="mt-10">
+              <div className="mt-5">
                 {product_link ? (
                   <Link href={product_link} target="_blank">
                     <Button
@@ -107,7 +113,7 @@ const ProductCard = (props: Props) => {
                       variant={'outline'}
                       className="w-full flex items-center justify-between"
                     >
-                      <p className="text-sm arial-font tracking-normal">
+                      <p className="text-sm arial-font tracking-normal truncate">
                         Chat with a Personal Shopper
                       </p>
                       <HiArrowLongRight size={20} />
@@ -118,7 +124,7 @@ const ProductCard = (props: Props) => {
                     variant={'outline'}
                     className="w-full flex items-center justify-between"
                   >
-                    <p className="text-sm arial-font  tracking-normal">
+                    <p className="text-sm arial-font  tracking-normal truncate">
                       Chat with a Personal Shopper
                     </p>
                     <HiArrowLongRight size={20} />

@@ -35,6 +35,8 @@ const LandscapePostHead = (props: Post) => {
   const postImage = urlForImage(coverImage).url()
   const pathname = usePathname()
   const url = `${process.env.NEXT_PUBLIC_BASE_URL}${pathname}`
+
+  console.log('abc', category.slug)
   return (
     <Container>
       <div className="w-full hidden sm:block">

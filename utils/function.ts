@@ -12,3 +12,12 @@ export const slugToCategory = (slug: string) => {
     })
     .join(' ')
 }
+
+export function nameToSlug(name: String) {
+  return name
+    .toLowerCase() // Convert to lowercase
+    .replace(/&/g, 'and') // Replace '&' with 'and'
+    .replace(/[^a-z0-9\s]/g, '') // Remove special characters
+    .replace(/\s+/g, '-') // Replace spaces with hyphens
+    .trim() // Remove leading/trailing whitespace
+}

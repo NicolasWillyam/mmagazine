@@ -94,7 +94,7 @@ export default function CategoryPosts({
                         <div className="mt-8">
                           <CategoryNameComponent category={_.category} />
                         </div>
-                        <div className="mt-6">
+                        <div className="mt-4">
                           <p className="text-[32px] leading-none sfu-font">
                             {_.title}
                           </p>
@@ -134,10 +134,10 @@ export default function CategoryPosts({
                           </div>
 
                           <div className="w-full xl:w-1/2 xl:h-full flex flex-col justify-center items-center text-center xl:px-8 ">
-                            <div className="mt-6 sm:mt-10 xl:mt-0">
+                            <div className="mt-4 sm:mt-10 xl:mt-0">
                               <CategoryNameComponent category={_.category} />
                             </div>
-                            <div className="mt-6">
+                            <div className="mt-4">
                               <p className="text-2xl sm:text-[40px] xl:text-5xl leading-none sfu-font">
                                 {_.title}
                               </p>

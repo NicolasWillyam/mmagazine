@@ -33,7 +33,7 @@ import LandscapePostHead from './LandscapePostHead'
 export default function PostHeader(props: Post) {
   const { title, description, category, coverImage, date, author, slug } = props
   const postImage = urlForImage(coverImage).url()
-  console.log(coverImage)
+
   const pathname = usePathname()
   const url = `${process.env.NEXT_PUBLIC_BASE_URL}${pathname}`
 

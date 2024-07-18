@@ -1,5 +1,5 @@
 /* styles/fonts.css */
-  @import url('https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100..900;1,100..900&display=swap');
+  /* @import url('https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100..900;1,100..900&display=swap'); */
   @font-face {
     font-family: 'SFUGoudyMedium';
     src: url('/fonts/SFUGoudyMedium.TTF') format('truetype');
@@ -9,6 +9,20 @@
   @font-face {
     font-family: 'SFUGoudyTimesTenRoman';
     src: url('/fonts/SFUTimesTenRoman.TTF') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: 'EpilogueExtralight';
+    src: url('/fonts/EpilogueExtralight.TTF') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: 'EpilogueLight';
+    src: url('/fonts/EpilogueLight.TTF') format('truetype');
     font-weight: normal;
     font-style: normal;
   }
@@ -39,10 +53,10 @@
   }
 
   .epilogue-300 {
-    font-family: "Epilogue";
-    font-optical-sizing: auto;
-    font-weight: 400;
-    font-style: normal;
+    font-family: "EpilogueLight";
+    /* font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal; */
   }
 
   

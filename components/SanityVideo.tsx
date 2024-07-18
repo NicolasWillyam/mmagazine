@@ -33,7 +33,7 @@ export const SanityVideo = (props: VideoProps) => {
 
   return (
     <div className="py-6">
-      <video controls autoPlay={true} loop>
+      <video autoPlay={true} loop>
         <source src={videoUrl} type="video/mp4" />
         Your browser does not support the video tag.
       </video>
