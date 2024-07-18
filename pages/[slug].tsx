@@ -67,17 +67,17 @@ export default function CategoryPosts({
       <NavBar state="black" />
 
       {posts.length > 0 ? (
-        <div className="w-full mx-auto pt-24">
+        <div className="w-full mx-auto pt-24 sm:px-0 px-5">
           <BlogContainer>
             {/* <HeroPost posts={posts} /> */}
 
             <div className="w-full flex items-start mb-12">
               <MenuBar inActive={category} />
               <div className="w-full">
-                <div className="w-full text-right capitalize tracking-tight text-[116px] -mt-12">
+                <div className="w-full text-right capitalize tracking-tighter text-[50px] sm:text-[116px] -mt-6 sm:-mt-12 sfu-font">
                   {category}
                 </div>
-                <div className="w-full grid grid-cols-2 gap-12 mt-10">
+                <div className="w-full grid sm:grid-cols-2 gap-12 mt-5 sm:mt-10">
                   {headerPosts.map((_, id) => (
                     <div key={id}>
                       <Link href={`/posts/${_.slug}`}>
@@ -85,18 +85,20 @@ export default function CategoryPosts({
                           style={{
                             backgroundImage: `url('${urlForImage(_.coverImage).url()}')`,
                           }}
-                          className="w-full h-[590px] bg-cover bg-no-repeat bg-center"
+                          className="w-full h-[506px] sm:h-[590px] bg-cover bg-no-repeat bg-center"
                         >
                           <HoverCard />
                         </div>
 
                         <div className="mt-8">
-                          <p className="uppercase text-lg ">
+                          <p className="uppercase text-sm sm:text-lg ">
                             {_.category.name}
                           </p>
                         </div>
                         <div className="mt-6">
-                          <p className="text-[32px] leading-none">{_.title}</p>
+                          <p className="text-[32px] leading-none sfu-font">
+                            {_.title}
+                          </p>
                         </div>
                       </Link>
                     </div>
@@ -111,7 +113,7 @@ export default function CategoryPosts({
             </p>
           </div>
           <BlogContainer>
-            <div className="grid grid-cols-1 gap-[136px] my-10">
+            <div className="grid grid-cols-1 gap-10 sm:gap-[136px] my-10">
               {bodyPosts.map((_, id) => {
                 if (id > 2) {
                   return (
@@ -120,26 +122,28 @@ export default function CategoryPosts({
                         <div
                           className={cn(
                             id % 2 == 0 ? '' : 'flex-row-reverse',
-                            'flex gap-8 h-full',
+                            'sm:flex gap-8 h-full',
                           )}
                         >
                           <div
                             style={{
                               backgroundImage: `url('${urlForImage(_.coverImage).url()}')`,
                             }}
-                            className="w-1/2 h-[350px] bg-cover bg-no-repeat bg-center"
+                            className="w-full sm:w-1/2 sm:h-[350px] h-[210px] bg-cover bg-no-repeat bg-center"
                           >
                             <HoverCard />
                           </div>
 
-                          <div className="w-1/2 h-full flex flex-col justify-center items-center text-center px-8 ">
-                            <div className="mt-8">
-                              <p className="uppercase text-lg ">
+                          <div className="w-full sm:w-1/2 sm:h-full flex flex-col justify-center items-center text-center sm:px-8 ">
+                            <div className="mt-6 sm:mt-8">
+                              <p className="uppercase text-sm sm:text-lg ">
                                 {_.category.name}
                               </p>
                             </div>
                             <div className="mt-6">
-                              <p className="text-5xl leading-none">{_.title}</p>
+                              <p className="text-2xl sm:text-5xl leading-none sfu-font">
+                                {_.title}
+                              </p>
                             </div>
                           </div>
                         </div>

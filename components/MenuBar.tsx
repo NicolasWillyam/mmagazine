@@ -61,14 +61,14 @@ const MenuBar = ({ inActive }: { inActive: String }) => {
   const [acvtive, setActive] = useState<Boolean>(false)
 
   return (
-    <div className="max-w-[365px]">
-      <ul className="text-[38px] w-[365px] leading-[48px] mt-28">
+    <div className="hidden sm:block max-w-[365px]">
+      <ul className="text-[38px] w-[365px] leading-[48px] mt-28 sfu-font tracking-tighter">
         {menuList.slice(0, 9).map((_, id) => {
           if (_.slug == inActive) {
             return (
               <Link key={id} href={`/${_.slug}`}>
-                <li className="italic tracking w-fit cursor-pointer flex items-end gap-2">
-                  <div className="w-14 h-[1px] bg-black/50 -ml-16 mb-2.5"></div>
+                <li className="italic tracking w-fit cursor-pointer flex items-end gap-2 text-red-700">
+                  <div className="w-14 h-[1px] bg-black/50 -ml-16 mb-2.5 "></div>
                   {_.name}
                 </li>
               </Link>
@@ -76,7 +76,7 @@ const MenuBar = ({ inActive }: { inActive: String }) => {
           } else {
             return (
               <Link key={id} href={`/${_.slug}`}>
-                <li className="hover:italic hover:underline decoration-1 hover:underline-offset-2 tracking w-fit cursor-pointer">
+                <li className="hover:italic decoration-1 tracking w-fit cursor-pointer">
                   {_.name}
                 </li>
               </Link>

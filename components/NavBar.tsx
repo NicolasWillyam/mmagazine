@@ -80,7 +80,7 @@ const NavBar = ({ state }: { state: string }) => {
   }
 
   return (
-    <div className="w-full fixed top-0 xl:px-14 px-6 z-[999px]">
+    <div className="w-full fixed top-0 sm:px-[60px] px-5 z-10">
       <div
         className={`sm:h-24 h-16 xl:max-w-[1440px] mx-auto flex items-center justify-end relative transition-opacity duration-300 ${
           show ? 'opacity-100' : 'opacity-0'
@@ -97,7 +97,7 @@ const NavBar = ({ state }: { state: string }) => {
         </Link>
         <div
           onClick={toggleMenu}
-          className={`uppercase text-base sm:text-2xl cursor-pointer text-${state}`}
+          className={`uppercase text-base sm:text-2xl cursor-pointer arial-font text-${state}`}
         >
           MENU
         </div>
@@ -105,19 +105,56 @@ const NavBar = ({ state }: { state: string }) => {
       {/* Sidebar menu */}
       <div
         onClick={toggleMenu}
-        className={`${menuOpen ? 'bg-black/70 w-full h-screen absolute  top-0 left-0 ' : 'hidden'} `}
+        className={`${menuOpen ? 'bg-white/70 w-full h-screen absolute  top-0 left-0 ' : 'hidden'} `}
       ></div>
       <div className={`${styles.sidebar} ${menuOpen ? styles.open : ''}`}>
-        <div className="absolute w-[300px] h-screen top-0 right-0 overflow-y-auto bg-white shadow-xl">
-          <div className="fixed p-9 w-[300px] bg-white flex items-center justify-end">
-            <IoMdClose
-              size={32}
+        <div className="absolute z-[999px] h-full w-full  top-0 right-0 overflow-y-auto bg-white shadow-xl sm:px-[60px] px-5">
+          <div
+            className={`sm:h-24 h-16 xl:max-w-[1440px] mx-auto flex items-center justify-end relative transition-opacity duration-300 `}
+          >
+            <Link href={'/'}>
+              <Image
+                src={`/logo-${state}.svg`}
+                alt="logo"
+                width={40}
+                height={40}
+                className="absolute top-0 left-0 sm:mt-8 mt-3 cursor-pointer sm:w-[104px] sm:h-[140px]"
+              />
+            </Link>
+            <div
               onClick={toggleMenu}
-              className="cursor-pointer fixed"
-            />
+              className={`uppercase text-base sm:text-2xl cursor-pointer arial-font text-${state}`}
+            >
+              Close
+            </div>
           </div>
-          <div className="w-full p-9">
-            <div className="mt-6 w-full flex justify-between items-center py-4 ">
+
+          <div className="w-full mt-20 sm:mt-24">
+            <div className="w-full mb-12">
+              <ul className="text-[32px] sm:text-[38px] leading-[38px] sm:leading-[48px] sm:mt-28 sfu-font tracking-tighter">
+                {menuList?.map((_, id) => (
+                  <Link key={id} href={`/${_.slug}`}>
+                    <li
+                      onClick={toggleMenu}
+                      className="hover:italic decoration-1 tracking w-fit cursor-pointer"
+                    >
+                      {_.name}
+                    </li>
+                  </Link>
+                ))}
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  )
+}
+
+export default NavBar
+
+{
+  /* <div className="mt-6 w-full flex justify-between items-center py-4 ">
               <form onSubmit={handleSearchSubmit}>
                 <input
                   type="text"
@@ -128,56 +165,5 @@ const NavBar = ({ state }: { state: string }) => {
                 />
               </form>
               <RiSearchLine size={18} />
-            </div>
-            <div className="mt-4 w-full">
-              <p className="text-sm text-gray-500 uppercase">Categories</p>
-              <ul className="w-full text-lg uppercase py-2 ">
-                {menuList?.map((item, idx) => (
-                  <li
-                    key={idx}
-                    onClick={toggleMenu}
-                    className="py-1 hover:underline hover:underline-offset-4"
-                  >
-                    <Link href={`/${item.slug}`}>{item.name}</Link>
-                  </li>
-                ))}
-              </ul>
-            </div>
-          </div>
-          <div className="w-full bg-black text-white p-9 mb-0">
-            <Link href={'/'}>
-              <Image
-                src={'/logo-white.svg'}
-                alt="logo"
-                width={60}
-                height={80}
-                className="text-black"
-              />
-            </Link>
-            <ul className="text-sm uppercase mt-6 mb-12">
-              <li className="py-1 hover:underline hover:underline-offset-4">
-                <Link href={`/about`}>about</Link>
-              </li>
-              <li className="py-1 hover:underline hover:underline-offset-4">
-                <Link href={`/contacts`}>contact</Link>
-              </li>
-              <li className="py-1 hover:underline hover:underline-offset-4 mt-4">
-                <Link href={`/`}>follow us</Link>
-              </li>
-              <div className="flex gap-4 mt-2">
-                <Link href={'https://www.facebook.com/mmagazinevietnam/'}>
-                  <RiFacebookFill size={24} />
-                </Link>
-                <Link href={'https://www.instagram.com/mmagvietnam/'}>
-                  <IoLogoInstagram size={24} />
-                </Link>
-              </div>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </div>
-  )
+            </div> */
 }
-
-export default NavBar

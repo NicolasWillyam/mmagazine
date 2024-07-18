@@ -29,7 +29,7 @@ export function PostPreview({
           style={{
             backgroundImage: `url('${urlForImage(coverImage).url()}')`,
           }}
-          className="w-full h-[300px] md:h-[170px] xl:h-[230px] 2xl:h-[380px] bg-cover bg-no-repeat bg-center"
+          className="w-full h-[300px] md:h-[170px] xl:h-[230px] 2xl:h-[] bg-cover bg-no-repeat bg-center"
         />
       </Link>
 

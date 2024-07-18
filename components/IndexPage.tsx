@@ -77,7 +77,7 @@ export default function IndexPage(props: IndexPageProps) {
       <NavBar state="black" />
       <IndexPageHead settings={settings} />
 
-      <div className="w-full mx-auto pt-24">
+      <div className="w-full mx-auto pt-24 px-5 sm:px-0">
         <BlogContainer>
           {/* Render HeroPost if exists */}
           {/* {heroPost && <HeroPost posts={heroPost} />} */}

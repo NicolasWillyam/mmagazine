@@ -1,7 +1,13 @@
 /* styles/fonts.css */
-@font-face {
+  @font-face {
     font-family: 'SFUGoudyMedium';
     src: url('/fonts/SFUGoudyMedium.TTF') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: 'SFUGoudyTimesTenRoman';
+    src: url('/fonts/SFUTimesTenRoman.TTF') format('truetype');
     font-weight: normal;
     font-style: normal;
   }
@@ -19,11 +25,16 @@
   }
 
   .sfu-font {
-    font-family: 'SFUGoudyMedium';
+    font-family: 'SFUGoudyTimesTenRoman';
+    letter-spacing: -0.05em;
   }
 
   .shelley-font {
     font-family: 'ShelleyLTStd-Script';
+  }
+
+  .arial-font {
+    font-family: Arial, Helvetica, sans-serif;
   }
 
   

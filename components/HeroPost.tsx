@@ -46,11 +46,11 @@ export default function HeroPost({ posts }: { posts: Post[] }) {
           Your browser does not support the video tag.
         </video>
       </div> */}
-      <div className="w-full flex items-start mb-12">
+      <div className="w-full sm:flex items-start mb-12">
         <MenuBar inActive={null} />
-        <div className="w-full grid grid-cols-2 gap-16">
+        <div className="w-full grid sm:grid-cols-2 sm:gap-16 gap-10">
           <BigHeroPostLayout id={0} post={posts[0]} />
-          <div className="grid grid-cols-1 gap-16">
+          <div className="grid grid-cols-1 sm:gap-16 gap-10">
             <SmallHeroPostLayout id={1} post={posts[1]} />
             <SmallHeroPostLayout id={2} post={posts[2]} />
           </div>
@@ -72,12 +72,12 @@ const BigHeroPostLayout = ({ post, id }: { post: Post; id: number }) => {
           style={{
             backgroundImage: `url('${img}')`,
           }}
-          className="h-[580px] w-full bg-cover bg-no-repeat bg-center"
+          className="h-[506px] sm:h-[580px] w-full bg-cover bg-no-repeat bg-center"
         >
           <HoverCard />
         </div>
         <div className="mt-8">
-          <p className="uppercase text-lg ">{post.category.name}</p>
+          <p className="uppercase text-sm sm:text-lg ">{post.category.name}</p>
         </div>
         <div className="mt-6">
           <p className="text-[32px] leading-none sfu-font">{post.title}</p>
@@ -94,18 +94,20 @@ const SmallHeroPostLayout = ({ post, id }: { post: Post; id: number }) => {
   const img = urlForImage(post.coverImage).url()
   return (
     <Link href={`/posts/${post.slug}`}>
-      <div className="w-full flex">
-        <div
-          style={{
-            backgroundImage: `url('${img}')`,
-          }}
-          className="w-3/5 h-[390px] bg-cover bg-no-repeat bg-center"
-        >
-          <HoverCard />
+      <div className="w-full sm:flex ">
+        <div className="w-full px-12 sm:px-0 sm:w-3/5">
+          <div
+            style={{
+              backgroundImage: `url('${img}')`,
+            }}
+            className="w-full mx-auto h-[380px] bg-cover bg-no-repeat bg-center"
+          >
+            <HoverCard />
+          </div>
         </div>
 
-        <div className="w-2/5 pl-6">
-          <p className="uppercase text-lg ">{post.category.name}</p>
+        <div className="w-full sm:w-2/5 sm:pl-6 mt-6 sm:mt-0">
+          <p className="uppercase text-sm sm:text-lg ">{post.category.name}</p>
           <div className="mt-6">
             <p className="text-2xl leading-none sfu-font">{post.title}</p>
           </div>
