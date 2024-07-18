@@ -20,7 +20,7 @@ const PrivacyPolicy = () => {
           content={'About - M MAGAZINE Vietnam'}
         />
       </Head>
-      <NavBar state="black" />
+      <NavBar state="black" category={null} />
       <div className="py-48 grid grid-cols-1 gap-24 sm:px-0 px-4">
         <p className="max-w-[800px] mx-auto text-3xl leading-[36px] sm:text-[55px] sm:leading-[66px] text-black text-center uppercase px-4 sm:px-0">
           M MAGAZINE VIETNAM - THE WOMEN’S EVOLUTION

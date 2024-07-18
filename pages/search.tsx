@@ -70,7 +70,7 @@ const SearchPage = () => {
 
   return (
     <>
-      <NavBar state="black" />
+      <NavBar state="black" category={null} />
       <Container>
         <div className="pt-20 sm:pt-48 w-full text-center">
           <form

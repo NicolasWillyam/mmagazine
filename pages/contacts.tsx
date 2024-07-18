@@ -20,7 +20,7 @@ const PrivacyPolicy = () => {
           content={'Contacts - M MAGAZINE Vietnam'}
         />
       </Head>
-      <NavBar state="black" />
+      <NavBar state="black" category={null} />
       <div className="py-48 grid grid-cols-1 gap-24">
         <p className="text-3xl leading-[36px] sm:text-[55px] sm:leading-[66px] text-black text-center uppercase">
           Contacts
