@@ -94,7 +94,7 @@ const SmallHeroPostLayout = ({ post, id }: { post: Post; id: number }) => {
   const img = urlForImage(post.coverImage).url()
   return (
     <Link href={`/posts/${post.slug}`}>
-      <div className="w-full sm:flex  lg:block xl:flex ">
+      <div className="w-full sm:flex lg:block xl:flex ">
         <div className="w-full px-12 sm:px-0 sm:w-3/5 lg:w-full xl:w-3/5">
           <div
             style={{
@@ -109,7 +109,7 @@ const SmallHeroPostLayout = ({ post, id }: { post: Post; id: number }) => {
         <div className="w-full sm:w-2/5 lg:w-full xl:w-2/5 mt-8 sm:pl-6 lg:pl-0 xl:pl-6 lg:mt-6 xl:mt-0">
           <CategoryNameComponent category={post.category} />
           <div className="mt-4">
-            <p className="text-[32px] leading-none sfu-font">{post.title}</p>
+            <p className="text-2xl leading-none sfu-font">{post.title}</p>
           </div>
         </div>
       </div>
