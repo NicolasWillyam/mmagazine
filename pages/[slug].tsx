@@ -75,7 +75,7 @@ export default function CategoryPosts({
             <div className="w-full flex items-start mb-12">
               <MenuBar inActive={category} />
               <div className="w-full">
-                <div className="w-fit ml-auto text-right capitalize leading-none tracking-tighter text-[50px] sm:text-[86px] xl:text-[116px]  sm:-mt-4 sfu-font   cursor-pointer transition duration-100">
+                <div className="w-fit ml-auto text-right capitalize leading-none tracking-tighter text-[50px] sm:text-[86px] xl:text-[116px]  sm:-mt-4 sfu-font hover:text-red-500 hover:italic  cursor-pointer transition duration-100">
                   {slugToCategory(category)}
                 </div>
                 <div className="w-full grid xl:grid-cols-2 gap-12 mt-6 lg:mt-10 xl:mt-16">
@@ -86,7 +86,7 @@ export default function CategoryPosts({
                           style={{
                             backgroundImage: `url('${urlForImage(_.coverImage).url()}')`,
                           }}
-                          className="w-full h-[506px] sm:h-[590px] lg:h-[860px] bg-cover bg-no-repeat bg-center"
+                          className="w-full h-[506px] sm:h-[590px] lg:h-[860px] xl:h-[590px] bg-cover bg-no-repeat bg-center"
                         >
                           <HoverCard />
                         </div>
@@ -128,17 +128,17 @@ export default function CategoryPosts({
                             style={{
                               backgroundImage: `url('${urlForImage(_.coverImage).url()}')`,
                             }}
-                            className="w-full xl:w-1/2 sm:h-[350px] lg:h-[510px] xl:h-[350px] h-[210px] bg-cover bg-no-repeat bg-top"
+                            className="w-full xl:w-1/2 sm:h-[350px] lg:h-[510px] xl:h-[860px] h-[506px] bg-cover bg-no-repeat bg-top max-w-[120vh]"
                           >
                             <HoverCard />
                           </div>
 
-                          <div className="w-full xl:w-1/2 xl:h-full flex flex-col justify-center items-center text-center xl:px-8 ">
-                            <div className="mt-4 sm:mt-10 xl:mt-0">
+                          <div className="w-full xl:w-1/2 xl:h-full flex flex-col justify-center items-center sm:text-center xl:px-8 ">
+                            <div className="mt-8 sm:mt-10 xl:mt-0 w-full">
                               <CategoryNameComponent category={_.category} />
                             </div>
                             <div className="mt-4">
-                              <p className="text-2xl sm:text-[40px] xl:text-5xl leading-none sfu-font">
+                              <p className="text-[32px] sm:text-[40px] xl:text-5xl leading-none sfu-font">
                                 {_.title}
                               </p>
                             </div>

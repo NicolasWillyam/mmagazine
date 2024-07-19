@@ -96,10 +96,10 @@ const NavBar = ({ state, category }: { state: string; category: string }) => {
               return (
                 <Link key={id} href={`/${_.slug}`}>
                   <li
-                    className="italic tracking w-fit cursor-pointer flex items-end hover:text-red-600 transition duration-100"
+                    className="italic tracking w-fit cursor-pointer flex gap-1 sm:gap-3 items-end hover:text-red-600 transition duration-100"
                     onClick={() => setMenuOpen(false)}
                   >
-                    <div className="w-16 h-[1px] bg-black/50 -ml-16 mb-2 xl:mb-2.5 "></div>
+                    <div className="w-14 h-[1px] bg-black/50 -ml-14 sm:-ml-16 mb-2 xl:mb-2.5 "></div>
                     <p className="-ml-1">{_.name}</p>
                   </li>
                 </Link>
