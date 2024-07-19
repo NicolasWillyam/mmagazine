@@ -62,14 +62,14 @@ const CategoryPostsLayout = ({ category }: { category: Menu }) => {
           <div className="grid grid-cols-1 xl:gap-16 gap-10">
             <div className="w-full xl:flex flex-row">
               <BigPostLayout id={0} post={posts[0]} />
-              <div className="w-full xl:w-1/2 lg:grid-cols-2 grid xl:grid-cols-1 lg:gap-8 xl:gap-16 gap-10 mt-10 xl:mt-0">
+              <div className="w-full xl:w-1/2 md:grid-cols-2 grid xl:grid-cols-1 md:gap-8 xl:gap-16 gap-10 mt-10 xl:mt-0">
                 <SmallPostLayout id={1} post={posts[1]} />
                 <SmallPostLayout id={2} post={posts[2]} />
               </div>
             </div>
             <div className="w-full sm:flex flex-col-reverse xl:flex-row-reverse">
               <BigPostLayout id={5} post={posts[5]} />
-              <div className="w-full xl:w-1/2 lg:grid-cols-2 grid xl:grid-cols-1 lg:gap-8 xl:gap-16 gap-10 mt-10 lg:mb-10 xl:mb-0 sm:mt-0">
+              <div className="w-full xl:w-1/2 md:grid-cols-2 grid xl:grid-cols-1 md:gap-8 xl:gap-16 gap-10 mt-10 md:mb-10 xl:mb-0 sm:mt-0">
                 <SmallPostLayout id={3} post={posts[3]} />
                 <SmallPostLayout id={4} post={posts[4]} />
               </div>
@@ -99,7 +99,7 @@ const BigPostLayout = ({ post, id }: { post: Post; id: number }) => {
           style={{
             backgroundImage: `url('${img}')`,
           }}
-          className="h-[506px] lg:h-[1226px] xl:h-[772px]  w-full bg-cover bg-no-repeat bg-center"
+          className="h-[506px] md:h-[900px] lg:h-[1226px] xl:h-[772px]  w-full bg-cover bg-no-repeat bg-center"
         >
           <HoverCard />
         </div>
@@ -130,7 +130,7 @@ const SmallPostLayout = ({ post, id }: { post: Post; id: number }) => {
             style={{
               backgroundImage: `url('${img}')`,
             }}
-            className="w-full mx-auto h-[380px] lg:h-[600px] xl:h-[520px] bg-cover bg-no-repeat bg-center"
+            className="w-full mx-auto h-[380px] md:h-[420px] lg:h-[600px] xl:h-[520px] bg-cover bg-no-repeat bg-center"
           >
             <HoverCard />
           </div>

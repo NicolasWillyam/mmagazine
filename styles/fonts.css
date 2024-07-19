@@ -39,6 +39,11 @@
     /* font-family: 'SFUGoudyMedium'; */
   }
 
+  .custom-selection::selection {
+    @apply text-white; /* Màu nền đen và màu văn bản trắng khi được bôi đen */
+    background-color: #EE0000;
+}
+
   .sfu-font {
     font-family: 'SFUGoudyTimesTenRoman';
     letter-spacing: -0.05em;

@@ -60,7 +60,7 @@ export default function PostHeader(props: Post) {
   }, [coverImage])
 
   return (
-    <>
+    <div className="mb-6">
       {postLayout == 'portrait' && (
         <PortraitPostHead
           title={title}
@@ -81,6 +81,6 @@ export default function PostHeader(props: Post) {
           author={author}
         />
       )}
-    </>
+    </div>
   )
 }

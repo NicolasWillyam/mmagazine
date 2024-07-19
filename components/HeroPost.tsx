@@ -72,7 +72,7 @@ const BigHeroPostLayout = ({ post, id }: { post: Post; id: number }) => {
           style={{
             backgroundImage: `url('${img}')`,
           }}
-          className="h-[506px] lg:h-[860px] xl:h-[580px] w-full bg-cover bg-no-repeat bg-center"
+          className="h-[506px] md:h-[640px] lg:h-[860px] xl:h-[580px] w-full bg-cover bg-no-repeat bg-center"
         >
           <HoverCard />
         </div>
@@ -105,6 +105,7 @@ const SmallHeroPostLayout = ({ post, id }: { post: Post; id: number }) => {
             <HoverCard />
           </div>
         </div>
+        <div className=""></div>
 
         <div className="w-full sm:w-2/5 lg:w-full xl:w-2/5 mt-8 sm:pl-6 lg:pl-0 xl:pl-6 lg:mt-6 xl:mt-0">
           <CategoryNameComponent category={post.category} />

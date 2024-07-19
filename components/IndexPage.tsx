@@ -23,6 +23,7 @@ import Link from 'next/link'
 import { urlForImage } from 'lib/sanity.image'
 import { cn } from '@/lib/utils'
 import HoverCard from './HoverCard'
+import AdsBlock from './AdsBlock'
 
 export interface IndexPageProps {
   preview?: boolean
@@ -90,11 +91,7 @@ export default function IndexPage(props: IndexPageProps) {
             {suggestPosts.length > 0 && <MoreBlogs posts={suggestPosts} />}
           </div> */}
         </BlogContainer>
-        <div className="w-full h-[330px] bg-gray-200 text-center p-4">
-          <p className="text-gray-400 text-[10px] tracking-tight">
-            ADVERTISEMENT
-          </p>
-        </div>
+        <AdsBlock />
 
         <BlogContainer>
           <CategoryContainer />

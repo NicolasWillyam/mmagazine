@@ -32,6 +32,7 @@ import { HiArrowLongRight } from 'react-icons/hi2'
 import BlogContainer from './BlogContainer'
 import { Button } from './ui/button'
 import PortraitPost from './PortraitPostHead'
+import AdsBlock from './AdsBlock'
 
 export interface PostPageProps {
   order: number
@@ -96,7 +97,7 @@ export default function PostPage(props: PostPageProps) {
               </PostTitle>
             ) : (
               <>
-                <article>
+                <article className="grid grid-cols-1 gap-6">
                   <PostHeader
                     title={post.title}
                     description={post.description}
@@ -105,6 +106,9 @@ export default function PostPage(props: PostPageProps) {
                     date={post.date}
                     author={post.author}
                   />
+                  <div className="px-4">
+                    <AdsBlock />
+                  </div>
 
                   <PostBody
                     order={order}

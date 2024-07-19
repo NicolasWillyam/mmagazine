@@ -54,7 +54,9 @@ const myPortableTextComponents: Partial<PortableTextReactComponents> = {
     h2: ({ children }) => <h2 className="text-2xl font-normal">{children}</h2>,
     h3: ({ children }) => <h3 className="text-1xl font-normal">{children}</h3>,
     normal: ({ children }) => (
-      <p className="text-xl my-4 xl:text-2xl sm:my-6">{children}</p>
+      <p className="text-xl my-4 xl:text-2xl sm:my-6 custom-selection">
+        {children}
+      </p>
     ),
   },
 }
@@ -69,7 +71,7 @@ export default function PostBody({
   content: any
 }) {
   return (
-    <div className="w-full flex mt-6 sm:mt-12">
+    <div className="w-full flex">
       <div className="hidden sm:block sm:w-2/5 h-auto mt-48 mr-[60px]">
         {order == 0 && (
           <div className="text-left py-auto max-w-[350px] mx-auto">

@@ -2,6 +2,7 @@
 
 import { cn } from '@/lib/utils'
 import Layout from 'app/layout'
+import AdsBlock from 'components/AdsBlock'
 import BlogContainer, { Container } from 'components/BlogContainer'
 import Footer from 'components/Footer'
 import HeroPost from 'components/HeroPost'
@@ -106,13 +107,10 @@ export default function CategoryPosts({
               </div>
             </div>
           </BlogContainer>
-          <div className="w-full h-[330px] bg-gray-200 text-center p-4">
-            <p className="text-gray-400 text-[10px] tracking-tight">
-              ADVERTISEMENT
-            </p>
-          </div>
+          <AdsBlock />
+
           <BlogContainer>
-            <div className="grid grid-cols-1 gap-10 sm:gap-12 xl:gap-[136px] my-10">
+            <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-1 gap-10 sm:gap-8 sm:gap-y-16 xl:gap-[136px] my-10">
               {bodyPosts.map((_, id) => {
                 if (id > 2) {
                   return (
@@ -128,17 +126,17 @@ export default function CategoryPosts({
                             style={{
                               backgroundImage: `url('${urlForImage(_.coverImage).url()}')`,
                             }}
-                            className="w-full xl:w-1/2 sm:h-[350px] lg:h-[510px] xl:h-[860px] h-[506px] bg-cover bg-no-repeat bg-top max-w-[120vh]"
+                            className="w-full xl:w-1/2 sm:h-[420px] lg:h-[600px] xl:h-[860px] h-[506px] bg-cover bg-no-repeat bg-top max-w-[120vh]"
                           >
                             <HoverCard />
                           </div>
 
-                          <div className="w-full xl:w-1/2 xl:h-full flex flex-col justify-center items-center sm:text-center xl:px-8 ">
+                          <div className="w-full xl:w-1/2 xl:h-full flex flex-col justify-center items-center xl:text-center xl:px-8 ">
                             <div className="mt-8 sm:mt-10 xl:mt-0 w-full">
                               <CategoryNameComponent category={_.category} />
                             </div>
                             <div className="mt-4">
-                              <p className="text-[32px] sm:text-[40px] xl:text-5xl leading-none sfu-font">
+                              <p className="text-[32px] xl:text-[40px] xl:text-5xl leading-none sfu-font">
                                 {_.title}
                               </p>
                             </div>

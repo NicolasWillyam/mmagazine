@@ -24,11 +24,11 @@ const PrivacyPolicy = () => {
         />
       </Head>
       <NavBar state="black" category={null} />
-      <div className="py-48 grid grid-cols-1 gap-24">
+      <div className="py-48 grid grid-cols-1 gap-24 sfu-font">
         <p className="text-3xl leading-[36px] sm:text-[55px] sm:leading-[66px] text-black text-center uppercase">
           PRIVACY POLICY
         </p>
-        <div className="max-w-[960px] mx-auto sm:pt-20 text-base text-left px-4 sm:px-0">
+        <div className="max-w-[960px] mx-auto sm:pt-20 text-xl text-left px-4 sm:px-0">
           <p>
             Website MMAGAZINEVIETNAM.com tôn trọng tất cả các quyền riêng tư của
             người sử dụng. <br /> <br />
