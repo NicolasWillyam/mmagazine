@@ -8,6 +8,7 @@ import { cn } from '@/lib/utils'
 import HoverCard from './HoverCard'
 import { CategoryNameComponent, TitleComponent } from './PostDetailComponents'
 import ImagePost from './ImagePost'
+import AdsBlock from './AdsBlock'
 
 const CategoryPostsLayout = ({
   category,
@@ -19,27 +20,30 @@ const CategoryPostsLayout = ({
   return (
     <>
       {posts.length > 5 && (
-        <div className="py-10">
-          <p className="text-[40px] sm:text-[64px] sm:mb-10 mb-4 tracking-tight sfu-font">
-            {category.name}
-          </p>
-          <div className="grid grid-cols-1 xl:gap-16 gap-10">
-            <div className="w-full xl:flex flex-row">
-              <BigPostLayout id={0} post={posts[0]} />
-              <div className="w-full xl:w-1/2 md:grid-cols-2 grid xl:grid-cols-1 md:gap-8 xl:gap-16 gap-10 mt-10 xl:mt-0">
-                <SmallPostLayout id={1} post={posts[1]} />
-                <SmallPostLayout id={2} post={posts[2]} />
+        <>
+          <div className="py-10">
+            <p className="text-[40px] sm:text-[64px] sm:mb-10 mb-4 tracking-tight sfu-font">
+              {category.name}
+            </p>
+            <div className="grid grid-cols-1 xl:gap-16 gap-10">
+              <div className="w-full xl:flex flex-row">
+                <BigPostLayout id={0} post={posts[0]} />
+                <div className="w-full xl:w-1/2 md:grid-cols-2 grid xl:grid-cols-1 md:gap-8 xl:gap-16 gap-10 mt-10 xl:mt-0">
+                  <SmallPostLayout id={1} post={posts[1]} />
+                  <SmallPostLayout id={2} post={posts[2]} />
+                </div>
               </div>
-            </div>
-            <div className="w-full sm:flex flex-col-reverse xl:flex-row-reverse">
-              <BigPostLayout id={5} post={posts[5]} />
-              <div className="w-full xl:w-1/2 md:grid-cols-2 grid xl:grid-cols-1 md:gap-8 xl:gap-16 gap-10 mt-10 md:mb-10 xl:mb-0 sm:mt-0">
-                <SmallPostLayout id={3} post={posts[3]} />
-                <SmallPostLayout id={4} post={posts[4]} />
+              <div className="w-full sm:flex flex-col-reverse xl:flex-row-reverse">
+                <BigPostLayout id={5} post={posts[5]} />
+                <div className="w-full xl:w-1/2 md:grid-cols-2 grid xl:grid-cols-1 md:gap-8 xl:gap-16 gap-10 mt-10 md:mb-10 xl:mb-0 sm:mt-0">
+                  <SmallPostLayout id={3} post={posts[3]} />
+                  <SmallPostLayout id={4} post={posts[4]} />
+                </div>
               </div>
             </div>
           </div>
-        </div>
+          {/* <AdsBlock /> */}
+        </>
       )}
     </>
   )

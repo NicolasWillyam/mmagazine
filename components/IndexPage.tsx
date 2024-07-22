@@ -24,6 +24,7 @@ import { urlForImage } from 'lib/sanity.image'
 import { cn } from '@/lib/utils'
 import HoverCard from './HoverCard'
 import AdsBlock from './AdsBlock'
+import LatestPost from './LatestPost'
 
 export interface IndexPageProps {
   preview?: boolean
@@ -85,6 +86,7 @@ export default function IndexPage(props: IndexPageProps) {
 
         <BlogContainer>
           <CategoryContainer posts={allPosts} />
+          <LatestPost posts={allPosts} />
         </BlogContainer>
       </div>
     </>

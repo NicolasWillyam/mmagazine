@@ -21,6 +21,7 @@ import Head from 'next/head'
 import Link from 'next/link'
 import { useRouter } from 'next/router'
 import { useEffect, useState } from 'react'
+import { ADS_PER_POSTS } from 'utils/constant'
 import { slugToCategory } from 'utils/function'
 
 export default function CategoryPosts({
@@ -114,36 +115,40 @@ export default function CategoryPosts({
               {bodyPosts.map((_, id) => {
                 if (id > 1) {
                   return (
-                    <div key={id}>
-                      <Link href={`/posts/${_.slug}`}>
-                        <div
-                          className={cn(
-                            id % 2 == 0 ? '' : 'flex-row-reverse',
-                            'xl:flex gap-8 h-full',
-                          )}
-                        >
+                    <>
+                      <div key={id}>
+                        <Link href={`/posts/${_.slug}`}>
                           <div
-                            style={{
-                              backgroundImage: `url('${urlForImage(_.coverImage).url()}')`,
-                            }}
-                            className="w-full xl:w-1/2 sm:h-[420px] lg:h-[600px] xl:h-[860px] h-[506px] bg-cover bg-no-repeat bg-top max-w-[120vh]"
+                            className={cn(
+                              id % 2 == 0 ? '' : 'flex-row-reverse',
+                              'xl:flex gap-8 h-full',
+                            )}
                           >
-                            <HoverCard />
-                          </div>
+                            <div
+                              style={{
+                                backgroundImage: `url('${urlForImage(_.coverImage).url()}')`,
+                              }}
+                              className="w-full xl:w-1/2 sm:h-[420px] lg:h-[600px] xl:h-[860px] h-[506px] bg-cover bg-no-repeat bg-top max-w-[120vh]"
+                            >
+                              <HoverCard />
+                            </div>
 
-                          <div className="w-full xl:w-1/2 xl:h-full flex flex-col justify-center items-center xl:text-center xl:px-8 ">
-                            <div className="mt-8 sm:mt-10 xl:mt-0 w-full">
-                              <CategoryNameComponent category={_.category} />
-                            </div>
-                            <div className="mt-4">
-                              <p className="text-[32px] xl:text-[40px] xl:text-5xl leading-none sfu-font">
-                                {_.title}
-                              </p>
+                            <div className="w-full xl:w-1/2 xl:h-full flex flex-col justify-center items-center xl:text-center xl:px-8 ">
+                              <div className="mt-8 sm:mt-10 xl:mt-0 w-full">
+                                <CategoryNameComponent category={_.category} />
+                              </div>
+                              <div className="mt-4">
+                                <p className="text-[32px] xl:text-[40px] xl:text-5xl leading-none sfu-font">
+                                  {_.title}
+                                </p>
+                              </div>
                             </div>
                           </div>
-                        </div>
-                      </Link>
-                    </div>
+                        </Link>
+                      </div>
+                      {(id - 1) % ADS_PER_POSTS == 0 &&
+                        id - 1 >= ADS_PER_POSTS && <AdsBlock />}
+                    </>
                   )
                 }
               })}

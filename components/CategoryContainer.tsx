@@ -2,6 +2,7 @@ import React from 'react'
 import CategoryPostsLayout from './CategoryPostsLayout'
 import { menuList } from './MenuBar'
 import { Post } from 'lib/sanity.queries'
+import AdsBlock from './AdsBlock'
 
 const CategoryContainer = ({ posts }: { posts: Post[] }) => {
   return (
