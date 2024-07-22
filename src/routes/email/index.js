@@ -5,6 +5,7 @@ const EmailController = require("../../controllers/email.controller");
 const router = express.Router();
 
 router.post("/notification", EmailController.sendNotification);
+router.get("/list-email", EmailController.getAllMailUser);
 router.get("/notification", (req, res) => {
     return res.send({
         status: "success",

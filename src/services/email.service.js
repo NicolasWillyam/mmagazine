@@ -3,6 +3,15 @@ const UserService = require("./user.service");
 const { email_addr } = require("../config/index");
 
 class EmailService {
+
+    static getAllMailUser = async () => {
+        const user = await UserService.getAllUser();
+        if(!user) {
+            return new Error("Error: User not found")
+        }
+        const mail = user.map((item) => item.email)
+        return mail
+    }
     static sendNotification = async (req, res) => {
         const user = await UserService.getAllUser();
         const mail = user.map((item) => item.email)
