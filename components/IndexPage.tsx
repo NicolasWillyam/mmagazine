@@ -71,7 +71,6 @@ export default function IndexPage(props: IndexPageProps) {
       </div>
     )
   }
-  allPosts.splice(0, 2)
 
   return (
     <>
@@ -81,8 +80,8 @@ export default function IndexPage(props: IndexPageProps) {
       <div className="w-full mx-auto pt-24 px-5 sm:px-0">
         <BlogContainer>
           <HeroPost posts={posts} />
+          <AdsBlock />
         </BlogContainer>
-        <AdsBlock />
 
         <BlogContainer>
           <CategoryContainer posts={allPosts} />

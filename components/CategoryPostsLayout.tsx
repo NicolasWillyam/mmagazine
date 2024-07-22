@@ -21,7 +21,7 @@ const CategoryPostsLayout = ({
     <>
       {posts.length > 5 && (
         <>
-          <div className="py-10">
+          <div className="py-10 pb-16">
             <p className="text-[40px] sm:text-[64px] sm:mb-10 mb-4 tracking-tight sfu-font">
               {category.name}
             </p>
@@ -42,7 +42,7 @@ const CategoryPostsLayout = ({
               </div>
             </div>
           </div>
-          {/* <AdsBlock /> */}
+          <AdsBlock />
         </>
       )}
     </>

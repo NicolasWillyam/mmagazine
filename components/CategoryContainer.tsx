@@ -5,6 +5,7 @@ import { Post } from 'lib/sanity.queries'
 import AdsBlock from './AdsBlock'
 
 const CategoryContainer = ({ posts }: { posts: Post[] }) => {
+  posts.splice(0, 3)
   return (
     <>
       {menuList.map((category, id) => {

@@ -11,7 +11,10 @@ const AdsBlock: React.FC = () => {
   }, [])
 
   return (
-    <div>
+    <div className="w-full mx-auto bg-gray-100 py-2">
+      <p className="text-[10px] uppercase font-light text-center text-gray-500">
+        advertisement
+      </p>
       <ins
         className="adsbygoogle"
         style={{ display: 'block' }}
