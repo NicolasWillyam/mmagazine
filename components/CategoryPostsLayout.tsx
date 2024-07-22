@@ -75,7 +75,7 @@ const SmallPostLayout = ({ post, id }: { post: Post; id: number }) => {
 
         <div className="w-full xl:w-2/5 xl:pl-6 mt-6 xl:mt-0">
           <CategoryNameComponent category={post.category} />
-          <TitleComponent title={post.title} fontSize={24} />
+          <TitleComponent title={post.title} fontSize={25} />
         </div>
       </div>
     </Link>

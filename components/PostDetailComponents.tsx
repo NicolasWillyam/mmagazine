@@ -27,7 +27,9 @@ export function TitleComponent({
   // description: string
 }) {
   return (
-    <p className={`text-[${fontSize}px] leading-none sfu-font mt-4`}>{title}</p>
+    <p className={`text-2xl text-[${fontSize}px] leading-none sfu-font mt-4`}>
+      {title}
+    </p>
   )
 }
 
