@@ -1,0 +1,37 @@
+### signup
+@url_dev= http://localhost:8080/v1/api
+
+POST {{url_dev}}/shop/signup
+Content-Type: application/json
+
+{
+     "name": 123,
+     "email": "luxofons123@gmail.com",
+     "password": "12323"
+}
+
+###
+
+POST {{url_dev}}/shop/login
+Content-Type: application/json
+
+{
+     "email": "luxofons@gmail.com",
+     "password": "123213"
+}
+
+###
+POST {{url_dev}}/shop/refresh-token
+Content-Type: application/json
+
+{
+    "refreshToken": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NDFlYWQzNjllZTU5NjQ1ZTRmMmQ2NTQiLCJlbWFpbCI6Imx1eG9mb25zQGdtYWlsLmNvbSIsImlhdCI6MTY3OTczODk4OSwiZXhwIjoxNjgwMzQzNzg5fQ.MqiEKRhGuA1PTaprgblRFPPlzLtcoFbRqIhuxVBf6sQKS7ZjXAG5kd2Hc6H-EuJ_w6_RRDosaGPnuC0RaB_HAy8a3mIOJsg60HtOvw_iYLRynOMNcTdfkfMbPAoih3754E5plf7yrEskF-NoW1YD8JF0YMs8xVCpMovN3Z7sobYeaStIgGqpEtQmDaJM5ayJXBPF1yeHhvxFS8ubBLgt9Tv1lRA6C3S2M0bZAKU1hz8AGGt3DLvkW-_eqdrDhtCXro9iM50Z3IPvvsA1GJdbWWrl27GcTmInZRvQBBoyqzDEsTHogZeM3pRAt3sUAM5CSTH2iz7m18mvCbsmqesngGLUte0pE2ej4k7sC4Qo_jMJbzodUvmxgC_M_5uz8ttMpE6O_vdsyyZS2OF3cLIo6YDlfeRBhnSsqf02dsAjxS1X8Sq0uERbAkBG7yNfDsNcLJ8FOTH3gIfnlOAGEYjRWxwsJTGaifLOO-tp8crdPc7edGYmClHODV5sM9qkf9qd_vd53EcAQkrojnOjCvCh11Q2kVnBi5eJsQbdn-HZZVfGvoMgDvUGOdi06t7sOe8m1K-2JEXgzhggBKhcqKwzIi7hsaBTfsKjkrDR6TvpKinTvTVu-W4E4rmfKDjRjNWzdqdbE7CDUBjy5E4DMVwudAgWPbpRE6J1p2fpQY04WNM"
+}
+
+###
+
+POST {{url_dev}}/shop/logout
+Content-Type: application/json
+
+{
+}
