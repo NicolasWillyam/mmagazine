@@ -1,13 +1,24 @@
-import Image from 'next/image'
-import React from 'react'
+import React, { useEffect } from 'react'
 
-const AdsBlock = () => {
+const AdsBlock: React.FC = () => {
+  useEffect(() => {
+    if (typeof window !== 'undefined') {
+      if (!window.adsbygoogle) {
+        window.adsbygoogle = []
+      }
+      window.adsbygoogle.push({})
+    }
+  }, [])
+
   return (
-    <div className="w-full">
-      <div
-        style={{ backgroundImage: `url('/ads.jpg')` }}
-        className="max-w-[1000px] h-32 sm:h-[200px] mx-auto bg-red-500 bg-center bg-no-repeat bg-cover"
-      ></div>
+    <div>
+      <ins
+        className="adsbygoogle"
+        style={{ display: 'block' }}
+        data-ad-client="ca-pub-6460957180122693"
+        data-ad-slot="4632040534"
+        data-ad-format="auto"
+      />
     </div>
   )
 }

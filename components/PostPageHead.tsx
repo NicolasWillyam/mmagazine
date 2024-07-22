@@ -17,6 +17,10 @@ export default function PostPageHead({ post }: PostPageHeadProps) {
     <Head>
       <title>{post.title}</title>
       <meta
+        name="google-adsense-account"
+        content="ca-pub-6460957180122693"
+      ></meta>
+      <meta
         name="description"
         content={post?.description || 'M MAGAZINE Vietnam'}
       />
@@ -43,6 +47,13 @@ export default function PostPageHead({ post }: PostPageHeadProps) {
       <meta name="twitter:title" content={post.title} />
       <meta name="twitter:description" content={post?.description || ''} />
       <meta name="twitter:image" content={postImage} />
+      <BlogMeta />
+
+      <script
+        async
+        src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6460957180122693"
+        crossOrigin="anonymous"
+      ></script>
     </Head>
   )
 }
