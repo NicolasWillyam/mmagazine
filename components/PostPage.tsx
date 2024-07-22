@@ -87,6 +87,7 @@ export default function PostPage(props: PostPageProps) {
     return (
       <>
         <NavBar state="black" category={post.category.slug} />
+        <PostPageHead post={post} />
         <Layout preview={preview} loading={loading}>
           <BlogContainer>
             {preview && !post ? (
