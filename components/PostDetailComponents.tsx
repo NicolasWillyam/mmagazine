@@ -8,7 +8,7 @@ import { nameToSlug } from 'utils/function'
 export function CategoryNameComponent({ category }: { category: Category }) {
   return (
     <Link href={`/${nameToSlug(category.name)}`}>
-      <p className="uppercase text-sm sm:text-lg epilogue-300 hover:text-black/70 duration-300">
+      <p className="uppercase text-sm sm:text-lg epilogue hover:text-black/70 duration-300">
         {category.name}
       </p>
     </Link>
@@ -16,21 +16,18 @@ export function CategoryNameComponent({ category }: { category: Category }) {
 }
 
 export function TitleComponent({
-  slug,
+  // slug,
   title,
-  description,
+  fontSize,
+  // description,
 }: {
-  slug: string
+  // slug: string
   title: string
-  description: string
+  fontSize: number
+  // description: string
 }) {
   return (
-    <Link href={`/posts/${slug}`}>
-      <p className="text-[20px] leading-[24px] sm:text-2xl sm:leading-[30px] md:text-xl xl:text-2xl xl:leading-[30px] ">
-        {title}
-      </p>
-      <p className="my-3 sm:hidden">{description}</p>
-    </Link>
+    <p className={`text-[${fontSize}px] leading-none sfu-font mt-4`}>{title}</p>
   )
 }
 
@@ -69,7 +66,6 @@ export function PostDetails({
   return (
     <>
       <CategoryNameComponent category={category} />
-      <TitleComponent title={title} description={description} slug={slug} />
       <PostedComponent date={date} author={author} />
     </>
   )

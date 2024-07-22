@@ -1,5 +1,5 @@
 /* styles/fonts.css */
-  /* @import url('https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100..900;1,100..900&display=swap'); */
+  @import url('https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100..900;1,100..900&display=swap');
   @font-face {
     font-family: 'SFUGoudyMedium';
     src: url('/fonts/SFUGoudyMedium.TTF') format('truetype');
@@ -57,11 +57,15 @@
     font-family: Arial, Helvetica, sans-serif;
   }
 
-  .epilogue-300 {
+  .epilogue {
     font-family: "EpilogueLight";
-    /* font-optical-sizing: auto;
-    font-weight: 300;
-    font-style: normal; */
+  }
+
+  .epilogue-400 {
+    font-family: "Epilogue", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
   }
 
   

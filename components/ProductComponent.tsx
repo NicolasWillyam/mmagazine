@@ -15,7 +15,7 @@ export interface ProductProps {
   name: string
   brand: string
   currency?: string
-  price: number
+  price: string
   product_link?: string
   order_link?: string
   image: {

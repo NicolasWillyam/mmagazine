@@ -1,0 +1,8 @@
+/* styles/globals.css */
+
+/* Apply custom selection styles to the entire document */
+::selection {
+    background-color: #EE0000; /* Background color */
+    color: white; /* Text color */
+  }
+  

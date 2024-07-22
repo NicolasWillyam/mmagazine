@@ -76,7 +76,7 @@ export default function CategoryPosts({
             <div className="w-full flex items-start mb-12">
               <MenuBar inActive={category} />
               <div className="w-full">
-                <div className="w-fit ml-auto text-right capitalize leading-none tracking-tighter text-[50px] sm:text-[86px] xl:text-[116px]  sm:-mt-4 sfu-font hover:text-red-500 hover:italic  cursor-pointer transition duration-100">
+                <div className="w-fit ml-auto text-right capitalize leading-none tracking-tighter text-[50px] sm:text-[86px] xl:text-[116px]  sm:-mt-4 sfu-font hover:text-[#EE0000] hover:italic  cursor-pointer transition duration-100">
                   {slugToCategory(category)}
                 </div>
                 <div className="w-full grid xl:grid-cols-2 gap-12 mt-6 lg:mt-10 xl:mt-16">
@@ -112,7 +112,7 @@ export default function CategoryPosts({
           <BlogContainer>
             <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-1 gap-10 sm:gap-8 sm:gap-y-16 xl:gap-[136px] my-10">
               {bodyPosts.map((_, id) => {
-                if (id > 2) {
+                if (id > 1) {
                   return (
                     <div key={id}>
                       <Link href={`/posts/${_.slug}`}>

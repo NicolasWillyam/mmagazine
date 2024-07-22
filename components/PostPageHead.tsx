@@ -10,10 +10,17 @@ export interface PostPageHeadProps {
 
 export default function PostPageHead({ post }: PostPageHeadProps) {
   const postImage = urlForImage(post.coverImage).height(1000).width(1500).url()
+  console.log(post)
+  const logoImg = '/logo-black.png'
+
   return (
     <Head>
       <title>{post.title}</title>
       {/* <meta name="description" content="M MAGAZINE Vietnam" /> */}
+      <link rel="icon" href={logoImg} />
+      <link rel="shortcut icon" href={logoImg} />
+      <link rel="apple-touch-icon" href={logoImg} />
+
       <meta charSet="UTF-8" />
       <meta
         property="og:url"

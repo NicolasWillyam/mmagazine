@@ -52,7 +52,7 @@ const myPortableTextComponents: Partial<PortableTextReactComponents> = {
   block: {
     h1: ({ children }) => <h1 className="text-3xl font-bold">{children}</h1>,
     h2: ({ children }) => <h2 className="text-2xl font-normal">{children}</h2>,
-    h3: ({ children }) => <h3 className="text-1xl font-normal">{children}</h3>,
+    h3: ({ children }) => <h3 className="text-xl font-normal">{children}</h3>,
     normal: ({ children }) => (
       <p className="text-xl my-4 xl:text-2xl sm:my-6 custom-selection">
         {children}

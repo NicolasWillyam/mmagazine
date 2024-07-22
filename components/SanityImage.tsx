@@ -26,7 +26,7 @@ export const SanityImage = (props: Props) => {
           loading="lazy"
         />
         {caption && (
-          <figcaption className="mb-8 mx-auto text-sm font-normal text-[#86868b] text-pretty text-left">
+          <figcaption className="mb-8 mx-auto text-sm font-normal text-[#86868b] text-pretty text-left epilogue tracking-tight">
             {caption}
           </figcaption>
         )}

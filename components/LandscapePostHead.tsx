@@ -35,8 +35,6 @@ const LandscapePostHead = (props: Post) => {
   const postImage = urlForImage(coverImage).url()
   const pathname = usePathname()
   const url = `${process.env.NEXT_PUBLIC_BASE_URL}${pathname}`
-
-  console.log('abc', category.slug)
   return (
     <Container>
       <div className="w-full hidden sm:block">
@@ -60,7 +58,7 @@ const LandscapePostHead = (props: Post) => {
                   <span className="text-2xl italic mr-2 shelley-font">by</span>
                   <span className="text-base font-bold">{author.name}</span>
                 </p>
-                <p className="text-lg sm:text-xl font-normal leading-[22px] text-center sm:text-right sfu-font">
+                <p className="text-lg sm:text-xl font-normal leading-[22px] text-center sm:text-right epilogue tracking-tight">
                   {description}
                 </p>
 
@@ -107,7 +105,7 @@ const LandscapePostHead = (props: Post) => {
               {title}
             </p>
             <div className="w-full grid grid-cols-1 gap-5">
-              <p className="text-lg sm:text-xl font-normal leading-[22px] text-center sm:text-left sfu-font">
+              <p className="text-lg sm:text-xl font-normal leading-[22px] text-center sm:text-left epilogue tracking-tight">
                 {description}
               </p>
               <p className="text-center sm:text-left">

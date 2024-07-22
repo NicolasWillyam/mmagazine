@@ -70,8 +70,7 @@ export default function IndexPage(props: IndexPageProps) {
       </div>
     )
   }
-
-  console.log(posts)
+  allPosts.splice(0, 2)
 
   return (
     <>
@@ -80,21 +79,12 @@ export default function IndexPage(props: IndexPageProps) {
 
       <div className="w-full mx-auto pt-24 px-5 sm:px-0">
         <BlogContainer>
-          {/* Render HeroPost if exists */}
-          {/* {heroPost && <HeroPost posts={heroPost} />} */}
-
           <HeroPost posts={posts} />
-          {/* Render SuggestPost with suggestPosts */}
-          {/* <SuggestPost posts={suggestPosts} /> */}
-
-          {/* <div className="xl:max-w-[1440px] 2xl:max-w-[1920px] mx-auto">
-            {suggestPosts.length > 0 && <MoreBlogs posts={suggestPosts} />}
-          </div> */}
         </BlogContainer>
         <AdsBlock />
 
         <BlogContainer>
-          <CategoryContainer />
+          <CategoryContainer posts={allPosts} />
         </BlogContainer>
       </div>
     </>

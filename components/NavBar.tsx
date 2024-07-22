@@ -185,39 +185,35 @@ const NavBar = ({ state, category }: { state: string; category: string }) => {
 
             <div className="max-w-[1440px] mx-auto mt-14 sm:mt-24">
               <MenuBar inActive={null} />
-            </div>
-
-            <div className="w-full md:flex justify-between items-start mt-24 md:mt-16 mb-10">
-              <ul className="mt-6 flex flex-col md:flex-row md:justify-center md:items-center gap-4 sm:gap-16 uppercase font-light">
-                {footerList.map((item, idx) => (
-                  <Link key={idx} href={item.link}>
-                    <li
-                      className=" font-semibold text-sm md:text-base"
-                      key={idx}
+              <div className="w-full md:flex justify-between items-start mt-24 md:mt-16 mb-10">
+                <ul className="mt-6 flex flex-col md:flex-row md:justify-center md:items-center gap-4 sm:gap-16 uppercase font-light">
+                  {footerList.map((item, idx) => (
+                    <Link key={idx} href={item.link}>
+                      <li
+                        className=" font-semibold text-sm md:text-base"
+                        key={idx}
+                      >
+                        {item.name}
+                      </li>
+                    </Link>
+                  ))}
+                </ul>
+                <div className="mt-24 mb-4 md:my-0">
+                  <div className="flex items-start justify-start md:justify-end gap-4">
+                    <Link
+                      target="_blank"
+                      href={'https://www.facebook.com/mmagazinevietnam/'}
                     >
-                      {item.name}
-                    </li>
-                  </Link>
-                ))}
-              </ul>
-              <div className="mt-24 mb-4 md:my-0">
-                <div className="flex items-start justify-start md:justify-end gap-4">
-                  <Link
-                    target="_blank"
-                    href={'https://www.facebook.com/mmagazinevietnam/'}
-                  >
-                    <RiFacebookFill size={24} />
-                  </Link>
-                  <Link
-                    target="_blank"
-                    href={'https://www.instagram.com/mmagvietnam/'}
-                  >
-                    <IoLogoInstagram size={24} />
-                  </Link>
+                      <RiFacebookFill size={24} />
+                    </Link>
+                    <Link
+                      target="_blank"
+                      href={'https://www.instagram.com/mmagvietnam/'}
+                    >
+                      <IoLogoInstagram size={24} />
+                    </Link>
+                  </div>
                 </div>
-                <p className="text-[10px] md:text-xs mt-8 sfu-font uppercase text-black/70">
-                  M Magazine © M Media 2024
-                </p>
               </div>
             </div>
           </div>
@@ -230,17 +226,19 @@ const NavBar = ({ state, category }: { state: string; category: string }) => {
 export default NavBar
 
 const footerList: Footer[] = [
+  { name: 'advertise', link: '/' },
   {
-    name: 'about',
-    link: '/about',
+    name: 'about us',
+    link: '/about-us',
+  },
+
+  {
+    name: 'TERMS & Privacy',
+    link: '/term-and-privacy',
   },
   {
     name: 'Contacts',
     link: '/contacts',
-  },
-  {
-    name: 'Privacy Policy',
-    link: '/privacy-policy',
   },
 ]
 

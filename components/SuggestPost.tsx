@@ -38,7 +38,9 @@ export const SuggestPostInPostBody = ({ posts }: { posts: Post[] }) => {
   return (
     <div>
       <hr className="my-6 border-t-[1.5px] border-black" />
-      <p className="text-[28px] font-semibold  sfu-font">Có thể bạn sẽ thích</p>
+      <p className="text-[28px] font-semibold  arial-font tracking-tight">
+        Có thể bạn sẽ thích
+      </p>
       <div className="mt-6 w-full grid grid-cols-2 gap-6  sfu-font">
         {posts.map((post) => (
           <PostSuggested

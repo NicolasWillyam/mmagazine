@@ -45,8 +45,6 @@ export default function PostHeader(props: Post) {
       .getDocument(coverImage.asset._ref)
       .then((asset) => {
         if (asset && asset.metadata && asset.metadata.dimensions) {
-          console.log('Dimensions:', asset.metadata.dimensions.height)
-          console.log('Dimensions:', asset.metadata.dimensions.width)
           const imgWidth = asset.metadata.dimensions.width
           const imgHeigh = asset.metadata.dimensions.height
           if (imgWidth > imgHeigh) {

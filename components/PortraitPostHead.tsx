@@ -46,7 +46,7 @@ const PortraitPostHead = (props: Post) => {
           {title}
         </p>
         <div className="w-full grid grid-cols-1 gap-5">
-          <p className="text-lg sm:text-xl font-normal leading-[22px] text-center sm:text-left sfu-font">
+          <p className="text-lg sm:text-xl font-normal leading-[22px] text-center sm:text-left epilogue tracking-tight">
             {description}
           </p>
           <p className="text-center sm:text-left">

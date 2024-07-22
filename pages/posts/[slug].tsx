@@ -36,7 +36,6 @@ export const fetchPostsByCategory = async (
   setCategoriesWithPosts: Function,
 ) => {
   try {
-    console.log(categoryName, title)
     const result = await getAllPostsByCategory({ categoryName, title })
     if (result?.posts?.length > 0) {
       setCategoriesWithPosts(result.posts)

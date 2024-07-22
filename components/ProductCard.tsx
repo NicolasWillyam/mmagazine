@@ -11,7 +11,7 @@ interface Props {
   name: string
   brand: string
   currency: string
-  price: number
+  price: string
   product_link?: string
   order_link?: string
   image: {
@@ -54,7 +54,17 @@ const ProductCard = (props: Props) => {
               : `grid xl:grid-cols-2 gap-6`
           }
         >
-          <Link href={product_link || undefined} target="blank">
+          {product_link ? (
+            <Link href={product_link} target="blank">
+              <Image
+                src={img}
+                alt={'alt'}
+                width={500}
+                height={500}
+                className="mx-auto"
+              />
+            </Link>
+          ) : (
             <Image
               src={img}
               alt={'alt'}
@@ -62,7 +72,8 @@ const ProductCard = (props: Props) => {
               height={500}
               className="mx-auto"
             />
-          </Link>
+          )}
+
           <div
             className={
               type == 'group'
@@ -71,13 +82,10 @@ const ProductCard = (props: Props) => {
             }
           >
             <div className="w-4/5 mx-auto">
-              <div>
+              <div className="">
                 <div className="text-xl mb-3 text-left">
                   {name},
-                  <span className="font-semibold arial-font ml-2">
-                    <span className="mr-0.5">{currency}</span>
-                    {price}
-                  </span>
+                  <span className="font-semibold arial-font ml-2">{price}</span>
                 </div>
               </div>
               <div className="mt-5">
@@ -107,8 +115,8 @@ const ProductCard = (props: Props) => {
               </div>
 
               <div className="mt-2">
-                {product_link ? (
-                  <Link href={product_link} target="_blank">
+                {order_link ? (
+                  <Link href={order_link} target="_blank">
                     <Button
                       variant={'outline'}
                       className="w-full flex items-center justify-between"

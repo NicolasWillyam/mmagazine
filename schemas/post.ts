@@ -60,29 +60,6 @@ export default defineType({
           ],
         },
         {
-          name: 'video',
-          type: 'file',
-          title: 'Video',
-          description: 'Upload a video file.',
-          options: {
-            accept: 'video/*', // Specify accepted file types, e.g., 'video/mp4'
-          },
-          fields: [
-            {
-              name: 'caption',
-              type: 'string',
-              title: 'Video Caption',
-              description: 'Caption displayed below the video.',
-            },
-            {
-              name: 'alt',
-              type: 'string',
-              title: 'Alternative text',
-              description: 'Important for SEO and accessibility.',
-            },
-          ],
-        },
-        {
           type: 'document',
           name: 'product',
           title: 'Product',
@@ -124,39 +101,28 @@ export default defineType({
                         hotspot: true,
                       },
                       hidden: ({ parent }) => parent.type !== 'product', // Only show if type is 'product'
+                      validation: (rule) => rule.required(),
                     },
                     {
                       name: 'name',
                       type: 'string',
                       title: 'Name',
                       hidden: ({ parent }) => parent.type !== 'product', // Only show if type is 'product'
+                      validation: (rule) => rule.required(),
                     },
                     {
                       name: 'brand',
                       type: 'string',
                       title: 'Brand',
                       hidden: ({ parent }) => parent.type !== 'product', // Only show if type is 'product'
-                    },
-                    {
-                      name: 'currency',
-                      type: 'string',
-                      title: 'Currency',
-                      options: {
-                        list: [
-                          // { title: 'Image', value: 'image' },
-                          { title: '€', value: '€' },
-                          { title: '$', value: '$' },
-                          { title: '¥', value: '¥' },
-                          { title: 'đ', value: 'đ' },
-                          // Add other content types as needed
-                        ],
-                      },
+                      validation: (rule) => rule.required(),
                     },
                     {
                       name: 'price',
-                      type: 'number',
+                      type: 'string',
                       title: 'Price',
                       hidden: ({ parent }) => parent.type !== 'product', // Only show if type is 'product'
+                      validation: (rule) => rule.required(),
                     },
                     {
                       name: 'product_link',
@@ -164,6 +130,7 @@ export default defineType({
                       title: 'Product link',
                       description: 'URL product link to the product.',
                       hidden: ({ parent }) => parent.type !== 'product', // Only show if type is 'product'
+                      validation: (rule) => rule.required(),
                     },
                     {
                       name: 'order_link',
