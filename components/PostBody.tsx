@@ -35,6 +35,11 @@ import { SanityImage } from './SanityImage'
 import SanityVideo from './SanityVideo'
 import { SuggestPostInPostBody } from './SuggestPost'
 import { Button } from './ui/button'
+import InstagramEmbed from './InstagramEmbed'
+import FacebookEmbed from './FaceBookEmbed'
+import TikTokEmbed from './TikTokEmbed'
+import TwitterEmbed from './TwitterEmbed'
+import EmbedComponent from './EmbedComponent'
 
 const myPortableTextComponents: Partial<PortableTextReactComponents> = {
   types: {
@@ -47,6 +52,10 @@ const myPortableTextComponents: Partial<PortableTextReactComponents> = {
     product: ({ value }) => {
       return <ProductComponent {...value} />
     },
+    'embed-post': ({ value }) => {
+      return <EmbedComponent {...value} />
+    },
+
     // product: ProductComponent,
   },
   block: {
@@ -70,6 +79,7 @@ export default function PostBody({
   posts: Post[]
   content: any
 }) {
+  console.log(content)
   return (
     <div className="w-full flex">
       <div className="hidden sm:block sm:w-2/5 h-auto mt-48 mr-[60px]">
@@ -81,9 +91,14 @@ export default function PostBody({
         )}
       </div>
 
-      <div className="sm:w-3/5 px-4 sm:px-0">
+      <div className="sm:w-3/5  px-4 sm:px-0">
         <div className="text-lg font-light grid grid-cols-1 gap-6 sfu-font text-justify">
           <div>
+            {/* <InstagramEmbed link="https://www.instagram.com/p/C9wLCE9tIwF/?igsh=MWozdmdvdnJiYmlxbQ%3D%3D&fbclid=IwZXh0bgNhZW0CMTAAAR1QODAAOJ-3BwpsE_g9-z3SNyPZVKR1nUPxPiQ30wQGpC4sn0wfboaobso_aem_X9Hli3zteWqVDvdEYHm9yQ" />
+            <FacebookEmbed href="https://www.facebook.com/mmagazinevietnam/posts/pfbid0AH381fUkR2XtfyJ1A42TaZugQCVKtJEEZU3GnyDZgmzCFBzisNyfddkh5QkQkUmAl" />
+            <TikTokEmbed href="https://www.tiktok.com/@louisvuitton/video/7394726134627175713?lang=vi-VN" />
+            <TwitterEmbed href="https://twitter.com/chainlink/status/1810710624395268315" /> */}
+
             <PortableText
               value={content}
               components={myPortableTextComponents}

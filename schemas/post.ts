@@ -153,6 +153,48 @@ export default defineType({
             },
           ],
         },
+        {
+          type: 'document',
+          name: 'embed-post',
+          title: 'Embed Post',
+          fields: [
+            {
+              type: 'array',
+              name: 'post',
+              title: 'Post',
+              of: [
+                {
+                  type: 'object',
+                  name: 'social-media',
+                  title: 'Social Media',
+                  fields: [
+                    {
+                      name: 'type',
+                      type: 'string',
+                      title: 'Type',
+                      options: {
+                        list: [
+                          // { title: 'Image', value: 'image' },
+                          { title: 'FaceBook', value: 'facebook' },
+                          { title: 'Instagram', value: 'instagram' },
+                          { title: 'TikTok', value: 'tiktok' },
+                          { title: 'Twitter', value: 'twitter' },
+                          { title: 'Pinterest', value: 'pinterest' },
+                          // Add other content types as needed
+                        ],
+                      },
+                    },
+                    {
+                      name: 'post_link',
+                      type: 'url',
+                      title: 'Post Link',
+                    },
+                  ],
+                },
+              ],
+            },
+          ],
+        },
 
         // {
         //   type: 'object',

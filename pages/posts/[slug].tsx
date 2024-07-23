@@ -106,7 +106,7 @@ export default function ProjectSlugRoute(props: PageProps) {
           setLoadedStatus={setLoadedStatus} // Update loadedStatus to false
           order={0}
         />
-        {categoriesWithPosts?.slice(0, 5)?.map((post, index) => (
+        {/* {categoriesWithPosts?.slice(0, 5)?.map((post, index) => (
           <div key={index}>
             <PostPage
               order={1}
@@ -117,7 +117,7 @@ export default function ProjectSlugRoute(props: PageProps) {
               setLoadedStatus={setLoadedStatus} // Update loadedStatus to false
             />
           </div>
-        ))}
+        ))} */}
       </>
     )
   }

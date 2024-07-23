@@ -21,3 +21,9 @@ export function nameToSlug(name: String) {
     .replace(/\s+/g, '-') // Replace spaces with hyphens
     .trim() // Remove leading/trailing whitespace
 }
+
+export const getTikTokVideoId = (url: string): string | null => {
+  const regex = /\/video\/(\d+)/
+  const match = url.match(regex)
+  return match ? match[1] : null
+}
