@@ -79,7 +79,6 @@ export default function PostBody({
   posts: Post[]
   content: any
 }) {
-  console.log(content)
   return (
     <div className="w-full flex">
       <div className="hidden sm:block sm:w-2/5 h-auto mt-48 mr-[60px]">

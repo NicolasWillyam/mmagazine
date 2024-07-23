@@ -10,7 +10,6 @@ export interface PostPageHeadProps {
 
 export default function PostPageHead({ post }: PostPageHeadProps) {
   const postImage = urlForImage(post.coverImage).height(1000).width(1500).url()
-  console.log(post)
   const logoImg = '/logo-black.png'
 
   return (

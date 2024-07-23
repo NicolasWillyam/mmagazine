@@ -18,7 +18,6 @@ interface Props {
 }
 
 const EmbedComponent = (props: Props) => {
-  console.log(props.post)
   const { post } = props
 
   return (

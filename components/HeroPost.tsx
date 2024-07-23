@@ -24,7 +24,7 @@ export default function HeroPost({ posts }: { posts: Post[] }) {
     </section>
   )
 }
-const BigHeroPostLayout = ({ post, id }: { post: Post; id: number }) => {
+export const BigHeroPostLayout = ({ post, id }: { post: Post; id: number }) => {
   return (
     <Link href={`/posts/${post.slug}`}>
       <div className="w-full h-auto">

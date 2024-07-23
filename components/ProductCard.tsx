@@ -115,7 +115,7 @@ const ProductCard = (props: Props) => {
               </div>
 
               <div className="mt-2">
-                {order_link ? (
+                {order_link && (
                   <Link href={order_link} target="_blank">
                     <Button
                       variant={'outline'}
@@ -127,16 +127,6 @@ const ProductCard = (props: Props) => {
                       <HiArrowLongRight size={20} />
                     </Button>
                   </Link>
-                ) : (
-                  <Button
-                    variant={'outline'}
-                    className="w-full flex items-center justify-between"
-                  >
-                    <p className="text-sm arial-font  tracking-normal truncate">
-                      Chat with a Personal Shopper
-                    </p>
-                    <HiArrowLongRight size={20} />
-                  </Button>
                 )}
               </div>
             </div>

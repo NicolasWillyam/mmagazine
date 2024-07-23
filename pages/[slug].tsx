@@ -7,6 +7,7 @@ import BlogContainer, { Container } from 'components/BlogContainer'
 import Footer from 'components/Footer'
 import HeroPost from 'components/HeroPost'
 import HoverCard from 'components/HoverCard'
+import ImagePost from 'components/ImagePost'
 import LoadingSpinner from 'components/LoadingSpinner'
 import MenuBar from 'components/MenuBar'
 import MoreBlogInCategory from 'components/MoreBlogInCategory'
@@ -124,13 +125,8 @@ export default function CategoryPosts({
                               'xl:flex gap-8 h-full',
                             )}
                           >
-                            <div
-                              style={{
-                                backgroundImage: `url('${urlForImage(_.coverImage).url()}')`,
-                              }}
-                              className="w-full xl:w-1/2 sm:h-[420px] lg:h-[600px] xl:h-[860px] h-[506px] bg-cover bg-no-repeat bg-top max-w-[120vh]"
-                            >
-                              <HoverCard />
+                            <div className="w-1/2">
+                              <ImagePost coverImage={_.coverImage} />
                             </div>
 
                             <div className="w-full xl:w-1/2 xl:h-full flex flex-col justify-center items-center xl:text-center xl:px-8 ">

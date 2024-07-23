@@ -11,7 +11,7 @@ const AdsBlock: React.FC = () => {
   }, [])
 
   return (
-    <div className="w-full mx-auto bg-gray-50 py-2">
+    <div className="w-full min-h-[200px] mx-auto bg-gray-50 py-2">
       <p className="text-[10px] uppercase font-light text-center text-gray-500">
         advertisement
       </p>

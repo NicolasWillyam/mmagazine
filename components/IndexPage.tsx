@@ -81,11 +81,7 @@ export default function IndexPage(props: IndexPageProps) {
         <BlogContainer>
           <HeroPost posts={posts} />
           <AdsBlock />
-        </BlogContainer>
-
-        <BlogContainer>
           <CategoryContainer posts={allPosts} />
-          <LatestPost posts={allPosts} />
         </BlogContainer>
       </div>
     </>

@@ -3,22 +3,34 @@ import CategoryPostsLayout from './CategoryPostsLayout'
 import { menuList } from './MenuBar'
 import { Post } from 'lib/sanity.queries'
 import AdsBlock from './AdsBlock'
+import LatestPost from './LatestPost'
 
 const CategoryContainer = ({ posts }: { posts: Post[] }) => {
-  posts.splice(0, 3)
+  const remainingPosts = [...posts] // Make a copy of the posts array
+
+  const filteredCategoryPosts = menuList.map((category, id) => {
+    const filteredPosts = remainingPosts
+      .filter((post) => post.category.name === category.name)
+      .slice(0, 6)
+    filteredPosts.forEach((filteredPost) => {
+      const index = remainingPosts.findIndex(
+        (post) => post._id === filteredPost._id,
+      )
+      if (index !== -1) {
+        remainingPosts.splice(index, 1)
+      }
+    })
+    return { category, filteredPosts }
+  })
+
   return (
     <>
-      {menuList.map((category, id) => {
-        // Filter posts by category.slug
-        const filteredPosts = posts.filter(
-          (post) => post.category.name === category.name,
-        )
-        return (
-          <div key={id}>
-            <CategoryPostsLayout posts={filteredPosts} category={category} />
-          </div>
-        )
-      })}
+      {filteredCategoryPosts.map(({ category, filteredPosts }, id) => (
+        <div key={id}>
+          <CategoryPostsLayout posts={filteredPosts} category={category} />
+        </div>
+      ))}
+      <LatestPost posts={remainingPosts} />
     </>
   )
 }
