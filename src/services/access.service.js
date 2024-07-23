@@ -14,6 +14,8 @@ const KeyStoreService = require("./keyToken.service");
 const getInfoData = require("../utils/getInfoData");
 const verifyJWT = require("../utils/verifyJWT");
 const { updateKeyToken } = require("./keyToken.service");
+const EmailService = require("./email.service");
+
 class AccessService {
   static register = async (req, res) => {
     const { email, name="", password="" } = req.body;
@@ -23,6 +25,7 @@ class AccessService {
     }
     const newUser = await UserService.createUser(req.body);
     if(newUser) {
+      const mail = await EmailService.sendMailWelcome({ mail: email });
       return {
         status: 201,
         message: "Registered successfully!",

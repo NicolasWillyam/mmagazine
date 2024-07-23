@@ -78,7 +78,7 @@ app.use("/", require("./routes"));
 
 
 // start cron job
-sendNotification.start()
+// sendNotification.start()
 // handle error
 app.use((req, res, next) => {
   const error = new Error("Not Found");
