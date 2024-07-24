@@ -85,6 +85,8 @@ export default function ProjectSlugRoute(props: PageProps) {
     return () => clearTimeout(timer)
   }, [])
 
+  // console.log(categoriesWithPosts)
+
   // Show loading message while fetching data
   if (loading) {
     return (

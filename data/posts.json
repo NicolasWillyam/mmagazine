@@ -1,0 +1,5751 @@
+[
+  {
+    "slug": "matthieu-blazy-chia-se-ve-viec-hoc-hoi-tu-le-corbusier-va-su-hop-tac-moi-cua-ong-voi-bottega",
+    "category": {
+      "name": "Art & Design",
+      "slug": "art-and-design"
+    },
+    "_updatedAt": "2024-07-21T05:21:40Z",
+    "excerpt": null,
+    "description": "Tại tuần lễ thiết kế Salone del Mobile của Milan, LC14 Tabouret phản ánh di sản thiết kế tinh tế của nhà mốt xa xỉ này - một di sản vừa thực dụng vừa giàu trí tưởng tượng và mang tính thử nghiệm.",
+    "date": "2024-07-25T05:14:00.000Z",
+    "coverImage": {
+      "_type": "image",
+      "asset": {
+        "_ref": "image-7c02c3e29623c82be612356283b8137a0e8822dd-680x1020-png",
+        "_type": "reference"
+      }
+    },
+    "coverVideo": null,
+    "author": {
+      "name": "Tùng Linh",
+      "picture": null
+    },
+    "_id": "03c7df33-5e41-4db5-9526-1309ef1f6acc",
+    "title": "Matthieu Blazy chia sẻ về việc học hỏi từ Le Corbusier và sự hợp tác mới của ông với Bottega Veneta trong lĩnh vực đồ nội thất"
+  },
+  {
+    "category": {
+      "name": "Style",
+      "slug": "style"
+    },
+    "title": "Thay vì mặc quần Jeans mùa hè này, hãy thử quần pyjama",
+    "description": null,
+    "date": "2024-07-23T20:03:50.943Z",
+    "author": {
+      "name": "Thanh Thảo",
+      "picture": {
+        "_type": "image",
+        "asset": {
+          "_ref": "image-3a3fd4f9d0beca93afd039f32e2309aec1037152-771x1024-jpg",
+          "_type": "reference"
+        }
+      }
+    },
+    "coverVideo": null,
+    "slug": "thay-vi-mac-quan-jeans-mua-he-nay-hay-thu-quan-pyjama",
+    "_id": "113ab815-2952-4754-8321-a1ce25bb3d82",
+    "_updatedAt": "2024-07-23T20:05:51Z",
+    "excerpt": null,
+    "coverImage": {
+      "_type": "image",
+      "asset": {
+        "_type": "reference",
+        "_ref": "image-2a341e5d750c4d213397430fbcd1c62b2c36c438-620x930-webp"
+      }
+    }
+  },
+  {
+    "_updatedAt": "2024-07-23T20:01:55Z",
+    "slug": "6-mau-shorts-duoc-gioi-thoi-trang-yeu-thich",
+    "author": {
+      "name": "Thanh Thảo",
+      "picture": {
+        "_type": "image",
+        "asset": {
+          "_ref": "image-3a3fd4f9d0beca93afd039f32e2309aec1037152-771x1024-jpg",
+          "_type": "reference"
+        }
+      }
+    },
+    "description": null,
+    "title": "6 mẫu shorts được giới thời trang yêu thích ",
+    "date": "2024-07-23T19:59:28.986Z",
+    "excerpt": null,
+    "coverImage": {
+      "_type": "image",
+      "asset": {
+        "_ref": "image-9b35ca7f1a55ead4a838acb7082ddd373aa25360-1000x1499-webp",
+        "_type": "reference"
+      }
+    },
+    "coverVideo": null,
+    "category": {
+      "name": "Style",
+      "slug": "style"
+    },
+    "_id": "516a48a9-bacd-4166-a482-339fb89f06ce"
+  },
+  {
+    "coverImage": {
+      "_type": "image",
+      "asset": {
+        "_type": "reference",
+        "_ref": "image-d8e1bd6c4e7ca0b7e67ccc311c521e7cec941a5b-1200x800-webp"
+      }
+    },
+    "slug": "xu-huong-moi-buoi-toi-sang-trong-cung-chanel",
+    "description": null,
+    "date": "2024-07-23T19:50:58.112Z",
+    "_updatedAt": "2024-07-23T19:54:04Z",
+    "excerpt": null,
+    "coverVideo": null,
+    "author": {
+      "name": "Thanh Thảo",
+      "picture": {
+        "_type": "image",
+        "asset": {
+          "_ref": "image-3a3fd4f9d0beca93afd039f32e2309aec1037152-771x1024-jpg",
+          "_type": "reference"
+        }
+      }
+    },
+    "_id": "5190d765-51bc-41c9-8b58-5e569f3141af",
+    "title": "Xu hướng mới : Buổi tối sang trọng cùng Chanel ",
+    "category": {
+      "name": "Lifestyle",
+      "slug": "lifestyle"
+    }
+  },
+  {
+    "date": "2024-07-23T19:43:00.000Z",
+    "_updatedAt": "2024-07-23T19:46:36Z",
+    "coverImage": {
+      "asset": {
+        "_ref": "image-79ddf564d301688dc9bf95fc37f4a6dc67c6766e-1120x1400-webp",
+        "_type": "reference"
+      },
+      "_type": "image"
+    },
+    "coverVideo": null,
+    "slug": "ngoi-nha-mua-he-cua-jacquemus",
+    "_id": "fb04973a-e179-498f-b050-d01a268847c0",
+    "title": "Ngôi nhà mùa hè của Jacquemus ",
+    "description": null,
+    "author": {
+      "name": "Thanh Thảo",
+      "picture": {
+        "_type": "image",
+        "asset": {
+          "_ref": "image-3a3fd4f9d0beca93afd039f32e2309aec1037152-771x1024-jpg",
+          "_type": "reference"
+        }
+      }
+    },
+    "category": {
+      "name": "Lifestyle",
+      "slug": "lifestyle"
+    },
+    "excerpt": null
+  },
+  {
+    "slug": "uong-nuoc-chanh-khi-doi-nen-hay-khong",
+    "excerpt": null,
+    "title": "Wellness : Uống nước chanh khi đói : Nên hay không? ",
+    "description": null,
+    "date": "2024-07-23T19:37:57.179Z",
+    "_updatedAt": "2024-07-23T19:41:18Z",
+    "coverImage": {
+      "_type": "image",
+      "asset": {
+        "_type": "reference",
+        "_ref": "image-104da79e070f1c1f3e174c5e4aee2d61f0b27a21-1080x1350-webp"
+      }
+    },
+    "coverVideo": null,
+    "author": {
+      "name": "Thanh Thảo",
+      "picture": {
+        "_type": "image",
+        "asset": {
+          "_ref": "image-3a3fd4f9d0beca93afd039f32e2309aec1037152-771x1024-jpg",
+          "_type": "reference"
+        }
+      }
+    },
+    "_id": "45ea7028-19d0-464c-8aa7-0e32439d65a7",
+    "category": {
+      "name": "Beauty",
+      "slug": "beauty"
+    }
+  },
+  {
+    "title": "Nàng thơ mới của Louis Vuitton - Lisa đại sứ thương hiệu mới của nhà mốt đình đám",
+    "description": null,
+    "date": "2024-07-23T19:30:30.720Z",
+    "_id": "da8453cc-03b9-48e8-8fa9-b0725fb23505",
+    "_updatedAt": "2024-07-23T19:35:14Z",
+    "excerpt": null,
+    "coverImage": {
+      "_type": "image",
+      "asset": {
+        "_ref": "image-390ddba8676b7aa994953fbcc96d871909ae68c1-1212x1516-png",
+        "_type": "reference"
+      }
+    },
+    "coverVideo": null,
+    "slug": "nhu-don-doan-lisa-tro-thanh-dai-su-thuong-hieu-cua-louis-vuitton",
+    "author": {
+      "name": "Thanh Thảo",
+      "picture": {
+        "_type": "image",
+        "asset": {
+          "_ref": "image-3a3fd4f9d0beca93afd039f32e2309aec1037152-771x1024-jpg",
+          "_type": "reference"
+        }
+      }
+    },
+    "category": {
+      "name": "Celebrity",
+      "slug": "celebrity"
+    }
+  },
+  {
+    "date": "2024-07-22T16:47:21.011Z",
+    "_updatedAt": "2024-07-23T15:06:21Z",
+    "excerpt": null,
+    "coverVideo": null,
+    "author": {
+      "name": "Thanh Thảo",
+      "picture": {
+        "_type": "image",
+        "asset": {
+          "_ref": "image-3a3fd4f9d0beca93afd039f32e2309aec1037152-771x1024-jpg",
+          "_type": "reference"
+        }
+      }
+    },
+    "description": null,
+    "title": "\"Nữ hoàng\" Hyori trở lại ",
+    "coverImage": {
+      "_type": "image",
+      "asset": {
+        "_type": "reference",
+        "_ref": "image-01e8278eeac1f46f30aae36150c80aff09086c7f-1080x1350-webp"
+      }
+    },
+    "slug": "nu-hoang-hyori-tro-lai",
+    "category": {
+      "name": "Celebrity",
+      "slug": "celebrity"
+    },
+    "_id": "c8671cca-ec08-42bc-8e75-18a29884d264"
+  },
+  {
+    "description": null,
+    "coverImage": {
+      "_type": "image",
+      "asset": {
+        "_ref": "image-4386bab9979ff576f42771a7b84b36c890eb178a-1080x1350-webp",
+        "_type": "reference"
+      }
+    },
+    "author": {
+      "name": "Thanh Thảo",
+      "picture": {
+        "_type": "image",
+        "asset": {
+          "_ref": "image-3a3fd4f9d0beca93afd039f32e2309aec1037152-771x1024-jpg",
+          "_type": "reference"
+        }
+      }
+    },
+    "_updatedAt": "2024-07-22T16:39:10Z",
+    "excerpt": null,
+    "coverVideo": null,
+    "slug": "jang-won-young-va-karina-kep-toc-la-phu-kien-yeu-thich-cua-sao-han",
+    "category": {
+      "name": "Style",
+      "slug": "style"
+    },
+    "_id": "929c0c7e-854d-4145-a75e-4b86672ff815",
+    "title": "Jang Won-Young và Karina : Kẹp tóc là phụ kiện yêu thích của sao Hàn ",
+    "date": "2024-07-22T16:37:42.763Z"
+  },
+  {
+    "category": {
+      "name": "Style",
+      "slug": "style"
+    },
+    "title": "Tất cả những gì bạn cần biết về áo thun đen ",
+    "description": null,
+    "date": "2024-07-22T16:33:29.497Z",
+    "coverImage": {
+      "_type": "image",
+      "asset": {
+        "_ref": "image-613a4c1ec7eed08a5bf28cbc3e700aadaee1a83f-1170x1148-webp",
+        "_type": "reference"
+      }
+    },
+    "coverVideo": null,
+    "author": {
+      "name": "Thanh Thảo",
+      "picture": {
+        "_type": "image",
+        "asset": {
+          "_ref": "image-3a3fd4f9d0beca93afd039f32e2309aec1037152-771x1024-jpg",
+          "_type": "reference"
+        }
+      }
+    },
+    "_id": "64c68547-b936-4ece-8711-2ac7bfaf1783",
+    "_updatedAt": "2024-07-22T16:34:46Z",
+    "excerpt": null,
+    "slug": "tat-ca-nhung-gi-ban-can-biet-ve-ao-thun-den"
+  },
+  {
+    "_id": "a3b87725-35bf-4dda-8f76-89c2d0d015a8",
+    "date": "2024-07-22T16:28:54.669Z",
+    "excerpt": null,
+    "coverImage": {
+      "_type": "image",
+      "asset": {
+        "_ref": "image-cc2a50fa713d72a86b08925a36752d6de645a13c-677x1023-jpg",
+        "_type": "reference"
+      }
+    },
+    "category": {
+      "name": "Style",
+      "slug": "style"
+    },
+    "title": "Gần đây sao Hàn đi giày gì? ",
+    "description": null,
+    "_updatedAt": "2024-07-22T16:30:50Z",
+    "coverVideo": null,
+    "slug": "nhung-doi-sneaker-duoc-cac-sao-han-yeu-thich-gan-day",
+    "author": {
+      "name": "Thanh Thảo",
+      "picture": {
+        "_type": "image",
+        "asset": {
+          "_ref": "image-3a3fd4f9d0beca93afd039f32e2309aec1037152-771x1024-jpg",
+          "_type": "reference"
+        }
+      }
+    }
+  },
+  {
+    "excerpt": null,
+    "coverImage": {
+      "_type": "image",
+      "asset": {
+        "_ref": "image-1d183bfe5e2a64f2116b43d857ca8b5b534f0fc4-1920x1080-webp",
+        "_type": "reference"
+      }
+    },
+    "coverVideo": null,
+    "slug": "tu-new-jeans-toi-jennie-phu-kien-ma-cac-sao-yeu-thich",
+    "category": {
+      "name": "Style",
+      "slug": "style"
+    },
+    "date": "2024-07-22T16:25:36.892Z",
+    "_updatedAt": "2024-07-22T16:27:15Z",
+    "description": null,
+    "author": {
+      "name": "Thanh Thảo",
+      "picture": {
+        "_type": "image",
+        "asset": {
+          "_ref": "image-3a3fd4f9d0beca93afd039f32e2309aec1037152-771x1024-jpg",
+          "_type": "reference"
+        }
+      }
+    },
+    "_id": "bd592e4e-f82a-474f-8ee0-edb986fd866c",
+    "title": "Từ New Jeans tới Jennie: phụ kiện mà các sao yêu thích"
+  },
+  {
+    "description": null,
+    "date": "2024-07-22T16:20:55.881Z",
+    "_updatedAt": "2024-07-22T16:24:00Z",
+    "excerpt": null,
+    "_id": "dcf885c3-3bd8-4c14-8e39-0b0fd9a32749",
+    "title": "New Jeans sẽ biểu diễn tại trận đấu giữa Munich vs Tottenham",
+    "coverImage": {
+      "_type": "image",
+      "asset": {
+        "_ref": "image-eb65f9d7cae48dd7b018e6cb1b21616ecc57326a-1080x864-webp",
+        "_type": "reference"
+      }
+    },
+    "coverVideo": null,
+    "slug": "new-jeans-se-bieu-dien-tai-tran-dau-giua-munich-vs-tottenham",
+    "author": {
+      "name": "Thanh Thảo",
+      "picture": {
+        "_type": "image",
+        "asset": {
+          "_ref": "image-3a3fd4f9d0beca93afd039f32e2309aec1037152-771x1024-jpg",
+          "_type": "reference"
+        }
+      }
+    },
+    "category": {
+      "name": "Celebrity",
+      "slug": "celebrity"
+    }
+  },
+  {
+    "_id": "1aa5da0e-1c62-4296-bf36-d9f8b90f7225",
+    "title": "\"Pink Noise\" liều thuốc an thần mới khi bạn mệt mỏi",
+    "date": "2024-07-22T15:38:11.396Z",
+    "_updatedAt": "2024-07-22T15:40:24Z",
+    "coverImage": {
+      "_type": "image",
+      "asset": {
+        "_ref": "image-bad567f42d83ab7e1e35d2c2b354d5aca087b386-1440x1800-webp",
+        "_type": "reference"
+      }
+    },
+    "coverVideo": null,
+    "slug": "pink-noise-lieu-thuoc-an-than-moi-khi-ban-met-moi",
+    "description": null,
+    "excerpt": null,
+    "author": {
+      "name": "Thanh Thảo",
+      "picture": {
+        "_type": "image",
+        "asset": {
+          "_ref": "image-3a3fd4f9d0beca93afd039f32e2309aec1037152-771x1024-jpg",
+          "_type": "reference"
+        }
+      }
+    },
+    "category": {
+      "name": "Lifestyle",
+      "slug": "lifestyle"
+    }
+  },
+  {
+    "coverImage": {
+      "asset": {
+        "_ref": "image-986b498e3d26e9d0efd30b3609ab69febbdbec71-1080x1350-webp",
+        "_type": "reference"
+      },
+      "_type": "image"
+    },
+    "slug": "new-jeans-tai-xuat-voi-trang-phuc-power-ranger",
+    "author": {
+      "name": "Thanh Thảo",
+      "picture": {
+        "_type": "image",
+        "asset": {
+          "_ref": "image-3a3fd4f9d0beca93afd039f32e2309aec1037152-771x1024-jpg",
+          "_type": "reference"
+        }
+      }
+    },
+    "_id": "8c3380ac-751e-4a77-a10c-abad27ee3d49",
+    "date": "2024-07-22T15:35:06.996Z",
+    "_updatedAt": "2024-07-22T15:36:40Z",
+    "excerpt": null,
+    "coverVideo": null,
+    "category": {
+      "name": "Celebrity",
+      "slug": "celebrity"
+    },
+    "title": "New Jeans tái xuất với trang phục Power Ranger ",
+    "description": null
+  },
+  {
+    "coverVideo": null,
+    "author": {
+      "name": "Thanh Thảo",
+      "picture": {
+        "_type": "image",
+        "asset": {
+          "_ref": "image-3a3fd4f9d0beca93afd039f32e2309aec1037152-771x1024-jpg",
+          "_type": "reference"
+        }
+      }
+    },
+    "_id": "ddb3e69e-b52b-48c0-86cc-b89c3f92fdd3",
+    "title": "Mẫu túi xách của năm 2024 : Những chiếc túi làm cho 2 tay của bạn trở nên bận rộn ",
+    "date": "2024-07-22T15:30:22.837Z",
+    "_updatedAt": "2024-07-22T15:33:01Z",
+    "excerpt": null,
+    "coverImage": {
+      "_type": "image",
+      "asset": {
+        "_ref": "image-e121fd969ae78a9a6cc8a5edf7e389ba440d67d7-620x930-webp",
+        "_type": "reference"
+      }
+    },
+    "category": {
+      "name": "Style",
+      "slug": "style"
+    },
+    "description": null,
+    "slug": "mau-tui-xach-cua-nam-2024-nhung-chiec-tui-lam-cho-2-tay-cua-ban-tro-nen-ban-ron"
+  },
+  {
+    "_id": "edc0297b-85e0-4ece-8f87-84c797dcaffa",
+    "title": "Nhỏ, xinh và tiện dụng : Chiếc túi nhỏ xinh như một phụ kiện ",
+    "excerpt": null,
+    "coverVideo": null,
+    "author": {
+      "name": "Thanh Thảo",
+      "picture": {
+        "_type": "image",
+        "asset": {
+          "_ref": "image-3a3fd4f9d0beca93afd039f32e2309aec1037152-771x1024-jpg",
+          "_type": "reference"
+        }
+      }
+    },
+    "category": {
+      "name": "Style",
+      "slug": "style"
+    },
+    "description": null,
+    "date": "2024-07-22T15:26:16.395Z",
+    "_updatedAt": "2024-07-22T15:28:03Z",
+    "coverImage": {
+      "_type": "image",
+      "asset": {
+        "_ref": "image-ec20c462399dd2f35f54b00058e3ec293ab194a0-766x930-webp",
+        "_type": "reference"
+      }
+    },
+    "slug": "nho-xinh-va-tien-dung-chiec-tui-nho-xinh-nhu-mot-phu-kien"
+  },
+  {
+    "coverImage": {
+      "_type": "image",
+      "asset": {
+        "_ref": "image-15c0e5596cc339fb94481193080d94b7cf6a7f76-1080x812-webp",
+        "_type": "reference"
+      }
+    },
+    "author": {
+      "name": "Thanh Thảo",
+      "picture": {
+        "_type": "image",
+        "asset": {
+          "_ref": "image-3a3fd4f9d0beca93afd039f32e2309aec1037152-771x1024-jpg",
+          "_type": "reference"
+        }
+      }
+    },
+    "category": {
+      "name": "Celebrity",
+      "slug": "celebrity"
+    },
+    "description": "Điều mà nhiều người hâm mộ chờ đợi bấy lâu đã trở thành hiện thực: nhóm nhạc 2NE1 sẽ chính thức tái xuất với đầy đủ các thành viên.",
+    "title": "Huyền thoại 2NE1 tái xuất, trường đua âm nhạc sẽ sôi động hơn bao giờ hết",
+    "date": "2024-07-22T15:21:26.918Z",
+    "_updatedAt": "2024-07-22T15:24:28Z",
+    "excerpt": null,
+    "coverVideo": null,
+    "slug": "2ne1-tai-xuat-truong-dua-am-nhac-se-soi-dong-hon-bao-gio-het",
+    "_id": "cad963ba-42cd-4c5e-bb5f-a2406f64f6a2"
+  },
+  {
+    "slug": "voi-mot-chiec-khan-ban-se-khong-phai-lo-ngai-ve-kieu-toc-cua-minh",
+    "author": {
+      "name": "Thanh Thảo",
+      "picture": {
+        "_type": "image",
+        "asset": {
+          "_ref": "image-3a3fd4f9d0beca93afd039f32e2309aec1037152-771x1024-jpg",
+          "_type": "reference"
+        }
+      }
+    },
+    "_id": "6f80edfe-25cc-4999-86b2-da8af9a509e6",
+    "title": "Với một chiếc khăn, bạn sẽ không phải lo ngại về kiểu tóc của mình",
+    "description": null,
+    "coverImage": {
+      "_type": "image",
+      "asset": {
+        "_ref": "image-599c2edb704d7210fe0de1b184712727cc9bc153-1440x1800-webp",
+        "_type": "reference"
+      }
+    },
+    "coverVideo": null,
+    "category": {
+      "name": "Style",
+      "slug": "style"
+    },
+    "date": "2024-07-22T15:18:09.011Z",
+    "_updatedAt": "2024-07-22T15:20:13Z",
+    "excerpt": null
+  },
+  {
+    "_id": "dc377b17-64f3-4d42-88d9-31758a8ae738",
+    "description": null,
+    "excerpt": null,
+    "coverImage": {
+      "_type": "image",
+      "asset": {
+        "_ref": "image-9215ed086a82f58a5eba6c6d1d12912a9fd5b4d2-1440x1800-webp",
+        "_type": "reference"
+      }
+    },
+    "category": {
+      "name": "Beauty",
+      "slug": "beauty"
+    },
+    "title": "Đón đầu xu hướng với một mái tóc rối tự do ",
+    "date": "2024-07-22T15:11:20.394Z",
+    "_updatedAt": "2024-07-22T15:16:38Z",
+    "coverVideo": null,
+    "slug": "don-dau-xu-huong-voi-mot-mai-toc-roi-tu-do",
+    "author": {
+      "name": "Thanh Thảo",
+      "picture": {
+        "_type": "image",
+        "asset": {
+          "_ref": "image-3a3fd4f9d0beca93afd039f32e2309aec1037152-771x1024-jpg",
+          "_type": "reference"
+        }
+      }
+    }
+  },
+  {
+    "date": "2024-07-22T08:49:25.190Z",
+    "_updatedAt": "2024-07-22T09:17:54Z",
+    "excerpt": null,
+    "coverVideo": null,
+    "slug": "nhung-san-pham-lam-dep-tot-nhat-de-mua-sam-vao-thang-7-nam-2024",
+    "author": {
+      "name": "Hikari",
+      "picture": null
+    },
+    "_id": "af139f7d-d2e6-493f-bbce-cf3b2e4ff355",
+    "title": "Những sản phẩm làm đẹp tốt nhất để mua sắm vào tháng 7 năm 2024",
+    "description": "Từ các sản phẩm chăm sóc da thần thánh đến những phát hiện làm đẹp mới đầy thú vị, đây là nhóm sản phẩm đáng để thêm vào giỏ hàng của bạn trong tháng này",
+    "coverImage": {
+      "_type": "image",
+      "asset": {
+        "_type": "reference",
+        "_ref": "image-1f22cb00202694d5d17b269344a7a6d1e996dfe6-680x1020-gif"
+      }
+    },
+    "category": {
+      "name": "Beauty",
+      "slug": "beauty"
+    }
+  },
+  {
+    "_id": "045bd52b-c9eb-4d75-822e-f03c1225ccca",
+    "date": "2024-07-22T08:35:46.826Z",
+    "coverVideo": null,
+    "coverImage": {
+      "_type": "image",
+      "asset": {
+        "_ref": "image-4a30c5442dafa5285b5a5ac9cb3b413f68b4fac6-680x1020-png",
+        "_type": "reference"
+      }
+    },
+    "slug": "nam-nay-chung-toi-se-dua-ra-ly-do-de-ban-thoa-phan-bat-sang-khap-noi-tru-go-ma",
+    "author": {
+      "name": "Hikari",
+      "picture": null
+    },
+    "category": {
+      "name": "Beauty",
+      "slug": "beauty"
+    },
+    "title": "Năm nay, chúng tôi sẽ đưa ra lý do để bạn thoa phấn bắt sáng khắp nơi trừ gò má",
+    "description": "Đừng vội vứt bỏ những loại phấn bắt sáng chói lóa của bạn. Đây là cách bạn có thể cập nhật diện mạo cho năm 2024",
+    "_updatedAt": "2024-07-22T08:48:52Z",
+    "excerpt": null
+  },
+  {
+    "excerpt": null,
+    "slug": "mat-na-duong-da-tot-nhat-nam-2024-duoc-thu-nghiem-boi-m-beauty",
+    "author": {
+      "name": "Naomi ",
+      "picture": null
+    },
+    "category": {
+      "name": "Beauty",
+      "slug": "beauty"
+    },
+    "_id": "aefb8cc1-85e1-4afa-9fbb-65971ead173f",
+    "_updatedAt": "2024-07-22T08:35:34Z",
+    "date": "2024-07-22T08:19:00.387Z",
+    "coverImage": {
+      "_type": "image",
+      "asset": {
+        "_ref": "image-76520868d37759d0eebb79a01bf8c190a0e5c535-680x1020-gif",
+        "_type": "reference"
+      }
+    },
+    "coverVideo": null,
+    "title": "Mặt nạ dưỡng da tốt nhất năm 2024, được thử nghiệm bởi M Beauty",
+    "description": "Với một loạt các loại mặt nạ trên thị trường, việc lựa chọn một loại phù hợp có thể rất khó khăn. M Beauty thu hẹp danh sách những loại mặt nạ tốt nhất có sẵn trong năm 2024"
+  },
+  {
+    "category": {
+      "name": "Lifestyle",
+      "slug": "lifestyle"
+    },
+    "_id": "f8c0a72d-1a86-42b4-8e7c-55c960385288",
+    "date": "2024-07-22T08:11:49.156Z",
+    "coverImage": {
+      "_type": "image",
+      "asset": {
+        "_ref": "image-2896c35fa92bdf8cc9a87ae9597a9c45840d78fb-680x1020-png",
+        "_type": "reference"
+      }
+    },
+    "coverVideo": null,
+    "slug": "5-cach-giup-chua-lanh-chan-thuong",
+    "title": "5 cách giúp chữa lành chấn thương",
+    "description": "Cuốn sách mới 'Tại sao tôi lại như thế này? Chiếu sáng bản thân bị tổn thương' của Natalia Rachel phác họa con đường chữa lành",
+    "_updatedAt": "2024-07-22T08:18:45Z",
+    "excerpt": null,
+    "author": {
+      "name": "Camille Pham",
+      "picture": null
+    }
+  },
+  {
+    "_id": "22db09c1-b6d0-4187-9de7-93c60c95ce0e",
+    "description": "Với làn da Châu Á dễ bị nhiều tình trạng liên quan đến đổi màu da, không có gì ngạc nhiên khi độ rạng rỡ và độ sáng của da được coi là ưu tiên hàng đầu đối với nhiều người trong chúng ta.",
+    "coverImage": {
+      "_type": "image",
+      "asset": {
+        "_ref": "image-1099a07df337a633b9a9dfc6d25b38a590b7f6f9-680x1020-png",
+        "_type": "reference"
+      }
+    },
+    "coverVideo": null,
+    "category": {
+      "name": "Beauty",
+      "slug": "beauty"
+    },
+    "title": "Thành phần chăm sóc da sáng mịn tốt nhất để kết hợp vào thói quen của bạn",
+    "date": "2024-07-22T07:22:30.373Z",
+    "_updatedAt": "2024-07-22T08:11:31Z",
+    "excerpt": null,
+    "slug": "thanh-phan-cham-soc-da-sang-min-tot-nhat-de-ket-hop-vao-thoi-quen-cua-ban",
+    "author": {
+      "name": "Camille Pham",
+      "picture": null
+    }
+  },
+  {
+    "coverImage": {
+      "_type": "image",
+      "asset": {
+        "_ref": "image-0951a322e2823873453a212cc1f8b627891760d4-680x1020-png",
+        "_type": "reference"
+      }
+    },
+    "slug": "16-loai-phan-phu-tot-nhat-cho-khuon-mat-hoan-hao-keo-dai-qua-cai-nong-mua-he",
+    "author": {
+      "name": "Hikari",
+      "picture": null
+    },
+    "category": {
+      "name": "Beauty",
+      "slug": "beauty"
+    },
+    "date": "2024-07-22T06:55:45.984Z",
+    "title": "16 loại phấn phủ tốt nhất cho khuôn mặt hoàn hảo kéo dài qua cái nóng mùa hè",
+    "description": "Tổng hợp những loại phấn phủ tốt nhất không chỉ bảo vệ lớp trang điểm của bạn mà còn che đi các khuyết điểm và kiểm soát lượng dầu thừa cũng như độ bóng nhờn",
+    "_updatedAt": "2024-07-22T07:52:46Z",
+    "excerpt": null,
+    "coverVideo": null,
+    "_id": "7f0b5338-6f52-4ce4-9158-2e2f88a5f959"
+  },
+  {
+    "_id": "a2f1d91b-85df-4017-b99b-a8f671e2f539",
+    "title": "Bạn có chải tóc đúng cách không?",
+    "description": null,
+    "date": "2024-07-22T06:53:31.827Z",
+    "author": {
+      "name": "Hikari",
+      "picture": null
+    },
+    "_updatedAt": "2024-07-22T06:55:27Z",
+    "excerpt": null,
+    "coverImage": {
+      "_type": "image",
+      "asset": {
+        "_ref": "image-d848963a8436b9f1c9dd5c36ccabb787ffffefd4-680x1020-png",
+        "_type": "reference"
+      }
+    },
+    "coverVideo": null,
+    "slug": "ban-co-chai-toc-dung-cach-khong",
+    "category": {
+      "name": "Beauty",
+      "slug": "beauty"
+    }
+  },
+  {
+    "description": "Nước dừa có vị ngọt dịu, ít calo và giàu chất dinh dưỡng. Phiên bản VOGUE của Hoa Kỳ đã nghiên cứu những tác động chính của nó đối với sức khỏe. Dựa trên những gì chúng tôi nghe được từ các chuyên gia, chúng tôi sẽ giới thiệu một số điều cần lưu ý.",
+    "date": "2024-07-21T18:01:53.159Z",
+    "category": {
+      "name": "Beauty",
+      "slug": "beauty"
+    },
+    "_id": "aaa0fa94-c185-403f-b43d-f6aecbfcb42f",
+    "_updatedAt": "2024-07-21T18:05:54Z",
+    "excerpt": null,
+    "coverImage": {
+      "asset": {
+        "_ref": "image-545a9928960262dcfe67b4f7bde4cc4be8d9486e-1600x1067-png",
+        "_type": "reference"
+      },
+      "_type": "image"
+    },
+    "coverVideo": null,
+    "slug": "ngot-nhung-it-calo-nuoc-dua-co-loi-ich-gi-cho-suc-khoe",
+    "author": {
+      "name": "Naomi ",
+      "picture": null
+    },
+    "title": "Ngọt nhưng ít calo. Nước dừa có lợi ích gì cho sức khỏe?"
+  },
+  {
+    "slug": "yen-tam-voi-su-tu-chu-lam-the-nao-de-doi-pho-voi-nhung-cam-xuc-hon-loan",
+    "category": {
+      "name": "Lifestyle",
+      "slug": "lifestyle"
+    },
+    "title": "Yên tâm với sự tự chủ. Làm thế nào để đối phó với những cảm xúc hỗn loạn",
+    "description": "Yên tâm với sự tự chủ. Làm thế nào để đối phó với những cảm xúc hỗn loạn",
+    "_updatedAt": "2024-07-21T18:01:18Z",
+    "excerpt": null,
+    "author": {
+      "name": "Hikari",
+      "picture": null
+    },
+    "_id": "789c803b-3e66-49e1-9769-128e31cbd6bc",
+    "date": "2024-07-21T17:54:30.944Z",
+    "coverImage": {
+      "asset": {
+        "_ref": "image-4a2217df5d80b98ef8692b149a082666e78ed8c0-1666x2499-png",
+        "_type": "reference"
+      },
+      "_type": "image"
+    },
+    "coverVideo": null
+  },
+  {
+    "date": "2024-07-21T17:41:26.576Z",
+    "_updatedAt": "2024-07-21T17:46:10Z",
+    "excerpt": null,
+    "coverVideo": null,
+    "slug": "bi-mat-ve-ve-dep-khong-gian-khac-cua-cate-blanchett-55-tuoi",
+    "author": {
+      "name": "Hikari",
+      "picture": null
+    },
+    "category": {
+      "name": "Beauty",
+      "slug": "beauty"
+    },
+    "_id": "3ee8b16d-5aca-43d5-8572-57f584b9b081",
+    "title": "Bí mật về \"vẻ đẹp không gian khác\" của Cate Blanchett 55 tuổi",
+    "description": "Gần đây Cate Blanchett đã xuất hiện trước công chúng trong nhiều cảnh quay khác nhau. Vẻ đẹp dường như vượt qua tuổi tác và nhân tính của cô đã nhận được nhiều lời khen ngợi trên mạng xã hội. Cùng khám phá vẻ đẹp của Cate",
+    "coverImage": {
+      "_type": "image",
+      "asset": {
+        "_ref": "image-c006e6cdf123bfc843125649f8904ac4225cae1c-1200x1801-png",
+        "_type": "reference"
+      }
+    }
+  },
+  {
+    "_updatedAt": "2024-07-21T17:40:23Z",
+    "excerpt": null,
+    "coverImage": {
+      "_type": "image",
+      "asset": {
+        "_type": "reference",
+        "_ref": "image-3fd747a80acf758b8ff3566fb9f5935841d2de62-1200x1800-png"
+      }
+    },
+    "coverVideo": null,
+    "_id": "359d4eab-3a75-44a7-88db-4ef26eecd2b3",
+    "title": "\"Tôi không muốn tất cả mọi người trên thế giới này đều thích tôi.\" Biểu tượng grunge, cách suy nghĩ của Courtney Love 60 tuổi để tạo tâm lý ổn định",
+    "description": "Thông thường, để giữ cho mối quan hệ diễn ra suôn sẻ, đôi khi cần phải kìm lại những điều mình muốn nói. Tuy nhiên, Courtney Love lại là người phá vỡ những quy tắc này hết lần này đến lần khác và vẫn sống thật với chính mình cho dù thế giới có ra sao. Sinh ngày 9 tháng 7 năm 1964 và hiện đã tròn 60 tuổi, chúng tôi khám phá cách suy nghĩ của cô ấy, lối suy nghĩ tiếp tục duy trì tính tự cao kiên định của cô ấy mà không sợ người khác sẽ nghĩ gì về mình.",
+    "date": "2024-07-21T17:32:05.451Z",
+    "author": {
+      "name": "Naomi ",
+      "picture": null
+    },
+    "slug": "toi-khong-muon-tat-ca-moi-nguoi-tren-the-gioi-nay-deu-thich-toi-bieu-tuong-grunge-cach-suy-nghi",
+    "category": {
+      "name": "Lifestyle",
+      "slug": "lifestyle"
+    }
+  },
+  {
+    "coverVideo": null,
+    "slug": "diem-quan-trong-la-vi-tri-cua-nut-that-cach-tao-kieu-toc-duoi-ngua-cao-sang-trong-and-6-kieu",
+    "category": {
+      "name": "Beauty",
+      "slug": "beauty"
+    },
+    "description": "Bạn có thể dễ dàng buộc tóc đuôi ngựa chỉ bằng dây buộc tóc, nhưng nếu bạn cẩn thận về vị trí của nút thắt, nó sẽ ngay lập tức trông cầu kỳ hơn. Giới thiệu các mẹo về cách làm chúng và 6 cách sắp xếp theo mùa có thể nhìn thấy trên đường phố.",
+    "_updatedAt": "2024-07-21T17:31:51Z",
+    "date": "2024-07-21T17:26:36.919Z",
+    "excerpt": null,
+    "coverImage": {
+      "_type": "image",
+      "asset": {
+        "_ref": "image-d802137f64d21a2411a9de1932c0d33f5311c1db-1600x2404-png",
+        "_type": "reference"
+      }
+    },
+    "author": {
+      "name": "Naomi ",
+      "picture": null
+    },
+    "_id": "ebca500f-66e7-4bcb-9a91-79c24998e2be",
+    "title": "Điểm quan trọng là vị trí của nút thắt. Cách tạo kiểu tóc đuôi ngựa cao sang trọng & 6 kiểu khuyên dùng"
+  },
+  {
+    "_id": "746e8885-363b-4aec-bb5f-2d1765a9f345",
+    "date": "2024-07-21T17:23:28.009Z",
+    "_updatedAt": "2024-07-21T20:12:16Z",
+    "coverImage": {
+      "_type": "image",
+      "asset": {
+        "_ref": "image-f3260b73feef1e35e4d805718aa38d8e001e1743-1200x1200-png",
+        "_type": "reference"
+      }
+    },
+    "coverVideo": null,
+    "category": {
+      "name": "Beauty",
+      "slug": "beauty"
+    },
+    "title": "Estée Lauder trở thành công ty đầu tiên trên thế giới bán độc quyền Aqua Charge, dòng sản phẩm chăm sóc da mới do Nhật Bản dẫn đầu",
+    "description": "Dòng sản phẩm chăm sóc dưỡng ẩm được làm hoàn toàn từ các loại thuốc gần như giống nhau, được phát triển cùng với Nhà máy bia Yushin Sake, đơn vị theo đuổi nghiên cứu lên men.",
+    "excerpt": null,
+    "slug": "estee-lauder-tro-thanh-cong-ty-dau-tien-tren-the-gioi-ban-doc-quyen-aqua-charge-dong-san-pham",
+    "author": {
+      "name": "Hikari",
+      "picture": null
+    }
+  },
+  {
+    "description": "Hội chứng kẻ mạo danh xảy ra khi con người không thể tự tin vào khả năng của bản thân, ngay cả khi họ được những người xung quanh đánh giá cao hoặc đạt được thành công. Nhiều người rơi vào trạng thái tâm lý này, cảm thấy mình như “kẻ lừa đảo” đang lừa dối mọi người xung quanh. Tôi nên làm gì để thoát ra?",
+    "excerpt": null,
+    "author": {
+      "name": "Naomi ",
+      "picture": null
+    },
+    "category": {
+      "name": "Beauty",
+      "slug": "beauty"
+    },
+    "slug": "wellness-thieu-tu-tin-vao-kha-nang-cua-ban-than-5-meo-doi-pho-voi-hoi-chung-ke-mao-danh",
+    "_id": "28942d31-527c-467b-af38-e24c041db4c0",
+    "title": "WELLNESS: Thiếu tự tin vào khả năng của bản thân: 5 mẹo đối phó với hội chứng kẻ mạo danh",
+    "date": "2024-07-21T17:18:10.922Z",
+    "_updatedAt": "2024-07-21T17:23:09Z",
+    "coverImage": {
+      "_type": "image",
+      "asset": {
+        "_ref": "image-d1fdd461e31bbce4686bea68cc4f213b797fc90d-1600x1290-png",
+        "_type": "reference"
+      }
+    },
+    "coverVideo": null
+  },
+  {
+    "slug": "bao-bi-mau-do-that-an-tuong-bo-suu-tap-tinh-yeu-cua-tom-ford-beauty-da-tro-lai",
+    "category": {
+      "name": "Beauty",
+      "slug": "beauty"
+    },
+    "coverImage": {
+      "_type": "image",
+      "asset": {
+        "_type": "reference",
+        "_ref": "image-4dabe0956c350e96d306f4f59acd4d5e387b073a-1200x1200-png"
+      }
+    },
+    "coverVideo": null,
+    "_id": "ed436013-ebb7-4f79-8be5-23bd58e35390",
+    "title": "Bao bì màu đỏ thật ấn tượng. Bộ sưu tập tình yêu của Tom Ford Beauty đã trở lại!",
+    "description": "Dòng sản phẩm phấn má và son môi sẽ tạo thêm điểm nhấn nồng nàn cho phong cách trang điểm mùa thu của bạn.",
+    "date": "2024-07-21T17:15:30.009Z",
+    "_updatedAt": "2024-07-21T17:17:09Z",
+    "excerpt": null,
+    "author": {
+      "name": "Naomi ",
+      "picture": null
+    }
+  },
+  {
+    "category": {
+      "name": "Beauty",
+      "slug": "beauty"
+    },
+    "date": "2024-07-21T17:12:16.051Z",
+    "_updatedAt": "2024-07-21T17:14:03Z",
+    "excerpt": null,
+    "coverVideo": null,
+    "slug": "lan-dau-tien-trong-lich-su-l-oreal-paris-trai-nghiem-tu-nhuom-toc-voi-oleolux-voi-thanh-phan",
+    "_id": "3ea7e3d7-d565-4c09-bb3a-b0716d811050",
+    "title": "Lần đầu tiên trong lịch sử L'Oréal Paris. Trải nghiệm tự nhuộm tóc với “Oleolux” với thành phần chính là dầu",
+    "description": "Dòng sản phẩm bao gồm tổng cộng 11 màu, bao gồm màu nâu tự nhiên cơ bản, màu tro theo xu hướng và màu be.",
+    "coverImage": {
+      "asset": {
+        "_ref": "image-b45defb104b3df2309b3d8b9cd8281e19bb15133-1200x1600-png",
+        "_type": "reference"
+      },
+      "_type": "image"
+    },
+    "author": {
+      "name": "Hikari",
+      "picture": null
+    }
+  },
+  {
+    "excerpt": null,
+    "coverImage": {
+      "asset": {
+        "_ref": "image-9eb2bb9f07dd17b35a393c282bae8884f750dfc6-798x1197-png",
+        "_type": "reference"
+      },
+      "_type": "image"
+    },
+    "author": {
+      "name": "Hikari",
+      "picture": null
+    },
+    "category": {
+      "name": "Beauty",
+      "slug": "beauty"
+    },
+    "slug": "mang-den-su-mat-me-trong-mua-he-va-nuoi-duong-lan-da-giau-duong-chat-5-lua-chon-dac-biet-ve",
+    "_id": "bdbd1825-3792-4fc2-a909-7f9d321bc24e",
+    "title": "Mang đến sự mát mẻ trong mùa hè và nuôi dưỡng làn da giàu dưỡng chất. 5 lựa chọn đặc biệt về notion",
+    "description": "Thời tiết tiếp tục oi bức nên tôi muốn sử dụng rộng rãi một loại kem dưỡng da để giúp tâm trạng sảng khoái. Hãy kết hợp vào quá trình chăm sóc da của bạn một loại kem dưỡng da đặc biệt có thành phần chính là nước, không chỉ là nước, và chuẩn bị cho làn da của bạn một mùa hè khỏe mạnh.",
+    "date": "2024-07-21T16:54:42.015Z",
+    "_updatedAt": "2024-07-21T17:05:18Z",
+    "coverVideo": null
+  },
+  {
+    "title": "Thức dậy và trải nghiệm làn da đẹp. Mẹo làm đẹp ban đêm để cải thiện làn da trong khi bạn ngủ",
+    "date": "2024-07-21T16:45:22.157Z",
+    "_updatedAt": "2024-07-21T16:53:47Z",
+    "coverImage": {
+      "_type": "image",
+      "asset": {
+        "_ref": "image-0954603d57a2bab2356c872d787112fb471713fe-1200x1800-png",
+        "_type": "reference"
+      }
+    },
+    "slug": "thuc-day-va-trai-nghiem-lan-da-dep-meo-lam-dep-ban-dem-de-cai-thien-lan-da-trong-khi-ban-ngu",
+    "author": {
+      "name": "Hikari",
+      "picture": null
+    },
+    "category": {
+      "name": "Beauty",
+      "slug": "beauty"
+    },
+    "_id": "e48ac11e-d766-4987-83b7-e667f85af851",
+    "description": "Người ta nói rằng làn da của bạn được tái sinh trong khi bạn ngủ nên chúng tôi đã lựa chọn các loại serum và kem hỗ trợ chăm sóc da ban đêm. Hãy hướng tới làn da khô và thô ráp bằng một sản phẩm đặc biệt giúp bạn cảm nhận được sự thay đổi của làn da vào sáng hôm sau chỉ bằng cách thoa và đi ngủ.",
+    "excerpt": null,
+    "coverVideo": null
+  },
+  {
+    "description": "Son dưỡng môi có màu giúp dưỡng ẩm và chăm sóc đôi môi của bạn, mang lại màu sắc tự nhiên và tăng cường làn da cho đôi môi của bạn. Hãy tham khảo những sản phẩm mới nhất mà bạn muốn có như một người bạn đồng hành đáng tin cậy gần gũi với đôi môi của mình.",
+    "date": "2024-07-21T16:27:37.749Z",
+    "_updatedAt": "2024-07-21T16:33:34Z",
+    "slug": "5-loai-son-duong-moi-co-cong-dung-cao-giup-ban-len-mau-dep-ma-van-cham-soc-moi",
+    "title": "5 loại son dưỡng môi có công dụng cao giúp bạn lên màu đẹp mà vẫn chăm sóc môi",
+    "excerpt": null,
+    "coverImage": {
+      "_type": "image",
+      "asset": {
+        "_ref": "image-19dfda25217e3986b8daf10581ff0aa3fe062039-1200x1800-png",
+        "_type": "reference"
+      }
+    },
+    "coverVideo": null,
+    "author": {
+      "name": "Hikari",
+      "picture": null
+    },
+    "category": {
+      "name": "Beauty",
+      "slug": "beauty"
+    },
+    "_id": "be666674-5386-48ca-9c29-efd6867c56eb"
+  },
+  {
+    "slug": "cac-bien-phap-chong-kho-da-vao-mua-he-va-tich-tu-do-am-khi-trang-diem-8-lua-chon-lotion-mist",
+    "category": {
+      "name": "Beauty",
+      "slug": "beauty"
+    },
+    "title": "Các biện pháp chống khô da vào mùa hè và tích tụ độ ẩm khi trang điểm! 8 lựa chọn lotion mist đáng đồng tiền nhất",
+    "description": "Vào mùa hè khi chúng ta tiếp xúc với tia UV mạnh, da chúng ta có xu hướng bị khô ngay cả khi chúng ta chăm sóc da cẩn thận. Hãy giữ cho làn da của bạn luôn khô thoáng trong mùa hè này với xịt dưỡng ẩm có thể bổ sung độ ẩm mọi lúc, mọi nơi!",
+    "date": "2024-07-21T16:13:45.617Z",
+    "excerpt": null,
+    "coverImage": {
+      "_type": "image",
+      "asset": {
+        "_ref": "image-9eb2bb9f07dd17b35a393c282bae8884f750dfc6-798x1197-png",
+        "_type": "reference"
+      }
+    },
+    "coverVideo": null,
+    "_id": "1fde34fa-f86d-4855-b189-44fbdbd49fef",
+    "_updatedAt": "2024-07-21T16:27:03Z",
+    "author": {
+      "name": "Hikari",
+      "picture": null
+    }
+  },
+  {
+    "slug": "nhung-mau-sac-moi-nhat-duoc-thay-trong-mua-he-paris-snaps-ky-thuat-sap-xep-toc-tu-cac-nha-hien",
+    "category": {
+      "name": "Beauty",
+      "slug": "beauty"
+    },
+    "_id": "6e3390a6-f61b-4e12-8cd6-4ea22a8b3fc6",
+    "_updatedAt": "2024-07-21T16:13:23Z",
+    "excerpt": null,
+    "coverVideo": null,
+    "author": {
+      "name": "Hikari",
+      "picture": null
+    },
+    "title": " Những màu sắc mới nhất được thấy trong mùa hè Paris snaps [Kỹ thuật sắp xếp tóc từ các nhà hiền triết thời trang]",
+    "description": "Các loại màu tóc ngày càng đa dạng hơn và số lượng người yêu thích những màu tóc đậm hàng ngày cũng tăng lên nhanh chóng. Tại Tuần lễ thời trang Paris vào tháng 6, các tín đồ thời trang được phát hiện với những màu sắc có độ bão hòa cao như đỏ, hồng và xanh.",
+    "date": "2024-07-21T16:06:55.662Z",
+    "coverImage": {
+      "_type": "image",
+      "asset": {
+        "_ref": "image-69605e2d0a277c47d71d176a13b203ca56ea2f70-1200x1804-png",
+        "_type": "reference"
+      }
+    }
+  },
+  {
+    "title": "Bộ sưu tập trang sức mới của Chanel, hãy bắt đầu với những món phụ kiện nhỏ",
+    "description": null,
+    "date": "2024-07-21T13:16:17.701Z",
+    "coverImage": {
+      "asset": {
+        "_ref": "image-a698304c9cbfa8cb8172ec620729500a37477b5b-1440x1799-webp",
+        "_type": "reference"
+      },
+      "_type": "image"
+    },
+    "coverVideo": null,
+    "category": {
+      "name": "Style",
+      "slug": "style"
+    },
+    "_id": "515caee4-cfbb-44d6-a8b6-79fbeb8bf718",
+    "_updatedAt": "2024-07-21T21:22:01Z",
+    "excerpt": null,
+    "slug": "bo-suu-tap-trang-suc-moi-cua-chanel-hay-bat-dau-voi-nhung-mon-phu-kien-nho",
+    "author": {
+      "name": "Thanh Thảo",
+      "picture": {
+        "_type": "image",
+        "asset": {
+          "_ref": "image-3a3fd4f9d0beca93afd039f32e2309aec1037152-771x1024-jpg",
+          "_type": "reference"
+        }
+      }
+    }
+  },
+  {
+    "category": {
+      "name": "Style",
+      "slug": "style"
+    },
+    "description": null,
+    "date": "2024-07-21T13:13:17.875Z",
+    "_updatedAt": "2024-07-21T23:11:21Z",
+    "coverImage": {
+      "_type": "image",
+      "asset": {
+        "_ref": "image-a46c46860e04ed7b29c9aef8088e731e029b6853-746x930-webp",
+        "_type": "reference"
+      }
+    },
+    "slug": "mon-do-dau-tien-ban-co-the-thich-khi-bat-dau-su-dung-hang-xa-xi",
+    "author": {
+      "name": "Thanh Thảo",
+      "picture": {
+        "_type": "image",
+        "asset": {
+          "_ref": "image-3a3fd4f9d0beca93afd039f32e2309aec1037152-771x1024-jpg",
+          "_type": "reference"
+        }
+      }
+    },
+    "_id": "812ad784-55d2-4c6b-ad69-8f8818d2743e",
+    "title": "Món đồ đầu tiên bạn có thể thích khi bắt đầu sử dụng hàng xa xỉ",
+    "excerpt": null,
+    "coverVideo": null
+  },
+  {
+    "_id": "dea2d423-0d8d-4ff9-9958-a86be6125f67",
+    "description": null,
+    "date": "2024-07-21T13:08:03.645Z",
+    "excerpt": null,
+    "coverImage": {
+      "asset": {
+        "_ref": "image-61f875870aca710a079f56d4bd035edc2ce69f93-1400x933-webp",
+        "_type": "reference"
+      },
+      "_type": "image"
+    },
+    "author": {
+      "name": "Thanh Thảo",
+      "picture": {
+        "_type": "image",
+        "asset": {
+          "_ref": "image-3a3fd4f9d0beca93afd039f32e2309aec1037152-771x1024-jpg",
+          "_type": "reference"
+        }
+      }
+    },
+    "category": {
+      "name": "Voyage & Gourmet",
+      "slug": "voyage-and-gourmet"
+    },
+    "title": "Phí vào cửa của tháp Eiffel lại tiếp tục tăng? Paris đang biến đổi?",
+    "_updatedAt": "2024-07-21T21:09:58Z",
+    "coverVideo": null,
+    "slug": "phi-vao-cua-cua-thap-eiffel-lai-tiep-tuc-tang-paris-dang-bien-doi"
+  },
+  {
+    "category": {
+      "name": "Style",
+      "slug": "style"
+    },
+    "description": null,
+    "date": "2024-07-21T13:02:50.405Z",
+    "excerpt": null,
+    "coverImage": {
+      "asset": {
+        "_ref": "image-24931085881a4b6799e6609c1eca2d3c1e76915e-1440x1742-webp",
+        "_type": "reference"
+      },
+      "_type": "image"
+    },
+    "coverVideo": null,
+    "slug": "nong-bong-nhu-tren-san-co-xu-huong-cua-mua-he-nay-la-nhung-chiec-ao-bong-da",
+    "author": {
+      "name": "Thanh Thảo",
+      "picture": {
+        "_type": "image",
+        "asset": {
+          "_ref": "image-3a3fd4f9d0beca93afd039f32e2309aec1037152-771x1024-jpg",
+          "_type": "reference"
+        }
+      }
+    },
+    "_id": "77a0ae0f-077e-4088-9e52-ef4f3f134255",
+    "title": "Nóng bỏng như trên sân cỏ : Xu hướng của mùa hè này là những chiếc áo bóng đá",
+    "_updatedAt": "2024-07-21T21:04:01Z"
+  },
+  {
+    "title": "Jennifer Lawrence và cách phối sơ mi trắng đơn giản vào mùa hè",
+    "description": "\"Trông cô ấy mặc còn thoải mái hơn là pyjama\"",
+    "date": "2024-07-21T12:59:25.659Z",
+    "_updatedAt": "2024-07-21T21:00:51Z",
+    "coverImage": {
+      "_type": "image",
+      "asset": {
+        "_ref": "image-55b6c5d79d2d602ecfdb23bee10884fec4d30dee-960x1440-webp",
+        "_type": "reference"
+      }
+    },
+    "slug": "jennifer-lawrence-va-cach-phoi-so-mi-trang-don-gian-vao-mua-he",
+    "category": {
+      "name": "Style",
+      "slug": "style"
+    },
+    "_id": "4d705502-3a94-41d8-b0a3-60e0e1e7a901",
+    "coverVideo": null,
+    "author": {
+      "name": "Thanh Thảo",
+      "picture": {
+        "_type": "image",
+        "asset": {
+          "_ref": "image-3a3fd4f9d0beca93afd039f32e2309aec1037152-771x1024-jpg",
+          "_type": "reference"
+        }
+      }
+    },
+    "excerpt": null
+  },
+  {
+    "_id": "10915c07-982d-482e-962c-bd3ced47a8fa",
+    "description": "“Tôi đã rất hồi hộp đến mức không nhận ra thời gian trôi qua như thế nào, nhưng nhờ những tiếng reo hò cổ vũ của mọi người, tôi đã cố gắng hết mình và hoàn thành nhiệm vụ.”",
+    "date": "2024-07-21T12:54:21.010Z",
+    "coverImage": {
+      "_type": "image",
+      "asset": {
+        "_ref": "image-38fa66dfaf0f719dd157c54b37203558ec673e14-1080x1080-webp",
+        "_type": "reference"
+      }
+    },
+    "author": {
+      "name": "Thanh Thảo",
+      "picture": {
+        "_type": "image",
+        "asset": {
+          "_ref": "image-3a3fd4f9d0beca93afd039f32e2309aec1037152-771x1024-jpg",
+          "_type": "reference"
+        }
+      }
+    },
+    "category": {
+      "name": "Celebrity",
+      "slug": "celebrity"
+    },
+    "title": "BTS Jin: Khoảnh khắc đáng nhớ trong lễ rước đuốc Olympic Paris 2024",
+    "_updatedAt": "2024-07-21T20:56:07Z",
+    "excerpt": null,
+    "coverVideo": null,
+    "slug": "bts-jin-khoanh-khac-dang-nho-trong-le-ruoc-duoc-olympic-paris-2024"
+  },
+  {
+    "title": "Kaia Gerber xuất hiện với đôi giày của một \"IT\" girl thứ thiệt",
+    "date": "2024-07-21T12:51:20.443Z",
+    "excerpt": null,
+    "coverImage": {
+      "asset": {
+        "_ref": "image-ff8ed1e541b3e2f1da0a55fda76c15c5ab3db116-2000x3000-webp",
+        "_type": "reference"
+      },
+      "_type": "image"
+    },
+    "author": {
+      "name": "Thanh Thảo",
+      "picture": {
+        "_type": "image",
+        "asset": {
+          "_ref": "image-3a3fd4f9d0beca93afd039f32e2309aec1037152-771x1024-jpg",
+          "_type": "reference"
+        }
+      }
+    },
+    "_id": "4393a5c8-3752-4bcf-afc8-bb8d340c2830",
+    "_updatedAt": "2024-07-21T20:52:45Z",
+    "coverVideo": null,
+    "slug": "kaia-gerber-xuat-hien-voi-doi-giay-cua-mot-it-girl-thu-thiet",
+    "category": {
+      "name": "Style",
+      "slug": "style"
+    },
+    "description": null
+  },
+  {
+    "title": "5 bí quyết để biến phòng ngủ của bạn thành nơi ngập tràn mùi hương thơm mát",
+    "date": "2024-07-21T12:45:54.962Z",
+    "excerpt": null,
+    "coverImage": {
+      "_type": "image",
+      "asset": {
+        "_ref": "image-0fce51fec142696b90ec030e2caf7959c9dc5542-1440x1791-webp",
+        "_type": "reference"
+      }
+    },
+    "author": {
+      "name": "Thanh Thảo",
+      "picture": {
+        "_type": "image",
+        "asset": {
+          "_ref": "image-3a3fd4f9d0beca93afd039f32e2309aec1037152-771x1024-jpg",
+          "_type": "reference"
+        }
+      }
+    },
+    "_id": "dfbe1db3-33a8-4947-9de1-8c1ba68e6854",
+    "description": null,
+    "_updatedAt": "2024-07-21T20:49:42Z",
+    "coverVideo": null,
+    "slug": "5-bi-quyet-de-bien-phong-ngu-cua-ban-thanh-noi-ngap-tran-mui-huong-thom-mat",
+    "category": {
+      "name": "Lifestyle",
+      "slug": "lifestyle"
+    }
+  },
+  {
+    "_id": "19e24b79-b19d-40bd-b64d-2d81455f1996",
+    "date": "2024-07-21T12:40:56.225Z",
+    "_updatedAt": "2024-07-21T20:43:16Z",
+    "excerpt": null,
+    "coverImage": {
+      "asset": {
+        "_ref": "image-4a33963329f52a8c46ee0f8a474a3b56fc1bece8-736x723-jpg",
+        "_type": "reference"
+      },
+      "_type": "image"
+    },
+    "coverVideo": null,
+    "title": "Kem chống nắng của bạn có hạn sử dụng?",
+    "description": null,
+    "slug": "kem-chong-nang-cua-ban-co-han-su-dung",
+    "author": {
+      "name": "Thanh Thảo",
+      "picture": {
+        "_type": "image",
+        "asset": {
+          "_ref": "image-3a3fd4f9d0beca93afd039f32e2309aec1037152-771x1024-jpg",
+          "_type": "reference"
+        }
+      }
+    },
+    "category": {
+      "name": "Beauty",
+      "slug": "beauty"
+    }
+  },
+  {
+    "date": "2024-07-21T12:38:04.698Z",
+    "_updatedAt": "2024-07-21T20:39:33Z",
+    "coverImage": {
+      "_type": "image",
+      "asset": {
+        "_ref": "image-481c40252a575c5be88c830e2e8140fb2df2a47d-1440x1800-webp",
+        "_type": "reference"
+      }
+    },
+    "slug": "su-ket-hop-hoan-hao-giua-quan-shorts-adidas-va-giay-loafers-co-dien",
+    "author": {
+      "name": "Thanh Thảo",
+      "picture": {
+        "_type": "image",
+        "asset": {
+          "_ref": "image-3a3fd4f9d0beca93afd039f32e2309aec1037152-771x1024-jpg",
+          "_type": "reference"
+        }
+      }
+    },
+    "category": {
+      "name": "Style",
+      "slug": "style"
+    },
+    "_id": "49bd958d-1ce4-40c3-84f0-cb8d3b124e48",
+    "title": "Sự kết hợp hoàn hảo giữa quần shorts Adidas và giày loafers cổ điển",
+    "description": null,
+    "excerpt": null,
+    "coverVideo": null
+  },
+  {
+    "description": null,
+    "excerpt": null,
+    "coverImage": {
+      "_type": "image",
+      "asset": {
+        "_ref": "image-e2fcc789cc01678d11a8bf0b54835c97d2bc9d2d-1600x2400-webp",
+        "_type": "reference"
+      }
+    },
+    "coverVideo": null,
+    "slug": "xu-huong-phoi-do-voi-sandal-mua-he-nay",
+    "_id": "e23e87f6-dafc-498a-887c-d558263ef683",
+    "title": "Xu hướng phối đồ với sandal mùa hè này",
+    "date": "2024-07-21T12:35:54.365Z",
+    "_updatedAt": "2024-07-21T20:35:09Z",
+    "author": {
+      "name": "Thanh Thảo",
+      "picture": {
+        "_type": "image",
+        "asset": {
+          "_ref": "image-3a3fd4f9d0beca93afd039f32e2309aec1037152-771x1024-jpg",
+          "_type": "reference"
+        }
+      }
+    },
+    "category": {
+      "name": "Style",
+      "slug": "style"
+    }
+  },
+  {
+    "title": "“Work From Home” và những hệ luỵ",
+    "date": "2024-07-21T12:27:19.166Z",
+    "excerpt": null,
+    "slug": "work-from-home-va-nhung-he-luy",
+    "category": {
+      "name": "M for Career",
+      "slug": "m-for-career"
+    },
+    "_id": "a1056053-62ec-47b1-969e-280b0fa67a7c",
+    "_updatedAt": "2024-07-21T20:27:41Z",
+    "coverImage": {
+      "_type": "image",
+      "asset": {
+        "_ref": "image-76c1b3a8c8f0d85e87dd3c6ca9d63bf750e54316-768x512-webp",
+        "_type": "reference"
+      }
+    },
+    "coverVideo": null,
+    "author": {
+      "name": "Thanh Thảo",
+      "picture": {
+        "_type": "image",
+        "asset": {
+          "_ref": "image-3a3fd4f9d0beca93afd039f32e2309aec1037152-771x1024-jpg",
+          "_type": "reference"
+        }
+      }
+    },
+    "description": null
+  },
+  {
+    "author": {
+      "name": "Thanh Thảo",
+      "picture": {
+        "_type": "image",
+        "asset": {
+          "_ref": "image-3a3fd4f9d0beca93afd039f32e2309aec1037152-771x1024-jpg",
+          "_type": "reference"
+        }
+      }
+    },
+    "title": "“Cheap Moment” du lịch hè này với sao Hollywood ",
+    "description": null,
+    "_updatedAt": "2024-07-21T10:01:25Z",
+    "coverImage": {
+      "asset": {
+        "_type": "reference",
+        "_ref": "image-28fec11fed518ffbedcc6692826971346d11229b-1520x2000-webp"
+      },
+      "_type": "image"
+    },
+    "slug": "cheap-moment-voi-sao-hollywood-qua-trai-nghiem-tai-nhung-khach-san-tot-nhat-the-gioi",
+    "_id": "8e647596-4adb-4495-b1fb-ac4254f78c54",
+    "date": "2024-07-21T09:22:14.097Z",
+    "excerpt": null,
+    "coverVideo": null,
+    "category": {
+      "name": "Voyage & Gourmet",
+      "slug": "voyage-and-gourmet"
+    }
+  },
+  {
+    "title": "Lợi ích của việc đầu tư vào làn da của bạn. 5 lựa chọn kem dưỡng da hiệu quả cao “cấp serum” giải quyết các vấn đề về da trong mùa hè",
+    "date": "2024-07-21T09:04:56.901Z",
+    "coverImage": {
+      "asset": {
+        "_ref": "image-248f684d595dcba4eeb089595dbe9ff3f10fd084-1200x1800-png",
+        "_type": "reference"
+      },
+      "_type": "image"
+    },
+    "slug": "loi-ich-cua-viec-dau-tu-vao-lan-da-cua-ban-5-lua-chon-kem-duong-da-hieu-qua-cao-cap-serum-giai",
+    "category": {
+      "name": "Beauty",
+      "slug": "beauty"
+    },
+    "_id": "0a0fdd1e-d3c8-4899-919e-cf60f052a02a",
+    "description": "Sữa dưỡng có công dụng cao giúp dưỡng ẩm cho làn da mùa hè bị khô đến bất ngờ do tia UV và điều hòa. Chúng tôi đã hỏi chuyên gia làm đẹp về lợi ích của việc sử dụng kem dưỡng da, loại kem có tác dụng dưỡng ẩm cho da tương tự như serum.",
+    "_updatedAt": "2024-07-21T09:15:12Z",
+    "excerpt": null,
+    "coverVideo": null,
+    "author": {
+      "name": "Hikari",
+      "picture": null
+    }
+  },
+  {
+    "title": "N°5 L’eau Drop: Sự tái hiện đầy mới mẻ của Chanel N°5",
+    "date": "2024-07-21T09:02:06.402Z",
+    "coverVideo": null,
+    "slug": "n-5-l-eau-drop-su-tai-hien-day-moi-me-cua-chanel-n-5",
+    "_id": "8764fd2a-1179-4ffe-82fd-c41a70334395",
+    "description": "Mùi hương huyền thoại nhất trong lịch sử của Chanel đã trở lại",
+    "_updatedAt": "2024-07-21T09:09:10Z",
+    "excerpt": null,
+    "coverImage": {
+      "_type": "image",
+      "asset": {
+        "_ref": "image-2c0157a81aaf01855323035faf05f9664644e4fa-1600x2133-webp",
+        "_type": "reference"
+      }
+    },
+    "author": {
+      "name": "Thanh Thảo",
+      "picture": {
+        "_type": "image",
+        "asset": {
+          "_ref": "image-3a3fd4f9d0beca93afd039f32e2309aec1037152-771x1024-jpg",
+          "_type": "reference"
+        }
+      }
+    },
+    "category": {
+      "name": "Beauty",
+      "slug": "beauty"
+    }
+  },
+  {
+    "title": "Cảm nhận sức mạnh chảy từ bên trong cơ thể bạn! Tái tạo lại cơ thể của bạn tại “Six Senses Spa Kyoto” nổi tiếng",
+    "coverVideo": null,
+    "slug": "cam-nhan-suc-manh-chay-tu-ben-trong-co-the-ban-tai-tao-lai-co-the-cua-ban-tai-six-senses-spa",
+    "_id": "22525090-1fbf-4042-b711-0bb7f2691014",
+    "description": "Six Senses Kyoto được chờ đợi từ lâu đã ra mắt tại Nhật Bản vào tháng 4 năm nay tại Higashiyama, Kyoto. Ở đó, một spa độc quyền, nơi bạn có thể tận hưởng triết lý Thiền và công nghệ tiên tiến. \"Sàng lọc sức khỏe\" kiểm tra bên trong cơ thể chỉ có ở Nhật Bản...! Việc điều trị như thế nào?",
+    "date": "2024-07-21T08:55:49.789Z",
+    "_updatedAt": "2024-07-21T09:04:37Z",
+    "excerpt": null,
+    "coverImage": {
+      "_type": "image",
+      "asset": {
+        "_ref": "image-79a3ec205e48efbef6a79d526ee2367d3da9e4dd-1600x1067-png",
+        "_type": "reference"
+      }
+    },
+    "author": {
+      "name": "Hikari",
+      "picture": null
+    },
+    "category": {
+      "name": "Beauty",
+      "slug": "beauty"
+    }
+  },
+  {
+    "title": "SKIN: Chăm sóc da đơn giản sẽ tốt cho làn da của bạn. Một thói quen tối giản được các bác sĩ da liễu khuyên dùng",
+    "description": "Ngày nay, có rất nhiều sản phẩm chứa nhiều hoạt chất khác nhau được cho là có tác dụng làm đẹp da, chẳng hạn như vitamin C, retinol và axit hyaluronic. Quy trình chăm sóc da 10 bước đã trở thành chủ đề nóng trên mạng xã hội và thật dễ dàng để sử dụng nhiều loại sản phẩm. Tuy nhiên, một số bác sĩ da liễu cho rằng khi nói đến việc chăm sóc da, sự đơn giản là tốt nhất.",
+    "slug": "skin-cham-soc-da-don-gian-se-tot-cho-lan-da-cua-ban-mot-thoi-quen-toi-gian-duoc-cac-bac-si-da",
+    "author": {
+      "name": "Hikari",
+      "picture": null
+    },
+    "coverImage": {
+      "_type": "image",
+      "asset": {
+        "_ref": "image-89490c9e48f0cd829143564eca24d87d347bc554-1600x2400-png",
+        "_type": "reference"
+      }
+    },
+    "coverVideo": null,
+    "category": {
+      "name": "Beauty",
+      "slug": "beauty"
+    },
+    "_id": "13ad825d-272d-4b50-9783-7fbd1129a585",
+    "date": "2024-07-21T08:51:10.335Z",
+    "_updatedAt": "2024-07-21T08:55:18Z",
+    "excerpt": null
+  },
+  {
+    "title": "Bí quyết của Taylor Swift để có thể giữ đôi môi đỏ đặc trưng ngay khi trời mưa lớn",
+    "description": "Đôi môi đỏ đặc trưng của Taylor Swift đã \"giữ vững phong độ\" của mình ngay cả trong cơn mưa xối xả.",
+    "_updatedAt": "2024-07-21T09:58:06Z",
+    "excerpt": null,
+    "coverImage": {
+      "asset": {
+        "_ref": "image-cd77eb52d59da647c6927dfc993360de6bb9289f-1500x1000-jpg",
+        "_type": "reference"
+      },
+      "_type": "image"
+    },
+    "author": {
+      "name": "Thanh Thảo",
+      "picture": {
+        "_type": "image",
+        "asset": {
+          "_ref": "image-3a3fd4f9d0beca93afd039f32e2309aec1037152-771x1024-jpg",
+          "_type": "reference"
+        }
+      }
+    },
+    "_id": "e391bf8f-b5dd-4ca6-8462-7e5c14ecf057",
+    "date": "2024-07-21T08:46:41.438Z",
+    "coverVideo": null,
+    "slug": "bi-quyet-cua-taylor-swift-de-co-the-giu-doi-moi-do-dac-chung-ngay-khi-troi-mua-lon",
+    "category": {
+      "name": "Beauty",
+      "slug": "beauty"
+    }
+  },
+  {
+    "description": "Da có xu hướng tích tụ tổn thương do nắng nóng gay gắt mỗi ngày. Chúng tôi đã chọn ra những loại sữa rửa mặt đáng tin cậy mà bạn có thể sử dụng khi gặp nhiều rắc rối và có xu hướng mất bình tĩnh.",
+    "excerpt": null,
+    "coverImage": {
+      "_type": "image",
+      "asset": {
+        "_type": "reference",
+        "_ref": "image-4b4152be7ae0f0a755a47f2f051439380876c1d9-640x640-png"
+      }
+    },
+    "slug": "da-xin-mau-cung-bong-v-v-sua-rua-mat-enzyme-giup-loai-bo-hoan-toan-nhung-rac-roi-ve-da-mua-he-my",
+    "_id": "74a573aa-c971-45ba-8551-3cf4abe1272d",
+    "title": "Da xỉn màu, cứng, bóng, v.v. Sữa rửa mặt enzyme giúp loại bỏ hoàn toàn những rắc rối về da mùa hè [Mỹ phẩm được biên tập viên khuyên dùng]",
+    "date": "2024-07-21T08:34:27.357Z",
+    "_updatedAt": "2024-07-21T08:45:41Z",
+    "coverVideo": null,
+    "author": {
+      "name": "Hikari",
+      "picture": null
+    },
+    "category": {
+      "name": "Beauty",
+      "slug": "beauty"
+    }
+  },
+  {
+    "slug": "the-van-hoi-paris-2024-sap-bat-dau-hay-chu-y-den-dong-phuc-chinh-thuc-duoc-tao-ra-boi-cac-thuong",
+    "category": {
+      "name": "Culture",
+      "slug": "culture"
+    },
+    "_id": "aee39ddd-9831-491b-bfb7-c9be80cadb41",
+    "date": "2024-07-21T05:55:02.202Z",
+    "_updatedAt": "2024-07-21T06:06:25Z",
+    "coverImage": {
+      "_type": "image",
+      "asset": {
+        "_ref": "image-cc2813c00e93720e776ddeabc36fbe524752d0b1-1200x1500-png",
+        "_type": "reference"
+      }
+    },
+    "coverVideo": null,
+    "author": {
+      "name": "Camille Pham",
+      "picture": null
+    },
+    "title": "Thế vận hội Paris 2024 sắp bắt đầu! Hãy chú ý đến đồng phục chính thức được tạo ra bởi các thương hiệu nổi tiếng",
+    "description": "Thế vận hội Paris sẽ khai mạc vào ngày 26 tháng 7. Tại Thế vận hội Olympic và Paralympic, trọng tâm không chỉ tập trung vào các vận động viên và cuộc thi của họ mà còn tập trung vào trang phục và đồng phục của mỗi đội tuyển quốc gia. Trước khi chương trình kết thúc, chúng ta hãy cùng xem qua các loại trang phục kết hợp giữa thiết kế và chức năng đã được công bố cho đến nay.",
+    "excerpt": null
+  },
+  {
+    "coverImage": {
+      "_type": "image",
+      "asset": {
+        "_ref": "image-3d5e17e602d12502a0f06497d1a5dd777ccf01c8-3000x1686-jpg",
+        "_type": "reference"
+      }
+    },
+    "coverVideo": null,
+    "author": {
+      "name": "Thanh Thảo",
+      "picture": {
+        "_type": "image",
+        "asset": {
+          "_ref": "image-3a3fd4f9d0beca93afd039f32e2309aec1037152-771x1024-jpg",
+          "_type": "reference"
+        }
+      }
+    },
+    "_id": "0868d6dc-1bb1-40ed-ac06-8c428b55c8cc",
+    "description": "Bài viết này có tiết lộ nội dung phim Inside Out 2.",
+    "excerpt": null,
+    "slug": "wellnes-cham-kiem-soat-cam-xuc-cua-ban-co-dang-on-khong",
+    "category": {
+      "name": "Beauty",
+      "slug": "beauty"
+    },
+    "title": "WELLNES : Chạm kiểm soát cảm xúc của bạn có đang ổn không?",
+    "date": "2024-07-21T05:39:26.549Z",
+    "_updatedAt": "2024-07-21T08:45:59Z"
+  },
+  {
+    "_updatedAt": "2024-07-21T05:07:26Z",
+    "coverImage": {
+      "_type": "image",
+      "asset": {
+        "_ref": "image-ea40da900be31149a9062c6c8edaf1128d054d6f-3999x3999-webp",
+        "_type": "reference"
+      }
+    },
+    "category": {
+      "name": "Style",
+      "slug": "style"
+    },
+    "_id": "74a9607e-4330-4a93-b661-b80ce99a02a5",
+    "title": "2 đôi giày sneaker không thể thiếu trong mùa hè này. ",
+    "date": "2024-07-20T22:24:23.498Z",
+    "slug": "5-doi-giay-sneaker-khong-the-thieu-trong-mua-he-nay",
+    "author": {
+      "name": "Thanh Thảo",
+      "picture": {
+        "_type": "image",
+        "asset": {
+          "_ref": "image-3a3fd4f9d0beca93afd039f32e2309aec1037152-771x1024-jpg",
+          "_type": "reference"
+        }
+      }
+    },
+    "description": "Giày sneaker tiếp tục chiếm lĩnh thị trường trong mùa hè này. Khi không mang dép xăng đan hay những đôi tông đang rất thịnh hành, chúng ta thường chọn những đôi giày sneaker phổ biến như Nike Cortez, Mexico 66 của Onitsuka Tiger, hay những đôi Chuck Taylor All Stars mang tính biểu tượng của Converse. Hãy cùng điểm qua những mẫu giày sneaker tốt nhất để lựa chọn trong mùa hè này, theo các người mẫu và các cô gái sành điệu.",
+    "excerpt": null,
+    "coverVideo": null
+  },
+  {
+    "title": "Loewe Foundation chính thức nhận hồ sơ cho giải thưởng thủ công 2025 - Loewe Craft Prize 2025",
+    "description": "Ngày 10 tháng 7 năm 2024 - Quỹ Loewe Foundation chính thức mở cổng nhận hồ sơ cho Giải thưởng Thủ công Loewe Foundation 2025, hứa hẹn sẽ là một sự kiện nổi bật trong làng nghệ thuật thủ công đương đại. Giải thưởng được khởi xướng vào năm 2016 nhằm tôn vinh sự xuất sắc, giá trị nghệ thuật và tính mới mẻ trong lĩnh vực thủ công đương đại.",
+    "_updatedAt": "2024-07-20T22:14:52Z",
+    "excerpt": null,
+    "coverVideo": null,
+    "slug": "loewe-foundation-chinh-thuc-nhan-ho-so-cho-giai-thuong-thu-cong-2025",
+    "author": {
+      "name": "Thanh Thảo",
+      "picture": {
+        "_type": "image",
+        "asset": {
+          "_ref": "image-3a3fd4f9d0beca93afd039f32e2309aec1037152-771x1024-jpg",
+          "_type": "reference"
+        }
+      }
+    },
+    "_id": "dd967933-98a5-4069-90f8-da2f42f5a18d",
+    "date": "2024-07-20T22:11:40.503Z",
+    "coverImage": {
+      "_type": "image",
+      "asset": {
+        "_ref": "image-d921629e8584e5c32c9f933a136aed5b0ee5584a-1800x1198-webp",
+        "_type": "reference"
+      }
+    },
+    "category": {
+      "name": "Culture",
+      "slug": "culture"
+    }
+  },
+  {
+    "_id": "75ed8318-b68a-4a7b-b170-5b3ad8e08cb3",
+    "description": "Trong một đêm tiệc hoành tráng tại Seoul, CHANEL đã tổ chức sự kiện pop-up store nhằm quảng bá cho bộ sưu tập mới nhất của dòng trang sức Coco Crush. Sự kiện này không chỉ thu hút sự quan tâm của giới mộ điệu mà còn quy tụ một dàn khách mời đình đám từ xứ Hàn, biến đêm tiệc thành một trong những sự kiện được mong chờ nhất mùa hè năm nay.",
+    "coverImage": {
+      "_type": "image",
+      "asset": {
+        "_ref": "image-c5105f172152f534e1f5d19b3dbe754e7c87c023-730x1055-jpg",
+        "_type": "reference"
+      }
+    },
+    "author": {
+      "name": "Thanh Thảo",
+      "picture": {
+        "_type": "image",
+        "asset": {
+          "_ref": "image-3a3fd4f9d0beca93afd039f32e2309aec1037152-771x1024-jpg",
+          "_type": "reference"
+        }
+      }
+    },
+    "category": {
+      "name": "Celebrity",
+      "slug": "celebrity"
+    },
+    "title": "Jennie, Park Seo Joon và các ngôi sao Hàn Quốc tỏa sáng tại buổi ra mắt Pop-Up store CHANEL Coco Crush ",
+    "date": "2024-07-20T22:04:27.797Z",
+    "_updatedAt": "2024-07-20T22:15:30Z",
+    "excerpt": null,
+    "coverVideo": null,
+    "slug": "jennie-park-seo-joon-va-cac-ngoi-sao-han-quoc-toa-sang-tai-buoi-ra-mat-pop-up-store-chanel-coco"
+  },
+  {
+    "description": "Tập đoàn khách sạn Pháp Accor và gã khổng lồ xa xỉ LVMH vừa công bố thông tin về việc ký kết “quan hệ đối tác chiến lược” để phát triển thương hiệu huyền thoại Orient Express. Đây là một bước tiến quan trọng nhằm tái sinh di sản của chuyến tàu lừng danh này.",
+    "coverImage": {
+      "_type": "image",
+      "asset": {
+        "_ref": "image-2a67c273089eb1083c00f96b87c4e75d9320d7bb-2200x1779-png",
+        "_type": "reference"
+      }
+    },
+    "slug": "hanh-trinh-moi-cua-orient-express-lvmh-va-accor-bat-tay-hoi-sinh-huyen-thoai",
+    "author": {
+      "name": "Thanh Thảo",
+      "picture": {
+        "_type": "image",
+        "asset": {
+          "_ref": "image-3a3fd4f9d0beca93afd039f32e2309aec1037152-771x1024-jpg",
+          "_type": "reference"
+        }
+      }
+    },
+    "category": {
+      "name": "Business",
+      "slug": "business"
+    },
+    "_id": "08c70859-a725-4bff-a8b0-a8334a0c4bc3",
+    "title": "Hành trình mới của Orient Express: LVMH và Accor bắt tay hồi sinh huyền thoại ",
+    "date": "2024-07-20T22:00:17.715Z",
+    "_updatedAt": "2024-07-21T07:38:12Z",
+    "excerpt": null,
+    "coverVideo": null
+  },
+  {
+    "description": "Từ những chiếc vali chống thấm nước đến túi tote rộng rãi, Goyard đáp ứng hoàn hảo nhu cầu của khách hàng tinh hoa. Khám phá lịch sử thương hiệu từ năm 1792 và cách Goyard chinh phục thị trường cao cấp qua bài viết này.",
+    "date": "2024-07-20T21:46:55.903Z",
+    "_updatedAt": "2024-07-21T10:08:35Z",
+    "coverVideo": {
+      "_ref": "file-267c4c7776cb43422cce419dc4510fdbe6d6bb09-mp4",
+      "_type": "reference"
+    },
+    "slug": "goyard-bi-an-giua-lang-thoi-trang-va-su-lua-chon-doc-ton-cua-gioi-thuong-luu",
+    "author": {
+      "name": "Thanh Thảo",
+      "picture": {
+        "_type": "image",
+        "asset": {
+          "_ref": "image-3a3fd4f9d0beca93afd039f32e2309aec1037152-771x1024-jpg",
+          "_type": "reference"
+        }
+      }
+    },
+    "category": {
+      "name": "Lifestyle",
+      "slug": "lifestyle"
+    },
+    "title": "Goyard: Bí ẩn giữa làng thời trang và sự lựa chọn độc tôn của giới thượng lưu",
+    "excerpt": null,
+    "coverImage": {
+      "_type": "image",
+      "asset": {
+        "_ref": "image-e702e583d3e30f02598e823fb8d87654b0e4640a-1350x1080-webp",
+        "_type": "reference"
+      }
+    },
+    "_id": "ec8d9125-b0ef-4437-a122-25548f4ed5d4"
+  },
+  {
+    "_id": "8188e07e-7e25-4924-9c30-de3f20349528",
+    "coverImage": {
+      "_type": "image",
+      "asset": {
+        "_ref": "image-ce15c7a9609bcce22c7854a1363cf5d294edd242-680x1020-png",
+        "_type": "reference"
+      }
+    },
+    "slug": "phan-tiep-theo-cua-devil-wears-prada-cuoi-cung-cung-sap-ra-mat",
+    "author": {
+      "name": "Camille Pham",
+      "picture": null
+    },
+    "category": {
+      "name": "Lifestyle",
+      "slug": "lifestyle"
+    },
+    "title": "Phần tiếp theo của 'Devil Wears Prada' cuối cùng cũng sắp ra mắt",
+    "description": "Bộ phim kinh điển đình đám đã công bố phần tiếp theo được mong đợi từ lâu sau 18 năm - và chúng ta không thể chờ đợi thêm nữa",
+    "date": "2024-07-20T21:27:35.423Z",
+    "_updatedAt": "2024-07-20T21:34:13Z",
+    "excerpt": null,
+    "coverVideo": null
+  },
+  {
+    "_id": "f12ce676-654b-4f41-86ba-6fbecbbbd1f0",
+    "title": "5 xu hướng thời trang mùa hè theo Stylight",
+    "description": "Mỗi năm, trước khi mùa hè bắt đầu, nền tảng thời trang Stylight lại phát hành báo cáo về các xu hướng chính sẽ thống trị trong những tháng tới. Dựa trên số lượng tìm kiếm trực tuyến trên trang web của mình và trên Google, phân tích này cung cấp một cái nhìn toàn cảnh – từ quần áo đến phụ kiện – về những món đồ nên đầu tư vào chỉ vài ngày trước khi mùa hè chính thức bắt đầu. Hãy cùng điểm qua các xu hướng không thể bỏ lỡ.",
+    "date": "2024-07-20T21:18:13.870Z",
+    "author": {
+      "name": "Thanh Thảo",
+      "picture": {
+        "_type": "image",
+        "asset": {
+          "_ref": "image-3a3fd4f9d0beca93afd039f32e2309aec1037152-771x1024-jpg",
+          "_type": "reference"
+        }
+      }
+    },
+    "category": {
+      "name": "Style",
+      "slug": "style"
+    },
+    "_updatedAt": "2024-07-20T21:45:49Z",
+    "excerpt": null,
+    "coverImage": {
+      "_type": "image",
+      "asset": {
+        "_ref": "image-6c20b3429e7e079ec68b4264397fdfe741fd3839-1600x2400-webp",
+        "_type": "reference"
+      }
+    },
+    "coverVideo": null,
+    "slug": "5-xu-huong-thoi-trang-mua-he-theo-stylight"
+  },
+  {
+    "author": {
+      "name": "Thanh Thảo",
+      "picture": {
+        "_type": "image",
+        "asset": {
+          "_ref": "image-3a3fd4f9d0beca93afd039f32e2309aec1037152-771x1024-jpg",
+          "_type": "reference"
+        }
+      }
+    },
+    "category": {
+      "name": "Style",
+      "slug": "style"
+    },
+    "_id": "4a86f3b2-70e7-405a-bb84-9f093eb96b96",
+    "description": null,
+    "date": "2024-07-20T19:17:00.000Z",
+    "_updatedAt": "2024-07-23T19:19:48Z",
+    "slug": "phong-cach-nghi-duong-he-nay-cua-kylie-jenner",
+    "title": "Phong cách nghỉ dưỡng hè này của Kylie Jenner",
+    "excerpt": null,
+    "coverImage": {
+      "asset": {
+        "_ref": "image-27aaca406d526b969ac9fda2b24c3a8119e88448-1080x1920-webp",
+        "_type": "reference"
+      },
+      "_type": "image"
+    },
+    "coverVideo": null
+  },
+  {
+    "_id": "746a80a1-883c-4861-bda1-e725edec932c",
+    "title": "Phụ kiện tóc sành điệu cho mùa hè này ",
+    "author": {
+      "name": "Thanh Thảo",
+      "picture": {
+        "_type": "image",
+        "asset": {
+          "_ref": "image-3a3fd4f9d0beca93afd039f32e2309aec1037152-771x1024-jpg",
+          "_type": "reference"
+        }
+      }
+    },
+    "category": {
+      "name": "Style",
+      "slug": "style"
+    },
+    "coverImage": {
+      "_type": "image",
+      "asset": {
+        "_type": "reference",
+        "_ref": "image-668d7860f132d009ab48d0d93bc223a56f061537-680x1020-jpg"
+      }
+    },
+    "coverVideo": null,
+    "slug": "phu-kien-toc-sanh-dieu-cho-mua-he-nay",
+    "description": null,
+    "date": "2024-07-19T20:39:00.000Z",
+    "_updatedAt": "2024-07-23T20:39:31Z",
+    "excerpt": null
+  },
+  {
+    "date": "2024-07-19T08:22:44.603Z",
+    "_updatedAt": "2024-07-19T08:34:16Z",
+    "coverVideo": null,
+    "slug": "khay-dung-sang-trong-de-ban-dung-do-trang-suc-hang-ngay",
+    "author": {
+      "name": "Camille Pham",
+      "picture": null
+    },
+    "_id": "7dd4e050-0bdc-408a-af65-39539daf0c17",
+    "title": "Khay đựng sang trọng để bạn đựng đồ trang sức hàng ngày",
+    "description": "Tiện dụng và đẹp mắt, một khay đựng đồ trang sức được lựa chọn kỹ lưỡng có thể làm bừng sáng ngôi nhà của bạn và mang đến cho những món đồ trang sức quý giá hàng ngày của bạn một nơi nghỉ ngơi đáng yêu",
+    "excerpt": null,
+    "coverImage": {
+      "_type": "image",
+      "asset": {
+        "_ref": "image-c293ede0a4e3de38fcf8394020deb8f3375eb29a-680x1020-png",
+        "_type": "reference"
+      }
+    },
+    "category": {
+      "name": "Watches & Jewelry",
+      "slug": "watches-and-jewelry"
+    }
+  },
+  {
+    "slug": "cartier-da-to-chuc-mot-bua-tiec-tai-paris-de-ky-niem-100-nam-ra-mat-bo-suu-tap-trinity",
+    "category": {
+      "name": "Watches & Jewelry",
+      "slug": "watches-and-jewelry"
+    },
+    "description": "Ba là con số kỳ diệu. Từ New York đến London và cuối cùng là Paris, Cartier đã thực hiện một chuyến đi qua những thành phố mang tính biểu tượng nhất của mình để đánh dấu bộ sưu tập Trinity tròn 100 năm tuổi.",
+    "date": "2024-07-19T06:32:03.210Z",
+    "_updatedAt": "2024-07-19T06:49:17Z",
+    "excerpt": null,
+    "coverImage": {
+      "_type": "image",
+      "asset": {
+        "_ref": "image-81b3f4cf5e0e5f60c78a84f7d120389eca2aa22c-2363x3360-png",
+        "_type": "reference"
+      }
+    },
+    "coverVideo": null,
+    "_id": "27b8287f-0e48-4171-ba58-11c08a9a16d7",
+    "title": "Cartier đã tổ chức một bữa tiệc tại Paris để kỷ niệm 100 năm ra mắt bộ sưu tập Trinity",
+    "author": {
+      "name": "Camille Pham",
+      "picture": null
+    }
+  },
+  {
+    "slug": "richard-mille-ket-hop-khia-canh-ky-quac-cua-che-tac-dong-ho-voi-su-quyen-ru-quy-phai-nu-tinh",
+    "category": {
+      "name": "Watches & Jewelry",
+      "slug": "watches-and-jewelry"
+    },
+    "_updatedAt": "2024-07-19T04:51:06Z",
+    "coverImage": {
+      "_type": "image",
+      "asset": {
+        "_type": "reference",
+        "_ref": "image-a48cc1b03c052dcf076c27676131f65b25f149e4-680x1020-png"
+      }
+    },
+    "coverVideo": null,
+    "date": "2024-07-19T04:45:18.110Z",
+    "excerpt": null,
+    "author": {
+      "name": "Camille Pham",
+      "picture": null
+    },
+    "_id": "32c90f5c-f06c-4093-8d34-56f847f6efef",
+    "title": "Richard Mille kết hợp khía cạnh kỳ quặc của chế tác đồng hồ với sự quyến rũ quý phái, nữ tính",
+    "description": "Bộ sưu tập RM 07-01 dành cho phụ nữ của hãng đồng hồ Thụy Sĩ là sự kết hợp giữa tính thẩm mỹ quý giá và bí quyết công nghệ mạnh mẽ"
+  },
+  {
+    "slug": "dong-ho-cat-theo-phong-cach-dune-co-the-la-xu-huong-dong-ho-tiep-theo",
+    "author": {
+      "name": "Tùng Linh",
+      "picture": null
+    },
+    "_id": "46d35b49-1399-4993-aa5d-1237284c8330",
+    "title": "Đồng hồ cát, theo phong cách Dune, có thể là xu hướng đồng hồ tiếp theo",
+    "date": "2024-07-19T04:11:58.509Z",
+    "_updatedAt": "2024-07-19T04:18:39Z",
+    "excerpt": null,
+    "description": "Xu hướng văn hóa đại chúng đang lan tỏa vào thế giới đồng hồ? Vẻ đẹp cát của Dune  Facebook Twitter WhatsApp Tin nhắn Facebook",
+    "coverImage": {
+      "_type": "image",
+      "asset": {
+        "_ref": "image-9f1781066f1a1f7b7cd425aa58a7ee92603f0085-680x1020-png",
+        "_type": "reference"
+      }
+    },
+    "coverVideo": null,
+    "category": {
+      "name": "Watches & Jewelry",
+      "slug": "watches-and-jewelry"
+    }
+  },
+  {
+    "_updatedAt": "2024-07-19T03:52:35Z",
+    "coverImage": {
+      "_type": "image",
+      "asset": {
+        "_ref": "image-a9abb2d91a662f5a9ba9abb03a607548bcca2724-680x1020-png",
+        "_type": "reference"
+      }
+    },
+    "coverVideo": null,
+    "slug": "phoebe-dynevor-moi-dinh-hon-toa-sang-o-saint-tropez-voi-su-giup-do-cua-mot-so-thuong-hieu-trang",
+    "category": {
+      "name": "Celebrity",
+      "slug": "celebrity"
+    },
+    "description": "Ngôi sao Bridgerton và đại sứ của Louis Vuitton đã đeo đồ trang sức cao cấp của thương hiệu Pháp này tại Saint-Tropez",
+    "date": "2024-07-19T03:44:37.217Z",
+    "excerpt": null,
+    "author": {
+      "name": "Camille Pham",
+      "picture": null
+    },
+    "_id": "775b9b8e-7fc7-40e3-832e-025677ccd64d",
+    "title": "Phoebe Dynevor mới đính hôn tỏa sáng ở Saint-Tropez với sự giúp đỡ của một số thương hiệu trang sức lớn"
+  },
+  {
+    "_id": "42b2f34f-b3e6-45cb-932b-7d8c611d9537",
+    "title": "Timberlands đã quay trở lại ",
+    "description": null,
+    "_updatedAt": "2024-07-23T20:42:03Z",
+    "coverImage": {
+      "_type": "image",
+      "asset": {
+        "_ref": "image-76fee392671f42301d0fc2d88ff1b8aff2fe3131-680x1020-jpg",
+        "_type": "reference"
+      }
+    },
+    "coverVideo": null,
+    "category": {
+      "name": "Style",
+      "slug": "style"
+    },
+    "date": "2024-07-18T20:41:00.000Z",
+    "excerpt": null,
+    "slug": "timberlands-da-quay-tro-lai",
+    "author": {
+      "name": "Thanh Thảo",
+      "picture": {
+        "_type": "image",
+        "asset": {
+          "_ref": "image-3a3fd4f9d0beca93afd039f32e2309aec1037152-771x1024-jpg",
+          "_type": "reference"
+        }
+      }
+    }
+  },
+  {
+    "date": "2024-07-18T20:21:00.000Z",
+    "author": {
+      "name": "Thanh Thảo",
+      "picture": {
+        "_type": "image",
+        "asset": {
+          "_ref": "image-3a3fd4f9d0beca93afd039f32e2309aec1037152-771x1024-jpg",
+          "_type": "reference"
+        }
+      }
+    },
+    "slug": "them-net-tinh-nghich-cho-trang-phuc-cua-ban-vao-mua-he-nay-voi-phu-kien-kitsch",
+    "_id": "75ec2b9c-c14f-487b-bb0f-55e59c01ee98",
+    "title": "Thêm nét tinh nghịch cho trang phục của bạn vào mùa hè này với phụ kiện \"Kitsch\"",
+    "description": null,
+    "_updatedAt": "2024-07-23T20:23:05Z",
+    "excerpt": null,
+    "coverImage": {
+      "_type": "image",
+      "asset": {
+        "_ref": "image-5c6137e2d4ede40bbe144c89e9301615e1008206-1080x1350-webp",
+        "_type": "reference"
+      }
+    },
+    "coverVideo": null,
+    "category": {
+      "name": "Style",
+      "slug": "style"
+    }
+  },
+  {
+    "_updatedAt": "2024-07-23T19:24:03Z",
+    "slug": "hoan-thien-tu-quan-ao-mua-he-cua-ban-voi-mot-chiec-vay-dai-den-don-gian",
+    "excerpt": null,
+    "coverImage": {
+      "asset": {
+        "_ref": "image-4d5427192152777e13256a806db21afb658d35cb-1106x1301-webp",
+        "_type": "reference"
+      },
+      "_type": "image"
+    },
+    "coverVideo": null,
+    "author": {
+      "name": "Thanh Thảo",
+      "picture": {
+        "_type": "image",
+        "asset": {
+          "_ref": "image-3a3fd4f9d0beca93afd039f32e2309aec1037152-771x1024-jpg",
+          "_type": "reference"
+        }
+      }
+    },
+    "_id": "93b33a80-6f22-4f53-963d-9cc512f351b3",
+    "title": "Hoàn thiện tủ quần áo mùa hè của bạn với một chiếc váy dài đen đơn giản",
+    "description": null,
+    "date": "2024-07-18T19:22:00.000Z",
+    "category": {
+      "name": "Style",
+      "slug": "style"
+    }
+  },
+  {
+    "coverVideo": null,
+    "slug": "bo-suu-tap-vacheron-constantin-egerie-chao-don-su-hop-tac-sang-tao-dau-tien",
+    "category": {
+      "name": "Watches & Jewelry",
+      "slug": "watches-and-jewelry"
+    },
+    "_id": "2d9944ed-c13b-4e50-b878-49e3d63f0016",
+    "description": "Vacheron Constantin đánh dấu sự hợp tác đầu tiên với nhà thiết kế thời trang cao cấp Yin Yiqing",
+    "_updatedAt": "2024-07-18T18:35:27Z",
+    "excerpt": null,
+    "coverImage": {
+      "_type": "image",
+      "asset": {
+        "_ref": "image-93828c0e7ab7b1d41e63d360b6742d97a034cd54-680x1020-png",
+        "_type": "reference"
+      }
+    },
+    "title": "Bộ sưu tập Vacheron Constantin Égérie chào đón sự hợp tác sáng tạo đầu tiên",
+    "date": "2024-07-18T18:30:52.754Z",
+    "author": {
+      "name": "Camille Pham",
+      "picture": null
+    }
+  },
+  {
+    "description": "Sự thanh lịch đang một lần nữa lên ngôi trên cổ tay, với những chiếc đồng hồ đeo tay tinh tế dẫn đầu trong số những sản phẩm mới ra mắt trong năm nay",
+    "_updatedAt": "2024-07-18T18:29:42Z",
+    "slug": "dong-ho-thanh-lich-tro-lai-hoanh-trang",
+    "category": {
+      "name": "Watches & Jewelry",
+      "slug": "watches-and-jewelry"
+    },
+    "_id": "2179b3f5-9cea-4640-af12-b187f4041b92",
+    "title": "Đồng hồ thanh lịch trở lại hoành tráng",
+    "date": "2024-07-18T18:21:41.714Z",
+    "excerpt": null,
+    "coverImage": {
+      "_type": "image",
+      "asset": {
+        "_ref": "image-fb4581907af31686da9eaa143ae12573cd2c389d-680x1020-png",
+        "_type": "reference"
+      }
+    },
+    "coverVideo": null,
+    "author": {
+      "name": "Camille Pham",
+      "picture": null
+    }
+  },
+  {
+    "coverImage": {
+      "_type": "image",
+      "asset": {
+        "_type": "reference",
+        "_ref": "image-5e0f457b9fdeb591b68de1a31667e15dda249196-680x1020-png"
+      }
+    },
+    "slug": "nhung-y-tuong-tao-bao-nhat-tu-watches-and-wonders-2024",
+    "author": {
+      "name": "Tùng Linh",
+      "picture": null
+    },
+    "coverVideo": null,
+    "category": {
+      "name": "Watches & Jewelry",
+      "slug": "watches-and-jewelry"
+    },
+    "_id": "cc736b15-fe7f-45f0-bc65-8acd890ca23e",
+    "title": "Những ý tưởng táo bạo nhất từ ​​Watches & Wonders 2024",
+    "description": "Từ việc xem giờ ngược cho đến cuộc gặp gỡ đầu tiên giữa đồng hồ cao cấp, nước hoa và thời trang cao cấp, đây là những ý tưởng sáng giá và táo bạo nhất mới ra mắt trong ấn bản năm 2024 của Watches & Wonders",
+    "date": "2024-07-18T17:45:47.858Z",
+    "_updatedAt": "2024-07-18T18:19:38Z",
+    "excerpt": null
+  },
+  {
+    "excerpt": null,
+    "coverImage": {
+      "_type": "image",
+      "asset": {
+        "_ref": "image-1230cec1e01d38c0249ea69180a13e2ed4842fcc-680x1020-png",
+        "_type": "reference"
+      }
+    },
+    "coverVideo": null,
+    "_id": "a3f80c91-46f4-4e8f-aa66-5cd3360b52d6",
+    "description": "Nhà sản xuất đồng hồ Thụy Sĩ đang kết thúc loạt RM 27 hợp tác với Rafael Nadal, khép lại sự nghiệp với mẫu RM27-05 thế hệ thứ năm",
+    "date": "2024-07-18T17:39:25.598Z",
+    "author": {
+      "name": "Camille Pham",
+      "picture": null
+    },
+    "category": {
+      "name": "Watches & Jewelry",
+      "slug": "watches-and-jewelry"
+    },
+    "title": "Richard Mille đạt đến đỉnh cao cuối cùng với RM27-05 Rafael Nadal",
+    "_updatedAt": "2024-07-18T17:43:16Z",
+    "slug": "richard-mille-dat-den-dinh-cao-cuoi-cung-voi-rm27-05-rafael-nadal"
+  },
+  {
+    "category": {
+      "name": "Watches & Jewelry",
+      "slug": "watches-and-jewelry"
+    },
+    "date": "2024-07-18T17:25:40.536Z",
+    "coverVideo": null,
+    "author": {
+      "name": "Naomi ",
+      "picture": null
+    },
+    "_updatedAt": "2024-07-18T17:38:28Z",
+    "excerpt": null,
+    "coverImage": {
+      "_type": "image",
+      "asset": {
+        "_ref": "image-65fbdca4418eeb139b980941b0d6c8f955971ae7-2363x3360-png",
+        "_type": "reference"
+      }
+    },
+    "slug": "mini-marvels-royal-oak-mini-tro-lai-day-tao-bao-tai-audemars-piguet",
+    "_id": "f2d73fff-7c81-419c-b609-175569138f87",
+    "title": "Mini Marvels: Royal Oak Mini trở lại đầy táo bạo tại Audemars Piguet",
+    "description": "Audemars Piguet chào đón một loạt đồng hồ Frosted Gold Royal Oak Mini sáng bóng vào bộ sưu tập hiện đại của mình"
+  },
+  {
+    "author": {
+      "name": "Camille Pham",
+      "picture": null
+    },
+    "title": "Cartier sẽ mang lễ kỷ niệm Trinity 100 đến Singapore",
+    "date": "2024-07-18T17:18:22.892Z",
+    "_updatedAt": "2024-07-18T17:23:10Z",
+    "coverImage": {
+      "_type": "image",
+      "asset": {
+        "_ref": "image-018d5fd540ff7c8d60e65d489493441b22a9eade-680x1020-png",
+        "_type": "reference"
+      }
+    },
+    "coverVideo": null,
+    "_id": "d9440f39-7057-4f92-ab5d-1a1c82467c40",
+    "description": "Lễ kỷ niệm Trinity 100 của nhà kim hoàn Pháp sẽ diễn ra tại Singapore vào tháng 7 này, với một cửa hàng pop-up tại The Arts House",
+    "excerpt": null,
+    "slug": "cartier-se-mang-le-ky-niem-trinity-100-den-singapore",
+    "category": {
+      "name": "Watches & Jewelry",
+      "slug": "watches-and-jewelry"
+    }
+  },
+  {
+    "category": {
+      "name": "Culture",
+      "slug": "culture"
+    },
+    "_id": "38171dcc-db43-430b-b5b4-35b0a09dca7a",
+    "title": "EXCLUSIVE: Coperni sẽ trình diễn thời trang tại Disneyland Paris",
+    "excerpt": null,
+    "coverImage": {
+      "_type": "image",
+      "asset": {
+        "_ref": "image-abd7ee0737b0d521b8007d3557e181318fb0b35e-2700x3840-png",
+        "_type": "reference"
+      }
+    },
+    "author": {
+      "name": "Camille Pham",
+      "picture": null
+    },
+    "description": "Sự kiện diễn ra vào ngày 1 tháng 10 trong Tuần lễ thời trang Paris sẽ đánh dấu lần đầu tiên công viên giải trí này tổ chức một buổi trình diễn thời trang.",
+    "date": "2024-07-18T14:40:16.720Z",
+    "_updatedAt": "2024-07-18T14:48:43Z",
+    "coverVideo": null,
+    "slug": "exclusive-coperni-se-trinh-dien-thoi-trang-tai-disneyland-paris"
+  },
+  {
+    "description": "Ariana Grande đang thêm một chút lấp lánh theo nghĩa đen vào bản lý lịch đồ sộ của mình. Nữ diễn viên kiêm ca sĩ đã được chọn làm đại sứ thương hiệu mới của Swarovski. Cô sẽ ra mắt trong chiến dịch kỳ nghỉ năm 2024.",
+    "_updatedAt": "2024-07-18T14:34:26Z",
+    "excerpt": null,
+    "coverVideo": null,
+    "slug": "ariana-grande-chinh-thuc-gia-nhap-swarovski-voi-tu-cach-tan-dai-su-thuong-hieu",
+    "_id": "b47772b3-3c61-444b-afe5-06fba703c936",
+    "title": "Ariana Grande chính thức gia nhập Swarovski với tư cách tân đại sứ thương hiệu",
+    "author": {
+      "name": "Naomi ",
+      "picture": null
+    },
+    "category": {
+      "name": "Culture",
+      "slug": "culture"
+    },
+    "date": "2024-07-18T14:30:03.454Z",
+    "coverImage": {
+      "_type": "image",
+      "asset": {
+        "_ref": "image-ca52733ce84351cc6fcfe7fb5955832cd5543c7f-980x1092-png",
+        "_type": "reference"
+      }
+    }
+  },
+  {
+    "slug": "show-dien-ky-niem-90-nam-cua-giorgio-armani",
+    "title": "Show diễn kỷ niệm 90 năm của Giorgio Armani",
+    "date": "2024-07-18T14:19:15.386Z",
+    "_updatedAt": "2024-07-18T14:24:58Z",
+    "coverImage": {
+      "_type": "image",
+      "asset": {
+        "_ref": "image-e0aa51cd170b6dbc2ac299ab0788c9a73418c0ec-1350x1920-png",
+        "_type": "reference"
+      }
+    },
+    "coverVideo": null,
+    "author": {
+      "name": "Camille Pham",
+      "picture": null
+    },
+    "category": {
+      "name": "Culture",
+      "slug": "culture"
+    },
+    "_id": "0959ff2b-abfc-4590-a3e3-ca22438b9195",
+    "description": "Vào ngày 11 tháng 7, thế giới kỷ niệm 90 năm của biểu tượng người Ý, Giorgio Armani. Năm tới, nhà thiết kế thời trang này sẽ kỷ niệm 50 năm thành lập thương hiệu của mình.",
+    "excerpt": null
+  },
+  {
+    "coverImage": {
+      "asset": {
+        "_type": "reference",
+        "_ref": "image-3a7d8eb5388172a2355f190e661a94c24412bf1b-1600x900-png"
+      },
+      "_type": "image"
+    },
+    "slug": "moi-dieu-can-biet-ve-jonathan-yeo-hoa-si-ve-buc-chan-dung-vua-charles-iii",
+    "author": {
+      "name": "Naomi ",
+      "picture": null
+    },
+    "title": "Mọi điều cần biết về Jonathan Yeo, họa sĩ vẽ bức chân dung Vua Charles III",
+    "description": "Bức chân dung của Vua Charles III đã được lan truyền rộng rãi, nhưng ai là họa sĩ đứng sau bức tranh này? Hãy gặp Jonathan Yeo.",
+    "date": "2024-07-18T13:52:43.757Z",
+    "coverVideo": null,
+    "category": {
+      "name": "Culture",
+      "slug": "culture"
+    },
+    "_id": "8ed86a86-cd62-47c0-9a94-13f864be3751",
+    "_updatedAt": "2024-07-18T14:00:33Z",
+    "excerpt": null
+  },
+  {
+    "_id": "a486ff8f-289e-4b46-b219-72a3436cc885",
+    "excerpt": null,
+    "coverImage": {
+      "_type": "image",
+      "asset": {
+        "_ref": "image-d1c4c23aa54a83b3ea4d6842c13103d36e80bd67-720x900-png",
+        "_type": "reference"
+      }
+    },
+    "slug": "rose-cua-blackpink-viet-lai-nhung-tac-pham-kinh-dien-trong-chien-dich-palermo-moi-nhat-cua-puma",
+    "author": {
+      "name": "Naomi ",
+      "picture": null
+    },
+    "category": {
+      "name": "Style",
+      "slug": "style"
+    },
+    "title": "Rosé của BLACKPINK 'Viết lại những tác phẩm kinh điển' trong chiến dịch Palermo mới nhất của Puma",
+    "description": "Đại sứ toàn cầu mới được công bố của nhãn hiệu đồ thể thao này sẽ xuất hiện trong chiến dịch Palermo mới của họ, nơi thần tượng nổi tiếng này diện những đôi giày thể thao mang tính biểu tượng theo cách của cô. ",
+    "date": "2024-07-18T13:34:26.904Z",
+    "_updatedAt": "2024-07-18T13:43:39Z",
+    "coverVideo": null
+  },
+  {
+    "description": "Chuyển động giữa vẻ đẹp của cô gái nhà bên và vẻ đẹp gợi cảm trên sân khấu, ngôi sao nhà Twice chắc chắn có sức hút mãnh liệt với người hâm mộ khi nói đến vẻ đẹp quyến rũ của cô",
+    "date": "2024-07-18T06:45:26.020Z",
+    "coverImage": {
+      "_type": "image",
+      "asset": {
+        "_ref": "image-66e5fc84fc3fdc832c4b85880e6a4928f5da6788-1350x1920-png",
+        "_type": "reference"
+      }
+    },
+    "slug": "9-khoanh-khac-trang-diem-va-lam-toc-an-tuong-cua-momo-nhom-twice",
+    "author": {
+      "name": "Camille Pham",
+      "picture": null
+    },
+    "_id": "4a80e8ef-4833-4dd4-b437-facb42dd4709",
+    "_updatedAt": "2024-07-18T07:28:26Z",
+    "excerpt": null,
+    "coverVideo": null,
+    "category": {
+      "name": "Beauty",
+      "slug": "beauty"
+    },
+    "title": "9 khoảnh khắc trang điểm và làm tóc ấn tượng của Momo nhóm Twice"
+  },
+  {
+    "description": "Xin chào mái tóc khỏe mạnh và các kiểu tóc đẹp với nhiều loại dụng cụ làm đẹp của Dyson, mọi máy móc đều được tích hợp các công nghệ chăm sóc tóc tiên tiến. ",
+    "_updatedAt": "2024-07-18T15:23:40Z",
+    "author": {
+      "name": "Camille Pham",
+      "picture": null
+    },
+    "slug": "huong-dan-cua-m-ve-cach-chon-dyson-phu-hop",
+    "category": {
+      "name": "Beauty",
+      "slug": "beauty"
+    },
+    "_id": "4c92f33f-9358-451d-a0bf-f2726d41bdd2",
+    "title": "Hướng dẫn của M về cách chọn Dyson phù hợp",
+    "date": "2024-07-18T06:12:07.942Z",
+    "excerpt": null,
+    "coverImage": {
+      "_type": "image",
+      "asset": {
+        "_ref": "image-96d7cca8f97267533efa93f3d39202a9a8d60f17-2025x2880-png",
+        "_type": "reference"
+      }
+    },
+    "coverVideo": null
+  },
+  {
+    "_updatedAt": "2024-07-18T06:09:58Z",
+    "excerpt": null,
+    "slug": "hair-dyson-supersonic-nural-may-say-toc-co-the-thay-doi-muc-nhiet-de-cham-soc-suc-khoe-da-dau",
+    "title": "Hair: Dyson Supersonic Nural, máy sấy tóc có thể thay đổi mức nhiệt để chăm sóc sức khỏe da đầu của bạn",
+    "description": "Trong một cuộc phỏng vấn hiếm hoi với Sir James Dyson, hãy cùng khám phá thêm về máy sấy tóc mới nhất mang tính đột phá của nhà phát minh này",
+    "date": "2024-07-18T05:56:56.108Z",
+    "author": {
+      "name": "Camille Pham",
+      "picture": null
+    },
+    "category": {
+      "name": "Beauty",
+      "slug": "beauty"
+    },
+    "_id": "976e4761-bcb3-487b-be76-c8d12f6b60b1",
+    "coverImage": {
+      "asset": {
+        "_ref": "image-4534803efbe364658260eb9f8705548afe387fae-2025x2880-png",
+        "_type": "reference"
+      },
+      "_type": "image"
+    },
+    "coverVideo": null
+  },
+  {
+    "title": "Adidas muốn \"độc quyền\" về sọc, nhà thiết kế New York nói với tòa án London",
+    "excerpt": null,
+    "author": {
+      "name": "Camille Pham",
+      "picture": null
+    },
+    "category": {
+      "name": "Business",
+      "slug": "business"
+    },
+    "_id": "69f54995-54c4-4d8e-bc85-54c6a2f92c61",
+    "description": "Thom Browne và thương hiệu đồ thể thao Đức trong cuộc chiến logo mới đây",
+    "date": "2024-07-18T01:19:52.993Z",
+    "_updatedAt": "2024-07-18T01:30:10Z",
+    "coverImage": {
+      "asset": {
+        "_ref": "image-2f66699d99db08ff973790448c5bffa4f0e0b20a-1350x1920-png",
+        "_type": "reference"
+      },
+      "_type": "image"
+    },
+    "coverVideo": null,
+    "slug": "adidas-muon-doc-quyen-ve-soc-nha-thiet-ke-new-york-noi-voi-toa-an-london"
+  },
+  {
+    "category": {
+      "name": "Style",
+      "slug": "style"
+    },
+    "_id": "c41887fd-5466-48df-ab17-9c2d4707d078",
+    "title": "Những bộ trang phục đẹp nhất từ buổi trình diễn Louis Vuitton Cruise 2025",
+    "date": "2024-07-17T12:59:50.019Z",
+    "_updatedAt": "2024-07-18T00:49:49Z",
+    "excerpt": null,
+    "coverImage": {
+      "_type": "image",
+      "asset": {
+        "_ref": "image-7bcbf8b249060021d077f9f4dae26223c0a175f6-680x1020-gif",
+        "_type": "reference"
+      }
+    },
+    "description": "Kèm đánh giá của M về sàn diễn Louis Vuitton Cruise 2025",
+    "coverVideo": null,
+    "slug": "nhung-bo-trang-phuc-dep-nhat-tu-buoi-trinh-dien-louis-vuitton-cruise-2025",
+    "author": {
+      "name": "Naomi ",
+      "picture": null
+    }
+  },
+  {
+    "_id": "5230bad6-383b-4b5e-a338-a2bcfaf44f0e",
+    "title": "Bạn nghĩ gì khi thưởng thức sản phẩm âm nhạc mới của Jimin ",
+    "description": null,
+    "date": "2024-07-15T20:46:00.000Z",
+    "_updatedAt": "2024-07-23T20:47:49Z",
+    "excerpt": null,
+    "coverImage": {
+      "asset": {
+        "_ref": "image-70d9212a9ce275a9a1505a850810adf0c9b18c05-680x1020-jpg",
+        "_type": "reference"
+      },
+      "_type": "image"
+    },
+    "coverVideo": null,
+    "slug": "ban-nghi-gi-khi-thuong-thuc-san-pham-am-nhac-moi-cua-jimin",
+    "author": {
+      "name": "Thanh Thảo",
+      "picture": {
+        "_type": "image",
+        "asset": {
+          "_ref": "image-3a3fd4f9d0beca93afd039f32e2309aec1037152-771x1024-jpg",
+          "_type": "reference"
+        }
+      }
+    },
+    "category": {
+      "name": "Celebrity",
+      "slug": "celebrity"
+    }
+  },
+  {
+    "slug": "tai-sao-longchamp-dan-quay-lai-thi-truong-va-tro-thanh-hang-thoi-trang-yeu-thich-cua-gioi-tre",
+    "author": {
+      "name": "Thanh Thảo",
+      "picture": {
+        "_type": "image",
+        "asset": {
+          "_ref": "image-3a3fd4f9d0beca93afd039f32e2309aec1037152-771x1024-jpg",
+          "_type": "reference"
+        }
+      }
+    },
+    "category": {
+      "name": "Style",
+      "slug": "style"
+    },
+    "_id": "b1dc220d-da6b-43a8-a28b-7bb7ba7e6dd8",
+    "description": null,
+    "excerpt": null,
+    "coverImage": {
+      "_type": "image",
+      "asset": {
+        "_ref": "image-7541bcaf401d578ed6ced560ae840a54e96d185c-720x900-png",
+        "_type": "reference"
+      }
+    },
+    "title": "Tại sao Longchamp dần quay lại thị trường và trở thành hãng thời trang yêu thích của giới trẻ?",
+    "date": "2024-07-13T10:03:53.457Z",
+    "_updatedAt": "2024-07-19T04:38:08Z",
+    "coverVideo": null
+  },
+  {
+    "coverVideo": null,
+    "date": "2024-07-11T09:44:00.000Z",
+    "_updatedAt": "2024-07-22T09:46:42Z",
+    "coverImage": {
+      "_type": "image",
+      "asset": {
+        "_ref": "image-38775051054c35202a3308ccf3a7968e730e2c03-1200x1200-png",
+        "_type": "reference"
+      }
+    },
+    "excerpt": null,
+    "slug": "bi-me-hoac-boi-riviera-khu-nghi-duong-tren-bien-dia-trung-hai-hai-loai-nuoc-hoa-mua-he-phien-ban",
+    "author": {
+      "name": "Hikari",
+      "picture": null
+    },
+    "category": {
+      "name": "Beauty",
+      "slug": "beauty"
+    },
+    "_id": "590f838a-e0ef-41a0-9e14-56fb95e61568",
+    "title": "Bị mê hoặc bởi Riviera, khu nghỉ dưỡng trên biển Địa Trung Hải. Hai loại nước hoa mùa hè phiên bản giới hạn hiện đã có sẵn từ Rochas",
+    "description": "Biển xanh thẳm, cảnh quan thành phố tuyệt đẹp. Trọng tâm chính là các loại trái cây mọc ở các khu nghỉ dưỡng lịch sử ở Địa Trung Hải."
+  },
+  {
+    "title": "Chiến dịch truyền thông mới của Prada : Hội nghị bàn tròn của Prada",
+    "description": null,
+    "date": "2024-07-10T20:17:00.000Z",
+    "slug": "chien-dich-truyen-thong-moi-cua-prada-hoi-nghi-ban-tron-cua-prada",
+    "coverVideo": null,
+    "author": {
+      "name": "Thanh Thảo",
+      "picture": {
+        "_type": "image",
+        "asset": {
+          "_ref": "image-3a3fd4f9d0beca93afd039f32e2309aec1037152-771x1024-jpg",
+          "_type": "reference"
+        }
+      }
+    },
+    "category": {
+      "name": "Lifestyle",
+      "slug": "lifestyle"
+    },
+    "_id": "0714bb1a-e231-4639-b3d6-ed05571e8c79",
+    "_updatedAt": "2024-07-23T20:18:29Z",
+    "excerpt": null,
+    "coverImage": {
+      "asset": {
+        "_ref": "image-2103b79daf71b2028a79cb3dc69fad4160c83595-1920x1305-jpg",
+        "_type": "reference"
+      },
+      "_type": "image"
+    }
+  },
+  {
+    "coverVideo": null,
+    "author": {
+      "name": "Hikari",
+      "picture": null
+    },
+    "description": "Off-White™ cung cấp các lợi ích như dịch vụ khắc dành riêng cho người mua vào ngày phát hành.",
+    "date": "2024-07-10T09:24:00.000Z",
+    "coverImage": {
+      "_type": "image",
+      "asset": {
+        "_ref": "image-5bd8492ed23c9e246cb8a4d465436fde7828b83f-640x640-png",
+        "_type": "reference"
+      }
+    },
+    "excerpt": null,
+    "slug": "nam-san-pham-moi-tham-gia-dong-nuoc-hoa-off-white-tm-beauty",
+    "category": {
+      "name": "Beauty",
+      "slug": "beauty"
+    },
+    "_id": "b5c953ae-7c67-4fd6-bd97-0a971d0b630b",
+    "title": "Năm sản phẩm mới tham gia dòng nước hoa Off-White™ Beauty",
+    "_updatedAt": "2024-07-22T09:25:14Z"
+  },
+  {
+    "title": "Một sự kiện sẽ được tổ chức để bạn có thể trải nghiệm sự quyến rũ của YSL Loveshine, thỏi son của Yves Saint Laurent.",
+    "author": {
+      "name": "Hikari",
+      "picture": null
+    },
+    "slug": "mot-su-kien-se-duoc-to-chuc-de-ban-co-the-trai-nghiem-su-quyen-ru-cua-ysl-loveshine-thoi-son-cua",
+    "_id": "19145f35-c924-48fe-aadd-fa563f4ff254",
+    "description": "Trải nghiệm những món đồ trang điểm đầy màu sắc trong không gian sự kiện ăn ảnh.",
+    "date": "2024-07-09T17:47:00.000Z",
+    "_updatedAt": "2024-07-21T17:49:19Z",
+    "excerpt": null,
+    "coverImage": {
+      "asset": {
+        "_ref": "image-ffe67071a88deccea4bef566111e6d84baa0ec19-1500x844-png",
+        "_type": "reference"
+      },
+      "_type": "image"
+    },
+    "coverVideo": null,
+    "category": {
+      "name": "Beauty",
+      "slug": "beauty"
+    }
+  },
+  {
+    "excerpt": null,
+    "slug": "anh-huong-cua-chu-nghia-nhat-ban-doi-voi-do-trang-suc",
+    "author": {
+      "name": "Camille Pham",
+      "picture": null
+    },
+    "category": {
+      "name": "Watches & Jewelry",
+      "slug": "watches-and-jewelry"
+    },
+    "date": "2024-07-08T19:48:56.880Z",
+    "_updatedAt": "2024-07-09T16:10:35Z",
+    "description": "Kể từ khi tác phẩm nghệ thuật trang trí thời kỳ Edo được trưng bày ở châu Âu cách đây hơn 150 năm, Nhật Bản đã ảnh hưởng đến các thợ kim hoàn ở phương Tây.",
+    "coverImage": {
+      "asset": {
+        "_ref": "image-27329becd63e10ed6b7bfe143ac2ab0d5f720cdd-1440x810-png",
+        "_type": "reference"
+      },
+      "_type": "image"
+    },
+    "coverVideo": null,
+    "_id": "831113e0-2632-4b3c-9b7a-425d42ce63aa",
+    "title": "Ảnh hưởng của chủ nghĩa Nhật Bản đối với đồ trang sức"
+  },
+  {
+    "description": "Thương hiệu này đang khai thác nhu cầu cao đối với đồng hồ từ thời đó bằng những thiết kế mới tôn vinh chúng",
+    "_updatedAt": "2024-07-08T19:47:39Z",
+    "coverVideo": null,
+    "slug": "piaget-thinh-vuong-khi-nguoi-mua-cam-nhan-duoc-suc-hut-cua-su-hao-nhoang-nhung-nam-1970",
+    "category": {
+      "name": "Watches & Jewelry",
+      "slug": "watches-and-jewelry"
+    },
+    "title": "Piaget thịnh vượng khi người mua cảm nhận được sức hút của sự hào nhoáng những năm 1970",
+    "date": "2024-07-08T19:27:48.220Z",
+    "excerpt": null,
+    "coverImage": {
+      "_type": "image",
+      "asset": {
+        "_ref": "image-dd20693fd40efbccf0211d08d659acb8614b1a03-700x803-png",
+        "_type": "reference"
+      }
+    },
+    "author": {
+      "name": "Camille Pham",
+      "picture": null
+    },
+    "_id": "3299bbd0-1d00-47c1-a7a2-fd850577be8f"
+  },
+  {
+    "_id": "b105d387-0f77-4046-8890-43d7c191eadb",
+    "description": " \tPlease use the sharing tools found via the share button at the top or side of articles. Copying articles to share with others is a breach of FT.com T&Cs and Copyright Policy. Email licensing@ft.com to buy additional rights. Subscribers may share up to 10 or 20 articles per month using the gift article service. More information can be found at https://www.ft.com/tour. \thttps://www.ft.com/content/8f8f5f15-0e59-419d-93de-def3fc423763  \tTổng giám đốc điều hành Benjamin Comar của công ty thuộc sở hữu của Richemont cho biết đồ trang sức đã giúp khôi phục lại hoạt động kinh doanh đồng hồ của công ty",
+    "excerpt": null,
+    "author": {
+      "name": "Camille Pham",
+      "picture": null
+    },
+    "category": {
+      "name": "Watches & Jewelry",
+      "slug": "watches-and-jewelry"
+    },
+    "title": "Tổng giám đốc điều hành Piaget: ''Bạn phải làm những gì đúng với DNA của mình''",
+    "date": "2024-07-08T17:43:45.360Z",
+    "_updatedAt": "2024-07-08T17:59:39Z",
+    "coverImage": {
+      "_type": "image",
+      "asset": {
+        "_ref": "image-0e8b930a742e90c7518dae2b67ec16a7c6c6dfc5-1067x1600-png",
+        "_type": "reference"
+      }
+    },
+    "coverVideo": null,
+    "slug": "tong-giam-doc-dieu-hanh-piaget-ban-phai-lam-nhung-gi-dung-voi-dna-cua-minh"
+  },
+  {
+    "description": " \tPlease use the sharing tools found via the share button at the top or side of articles. Copying articles to share with others is a breach of FT.com T&Cs and Copyright Policy. Email licensing@ft.com to buy additional rights. Subscribers may share up to 10 or 20 articles per month using the gift article service. More information can be found at https://www.ft.com/tour. \thttps://www.ft.com/content/87063028-9130-48f3-972b-7946849f84cc  \tHai anh em đồng chủ tịch Caroline và Karl-Friedrich Scheufele chia sẻ về cách thức mà việc gia đình điều hành giúp thương hiệu này đứng vững giữa các đối thủ do tập đoàn sở hữu",
+    "date": "2024-07-08T17:27:50.938Z",
+    "_updatedAt": "2024-07-08T17:43:05Z",
+    "slug": "gia-dinh-dang-sau-chopard",
+    "category": {
+      "name": "Watches & Jewelry",
+      "slug": "watches-and-jewelry"
+    },
+    "_id": "f2ae70aa-6576-4239-b0a9-2c588c089b79",
+    "title": "Gia đình đằng sau Chopard",
+    "excerpt": null,
+    "coverImage": {
+      "_type": "image",
+      "asset": {
+        "_ref": "image-1f600d1375b4e65ce02b8dfbd37f8dbf417d7410-1067x1601-png",
+        "_type": "reference"
+      }
+    },
+    "coverVideo": null,
+    "author": {
+      "name": "Camille Pham",
+      "picture": null
+    }
+  },
+  {
+    "description": null,
+    "coverVideo": null,
+    "slug": "su-quyen-ru-cua-chiec-vong-tay-han-ma-ban-khong-the-thao-ra",
+    "category": {
+      "name": "Watches & Jewelry",
+      "slug": "watches-and-jewelry"
+    },
+    "title": "Sự quyến rũ của chiếc vòng tay 'hàn' mà bạn không thể tháo ra",
+    "date": "2024-07-08T17:20:42.626Z",
+    "_updatedAt": "2024-07-08T17:27:23Z",
+    "excerpt": null,
+    "coverImage": {
+      "_type": "image",
+      "asset": {
+        "_type": "reference",
+        "_ref": "image-f733bdda661327d60c1585c637bf16121d8df936-1440x480-png"
+      }
+    },
+    "author": {
+      "name": "Naomi ",
+      "picture": null
+    },
+    "_id": "a4052bc6-06c1-4fd8-bd7a-86c6006025e7"
+  },
+  {
+    "_id": "95908bf2-408d-47ed-9360-fe3db38f8089",
+    "title": "Tạo nên sự lấp lánh 'mỗi ngày' tại Bulgari",
+    "date": "2024-07-08T14:56:56.140Z",
+    "excerpt": null,
+    "coverImage": {
+      "_type": "image",
+      "asset": {
+        "_ref": "image-43755c89a49922c3cd1d857f4b3430935294ab96-680x1020-png",
+        "_type": "reference"
+      }
+    },
+    "category": {
+      "name": "Business",
+      "slug": "business"
+    },
+    "description": "Mary Katrantzou: 'Một chiếc túi có thể được coi là một món đồ trang sức",
+    "_updatedAt": "2024-07-19T07:43:08Z",
+    "coverVideo": null,
+    "slug": "tao-nen-su-lap-lanh-moi-ngay-tai-bulgari",
+    "author": {
+      "name": "Camille Pham",
+      "picture": null
+    }
+  },
+  {
+    "title": "Xu hướng trang sức hiện nay là gì",
+    "_updatedAt": "2024-07-08T13:43:27Z",
+    "excerpt": null,
+    "coverVideo": null,
+    "slug": "xu-huong-trang-suc-hien-nay-la-gi",
+    "author": {
+      "name": "Naomi ",
+      "picture": null
+    },
+    "category": {
+      "name": "Watches & Jewelry",
+      "slug": "watches-and-jewelry"
+    },
+    "_id": "33a05618-7e64-4b08-8018-9e2cc0dbda17",
+    "description": " Mùa hè này, hãy chuẩn bị tạo nên sự khác biệt với những món đồ trang sức có kích thước lớn, màu sắc nổi bật hoặc có đường viền thô.",
+    "date": "2024-07-08T13:07:05.410Z",
+    "coverImage": {
+      "_type": "image",
+      "asset": {
+        "_ref": "image-9cb9d5f75ba1e0cd7cf157e9fb8a6016ea43c3c4-1440x809-png",
+        "_type": "reference"
+      }
+    }
+  },
+  {
+    "excerpt": null,
+    "coverImage": {
+      "asset": {
+        "_ref": "image-e5e2e2eedd6e0e88dbb656fc485eb76072552fa6-1920x1280-png",
+        "_type": "reference"
+      },
+      "_type": "image"
+    },
+    "slug": "nguoi-tho-kim-hoan-xa-xi-voi-cuoc-song-xa-hoa-bi-mat",
+    "category": {
+      "name": "Watches & Jewelry",
+      "slug": "watches-and-jewelry"
+    },
+    "description": "Nhà thiết kế Sonia Petroff đã có một cuộc sống tuyệt vời, giao lưu với các diễn viên Hollywood và tạo ra đồ trang sức cho Valentino và Balmain. Gia đình cô không hề biết",
+    "date": "2024-07-08T12:29:27.087Z",
+    "_updatedAt": "2024-07-08T12:53:19Z",
+    "coverVideo": null,
+    "author": {
+      "name": "Naomi ",
+      "picture": null
+    },
+    "_id": "83463692-d671-4b45-b989-13047e932116",
+    "title": "Người thợ kim hoàn xa xỉ với cuộc sống xa hoa bí mật"
+  },
+  {
+    "_id": "442279cd-219a-4e58-b588-e276baea5a40",
+    "title": "KNOW WHY: Tại sao thợ làm đồng hồ lại bị ám ảnh bởi chu kỳ mặt trăng",
+    "description": null,
+    "coverImage": {
+      "_type": "image",
+      "asset": {
+        "_ref": "image-49074c52f424785c4a414095664832596a9958e6-1440x810-png",
+        "_type": "reference"
+      }
+    },
+    "coverVideo": null,
+    "author": {
+      "name": "Tùng Linh",
+      "picture": null
+    },
+    "category": {
+      "name": "Watches & Jewelry",
+      "slug": "watches-and-jewelry"
+    },
+    "date": "2024-07-08T11:54:17.612Z",
+    "_updatedAt": "2024-07-13T08:47:39Z",
+    "excerpt": null,
+    "slug": "tai-sao-tho-lam-dong-ho-lai-bi-am-anh-boi-chu-ky-mat-trang"
+  },
+  {
+    "author": {
+      "name": "Camille Pham",
+      "picture": null
+    },
+    "date": "2024-07-08T10:42:45.424Z",
+    "coverImage": {
+      "asset": {
+        "_ref": "image-ead7a71011767307018555eff32009a6ffcbfeac-1920x1280-png",
+        "_type": "reference"
+      },
+      "_type": "image"
+    },
+    "coverVideo": null,
+    "slug": "cac-thuong-hieu-xa-xi-thu-hut-cac-khach-hang-giau-co-tai-cac-cua-khu-nghi-duong-cao-cap",
+    "excerpt": null,
+    "category": {
+      "name": "Voyage & Gourmet",
+      "slug": "voyage-and-gourmet"
+    },
+    "_id": "d264c981-b0fb-42fd-901a-4f869786e65b",
+    "title": "Các thương hiệu xa xỉ thu hút các khách hàng giàu có tại các cửa khu nghỉ dưỡng cao cấp",
+    "description": " Các cửa hàng pop-up theo mùa tìm cách thu hút những khách hàng giàu có đang trong tâm trạng thoải mái và thậm chí thu hút thêm những khách hàng mới",
+    "_updatedAt": "2024-07-08T11:00:27Z"
+  },
+  {
+    "slug": "su-pha-tron-bach-kim-se-toa-sang-trong-the-gioi-do-trang-suc",
+    "excerpt": null,
+    "title": "Sự pha trộn bạch kim sẽ tỏa sáng trong thế giới đồ trang sức",
+    "description": "Một hợp kim cải tiến được phát triển tại Anh có những đặc tính giúp kim loại dễ gia công và rẻ hơn",
+    "date": "2024-07-08T10:35:25.821Z",
+    "_updatedAt": "2024-07-08T10:41:51Z",
+    "coverImage": {
+      "_type": "image",
+      "asset": {
+        "_ref": "image-6957b708de3cd66345959c262ffe7d608a8e9be0-1200x800-png",
+        "_type": "reference"
+      }
+    },
+    "coverVideo": null,
+    "author": {
+      "name": "Tùng Linh",
+      "picture": null
+    },
+    "_id": "f7cc1d28-99a3-458c-9a2e-09a2c64a190b",
+    "category": {
+      "name": "Watches & Jewelry",
+      "slug": "watches-and-jewelry"
+    }
+  },
+  {
+    "_updatedAt": "2024-07-08T10:34:53Z",
+    "coverImage": {
+      "_type": "image",
+      "asset": {
+        "_type": "reference",
+        "_ref": "image-7cc3103ca174e778ff983c0fcba520dcff32e41f-1920x1280-png"
+      }
+    },
+    "slug": "chanel-va-hermes-thoi-bung-tri-tuong-tuong-voi-nhung-chiec-dong-ho-lay-cam-hung-tu-thoi-trang",
+    "author": {
+      "name": "Naomi ",
+      "picture": null
+    },
+    "category": {
+      "name": "Watches & Jewelry",
+      "slug": "watches-and-jewelry"
+    },
+    "_id": "d022e1d2-b87f-402d-9717-efde93f07435",
+    "date": "2024-07-08T10:25:22.383Z",
+    "excerpt": null,
+    "coverVideo": null,
+    "title": "Chanel và Hermès thổi bùng trí tưởng tượng với những chiếc đồng hồ lấy cảm hứng từ thời trang",
+    "description": "Hai ngôi nhà này đã được ca ngợi vì sự sáng tạo trong lĩnh vực chế tạo đồng hồ của họ trong một thị trường mà nhiều nhà phê bình cho rằng đang thiếu điều đó."
+  },
+  {
+    "slug": "know-how-lam-the-nao-ma-phan-khuc-tam-trung-lai-tro-thanh-nam-cham-thu-hut-cac-nha-kim-hoan",
+    "_id": "e185cb17-7a45-43d5-8b0d-e91eff418b29",
+    "title": "KNOW HOW: Làm thế nào mà phân khúc tầm trung lại trở thành nam châm thu hút các nhà kim hoàn",
+    "description": "Các sản phẩm có giá cả phải chăng thể hiện giá trị thiết kế của những sản phẩm cao cấp là phân khúc phát triển nhanh và sinh lợi",
+    "date": "2024-07-08T10:08:31.978Z",
+    "_updatedAt": "2024-07-08T10:19:37Z",
+    "excerpt": null,
+    "coverVideo": null,
+    "author": {
+      "name": "Tùng Linh",
+      "picture": null
+    },
+    "category": {
+      "name": "Business",
+      "slug": "business"
+    },
+    "coverImage": {
+      "asset": {
+        "_type": "reference",
+        "_ref": "image-33f91041624313ffc8b416217b68632f605984b9-1440x480-png"
+      },
+      "_type": "image"
+    }
+  },
+  {
+    "title": "Liệu việc trở thành một CEO có nhiều rắc rối hơn lợi ích của nó không?",
+    "description": "Nghiên cứu mới chỉ ra những rủi ro khi một cá nhân đảm nhiệm nhiều hơn một vai trò điều hành cấp cao",
+    "coverImage": {
+      "_type": "image",
+      "asset": {
+        "_ref": "image-75cbe6977b6d1d614ddaa39293c0355b8ff5aa90-564x705-png",
+        "_type": "reference"
+      }
+    },
+    "coverVideo": null,
+    "_id": "cdcee5cb-a4f7-4361-bee0-5b48897b2842",
+    "_updatedAt": "2024-07-14T08:48:40Z",
+    "excerpt": null,
+    "slug": "lieu-viec-tro-thanh-mot-ceo-co-nhieu-rac-roi-hon-loi-ich-cua-no-khong",
+    "author": {
+      "name": "Naomi ",
+      "picture": null
+    },
+    "category": {
+      "name": "Business",
+      "slug": "business"
+    },
+    "date": "2024-07-08T09:08:35.554Z"
+  },
+  {
+    "category": {
+      "name": "M for Career",
+      "slug": "m-for-career"
+    },
+    "title": "Hiểu rõ về Gen Z: các nhà tuyển dụng tìm kiếm câu trả lời về việc quản lý những người lao động trẻ tuổi",
+    "description": "Các cố vấn từ những người có ảnh hưởng trên mạng xã hội đến các nhà tư vấn lớn đưa ra hướng dẫn về cách tuyển dụng và giữ chân những người ngoài 20 tuổi",
+    "_updatedAt": "2024-07-18T15:32:27Z",
+    "coverImage": {
+      "_type": "image",
+      "asset": {
+        "_type": "reference",
+        "_ref": "image-8abca073c45c4ce8fc4551204113af41dc526db4-2531x3600-png"
+      }
+    },
+    "coverVideo": null,
+    "_id": "1ec11ba7-0aa1-4b9b-bccb-90d6d9a85f83",
+    "date": "2024-07-08T08:43:47.834Z",
+    "excerpt": null,
+    "slug": "hieu-ro-ve-gen-z-cac-nha-tuyen-dung-tim-kiem-cau-tra-loi-ve-viec-quan-ly-nhung-nguoi-lao-dong",
+    "author": {
+      "name": "Camille Pham",
+      "picture": null
+    }
+  },
+  {
+    "title": "Bản cải tiến của LinkedIn thiếu đi một thứ: sự hài hước",
+    "coverImage": {
+      "_type": "image",
+      "asset": {
+        "_ref": "image-895ec35a4d522aa3de1003d09d567af8d6f834d9-736x1104-png",
+        "_type": "reference"
+      }
+    },
+    "slug": "ban-cai-tien-cua-linkedin-thieu-di-mot-thu-su-hai-huoc",
+    "category": {
+      "name": "M for Career",
+      "slug": "m-for-career"
+    },
+    "_id": "0ed0e64d-56fd-4225-86c4-e5c35fbb0a1b",
+    "description": null,
+    "date": "2024-07-08T08:30:00.560Z",
+    "_updatedAt": "2024-07-18T15:33:56Z",
+    "excerpt": null,
+    "coverVideo": null,
+    "author": {
+      "name": "Naomi ",
+      "picture": null
+    }
+  },
+  {
+    "_updatedAt": "2024-07-08T08:22:51Z",
+    "coverImage": {
+      "_type": "image",
+      "asset": {
+        "_ref": "image-e311d52e1a2ac08b99aaf8b4ce2c753f3d13ab38-700x394-png",
+        "_type": "reference"
+      }
+    },
+    "coverVideo": null,
+    "slug": "lieu-cac-nha-tuyen-dung-co-nen-giam-sat-nhieu-hon-nhung-cu-nhap-chuot-cua-cac-nhan-vien-lam-viec",
+    "author": {
+      "name": "Camille Pham",
+      "picture": null
+    },
+    "category": {
+      "name": "M for Career",
+      "slug": "m-for-career"
+    },
+    "_id": "a6b96745-2888-4517-bca4-5474a778e634",
+    "title": "Liệu các nhà tuyển dụng có nên giám sát nhiều hơn những cú nhấp chuột của các nhân viên làm việc từ xa không?",
+    "description": null,
+    "date": "2024-07-08T08:12:34.609Z",
+    "excerpt": null
+  },
+  {
+    "description": null,
+    "date": "2024-07-08T08:03:15.595Z",
+    "_updatedAt": "2024-07-18T15:34:52Z",
+    "coverImage": {
+      "_type": "image",
+      "asset": {
+        "_ref": "image-07c4d2c8c9d09afca5c234a290e6947c73b58782-563x704-png",
+        "_type": "reference"
+      }
+    },
+    "slug": "tai-sao-viec-ha-thap-xuat-than-dac-quyen-co-the-la-mot-buoc-di-khon-ngoan-trong-su-nghiep",
+    "category": {
+      "name": "M for Career",
+      "slug": "m-for-career"
+    },
+    "_id": "266f5976-ef73-4194-9d17-e32d7ca6f407",
+    "title": "Tại sao việc hạ thấp xuất thân đặc quyền có thể là một bước đi khôn ngoan trong sự nghiệp ?",
+    "excerpt": null,
+    "coverVideo": null,
+    "author": {
+      "name": "Camille Pham",
+      "picture": null
+    }
+  },
+  {
+    "_id": "7d0d9a5d-d5d4-4809-bc43-66fe535c824f",
+    "title": "\"Chúng tôi giống như những bánh răng nghiến cho đến khi chúng hỏng\": Các công ty công nghệ Trung Quốc đẩy nhân viên đến giới hạn",
+    "description": null,
+    "slug": "chung-toi-giong-nhu-nhung-banh-rang-nghien-cho-den-khi-chung-hong-cac-cong-ty-cong-nghe-trung",
+    "category": {
+      "name": "Technology",
+      "slug": "technology"
+    },
+    "date": "2024-07-08T07:45:18.385Z",
+    "_updatedAt": "2024-07-08T08:04:00Z",
+    "excerpt": null,
+    "coverImage": {
+      "_type": "image",
+      "asset": {
+        "_ref": "image-33d4652255ded009e5ff02839c472164506e2192-1440x810-png",
+        "_type": "reference"
+      }
+    },
+    "coverVideo": null,
+    "author": {
+      "name": "Camille Pham",
+      "picture": null
+    }
+  },
+  {
+    "author": {
+      "name": "Camille Pham",
+      "picture": null
+    },
+    "category": {
+      "name": "Lifestyle",
+      "slug": "lifestyle"
+    },
+    "date": "2024-07-06T09:51:44.262Z",
+    "excerpt": null,
+    "coverImage": {
+      "_type": "image",
+      "asset": {
+        "_ref": "image-91974ef35bf3a3b72ae0317b75b5f97369568873-700x393-png",
+        "_type": "reference"
+      }
+    },
+    "coverVideo": null,
+    "slug": "singapore-dang-co-gang-thoat-khoi-khuon-mau-nhung-nguoi-giau-co-chau-a",
+    "_id": "eb007fb7-c5d8-4f52-92d0-779310287277",
+    "title": "Singapore đang cố gắng thoát khỏi khuôn mẫu \"Những người giàu có châu Á\"",
+    "description": null,
+    "_updatedAt": "2024-07-08T03:49:31Z"
+  },
+  {
+    "description": "Sức mạnh tiếp thị từ nhân viên - cơ hội tạo dựng hình ảnh chân thực về công ty và các thách thức",
+    "date": "2024-07-06T08:19:44.666Z",
+    "coverVideo": null,
+    "author": {
+      "name": "Camille Pham",
+      "picture": null
+    },
+    "_id": "749bb664-d1b6-4df4-baf5-cdcad0c56a56",
+    "title": "Sức mạnh tiếp thị từ nhân viên - cơ hội tạo dựng hình ảnh chân thực về công ty và các thách thức",
+    "coverImage": {
+      "_type": "image",
+      "asset": {
+        "_ref": "image-d22bdaa8c44300e2bb67ebbe7dda54e1283a41c6-736x920-png",
+        "_type": "reference"
+      }
+    },
+    "slug": "suc-manh-tiep-thi-tu-nhan-vien-co-hoi-tao-dung-hinh-anh-chan-thuc-ve-cong-ty-va-cac-thach-thuc",
+    "category": {
+      "name": "M for Career",
+      "slug": "m-for-career"
+    },
+    "_updatedAt": "2024-07-18T15:36:06Z",
+    "excerpt": null
+  },
+  {
+    "author": {
+      "name": "Camille Pham",
+      "picture": null
+    },
+    "_id": "f4de4548-5fbb-4f0e-af45-2cc3605dc2d0",
+    "description": "Trong số hơn 200 món đồ cá nhân của Vivienne Westwood được bán đấu giá tại Christie's , chiếc váy taffeta bằng lụa từ bộ sưu tập thu đông 1998-99 đặc biệt được ưa chuộng. Sự hấp dẫn của tác phẩm đầu tiên được bán với giá xấp xỉ 42 ngàn đô la Mỹ là gì?",
+    "date": "2024-07-06T07:06:00.000Z",
+    "_updatedAt": "2024-07-21T07:15:57Z",
+    "coverImage": {
+      "_type": "image",
+      "asset": {
+        "_ref": "image-14d78bf45d6b979d52e8f9213cd56b0a15775c01-1261x1920-png",
+        "_type": "reference"
+      }
+    },
+    "coverVideo": null,
+    "slug": "chiec-vay-vivienne-westwood-duoc-ban-voi-gia-hon-42-ngan-do-la-my-can-canh-ve-dep-quyen-ru-cua",
+    "title": "Chiếc váy Vivienne Westwood được bán với giá hơn 42 ngàn đô la Mỹ. Cận cảnh vẻ đẹp quyến rũ của một tác phẩm độc đáo lấy cảm hứng từ thế kỷ 18",
+    "excerpt": null,
+    "category": {
+      "name": "Culture",
+      "slug": "culture"
+    }
+  },
+  {
+    "_id": "4b626e70-b85a-4702-a014-34bcbbb68ea1",
+    "title": "WEDDING: Đám cưới phát triển như thế nào khi thế hệ Z bước vào kỷ nguyên hôn nhân của họ",
+    "description": null,
+    "date": "2024-07-05T18:24:43.014Z",
+    "excerpt": null,
+    "category": {
+      "name": "Lifestyle",
+      "slug": "lifestyle"
+    },
+    "_updatedAt": "2024-07-06T06:48:29Z",
+    "coverImage": {
+      "_type": "image",
+      "asset": {
+        "_type": "reference",
+        "_ref": "image-c917700e0516a90f3ca4f26056de18e331d145a8-1500x785-png"
+      }
+    },
+    "coverVideo": null,
+    "slug": "dam-cuoi-phat-trien-nhu-the-nao-khi-the-he-z-buoc-vao-ky-nguyen-hon-nhan-cua-ho",
+    "author": {
+      "name": "Camille Pham",
+      "picture": null
+    }
+  },
+  {
+    "description": null,
+    "date": "2024-07-05T18:04:36.744Z",
+    "coverImage": {
+      "_type": "image",
+      "asset": {
+        "_ref": "image-d8e73dd00641e4eb519ac8c763d16009121061bc-564x752-png",
+        "_type": "reference"
+      }
+    },
+    "coverVideo": null,
+    "slug": "know-how-nhung-ky-nang-duoc-yeu-cau-nhieu-nhat-va-it-nhat-trong-thoi-trang",
+    "_id": "ff1a1151-ce71-4fe2-8e94-ea255af1d6d4",
+    "title": "KNOW HOW:  Những kỹ năng được yêu cầu nhiều nhất (và ít nhất) trong ngành thời trang",
+    "author": {
+      "name": "Tùng Linh",
+      "picture": null
+    },
+    "category": {
+      "name": "M for Career",
+      "slug": "m-for-career"
+    },
+    "_updatedAt": "2024-07-18T15:37:44Z",
+    "excerpt": null
+  },
+  {
+    "_id": "aea336cc-8860-488d-9d26-8726ef71d9b3",
+    "title": "Tư duy học hỏi: Điểm sáng nổi bật trong thị trường tuyển dụng",
+    "date": "2024-07-05T17:58:03.439Z",
+    "coverImage": {
+      "_type": "image",
+      "asset": {
+        "_ref": "image-5203fae1ad3a9a8dba470eafbc927f0fbcb8d02b-564x693-png",
+        "_type": "reference"
+      }
+    },
+    "author": {
+      "name": "Tùng Linh",
+      "picture": null
+    },
+    "description": null,
+    "_updatedAt": "2024-07-18T15:49:53Z",
+    "excerpt": null,
+    "coverVideo": null,
+    "slug": "tu-duy-hoc-hoi-diem-sang-noi-bat-trong-thi-truong-tuyen-dung",
+    "category": {
+      "name": "M for Career",
+      "slug": "m-for-career"
+    }
+  },
+  {
+    "excerpt": null,
+    "coverImage": {
+      "_type": "image",
+      "asset": {
+        "_ref": "image-acc2ebad7b9178eb1846cee1244952b603715a3e-964x718-png",
+        "_type": "reference"
+      }
+    },
+    "coverVideo": null,
+    "author": {
+      "name": "Tùng Linh",
+      "picture": null
+    },
+    "category": {
+      "name": "M for Career",
+      "slug": "m-for-career"
+    },
+    "description": null,
+    "date": "2024-07-05T17:52:45.822Z",
+    "_updatedAt": "2024-07-05T17:57:30Z",
+    "slug": "lanh-dao-tu-trai-tim-thach-thuc-va-chien-luoc",
+    "_id": "53683c98-61e1-4b96-8df8-391a6c99e612",
+    "title": "Lãnh đạo từ trái tim: Thách thức và Chiến lược"
+  },
+  {
+    "_id": "d1c1e8ec-2c8e-4d9a-996b-f906adf33b93",
+    "date": "2024-07-05T16:06:23.737Z",
+    "author": {
+      "name": "Tanya Ngo",
+      "picture": {
+        "_type": "image",
+        "asset": {
+          "_ref": "image-dfa9f3057eb20ddbd5483cabaf013151d3ca0c19-1920x2560-jpg",
+          "_type": "reference"
+        }
+      }
+    },
+    "category": {
+      "name": "M for Career",
+      "slug": "m-for-career"
+    },
+    "title": "KNOW HOW: Cách nói ”Tôi không có thời gian cho việc này” một cách chuyên nghiệp tại nơi làm việc",
+    "description": null,
+    "_updatedAt": "2024-07-05T16:08:43Z",
+    "excerpt": null,
+    "coverImage": {
+      "_type": "image",
+      "asset": {
+        "_ref": "image-2c8ed8cb4e61139d80d72003b5e408a18c1562fb-1170x665-png",
+        "_type": "reference"
+      }
+    },
+    "coverVideo": null,
+    "slug": "know-how-cach-noi-toi-khong-co-thoi-gian-cho-viec-nay-mot-cach-chuyen-nghiep-tai-noi-lam-viec"
+  },
+  {
+    "category": {
+      "name": "M for Career",
+      "slug": "m-for-career"
+    },
+    "description": null,
+    "_updatedAt": "2024-07-05T16:05:02Z",
+    "slug": "know-how-bien-dam-me-thanh-con-duong-su-nghiep",
+    "author": {
+      "name": "Tanya Ngo",
+      "picture": {
+        "_type": "image",
+        "asset": {
+          "_ref": "image-dfa9f3057eb20ddbd5483cabaf013151d3ca0c19-1920x2560-jpg",
+          "_type": "reference"
+        }
+      }
+    },
+    "coverImage": {
+      "_type": "image",
+      "asset": {
+        "_ref": "image-931b6b7c622108323be5d91c000cf1697634a215-969x544-png",
+        "_type": "reference"
+      }
+    },
+    "coverVideo": null,
+    "_id": "cf5f62a9-40f2-4545-a9e0-12a6c4c4dfaf",
+    "title": "KNOW HOW: Biến đam mê thành con đường sự nghiệp",
+    "date": "2024-07-05T16:01:29.415Z",
+    "excerpt": null
+  },
+  {
+    "coverVideo": null,
+    "_id": "d25a486f-0fb6-45d1-8a6f-f0a0b2936526",
+    "description": null,
+    "date": "2024-07-05T15:49:41.732Z",
+    "_updatedAt": "2024-07-05T16:00:42Z",
+    "excerpt": null,
+    "title": "EXPLAIN: Kiệt sức vì công việc, thoát khỏi vòng xoáy và tìm kiếm sự cân bằng",
+    "coverImage": {
+      "_type": "image",
+      "asset": {
+        "_ref": "image-07f89bea7d73df41103be9abe987fe0203742ebf-966x646-png",
+        "_type": "reference"
+      }
+    },
+    "slug": "explain-kiet-suc-vi-cong-viec-thoat-khoi-vong-xoay-va-tim-kiem-su-can-bang",
+    "author": {
+      "name": "Tanya Ngo",
+      "picture": {
+        "_type": "image",
+        "asset": {
+          "_ref": "image-dfa9f3057eb20ddbd5483cabaf013151d3ca0c19-1920x2560-jpg",
+          "_type": "reference"
+        }
+      }
+    },
+    "category": {
+      "name": "M for Career",
+      "slug": "m-for-career"
+    }
+  },
+  {
+    "_updatedAt": "2024-07-05T15:48:05Z",
+    "coverImage": {
+      "_type": "image",
+      "asset": {
+        "_ref": "image-0dbf40099ca94974e66c47d8323424375a356012-474x844-png",
+        "_type": "reference"
+      }
+    },
+    "coverVideo": null,
+    "slug": "gen-z-phan-ung-tich-cuc-voi-cac-noi-dung-cua-the-he-baby-boomers-cac-thuong-hieu-da-nhan-ra-dieu",
+    "author": {
+      "name": "Tanya Ngo",
+      "picture": {
+        "_type": "image",
+        "asset": {
+          "_ref": "image-dfa9f3057eb20ddbd5483cabaf013151d3ca0c19-1920x2560-jpg",
+          "_type": "reference"
+        }
+      }
+    },
+    "category": {
+      "name": "Business",
+      "slug": "business"
+    },
+    "title": "Gen Z phản ứng tích cực với các nội dung của thế hệ baby boomers - các thương hiệu đã nhận ra điều gì?",
+    "date": "2024-07-05T15:35:47.471Z",
+    "excerpt": null,
+    "_id": "eaee8747-c138-42fe-9533-ca2569490d13",
+    "description": null
+  },
+  {
+    "title": "Những chiếc túi đắt nhất thế giới vẫn tiếp tục tăng giá - rủi ro hay xu hướng?",
+    "description": null,
+    "_updatedAt": "2024-07-05T11:49:37Z",
+    "slug": "nhung-chiec-tui-dat-nhat-the-gioi-van-tiep-tuc-tang-gia-rui-ro-hay-xu-huong",
+    "_id": "788129c3-007c-4b8d-a271-28eaa15e0857",
+    "excerpt": null,
+    "coverImage": {
+      "asset": {
+        "_ref": "image-bb149b4529b4065340903f8b34d12357377c76f4-720x900-png",
+        "_type": "reference"
+      },
+      "_type": "image"
+    },
+    "coverVideo": null,
+    "author": {
+      "name": "Tanya Ngo",
+      "picture": {
+        "_type": "image",
+        "asset": {
+          "_ref": "image-dfa9f3057eb20ddbd5483cabaf013151d3ca0c19-1920x2560-jpg",
+          "_type": "reference"
+        }
+      }
+    },
+    "category": {
+      "name": "Business",
+      "slug": "business"
+    },
+    "date": "2024-07-05T09:43:40.358Z"
+  },
+  {
+    "_updatedAt": "2024-07-05T18:23:46Z",
+    "excerpt": null,
+    "coverImage": {
+      "_type": "image",
+      "asset": {
+        "_ref": "image-f6a3873a482d59d469bbe6b3b56b2579e2d00ab7-1163x644-png",
+        "_type": "reference"
+      }
+    },
+    "coverVideo": null,
+    "category": {
+      "name": "M for Career",
+      "slug": "m-for-career"
+    },
+    "_id": "5ada3eba-c5b5-4701-8af5-f88e9995f238",
+    "date": "2024-07-04T18:13:00.000Z",
+    "slug": "loi-khuyen-tu-cac-ceo-thoi-trang-ve-viec-dan-dau-trong-thoi-ky-suy-thoai",
+    "author": {
+      "name": "Camille Pham",
+      "picture": null
+    },
+    "title": "Lời khuyên từ các CEO thời trang về việc dẫn đầu trong thời kỳ suy thoái",
+    "description": null
+  },
+  {
+    "_id": "75450afe-1224-43b4-8840-2fe83fbb7a7f",
+    "title": "WELLNESS: Chào mừng bạn đến với thế giới của \"Sexy Water\"",
+    "description": null,
+    "date": "2024-07-04T06:33:07.025Z",
+    "excerpt": null,
+    "coverVideo": null,
+    "author": {
+      "name": "Hikari",
+      "picture": null
+    },
+    "category": {
+      "name": "Beauty",
+      "slug": "beauty"
+    },
+    "_updatedAt": "2024-07-18T16:15:36Z",
+    "coverImage": {
+      "_type": "image",
+      "asset": {
+        "_ref": "image-a4953b0887f55907b6b776f03166535173c8960a-625x830-png",
+        "_type": "reference"
+      }
+    },
+    "slug": "wellness-chao-mung-ban-den-voi-the-gioi-cua-sexy-water"
+  },
+  {
+    "_id": "4f9318da-21a1-42c9-a415-a3e77dd91af8",
+    "title": "WELLNESS: Sự thật về việc cho bơ vào cà phê",
+    "date": "2024-07-04T06:08:44.954Z",
+    "coverVideo": null,
+    "slug": "wellness-su-that-ve-viec-cho-bo-vao-ca-phe",
+    "category": {
+      "name": "Beauty",
+      "slug": "beauty"
+    },
+    "description": null,
+    "_updatedAt": "2024-07-18T15:48:01Z",
+    "excerpt": null,
+    "coverImage": {
+      "asset": {
+        "_type": "reference",
+        "_ref": "image-969f42c48d833bc61aa38bfb8e84a4f697cac2ed-563x702-png"
+      },
+      "_type": "image"
+    },
+    "author": {
+      "name": "Camille Pham",
+      "picture": null
+    }
+  },
+  {
+    "_id": "6b5b524d-4636-4621-8877-82d4b80f884d",
+    "title": "WELLNESS: Lợi ích sức khỏe của việc leo núi không chỉ về mặt thể chất mà còn về mặt tinh thần",
+    "description": null,
+    "_updatedAt": "2024-07-18T16:27:10Z",
+    "excerpt": null,
+    "coverImage": {
+      "_type": "image",
+      "asset": {
+        "_ref": "image-bac5d6b8b15b057199af83c291fe43b2658905fb-564x910-png",
+        "_type": "reference"
+      }
+    },
+    "date": "2024-07-04T05:26:52.626Z",
+    "coverVideo": null,
+    "slug": "wellness-loi-ich-suc-khoe-cua-viec-leo-nui-khong-chi-ve-mat-the-chat-ma-con-ve-mat-tinh-than",
+    "author": {
+      "name": "Hikari",
+      "picture": null
+    },
+    "category": {
+      "name": "Beauty",
+      "slug": "beauty"
+    }
+  },
+  {
+    "title": "WELLNESS: Ikigai - Bí mật cách kiếm tìm hạnh phúc & nghề nghiệp mơ ước của người Nhật",
+    "description": null,
+    "excerpt": null,
+    "coverVideo": null,
+    "category": {
+      "name": "Beauty",
+      "slug": "beauty"
+    },
+    "_id": "7fd0d74e-1c5f-48d9-b639-e3ab975b248f",
+    "date": "2024-07-04T05:12:14.934Z",
+    "_updatedAt": "2024-07-18T16:31:18Z",
+    "coverImage": {
+      "_type": "image",
+      "asset": {
+        "_type": "reference",
+        "_ref": "image-4b305579ed5c2e01c038e8cb06551e7f65679e3b-500x798-png"
+      }
+    },
+    "slug": "wellness-ikigai-bi-mat-cach-kiem-tim-hanh-phuc-and-nghe-nghiep-mo-uoc-cua-nguoi-nhat",
+    "author": {
+      "name": "Hikari",
+      "picture": null
+    }
+  },
+  {
+    "_id": "e82e252a-ff13-4a3c-bd40-dbef3fd9e43c",
+    "title": "SKIN: Tẩy tế bào chết, lột da hay hòa tan bằng hóa chất? Các chuyên gia cân nhắc cách tẩy tế bào chết cho da mặt đúng cách",
+    "excerpt": null,
+    "coverVideo": null,
+    "slug": "skin-tay-te-bao-chet-lot-da-hay-hoa-tan-bang-hoa-chat-cac-chuyen-gia-can-nhac-cach-tay-te-bao",
+    "author": {
+      "name": "Hikari",
+      "picture": null
+    },
+    "category": {
+      "name": "Beauty",
+      "slug": "beauty"
+    },
+    "description": null,
+    "date": "2024-07-03T19:08:24.196Z",
+    "_updatedAt": "2024-07-18T16:49:15Z",
+    "coverImage": {
+      "_type": "image",
+      "asset": {
+        "_type": "reference",
+        "_ref": "image-641edf768134d030d550cd5d7f8d8ff56cd55195-736x920-png"
+      }
+    }
+  },
+  {
+    "title": "SKIN: Cách sử dụng dầu dưỡng da mặt, bất kể loại da của bạn",
+    "date": "2024-07-03T18:30:56.032Z",
+    "_updatedAt": "2024-07-18T16:46:17Z",
+    "slug": "cach-su-dung-dau-duong-da-mat-bat-ke-loai-da-cua-ban",
+    "category": {
+      "name": "Beauty",
+      "slug": "beauty"
+    },
+    "author": {
+      "name": "Hikari",
+      "picture": null
+    },
+    "_id": "55646288-959b-4e70-8d63-251667ea74a0",
+    "description": null,
+    "excerpt": null,
+    "coverImage": {
+      "_type": "image",
+      "asset": {
+        "_ref": "image-b01f86990415e285bc36a476f05cfd2ebebe3726-736x981-png",
+        "_type": "reference"
+      }
+    },
+    "coverVideo": null
+  },
+  {
+    "_id": "8184ec82-7dff-4347-9e20-a16b0f4e5374",
+    "title": "WELLNESS: Hãy cẩn thận vì bản cập nhật Instagram mới có thể khiến cho sức khỏe tinh thần của bạn trở nên tồi tệ",
+    "description": null,
+    "excerpt": null,
+    "coverImage": {
+      "_type": "image",
+      "asset": {
+        "_ref": "image-3f3777cf024df35f9cf329531d90772708d628d7-564x846-png",
+        "_type": "reference"
+      }
+    },
+    "category": {
+      "name": "Beauty",
+      "slug": "beauty"
+    },
+    "date": "2024-07-03T18:20:03.895Z",
+    "_updatedAt": "2024-07-18T16:32:38Z",
+    "coverVideo": null,
+    "slug": "wellness-hay-can-than-vi-ban-cap-nhat-instagram-moi-co-the-te-hon-cho-suc-khoe-tinh-than-cua-ban",
+    "author": {
+      "name": "Naomi ",
+      "picture": null
+    }
+  },
+  {
+    "_id": "25224a7b-e0c7-47f8-8886-5a35c34fbec9",
+    "date": "2024-07-03T17:52:01.327Z",
+    "coverImage": {
+      "_type": "image",
+      "asset": {
+        "_ref": "image-ff9f0e4a3335b60f0a8dad6c80635f69265884a8-564x705-png",
+        "_type": "reference"
+      }
+    },
+    "category": {
+      "name": "Beauty",
+      "slug": "beauty"
+    },
+    "author": {
+      "name": "Hikari",
+      "picture": null
+    },
+    "title": "SKIN: 10 loại thực phẩm giàu vitamin C giúp tăng cường khả năng miễn dịch và kích thích sản xuất collagen",
+    "description": null,
+    "_updatedAt": "2024-07-18T16:41:46Z",
+    "excerpt": null,
+    "coverVideo": null,
+    "slug": "skin-10-loai-thuc-pham-giau-vitamin-c-giup-tang-cuong-kha-nang-mien-dich-va-kich-thich-san-xuat"
+  },
+  {
+    "_updatedAt": "2024-07-03T15:31:12Z",
+    "excerpt": null,
+    "coverVideo": null,
+    "title": "WELLNESS: Uống một ly nước gừng mỗi sáng và đây là tất cả những lợi ích điều này mang lại",
+    "date": "2024-07-03T15:19:27.018Z",
+    "coverImage": {
+      "_type": "image",
+      "asset": {
+        "_ref": "image-1db7b0ae77a293457a37a5b187a651a5c1f015fa-1920x2880-png",
+        "_type": "reference"
+      }
+    },
+    "slug": "wellness-uong-mot-ly-nuoc-gung-moi-sang-va-day-la-tat-ca-nhung-loi-ich-dieu-nay-mang-lai",
+    "author": {
+      "name": "Hikari",
+      "picture": null
+    },
+    "category": {
+      "name": "Beauty",
+      "slug": "beauty"
+    },
+    "_id": "85a606ad-1afa-46a0-abc8-85661c486d29",
+    "description": null
+  },
+  {
+    "excerpt": null,
+    "coverVideo": null,
+    "category": {
+      "name": "Culture",
+      "slug": "culture"
+    },
+    "_id": "91fc9b40-0dfc-47fd-ab9b-e15026f890b3",
+    "title": "Ariana Grande theo dõi Penn Badgley \"You -Style\" trong “The Boy Is Mine",
+    "description": null,
+    "date": "2024-07-03T10:58:39.978Z",
+    "_updatedAt": "2024-07-03T11:05:47Z",
+    "coverImage": {
+      "_type": "image",
+      "asset": {
+        "_ref": "image-ef44d03f29d5ea8a521ad9445b26f910c7285dfd-864x658-png",
+        "_type": "reference"
+      }
+    },
+    "slug": "ariana-grande-theo-doi-penn-badgley-you-style-trong-the-boy-is-mine",
+    "author": {
+      "name": "Camille Pham",
+      "picture": null
+    }
+  },
+  {
+    "author": {
+      "name": "Tùng Linh",
+      "picture": null
+    },
+    "title": "Natalie Portman bị mắc kẹt trong cơn ác mộng tội phạm thập niên 60 trong đoạn giới thiệu phim Lady in the Lake",
+    "description": null,
+    "_updatedAt": "2024-07-03T10:40:01Z",
+    "excerpt": null,
+    "coverImage": {
+      "_type": "image",
+      "asset": {
+        "_ref": "image-a502745a7763de95c1360ce9bdbd60f5e7d55fe0-864x658-png",
+        "_type": "reference"
+      }
+    },
+    "coverVideo": null,
+    "slug": "natalie-portman-bi-mac-ket-trong-con-ac-mong-toi-pham-thap-nien-60-trong-doan-gioi-thieu-phim",
+    "category": {
+      "name": "Culture",
+      "slug": "culture"
+    },
+    "_id": "0afe3d74-2afa-42a2-b030-c54268d89879",
+    "date": "2024-07-03T10:36:05.143Z"
+  },
+  {
+    "_updatedAt": "2024-07-03T10:35:38Z",
+    "excerpt": null,
+    "slug": "du-an-tiep-theo-cua-jennifer-lawrence-la-mot-vu-giet-nguoi-bi-an-lay-cam-hung-tu-real-housewives",
+    "category": {
+      "name": "Culture",
+      "slug": "culture"
+    },
+    "_id": "3cdb5139-8c11-45d8-bb75-a16701ce41fe",
+    "title": "Dự án tiếp theo của Jennifer Lawrence là một vụ giết người bí ẩn lấy cảm hứng từ Real Housewives",
+    "description": null,
+    "date": "2024-07-03T10:31:45.772Z",
+    "coverImage": {
+      "asset": {
+        "_ref": "image-a04a18a83c0b0c7d62cda42e992248ce0c8c1863-864x658-png",
+        "_type": "reference"
+      },
+      "_type": "image"
+    },
+    "coverVideo": null,
+    "author": {
+      "name": "Camille Pham",
+      "picture": null
+    }
+  },
+  {
+    "title": "Triển lãm Lexus “Thời gian” báo trước tương lai của xe sang",
+    "description": "Lexus đã công bố hai tác phẩm sắp đặt hấp dẫn tại Tuần lễ Thiết kế Milan 2024 thể hiện triết lý lấy con người làm trung tâm .",
+    "slug": "trien-lam-lexus-thoi-gian-bao-truoc-tuong-lai-cua-xe-sang",
+    "category": {
+      "name": "Art & Design",
+      "slug": "art-and-design"
+    },
+    "_id": "4f79dab8-5b7e-49ad-bdea-13016c8923a4",
+    "date": "2024-07-03T06:06:00.000Z",
+    "_updatedAt": "2024-07-21T06:18:46Z",
+    "excerpt": null,
+    "coverImage": {
+      "_type": "image",
+      "asset": {
+        "_ref": "image-06599dbca6943e3c5b66034168cac14a6adae6da-1280x720-png",
+        "_type": "reference"
+      }
+    },
+    "coverVideo": null,
+    "author": {
+      "name": "Hikari",
+      "picture": null
+    }
+  },
+  {
+    "author": {
+      "name": "Tùng Linh",
+      "picture": null
+    },
+    "_id": "4665495a-7beb-4656-8657-390c2852906c",
+    "coverVideo": null,
+    "slug": "house-of-the-dragon-phan-2-tap-3-gia-dinh-hatfield-va-mccoy",
+    "_updatedAt": "2024-07-02T19:56:46Z",
+    "excerpt": null,
+    "coverImage": {
+      "_type": "image",
+      "asset": {
+        "_ref": "image-2adf9fb956ccbb4e8aa98d334b4c5f5911b24c10-900x600-png",
+        "_type": "reference"
+      }
+    },
+    "category": {
+      "name": "Culture",
+      "slug": "culture"
+    },
+    "title": "House of the Dragon Phần 2, Tập 3: Gia đình Hatfield và McCoy",
+    "description": "Lịch sử trở nên vô nghĩa khi phe Xanh và phe Đen lao sâu hơn vào chiến tranh.",
+    "date": "2024-07-02T19:47:51.948Z"
+  },
+  {
+    "excerpt": null,
+    "coverImage": {
+      "_type": "image",
+      "asset": {
+        "_ref": "image-ffc2fecf3afa8cc49805556a93507415eb52f35a-864x658-png",
+        "_type": "reference"
+      }
+    },
+    "coverVideo": null,
+    "author": {
+      "name": "Camille Pham",
+      "picture": null
+    },
+    "title": "Anya Taylor-Joy và Cara Delevingne Body Glastonbury Festival Style",
+    "description": "Phụ kiện lễ hội âm nhạc mùa hè hoàn hảo đang được treo trên tay bạn gái của bạn.",
+    "date": "2024-07-02T18:45:32.233Z",
+    "_updatedAt": "2024-07-02T18:51:12Z",
+    "slug": "anya-taylor-joy-va-cara-delevingne-voi-body-glastonbury-festival-style",
+    "category": {
+      "name": "Style",
+      "slug": "style"
+    },
+    "_id": "c15361fd-73c6-40b2-a650-95c275971393"
+  },
+  {
+    "category": {
+      "name": "Style",
+      "slug": "style"
+    },
+    "_id": "ff4c1206-2952-403c-98e5-ded19e55aa69",
+    "title": "Tất cả những khoảnh khắc thời trang đẹp nhất của người nổi tiếng từ Wimbledon 2024",
+    "description": null,
+    "_updatedAt": "2024-07-02T18:08:37Z",
+    "excerpt": null,
+    "date": "2024-07-02T18:00:11.100Z",
+    "coverImage": {
+      "_type": "image",
+      "asset": {
+        "_ref": "image-1d6ae574e7c39e474a4a3365e508b7aaacb32fa9-900x1350-png",
+        "_type": "reference"
+      }
+    },
+    "coverVideo": null,
+    "slug": "tat-ca-nhung-khoanh-khac-thoi-trang-dep-nhat-cua-nguoi-noi-tieng-tu-wimbledon-2024",
+    "author": {
+      "name": "Tùng Linh",
+      "picture": null
+    }
+  },
+  {
+    "title": "Talia Ryder trở nên quyến rũ theo phong cách Goth với váy liền và bốt Kiki",
+    "description": null,
+    "date": "2024-07-02T17:57:43.950Z",
+    "excerpt": null,
+    "slug": "talia-ryder-tro-nen-quyen-ru-theo-phong-cach-goth-voi-vay-lien-va-bot-kiki",
+    "_id": "a6dfb2de-b9dc-4ba5-84da-d43f232758c5",
+    "_updatedAt": "2024-07-02T17:59:53Z",
+    "coverImage": {
+      "_type": "image",
+      "asset": {
+        "_ref": "image-5d18eca9ff7b8f3c5f77e9f05da00c7ba3f38ddb-900x1350-png",
+        "_type": "reference"
+      }
+    },
+    "coverVideo": null,
+    "author": {
+      "name": "Naomi ",
+      "picture": null
+    },
+    "category": {
+      "name": "Style",
+      "slug": "style"
+    }
+  },
+  {
+    "title": "Marc Jacobs bước vào Thung lũng búp bê mùa thu năm 2024",
+    "coverImage": {
+      "_type": "image",
+      "asset": {
+        "_type": "reference",
+        "_ref": "image-3bad596c0531b6062ecb01f32c21705d20dd2a02-864x658-png"
+      }
+    },
+    "author": {
+      "name": "Camille Pham",
+      "picture": null
+    },
+    "_id": "ef15efc9-a5de-4bbd-8f61-1cfcced7da0c",
+    "description": "Nhà thiết kế đã trình diễn một bộ sưu tập tại thành phố New York với chủ đề chính là sự vui nhộn, chấm hết.",
+    "date": "2024-07-02T17:25:12.722Z",
+    "_updatedAt": "2024-07-02T17:56:47Z",
+    "excerpt": null,
+    "coverVideo": null,
+    "slug": "marc-jacobs-buoc-vao-thung-lung-bup-be-cho-mua-thu-nam-2024",
+    "category": {
+      "name": "Style",
+      "slug": "style"
+    }
+  },
+  {
+    "title": "Chiếc váy mùa hè của Emily Ratajkowski có chữ Tomato (Bất kể bạn phát âm thế nào)",
+    "coverImage": {
+      "_type": "image",
+      "asset": {
+        "_ref": "image-5d33334d14ede26a8bd8fe40234636bed067ff96-864x658-png",
+        "_type": "reference"
+      }
+    },
+    "coverVideo": null,
+    "_id": "0ed48d48-48fd-4d07-916c-0911c9e70f8a",
+    "date": "2024-07-02T17:21:03.357Z",
+    "_updatedAt": "2024-07-02T17:24:50Z",
+    "excerpt": null,
+    "slug": "chiec-vay-mua-he-cua-emily-ratajkowski-co-chu-tomato-bat-ke-ban-phat-am-the-nao",
+    "author": {
+      "name": "Camille Pham",
+      "picture": null
+    },
+    "category": {
+      "name": "Style",
+      "slug": "style"
+    },
+    "description": null
+  },
+  {
+    "description": null,
+    "coverImage": {
+      "_type": "image",
+      "asset": {
+        "_ref": "image-22566d52e1133263a7b97f9d06755cbd8671c73a-900x1133-png",
+        "_type": "reference"
+      }
+    },
+    "slug": "jennifer-lopez-trong-phong-cach-business-voi-tui-birkin-va-ballet-flats",
+    "category": {
+      "name": "Celebrity",
+      "slug": "celebrity"
+    },
+    "excerpt": null,
+    "coverVideo": null,
+    "author": {
+      "name": "Camille Pham",
+      "picture": null
+    },
+    "_id": "4c4e926c-3574-49b0-9a0e-830c763de5a7",
+    "title": "Jennifer Lopez trong phong cách Business với túi Birkin và Ballet Flats",
+    "date": "2024-07-02T16:47:23.329Z",
+    "_updatedAt": "2024-07-02T16:53:42Z"
+  },
+  {
+    "title": "Cardi B diện một bó hoa tại buổi trình diễn của Marc Jacobs ở New York",
+    "description": "Cardi B có thể đã bị nhầm là một trong những người mẫu, đang đi bộ qua các hành lang của Thư viện Công cộng New York. Nữ ca sĩ nhạc rap đã có một đêm đi chơi, tham dự buổi trình diễn Marc Jacobs mùa thu năm 2024 được tổ chức tại Tòa nhà Stephen A. Schwarzman của thư viện. Buổi trình diễn của Jacobs bắt đầu đúng 7:30 và kết thúc trong vòng năm, sáu phút. Khi khách mời rời khỏi tòa nhà, Cardi B bước xuống cầu thang, và đã bỏ lỡ hoàn toàn buổi thuyết trình.",
+    "date": "2024-07-02T16:42:22.949Z",
+    "_updatedAt": "2024-07-02T16:46:36Z",
+    "excerpt": null,
+    "coverVideo": null,
+    "_id": "0885167f-54cf-4560-a337-0cc45f0dda4d",
+    "coverImage": {
+      "_type": "image",
+      "asset": {
+        "_ref": "image-42291aba8e3e8228681e4b342a3619927c317106-900x1350-png",
+        "_type": "reference"
+      }
+    },
+    "slug": "cardi-b-dien-mot-bo-hoa-tai-buoi-trinh-dien-cua-marc-jacobs-o-new-york",
+    "author": {
+      "name": "Camille Pham",
+      "picture": null
+    },
+    "category": {
+      "name": "Celebrity",
+      "slug": "celebrity"
+    }
+  },
+  {
+    "title": "Jisoo (BLACKPINK) ủng hộ sự trở lại của bubble skirt tại Dior Haute Couture Show",
+    "description": null,
+    "date": "2024-07-02T15:10:09.793Z",
+    "_updatedAt": "2024-07-02T16:09:24Z",
+    "excerpt": null,
+    "slug": "jisoo-blackpink-ung-ho-su-tro-lai-cua-bubble-skirt-tai-dior-haute-couture-show",
+    "_id": "f85672b3-ab3a-4434-80e2-e52a70f2aa21",
+    "coverImage": {
+      "asset": {
+        "_ref": "image-0346fe418d4eb082345b94377758aa1f54db0ad8-700x1047-png",
+        "_type": "reference"
+      },
+      "_type": "image"
+    },
+    "coverVideo": null,
+    "author": {
+      "name": "Camille Pham",
+      "picture": null
+    },
+    "category": {
+      "name": "Style",
+      "slug": "style"
+    }
+  },
+  {
+    "coverVideo": null,
+    "author": {
+      "name": "Tùng Linh",
+      "picture": null
+    },
+    "_updatedAt": "2024-07-05T21:15:14Z",
+    "coverImage": {
+      "_type": "image",
+      "asset": {
+        "_ref": "image-1c44f556903c664f907965f76c3e86d568ea65bd-1920x1281-png",
+        "_type": "reference"
+      }
+    },
+    "description": null,
+    "date": "2024-07-02T05:43:00.000Z",
+    "excerpt": null,
+    "slug": "sport-nguon-cam-hung-cho-chiec-vay-wimbledon-gay-sot-cua-marta-kostyuk-la-gi-chiec-vay-cuoi-cua",
+    "category": {
+      "name": "Lifestyle",
+      "slug": "lifestyle"
+    },
+    "_id": "abfebf4c-78d6-4682-874c-d3cbf4514e11",
+    "title": "SPORT: Nguồn cảm hứng cho chiếc váy Wimbledon gây sốt của Marta Kostyuk là gì ? Chiếc váy cưới của cô ấy"
+  },
+  {
+    "date": "2024-07-01T10:42:00.000Z",
+    "coverImage": {
+      "_type": "image",
+      "asset": {
+        "_ref": "image-598453e4b2b6c7e5080edaa120b3a1be43e4bb81-736x1104-png",
+        "_type": "reference"
+      }
+    },
+    "slug": "explain-bo-viec-tham-lang-tich-tru-lao-dong-va-cac-xu-huong-khac-o-noi-lam-viec",
+    "author": {
+      "name": "Naomi ",
+      "picture": null
+    },
+    "category": {
+      "name": "M for Career",
+      "slug": "m-for-career"
+    },
+    "_id": "bae4ac54-e005-4aaa-8d9b-3520c75d2077",
+    "title": "EXPLAIN: Bỏ việc thầm lặng, tích trữ lao động và các xu hướng khác ở nơi làm việc",
+    "description": "Sự bùng nổ của các cụm từ hấp dẫn để mô tả cách mọi người hành xử tại nơi làm việc là dấu hiệu mới nhất của môi trường đầy thách thức đối với các công ty và nhân viên của họ.",
+    "_updatedAt": "2024-07-18T15:50:52Z",
+    "excerpt": null,
+    "coverVideo": null
+  },
+  {
+    "category": {
+      "name": "Beauty",
+      "slug": "beauty"
+    },
+    "_id": "b921100e-64f2-4a54-af89-36de07a043df",
+    "excerpt": null,
+    "coverVideo": null,
+    "_updatedAt": "2024-07-22T09:50:25Z",
+    "coverImage": {
+      "_type": "image",
+      "asset": {
+        "_type": "reference",
+        "_ref": "image-3d14d70fd8f3f87aef1f96eb67ac17b563050332-1200x951-png"
+      }
+    },
+    "slug": "su-hop-tac-trong-mo-giua-jo-malone-london-va-paddington-tm-da-ra-doi",
+    "author": {
+      "name": "Camille Pham",
+      "picture": null
+    },
+    "title": "Sự hợp tác trong mơ giữa Jo Malone London và Paddington™ đã ra đời",
+    "description": "Một bộ sưu tập quà tặng giới hạn gồm các loại nước hoa được tạo ra bằng cách hợp tác với các nhân vật lần đầu tiên với tư cách là một thương hiệu.",
+    "date": "2024-07-01T09:47:00.000Z"
+  },
+  {
+    "date": "2024-06-30T09:58:00.000Z",
+    "_updatedAt": "2024-07-19T12:18:35Z",
+    "excerpt": null,
+    "category": {
+      "name": "Technology",
+      "slug": "technology"
+    },
+    "_id": "a7f6430a-b16f-43fd-b2ae-e9a5dfdd4b96",
+    "title": "Với Apple Vision Pro, một thế giới mới đã xuất hiện",
+    "description": "24 giờ với Apple Vision Pro",
+    "coverImage": {
+      "_type": "image",
+      "asset": {
+        "_ref": "image-48545190537adaf0a7a7eb481a54b562ff34b938-680x1020-png",
+        "_type": "reference"
+      }
+    },
+    "coverVideo": null,
+    "slug": "voi-apple-vision-pro-mot-the-gioi-moi-da-xuat-hien",
+    "author": {
+      "name": "Camille Pham",
+      "picture": null
+    }
+  },
+  {
+    "description": null,
+    "_id": "6574d124-3d3b-4dcd-b820-553662bc939a",
+    "title": "Phong cách đường phố mới nhất của Iris Law kết hợp với quần bó kiểu thập niên 2000",
+    "excerpt": null,
+    "coverImage": {
+      "_type": "image",
+      "asset": {
+        "_ref": "image-fb5a3017a8a1d593242c80f8a6bdada3010ad1bb-900x638-png",
+        "_type": "reference"
+      }
+    },
+    "coverVideo": null,
+    "slug": "phong-cach-duong-pho-moi-nhat-cua-iris-law-ket-hop-voi-quan-bo-kieu-thap-nien-2000",
+    "author": {
+      "name": "Camille Pham",
+      "picture": null
+    },
+    "category": {
+      "name": "Style",
+      "slug": "style"
+    },
+    "date": "2024-06-28T16:58:00.000Z",
+    "_updatedAt": "2024-07-02T17:13:25Z"
+  },
+  {
+    "excerpt": null,
+    "author": {
+      "name": "Camille Pham",
+      "picture": null
+    },
+    "description": null,
+    "date": "2024-06-28T16:54:00.000Z",
+    "_updatedAt": "2024-07-02T16:58:41Z",
+    "coverVideo": null,
+    "slug": "jennifer-lawrence-bien-bo-do-ngu-thanh-khoanh-khac-thoai-mai-thuong-ngay",
+    "category": {
+      "name": "Style",
+      "slug": "style"
+    },
+    "_id": "5b91d457-e064-44e3-91c5-77a17f727c3c",
+    "title": "Jennifer Lawrence biến bộ đồ ngủ thành khoảnh khắc thoải mái thường ngày",
+    "coverImage": {
+      "_type": "image",
+      "asset": {
+        "_type": "reference",
+        "_ref": "image-89e404767dee19ce590f65122fa60028a68fa6e9-900x1350-png"
+      }
+    }
+  },
+  {
+    "author": {
+      "name": "Hikari",
+      "picture": null
+    },
+    "category": {
+      "name": "Beauty",
+      "slug": "beauty"
+    },
+    "_id": "5b5801bf-3293-4132-be02-bd0e537f4296",
+    "title": "HAIR: Xu hướng tóc Scandinavia hoàn hảo cho mùa hè",
+    "description": null,
+    "slug": "hair-xu-huong-toc-scandinavia-hoan-hao-cho-mua-he",
+    "coverVideo": null,
+    "date": "2024-06-28T16:41:00.000Z",
+    "_updatedAt": "2024-07-03T16:59:49Z",
+    "excerpt": null,
+    "coverImage": {
+      "_type": "image",
+      "asset": {
+        "_ref": "image-d62d4ec9a7f6c68e98780f868d8256d4a14b7a19-1984x1664-png",
+        "_type": "reference"
+      }
+    }
+  },
+  {
+    "date": "2024-06-28T15:23:00.000Z",
+    "_updatedAt": "2024-07-02T16:18:23Z",
+    "coverVideo": null,
+    "slug": "fashion-week-schiaparelli-khai-mac-tuan-le-thoi-trang-haute-couture-cung-doja-cat-kylie-jenner",
+    "author": {
+      "name": "Camille Pham",
+      "picture": null
+    },
+    "_id": "3985348f-42d0-42a7-8f8d-4fc2675c012c",
+    "title": "FASHION WEEK:  Schiaparelli khai mạc tuần lễ thời trang haute couture cùng Doja Cat, Kylie Jenner và Anitta",
+    "description": "Than ôi, không có Zendaya và mái tóc mái thưa của cô ấy.",
+    "excerpt": null,
+    "coverImage": {
+      "_type": "image",
+      "asset": {
+        "_ref": "image-c52dd568df44ecda44e6089674a8a3536c7620de-1880x1253-png",
+        "_type": "reference"
+      }
+    },
+    "category": {
+      "name": "Style",
+      "slug": "style"
+    }
+  },
+  {
+    "date": "2024-06-28T04:56:00.000Z",
+    "_updatedAt": "2024-07-03T05:00:09Z",
+    "author": {
+      "name": "Camille Pham",
+      "picture": null
+    },
+    "category": {
+      "name": "Culture",
+      "slug": "culture"
+    },
+    "slug": "cate-blanchett-dam-nhan-vai-dien-moi-la-ke-phan-boi-va-am-muu-voi-disclaimer",
+    "_id": "356f059b-a7f5-41d6-bcae-83bd6fcf8ee4",
+    "title": "Cate Blanchett đảm nhận vai diễn mới là kẻ phản bội và âm mưu với Disclaimer",
+    "description": "Dự án tiếp theo của nữ diễn viên Tár sẽ đề cập đến nhiều chủ đề yêu thích của cô.",
+    "excerpt": null,
+    "coverImage": {
+      "_type": "image",
+      "asset": {
+        "_ref": "image-a21aeab1742fde92fe4165bb84a6c0cfaeb5605c-864x658-png",
+        "_type": "reference"
+      }
+    },
+    "coverVideo": null
+  },
+  {
+    "title": "Jean Paul Gaultier và sự tối giản từ nhà thiết kế khách mời Nicolas Di Felice",
+    "description": null,
+    "date": "2024-06-27T19:17:00.000Z",
+    "_updatedAt": "2024-07-02T19:35:16Z",
+    "coverImage": {
+      "_type": "image",
+      "asset": {
+        "_type": "reference",
+        "_ref": "image-357b00281e41781be8b747d60927b3f80dbfce63-900x1350-png"
+      }
+    },
+    "category": {
+      "name": "Style",
+      "slug": "style"
+    },
+    "_id": "fb32a2a8-da2d-48c5-957e-6456fccc17f6",
+    "coverVideo": null,
+    "slug": "jean-paul-gaultier-va-su-toi-gian-tu-nha-thiet-ke-khach-moi-nicolas-di-felice",
+    "author": {
+      "name": "Naomi ",
+      "picture": null
+    },
+    "excerpt": null
+  },
+  {
+    "_id": "5559dda6-4656-45a0-97e3-5585b43b631c",
+    "title": "CELEBRITY STYLE: Selena Gomez biến đổi diện mạo sàn diễn Versace của Gigi Hadid",
+    "date": "2024-06-27T19:12:00.000Z",
+    "coverVideo": null,
+    "slug": "celebrity-style-selena-gomez-bien-doi-dien-mao-san-dien-versace-cua-gigi-hadid",
+    "description": null,
+    "_updatedAt": "2024-07-02T19:16:46Z",
+    "excerpt": null,
+    "coverImage": {
+      "_type": "image",
+      "asset": {
+        "_type": "reference",
+        "_ref": "image-8d0c8a7b4885165b1cf01d84b6c9272c7aee5149-900x1124-png"
+      }
+    },
+    "author": {
+      "name": "Tùng Linh",
+      "picture": null
+    },
+    "category": {
+      "name": "Style",
+      "slug": "style"
+    }
+  },
+  {
+    "description": null,
+    "_updatedAt": "2024-07-02T19:09:01Z",
+    "coverImage": {
+      "_type": "image",
+      "asset": {
+        "_type": "reference",
+        "_ref": "image-33ca8fc6d44e3e17d6d7883ffd7753f9883e1ec3-900x1350-png"
+      }
+    },
+    "coverVideo": null,
+    "slug": "celebrity-style-chiec-vay-sieu-nho-cua-rose-mang-den-su-nho-be-trong-chiec-vay-den",
+    "category": {
+      "name": "Style",
+      "slug": "style"
+    },
+    "_id": "ca9f50cf-4a47-4b68-9639-e67e8b313498",
+    "title": "CELEBRITY STYLE: Chiếc váy siêu nhỏ của Rosé mang đến sự “nhỏ bé” trong chiếc váy đen ",
+    "date": "2024-06-27T19:02:00.000Z",
+    "excerpt": null,
+    "author": {
+      "name": "Camille Pham",
+      "picture": null
+    }
+  },
+  {
+    "slug": "peggy-gou-dua-xu-huong-cat-xe-len-mot-tam-cao-moi-tai-london",
+    "category": {
+      "name": "Celebrity",
+      "slug": "celebrity"
+    },
+    "title": "Peggy Gou đưa xu hướng cắt xẻ lên một tầm cao mới tại London",
+    "description": null,
+    "date": "2024-06-27T17:13:00.000Z",
+    "excerpt": null,
+    "coverVideo": null,
+    "_id": "5e8366bc-4e70-422e-aea8-40d890f5486a",
+    "_updatedAt": "2024-07-02T17:20:33Z",
+    "coverImage": {
+      "_type": "image",
+      "asset": {
+        "_ref": "image-445b60de0032d1b6eae31fe0bcf3b0cfdf12323d-900x1350-png",
+        "_type": "reference"
+      }
+    },
+    "author": {
+      "name": "Naomi ",
+      "picture": null
+    }
+  },
+  {
+    "_id": "fc126bba-ae7e-406e-8cdc-faee17a4c7da",
+    "description": null,
+    "date": "2024-06-27T11:50:00.000Z",
+    "_updatedAt": "2024-07-05T12:09:05Z",
+    "excerpt": null,
+    "coverImage": {
+      "_type": "image",
+      "asset": {
+        "_ref": "image-f6a25ac584fa27acc7bb4c0ab2d95d03969e079c-1920x1081-png",
+        "_type": "reference"
+      }
+    },
+    "category": {
+      "name": "Watches & Jewelry",
+      "slug": "watches-and-jewelry"
+    },
+    "title": "Hermes Les Formes de la Couleur Collection: một thí nghiệm xoay quanh nhận thức về ánh sáng và sự định hình của màu sắc ",
+    "coverVideo": null,
+    "slug": "hermes-les-formes-de-la-couleur-collection-mot-thi-nghiem-xoay-quanh-nhan-thuc-ve-anh-sang-va-su",
+    "author": {
+      "name": "Naomi ",
+      "picture": null
+    }
+  },
+  {
+    "coverImage": {
+      "_type": "image",
+      "asset": {
+        "_ref": "image-1fa741eceb6cd1173fb42ab7f3e603510289ef22-1000x563-png",
+        "_type": "reference"
+      },
+      "crop": {
+        "top": 0,
+        "left": 0,
+        "bottom": 0,
+        "_type": "sanity.imageCrop",
+        "right": 0.636363743068455
+      },
+      "hotspot": {
+        "x": 0.1818181284657725,
+        "y": 0.5,
+        "height": 1,
+        "_type": "sanity.imageHotspot",
+        "width": 0.363636256931545
+      }
+    },
+    "slug": "hailey-bieber-ve-co-ban-da-lam-nguoi-mau-cho-mot-cuon-lookbook-danh-cho-ba-bau",
+    "author": {
+      "name": "Camille Pham",
+      "picture": null
+    },
+    "category": {
+      "name": "Style",
+      "slug": "style"
+    },
+    "_id": "2f034915-edc3-4605-a613-d1059d29ec46",
+    "excerpt": null,
+    "date": "2024-06-26T14:40:00.000Z",
+    "_updatedAt": "2024-07-05T23:20:22Z",
+    "coverVideo": null,
+    "title": "Hailey Bieber về cơ bản đã làm người mẫu cho một cuốn lookbook dành cho bà bầu",
+    "description": "Trong chuyến đi mới nhất tới thành phố New York, Hailey Bieber đã gia nhập hàng ngũ những cô nàng sành điệu, biến đường phố New York thành sàn diễn thời trang cao cấp dành cho bà bầu của riêng cô."
+  },
+  {
+    "date": "2024-06-26T05:27:00.000Z",
+    "_updatedAt": "2024-07-03T05:35:17Z",
+    "excerpt": null,
+    "coverImage": {
+      "_type": "image",
+      "asset": {
+        "_ref": "image-ef1cc271f2bbb3b048502cf0f94ec4b489821adf-900x1350-png",
+        "_type": "reference"
+      }
+    },
+    "slug": "daniel-bruehl-tro-thanh-karl-lagerfeld",
+    "_id": "768a2c6d-9b0b-4246-a393-5784cf68b512",
+    "description": "“Với tôi, điều quan trọng là phải thể hiện được nỗi cô đơn của một người đàn ông.”",
+    "coverVideo": null,
+    "author": {
+      "name": "Naomi ",
+      "picture": null
+    },
+    "category": {
+      "name": "Culture",
+      "slug": "culture"
+    },
+    "title": "Daniel Brühl: trở thành Karl Lagerfeld"
+  },
+  {
+    "title": "Gong Yoo: Biểu tượng mới cho tinh thần Louis Vuitton",
+    "description": "Louis Vuitton tiếp tục dẫn dắt làn sóng Hallyu với việc bổ nhiệm thêm một đại sứ thương hiệu khác đến từ Hàn Quốc.",
+    "coverVideo": null,
+    "slug": "gong-yoo-bieu-tuong-moi-cho-tinh-than-louis-vuitton",
+    "category": {
+      "name": "Style",
+      "slug": "style"
+    },
+    "_id": "a5183561-fa5b-4681-a8a5-b57fb8d2b11c",
+    "date": "2024-06-26T05:08:00.000Z",
+    "_updatedAt": "2024-07-05T05:15:25Z",
+    "excerpt": null,
+    "coverImage": {
+      "_type": "image",
+      "asset": {
+        "_type": "reference",
+        "_ref": "image-2e83748d428c14966edfaf387c0573e34064532c-1000x563-png"
+      }
+    },
+    "author": {
+      "name": "Tanya Ngo",
+      "picture": {
+        "_type": "image",
+        "asset": {
+          "_ref": "image-dfa9f3057eb20ddbd5483cabaf013151d3ca0c19-1920x2560-jpg",
+          "_type": "reference"
+        }
+      }
+    }
+  },
+  {
+    "slug": "celebrity-style-gigi-hadid-khep-lai-vogue-world-2024-tai-paris-voi-bo-trang-phuc-duoc-balmain",
+    "description": null,
+    "date": "2024-06-24T17:15:00.000Z",
+    "_updatedAt": "2024-07-03T17:42:52Z",
+    "excerpt": null,
+    "coverImage": {
+      "_type": "image",
+      "asset": {
+        "_ref": "image-70855a0e6b8ad83ed85d9d11693631207b0a4459-1920x2878-png",
+        "_type": "reference"
+      }
+    },
+    "coverVideo": null,
+    "_id": "26c1abb4-9d6f-40a7-951e-d3704dd4158f",
+    "title": "CELEBRITY STYLE: Gigi Hadid khép lại Vogue World 2024 tại Paris với bộ trang phục được Balmain thiết kế riêng",
+    "author": {
+      "name": "Tùng Linh",
+      "picture": null
+    },
+    "category": {
+      "name": "Style",
+      "slug": "style"
+    }
+  },
+  {
+    "_id": "059d0c4e-a483-4259-9791-3660bf203a04",
+    "_updatedAt": "2024-07-03T17:14:50Z",
+    "excerpt": null,
+    "coverVideo": null,
+    "author": {
+      "name": "Camille Pham",
+      "picture": null
+    },
+    "title": "Cận cảnh chiếc váy đỏ, trắng và xanh của Alaïa xuất hiện trên Vogue World 2024",
+    "description": null,
+    "date": "2024-06-24T17:10:00.000Z",
+    "coverImage": {
+      "_type": "image",
+      "asset": {
+        "_type": "reference",
+        "_ref": "image-cbc61d0d0d70d4c5f932ea66e076a96ce0acc544-1920x1281-png"
+      }
+    },
+    "slug": "can-canh-chiec-vay-do-trang-va-xanh-cua-alaia-xuat-hien-tren-vogue-world-2024",
+    "category": {
+      "name": "Style",
+      "slug": "style"
+    }
+  },
+  {
+    "title": "Triển lãm '‘Miss Dior, Stories of a Miss'’ tại Tokyo: Hành trình di sản qua mùi hương",
+    "date": "2024-06-20T15:09:00.000Z",
+    "slug": "trien-lam-miss-dior-stories-of-a-miss-tai-tokyo-hanh-trinh-di-san-qua-mui-huong",
+    "author": {
+      "name": "Tanya Ngo",
+      "picture": {
+        "_type": "image",
+        "asset": {
+          "_ref": "image-dfa9f3057eb20ddbd5483cabaf013151d3ca0c19-1920x2560-jpg",
+          "_type": "reference"
+        }
+      }
+    },
+    "category": {
+      "name": "Art & Design",
+      "slug": "art-and-design"
+    },
+    "_id": "c9cc6944-cce2-4727-8b14-55188b31bb28",
+    "description": null,
+    "_updatedAt": "2024-07-05T15:20:25Z",
+    "excerpt": null,
+    "coverImage": {
+      "asset": {
+        "_ref": "image-0a027b69d95af030b126420c63acf7ff1761eb1d-1000x667-png",
+        "_type": "reference"
+      },
+      "_type": "image"
+    },
+    "coverVideo": null
+  },
+  {
+    "_updatedAt": "2024-07-05T13:07:47Z",
+    "author": {
+      "name": "Camille Pham",
+      "picture": null
+    },
+    "category": {
+      "name": "Style",
+      "slug": "style"
+    },
+    "date": "2024-06-20T12:09:00.000Z",
+    "title": "\"Quiet luxury\" có thực sự còn \"thầm lặng\"?",
+    "description": null,
+    "excerpt": null,
+    "coverImage": {
+      "_type": "image",
+      "asset": {
+        "_ref": "image-81ad4120c18017136a0cd7baa33bcc303f81d4c6-1000x1000-png",
+        "_type": "reference"
+      }
+    },
+    "coverVideo": null,
+    "slug": "quiet-luxury-co-thuc-su-con-tham-lang",
+    "_id": "f15386fc-3d6a-46f5-a7cb-3f003d32dcec"
+  },
+  {
+    "coverImage": {
+      "_type": "image",
+      "asset": {
+        "_ref": "image-5dd40cb0f968b5a27392a5a8a1e547d35429a446-700x394-png",
+        "_type": "reference"
+      }
+    },
+    "coverVideo": null,
+    "author": {
+      "name": "Camille Pham",
+      "picture": null
+    },
+    "category": {
+      "name": "Business",
+      "slug": "business"
+    },
+    "_id": "ae328145-aa08-4fe4-a8c0-d2b1d5767e2e",
+    "_updatedAt": "2024-07-02T11:35:00Z",
+    "excerpt": null,
+    "slug": "yoox-net-a-porter-rut-khoi-trung-quoc-de-tap-trung-vao-cac-thi-truong-co-loi-nhuan-cao-hon",
+    "title": "Yoox Net-a-Porter rút khỏi Trung Quốc để tập trung vào các thị trường có lợi nhuận cao hơn",
+    "description": "Nền tảng thương mại điện tử thời trang cao cấp Yoox Net-a-Porter đang đóng cửa hoạt động tại Trung Quốc, làm nổi bật khó khăn trong việc cạnh tranh trên một thị trường thương mại điện tử rộng lớn nơi các nhà bán lẻ cao cấp phải đối mặt với bối cảnh kinh tế yếu hơn.",
+    "date": "2024-06-18T11:07:00.000Z"
+  },
+  {
+    "coverImage": {
+      "_type": "image",
+      "asset": {
+        "_ref": "image-158a36beeb78f3c5e351f741cb9d4c03294cb597-1706x2559-webp",
+        "_type": "reference"
+      }
+    },
+    "slug": "janu-khach-san-moi-duoc-ra-mat-tai-tokyo",
+    "author": {
+      "name": "Thanh Thảo",
+      "picture": {
+        "_type": "image",
+        "asset": {
+          "_ref": "image-3a3fd4f9d0beca93afd039f32e2309aec1037152-771x1024-jpg",
+          "_type": "reference"
+        }
+      }
+    },
+    "category": {
+      "name": "Voyage & Gourmet",
+      "slug": "voyage-and-gourmet"
+    },
+    "title": "Janu : Khách sạn mới được ra mắt tại Tokyo ",
+    "date": "2024-06-17T21:04:00.000Z",
+    "_updatedAt": "2024-07-23T21:09:00Z",
+    "coverVideo": null,
+    "_id": "3e95d39b-e5ed-43b8-911b-5e54b71a34e3",
+    "description": null,
+    "excerpt": null
+  },
+  {
+    "_id": "b439e930-d036-4a72-ad1b-d5e384d859b5",
+    "description": "\"Mặc dù tôi thích đóng vai phản diện, nhưng tôi muốn thấy cô ấy hạnh phúc.\"",
+    "category": {
+      "name": "Culture",
+      "slug": "culture"
+    },
+    "coverVideo": null,
+    "slug": "jessica-madsen-vao-vai-co-gai-xau-tinh-cua-bridgerton-cressida-cowper",
+    "author": {
+      "name": "Naomi ",
+      "picture": null
+    },
+    "title": "Jessica Madsen vào vai cô gái xấu tính của Bridgerton - Cressida Cowper",
+    "date": "2024-06-17T04:32:00.000Z",
+    "_updatedAt": "2024-07-03T04:41:30Z",
+    "excerpt": null,
+    "coverImage": {
+      "asset": {
+        "_ref": "image-e58526ab045bdad2b9fe97e5e114236d7e8a659a-900x600-png",
+        "_type": "reference"
+      },
+      "_type": "image"
+    }
+  },
+  {
+    "_id": "fae01b15-7587-4e42-8011-537913515cf5",
+    "date": "2024-06-16T10:40:00.000Z",
+    "excerpt": null,
+    "coverImage": {
+      "_type": "image",
+      "asset": {
+        "_ref": "image-45865f73f27ad0792006a29b0623c24f94667ff5-864x658-png",
+        "_type": "reference"
+      }
+    },
+    "coverVideo": null,
+    "title": "Bridgerton Phần 4 Đã Có Một Sự Thay Đổi",
+    "description": "Sau đây là mọi thông tin cần biết về phần tiếp theo của câu chuyện tình lãng mạn thời Regency đình đám.",
+    "_updatedAt": "2024-07-03T10:48:56Z",
+    "slug": "bridgerton-phan-4-da-co-mot-su-thay-doi",
+    "author": {
+      "name": "Tùng Linh",
+      "picture": null
+    },
+    "category": {
+      "name": "Culture",
+      "slug": "culture"
+    }
+  },
+  {
+    "title": "Bạn đã sẵn sàng cho không chỉ một mà là bốn bộ phim tiểu sử về The Beatles chưa?",
+    "excerpt": null,
+    "slug": "ban-da-san-sang-cho-khong-chi-mot-ma-la-bon-bo-phim-tieu-su-ve-the-beatles-chua",
+    "category": {
+      "name": "Culture",
+      "slug": "culture"
+    },
+    "_id": "833db9a6-12b5-49d3-9d52-60b552c0d912",
+    "date": "2024-06-13T10:49:00.000Z",
+    "_updatedAt": "2024-07-03T10:55:09Z",
+    "coverImage": {
+      "_type": "image",
+      "asset": {
+        "_ref": "image-edcaf3324e564e0e61362e6eb54b05917ffe5767-864x658-png",
+        "_type": "reference"
+      }
+    },
+    "coverVideo": null,
+    "author": {
+      "name": "Naomi ",
+      "picture": null
+    },
+    "description": null
+  },
+  {
+    "category": {
+      "name": "Technology",
+      "slug": "technology"
+    },
+    "title": "Cách các thuật toán đang thay đổi ngành thời trang",
+    "description": "Các thuật toán đang ảnh hưởng đến những gì người tiêu dùng thấy, thích, mua và mặc, nhưng không phải lúc nào cũng mang lại điều tốt nhất.",
+    "_updatedAt": "2024-07-02T11:34:47Z",
+    "coverImage": {
+      "hotspot": {
+        "y": 0.5,
+        "height": 1,
+        "_type": "sanity.imageHotspot",
+        "width": 0.7594404954176683,
+        "x": 0.6202797522911658
+      },
+      "_type": "image",
+      "asset": {
+        "_type": "reference",
+        "_ref": "image-1143d6ab308dc38c6d4fde2bcd946ca35311f974-2000x1073-png"
+      },
+      "crop": {
+        "top": 0,
+        "left": 0.24055950458233166,
+        "bottom": 0,
+        "_type": "sanity.imageCrop",
+        "right": 0
+      }
+    },
+    "author": {
+      "name": "Tùng Linh",
+      "picture": null
+    },
+    "_id": "f6bba7a2-10ee-47ff-9c53-09bf2562bad6",
+    "date": "2024-06-07T11:21:00.000Z",
+    "excerpt": null,
+    "coverVideo": null,
+    "slug": "cach-cac-thuat-toan-dang-thay-doi-nganh-thoi-trang"
+  },
+  {
+    "title": "Mọi trang phục kỳ dị từ Emily in Paris Phần 4 cho đến nay",
+    "description": "Phân tích đầy đủ về thời trang.",
+    "_updatedAt": "2024-07-03T06:34:27Z",
+    "coverImage": {
+      "crop": {
+        "right": 0.2601401589133523,
+        "top": 0,
+        "left": 0.044755202073317304,
+        "bottom": 0,
+        "_type": "sanity.imageCrop"
+      },
+      "hotspot": {
+        "_type": "sanity.imageHotspot",
+        "width": 0.6951046390133304,
+        "x": 0.3923075215799825,
+        "y": 0.5,
+        "height": 1
+      },
+      "_type": "image",
+      "asset": {
+        "_ref": "image-5994c31646405a72e80b72b15b73b1000f017891-900x600-png",
+        "_type": "reference"
+      }
+    },
+    "coverVideo": null,
+    "author": {
+      "name": "Camille Pham",
+      "picture": null
+    },
+    "category": {
+      "name": "Style",
+      "slug": "style"
+    },
+    "_id": "ac6dfc9f-2299-4d69-9f46-32c3317f60b9",
+    "date": "2024-06-07T05:35:00.000Z",
+    "excerpt": null,
+    "slug": "moi-trang-phuc-ky-di-tu-emily-in-paris-phan-4-cho-den-nay"
+  },
+  {
+    "title": "Tôi đã lái thử chiếc đồng hồ nước hoa đầu tiên trên thế giới. Đây là mùi của nó",
+    "_updatedAt": "2024-07-19T04:24:43Z",
+    "slug": "toi-da-lai-thu-chiec-dong-ho-nuoc-hoa-dau-tien-tren-the-gioi-day-la-mui-cua-no",
+    "coverImage": {
+      "_type": "image",
+      "asset": {
+        "_ref": "image-3a7caa1b9120ab244ffab89bab7ea94a7cd088ee-680x1020-png",
+        "_type": "reference"
+      }
+    },
+    "coverVideo": null,
+    "author": {
+      "name": "Camille Pham",
+      "picture": null
+    },
+    "category": {
+      "name": "Watches & Jewelry",
+      "slug": "watches-and-jewelry"
+    },
+    "_id": "474b98cf-b37b-4000-80bc-f53ca0be77c7",
+    "description": "Vacheron Constantin gần đây đã tiết lộ một chiếc đồng hồ ý tưởng đầu tiên thuộc loại này: một chiếc đồng hồ nước hoa, được chế tạo với sự hợp tác của nhà thiết kế thời trang cao cấp Yin Yiqing và chuyên gia nước hoa bậc thầy Dominique Ropion",
+    "date": "2024-06-06T04:19:00.000Z",
+    "excerpt": null
+  },
+  {
+    "_id": "24ee016f-e779-4d8f-af75-2b001de2e7df",
+    "date": "2024-06-06T04:01:00.000Z",
+    "coverVideo": null,
+    "author": {
+      "name": "Camille Pham",
+      "picture": null
+    },
+    "category": {
+      "name": "Watches & Jewelry",
+      "slug": "watches-and-jewelry"
+    },
+    "slug": "lay-cam-hung-tu-chuyen-bay-trang-suc-cao-cap-un-air-de-chaumet-bay-cao",
+    "title": "Lấy cảm hứng từ chuyến bay, trang sức cao cấp Un Air de Chaumet bay cao",
+    "description": "Bộ sưu tập trang sức cao cấp Un Air de Chaumet của Chaumet cất cánh",
+    "_updatedAt": "2024-07-19T04:10:28Z",
+    "excerpt": null,
+    "coverImage": {
+      "asset": {
+        "_ref": "image-d797df3457bc8210e79323c2fd183101f0d30812-680x1020-png",
+        "_type": "reference"
+      },
+      "_type": "image"
+    }
+  },
+  {
+    "_id": "11c778c5-428d-4f4b-a223-8d47896b30cd",
+    "title": "Tin tức về chiếc nhẫn đính hôn triệu đô mới của Hailey Bieber",
+    "description": "Làm móng tay mới, đeo nhẫn mới. Ngoài lớp sơn mới, mọi ánh mắt chắc chắn đổ dồn vào em bé lấp lánh mới của Hailey Bieber",
+    "date": "2024-06-04T04:25:00.000Z",
+    "coverImage": {
+      "_type": "image",
+      "asset": {
+        "_ref": "image-1fdc62745d0d70ae9395bc28f413245e5dc306a0-680x1020-png",
+        "_type": "reference"
+      }
+    },
+    "slug": "tin-tuc-ve-chiec-nhan-dinh-hon-trieu-do-moi-cua-hailey-bieber",
+    "author": {
+      "name": "Naomi ",
+      "picture": null
+    },
+    "_updatedAt": "2024-07-19T04:28:28Z",
+    "excerpt": null,
+    "coverVideo": null,
+    "category": {
+      "name": "Watches & Jewelry",
+      "slug": "watches-and-jewelry"
+    }
+  },
+  {
+    "author": {
+      "name": "Camille Pham",
+      "picture": null
+    },
+    "category": {
+      "name": "Watches & Jewelry",
+      "slug": "watches-and-jewelry"
+    },
+    "title": "Eau de Atelier: Jennie kể về cuộc sống kể từ khi thành lập công ty riêng",
+    "date": "2024-06-03T18:40:00.000Z",
+    "_updatedAt": "2024-07-18T18:49:28Z",
+    "coverImage": {
+      "_type": "image",
+      "asset": {
+        "_ref": "image-1123439e24d2c41f1ceca5a2fc96f3e225c1ec04-680x1020-png",
+        "_type": "reference"
+      }
+    },
+    "coverVideo": null,
+    "slug": "eau-de-atelier-jennie-ke-ve-cuoc-song-ke-tu-khi-thanh-lap-cong-ty-rieng",
+    "_id": "93027559-c8aa-49a2-9cc1-01df47b61dfb",
+    "description": "Một bức ảnh mới của Jennie Kim đang xuất hiện, ngay sau khi siêu sao K-pop này thành lập công ty quản lý riêng Odd Atelie",
+    "excerpt": null
+  },
+  {
+    "description": "Nếu làm việc từ xa trong thời kỳ đại dịch khiến việc duy trì kết nối với đồng nghiệp trở thành thách thức, thì trong kỷ nguyên làm việc hybrid mọi thứ sẽ còn trở nên phức tạp hơn.",
+    "date": "2024-06-01T10:09:00.000Z",
+    "slug": "know-how-tao-ra-su-ket-noi-trong-moi-truong-lam-viec-hybrid",
+    "author": {
+      "name": "Naomi ",
+      "picture": null
+    },
+    "_id": "6379d770-b368-44c1-be65-995bfdbd0037",
+    "_updatedAt": "2024-07-18T15:52:18Z",
+    "excerpt": null,
+    "coverImage": {
+      "_type": "image",
+      "asset": {
+        "_ref": "image-0b4767c8c9f51c4809a2451af273d9c45ab7afed-564x845-png",
+        "_type": "reference"
+      }
+    },
+    "coverVideo": null,
+    "category": {
+      "name": "M for Career",
+      "slug": "m-for-career"
+    },
+    "title": "KNOW HOW: Tạo ra sự kết nối trong môi trường làm việc hybrid"
+  },
+  {
+    "_id": "3f1f5bbc-6722-440d-9568-9ae6995590de",
+    "title": "Tại Place Vendôme, một nơi bí mật nơi Chanel bảo vệ kho báu của mình",
+    "description": "Bên trong cửa hàng Chanel Watches & Fine Jewellery tại Place Vendôme là kho lưu trữ Patrimoine bí mật, nơi ngôi nhà lưu giữ những báu vật tuyệt vời nhất của mình",
+    "date": "2024-05-29T04:38:00.000Z",
+    "coverImage": {
+      "_type": "image",
+      "asset": {
+        "_type": "reference",
+        "_ref": "image-5420b3eb611f86a28afa820a03f3a5d7fb68abd9-680x1020-png"
+      }
+    },
+    "coverVideo": null,
+    "slug": "tai-place-vendome-mot-noi-bi-mat-noi-chanel-bao-ve-kho-bau-cua-minh",
+    "category": {
+      "name": "Watches & Jewelry",
+      "slug": "watches-and-jewelry"
+    },
+    "_updatedAt": "2024-07-19T04:45:05Z",
+    "excerpt": null,
+    "author": {
+      "name": "Tùng Linh",
+      "picture": null
+    }
+  },
+  {
+    "coverVideo": null,
+    "author": {
+      "name": "Tùng Linh",
+      "picture": null
+    },
+    "category": {
+      "name": "Watches & Jewelry",
+      "slug": "watches-and-jewelry"
+    },
+    "_id": "cd943e70-9055-4edd-8ee5-ba8dee2a7bc3",
+    "description": "Hermès Cut là chiếc đồng hồ thể thao đầu tiên của thương hiệu Pháp dành cho phụ nữ, được trang bị bộ máy sản xuất tại nhà. Philippe Delhotal, giám đốc sáng tạo của bộ phận đồng hồ của thương hiệu, chia sẻ nguồn cảm hứng của mình  Facebook Twitter WhatsApp Facebook Messender",
+    "_updatedAt": "2024-07-19T04:34:46Z",
+    "excerpt": null,
+    "title": "Giám đốc sáng tạo Philippe Delhotal giải thích về Hermès Cut mới",
+    "date": "2024-05-29T04:28:00.000Z",
+    "coverImage": {
+      "_type": "image",
+      "asset": {
+        "_ref": "image-59af2cd9299a73b4bc79149e0cca058e026e3ab1-680x1020-png",
+        "_type": "reference"
+      }
+    },
+    "slug": "giam-doc-sang-tao-philippe-delhotal-giai-thich-ve-hermes-cut-moi"
+  },
+  {
+    "_id": "0e984931-7936-498d-8a4b-2ce8983fa503",
+    "title": "InterContinental Bangkok Sukhumvit là nơi lý tưởng ở trung tâm của một thành phố đang phát triển",
+    "excerpt": null,
+    "slug": "intercontinental-bangkok-sukhumvit-la-noi-ly-tuong-o-trung-tam-cua-mot-thanh-pho-dang-phat-trien",
+    "category": {
+      "name": "Voyage & Gourmet",
+      "slug": "voyage-and-gourmet"
+    },
+    "description": "Được thiết kế cho du khách hiện đại, khách sạn sang trọng mới này cung cấp điểm quan sát hoàn hảo để khám phá khu phố Thonglor sôi động",
+    "date": "2024-05-29T04:27:00.000Z",
+    "_updatedAt": "2024-07-21T04:48:19Z",
+    "coverImage": {
+      "_type": "image",
+      "asset": {
+        "_ref": "image-7aacec97886a5011016e5e454c5df71ae91b7065-680x1020-png",
+        "_type": "reference"
+      }
+    },
+    "coverVideo": null,
+    "author": {
+      "name": "Hikari",
+      "picture": null
+    }
+  },
+  {
+    "_id": "3b5fa5a5-6cb1-425b-97ef-951875236d17",
+    "date": "2024-05-27T09:07:00.000Z",
+    "coverVideo": null,
+    "category": {
+      "name": "Watches & Jewelry",
+      "slug": "watches-and-jewelry"
+    },
+    "coverImage": {
+      "_type": "image",
+      "asset": {
+        "_ref": "image-f3c371c2aec6d94502725ce531edf8cd95b83e90-850x600-png",
+        "_type": "reference"
+      }
+    },
+    "slug": "bulgari-trinh-lang-kiet-tac-kim-cuong-serpenti-aeterna-tri-gia-40-trieu-euro",
+    "author": {
+      "name": "Tanya Ngo",
+      "picture": {
+        "_type": "image",
+        "asset": {
+          "_ref": "image-dfa9f3057eb20ddbd5483cabaf013151d3ca0c19-1920x2560-jpg",
+          "_type": "reference"
+        }
+      }
+    },
+    "title": "Bulgari Trình Làng Kiệt Tác Kim Cương \"Serpenti Aeterna\" trị giá 40 Triệu Euro",
+    "description": null,
+    "_updatedAt": "2024-07-05T09:27:36Z",
+    "excerpt": null
+  },
+  {
+    "description": "Hòn đảo lớn nhất của Hàn Quốc là nơi có những bãi biển núi lửa, làn nước trong xanh và quan trọng nhất là một quán cà phê sầm uất  ",
+    "date": "2024-05-22T04:48:00.000Z",
+    "category": {
+      "name": "Voyage & Gourmet",
+      "slug": "voyage-and-gourmet"
+    },
+    "_id": "91ea747e-8cb3-4e90-81fa-fc858f88a4a7",
+    "title": "Những quán cà phê đẹp nhất để ghé thăm ở Jeju",
+    "_updatedAt": "2024-07-21T05:02:59Z",
+    "excerpt": null,
+    "coverImage": {
+      "_type": "image",
+      "asset": {
+        "_ref": "image-41d8181d5715426faec09cc4a05bcc3f2bd98873-680x1020-png",
+        "_type": "reference"
+      }
+    },
+    "coverVideo": null,
+    "slug": "nhung-quan-ca-phe-dep-nhat-de-ghe-tham-o-jeju",
+    "author": {
+      "name": "Camille Pham",
+      "picture": null
+    }
+  },
+  {
+    "_updatedAt": "2024-07-21T05:14:18Z",
+    "excerpt": null,
+    "author": {
+      "name": "Naomi ",
+      "picture": null
+    },
+    "category": {
+      "name": "Voyage & Gourmet",
+      "slug": "voyage-and-gourmet"
+    },
+    "description": "Nhận phòng và thư giãn - khu nghỉ dưỡng tích hợp trên Cotai Strip này là một điểm đến nổi bật đầy hứa hẹn, sẵn sàng gây ấn tượng với sự xa hoa xa hoa",
+    "title": "Grand Lisboa Palace Resort Macau đưa bạn vào chốn an nghỉ của sự nuông chiều",
+    "date": "2024-05-18T05:03:00.000Z",
+    "coverImage": {
+      "_type": "image",
+      "asset": {
+        "_ref": "image-233c16c18629ddf1f4c409ca4f4cd3bfcc165367-680x1020-png",
+        "_type": "reference"
+      }
+    },
+    "coverVideo": null,
+    "slug": "grand-lisboa-palace-resort-macau-dua-ban-vao-chon-an-nghi-cua-su-nuong-chieu",
+    "_id": "1b1fd5a7-1d78-4ad0-8538-3ec0c53cfc23"
+  },
+  {
+    "coverVideo": null,
+    "slug": "ariana-grande-giup-cynthia-erivo-tro-nen-noi-tieng-trong-trailer-day-du-cua-wicked",
+    "author": {
+      "name": "Tùng Linh",
+      "picture": null
+    },
+    "_id": "f7a78b98-d49c-4e1c-9834-9d62abf06d95",
+    "title": "Ariana Grande giúp Cynthia Erivo trở nên “nổi tiếng” trong Trailer đầy đủ của Wicked",
+    "date": "2024-05-17T11:08:00.000Z",
+    "_updatedAt": "2024-07-04T17:07:36Z",
+    "coverImage": {
+      "_type": "image",
+      "asset": {
+        "_ref": "image-cda185c972940183114b871b40d1f14326bdb777-864x658-png",
+        "_type": "reference"
+      }
+    },
+    "description": null,
+    "excerpt": null,
+    "category": {
+      "name": "Culture",
+      "slug": "culture"
+    }
+  },
+  {
+    "date": "2024-05-06T18:22:00.000Z",
+    "_updatedAt": "2024-07-21T18:28:59Z",
+    "coverVideo": null,
+    "slug": "cham-soc-ban-chan-giup-ban-co-doi-chan-tran-min-mang-tai-spa-o-the-ritz-carlton-tokyo",
+    "author": {
+      "name": "Hikari",
+      "picture": null
+    },
+    "description": "Khi hầu hết mọi người nghĩ đến việc làm móng chân, họ sẽ nghĩ đến việc làm móng tay trên móng chân. Tuy nhiên, móng chân thực sự có nghĩa là \"chữa các vấn đề về chân\" trong tiếng Latin. Bastian Gonzalez, một bác sĩ chuyên khoa chân (chuyên gia nhi khoa), đưa ra các phương pháp điều trị trung thành với từ nguyên này và kết hợp giữa y học và sắc đẹp. Đôi chân trần của biên tập viên đã thay đổi như thế nào kể từ khi ông đến Nhật Bản để giúp phụ nữ Nhật Bản tìm hiểu thêm về tầm quan trọng của thuốc chữa chân? Cung cấp các báo cáo thực tế.",
+    "title": "Chăm sóc bàn chân giúp bạn có đôi chân trần mịn màng tại spa ở The Ritz-Carlton, Tokyo ",
+    "excerpt": null,
+    "coverImage": {
+      "_type": "image",
+      "asset": {
+        "_ref": "image-041c93d7cebb974818615d36643a312ff97f7e7c-1200x800-png",
+        "_type": "reference"
+      }
+    },
+    "category": {
+      "name": "Lifestyle",
+      "slug": "lifestyle"
+    },
+    "_id": "ae59a233-bf92-42fb-9236-9c7e3fef5007"
+  },
+  {
+    "description": "Thương hiệu Milanese đã cho ra mắt bộ sưu tập trang sức hai mặt mới nhẹ nhàng, có thể đảo ngược",
+    "date": "2024-04-22T05:01:00.000Z",
+    "coverImage": {
+      "_type": "image",
+      "asset": {
+        "_ref": "image-8cafdad23d683c383c39fd180b17a8db22a5c312-680x1020-png",
+        "_type": "reference"
+      }
+    },
+    "coverVideo": null,
+    "slug": "pom-pom-dot-la-bo-suu-tap-hai-trong-mot-moi-day-thu-vi-cua-pomellato",
+    "author": {
+      "name": "Camille Pham",
+      "picture": null
+    },
+    "_id": "7cf2a26e-107b-469c-a4b1-b5c44b7617de",
+    "title": "Pom Pom Dot là bộ sưu tập hai trong một mới đầy thú vị của Pomellato",
+    "category": {
+      "name": "Watches & Jewelry",
+      "slug": "watches-and-jewelry"
+    },
+    "_updatedAt": "2024-07-19T05:06:33Z",
+    "excerpt": null
+  },
+  {
+    "author": {
+      "name": "Naomi ",
+      "picture": null
+    },
+    "_id": "09627ca5-4b6c-4e71-a647-623f137f7115",
+    "title": "Quyền lực mềm: Giám đốc sáng tạo của Boucheron Claire Choisne nói về đồ trang sức nghi lễ",
+    "date": "2024-04-20T07:44:00.000Z",
+    "_updatedAt": "2024-07-19T07:56:40Z",
+    "excerpt": null,
+    "coverImage": {
+      "_type": "image",
+      "asset": {
+        "_ref": "image-8faf4c9c0e049040701204a8dae0efd242cac6e0-680x1020-png",
+        "_type": "reference"
+      }
+    },
+    "slug": "quyen-luc-mem-giam-doc-sang-tao-cua-boucheron-claire-choisne-noi-ve-do-trang-suc-nghi-le",
+    "description": "Trong The Power of Couture, nhà mốt Pháp này sử dụng các chi tiết trang phục trang trọng như đồ trang sức cao cấp sáng tạo  ",
+    "coverVideo": null,
+    "category": {
+      "name": "Watches & Jewelry",
+      "slug": "watches-and-jewelry"
+    }
+  },
+  {
+    "excerpt": null,
+    "coverVideo": null,
+    "category": {
+      "name": "Watches & Jewelry",
+      "slug": "watches-and-jewelry"
+    },
+    "date": "2024-04-19T05:41:00.000Z",
+    "title": "Bên trong triển lãm mới tuyệt vời của Tiffany & Co. được tổ chức tại Tokyo",
+    "description": "Tiffany Wonder, diễn ra tại Tokyo cho đến tháng 6, là chương trình tham vọng và mở rộng nhất của nhà kim hoàn Mỹ cho đến nay",
+    "_updatedAt": "2024-07-19T06:07:13Z",
+    "coverImage": {
+      "_type": "image",
+      "asset": {
+        "_ref": "image-ed54cae64a19197c81496576f51af201368a71a7-680x1020-png",
+        "_type": "reference"
+      }
+    },
+    "slug": "ben-trong-trien-lam-moi-tuyet-voi-cua-tiffany-and-co-duoc-to-chuc-tai-tokyo",
+    "author": {
+      "name": "Naomi ",
+      "picture": null
+    },
+    "_id": "dd1c67c2-bc8c-49f6-9628-8c7db1e3aa46"
+  },
+  {
+    "date": "2024-03-20T04:43:00.000Z",
+    "_updatedAt": "2024-07-03T04:55:55Z",
+    "coverImage": {
+      "_type": "image",
+      "asset": {
+        "_ref": "image-a80c844becc5070d981d3feac76e3dadf792021d-864x658-png",
+        "_type": "reference"
+      }
+    },
+    "coverVideo": null,
+    "_id": "b4280187-d6d2-4256-87bd-e0485fff4f8d",
+    "title": "Phim nhạc kịch The Wicked sắp ra mắt: Mọi thứ bạn cần biết",
+    "description": null,
+    "excerpt": null,
+    "slug": "phim-nhac-kich-the-wicked-sap-ra-mat-moi-thu-ban-can-biet",
+    "author": {
+      "name": "Tùng Linh",
+      "picture": null
+    },
+    "category": {
+      "name": "Culture",
+      "slug": "culture"
+    }
+  },
+  {
+    "description": "Lý do tại sao các thương hiệu cần nhấn mạnh lại việc quản lý và duy trì bản sắc thương hiệu nhất quán để tránh rơi vào dòng chảy không ngừng của các xu hướng ngắn hạn.",
+    "excerpt": null,
+    "coverImage": {
+      "_type": "image",
+      "asset": {
+        "_ref": "image-c156a42c708a118fdb65f8ef40b1f60b76d657d4-1600x900-png",
+        "_type": "reference"
+      }
+    },
+    "coverVideo": null,
+    "_id": "982a70b7-e573-441f-b80b-3b811b035b26",
+    "title": "Ngành thời trang đang ứng dụng công nghệ AI như thế nào ?",
+    "date": "2024-03-16T11:39:00.000Z",
+    "_updatedAt": "2024-07-02T11:55:09Z",
+    "slug": "nganh-thoi-trang-dang-ung-dung-cong-nghe-ai-nhu-the-nao",
+    "author": {
+      "name": "Tùng Linh",
+      "picture": null
+    },
+    "category": {
+      "name": "Technology",
+      "slug": "technology"
+    }
+  },
+  {
+    "_updatedAt": "2024-07-02T03:28:15Z",
+    "excerpt": null,
+    "coverImage": {
+      "_type": "image",
+      "asset": {
+        "_ref": "image-53f91ff1207bb5389a01ced75f55982a03079e3b-320x480-png",
+        "_type": "reference"
+      }
+    },
+    "coverVideo": null,
+    "author": {
+      "name": "Tùng Linh",
+      "picture": null
+    },
+    "_id": "b7dc51bd-8705-40e4-8d2b-cb636b555ce7",
+    "date": "2024-03-14T22:36:00.000Z",
+    "slug": "nhung-chiec-ao-len-tri-gia-9-000-usd-cua-loro-piana-duoc-tao-ra-boi-nhung-nong-dan-khong-duoc",
+    "category": {
+      "name": "Business",
+      "slug": "business"
+    },
+    "title": "Những chiếc áo len trị giá 9.000 USD của Loro Piana được tạo ra bởi những nông dân không được trả lương ở Peru",
+    "description": "Trong suốt ba mươi năm cung cấp len tốt nhất thế giới cho thương hiệu thời trang Loro Piana, cộng đồng người bản địa tại dãy Andes ở Peru hầu như không được hưởng lợi"
+  },
+  {
+    "description": "Người tiêu dùng ngày càng chuyển sang các kênh trực tuyến để mua sắm sản phẩm làm đẹp. Nhưng khi không có nhân viên bán hàng và chuyên gia da liễu để đề xuất sản phẩm tốt nhất, AI đang bước vào để cá nhân hóa trải nghiệm người tiêu dùng.",
+    "_updatedAt": "2024-07-18T16:55:41Z",
+    "coverVideo": null,
+    "slug": "lieu-ai-co-the-chon-lua-cho-ban-san-pham-lam-dep-yeu-thich-tiep-theo-khong",
+    "category": {
+      "name": "Technology",
+      "slug": "technology"
+    },
+    "author": {
+      "name": "Camille Pham",
+      "picture": null
+    },
+    "_id": "a210f6b9-50e4-4651-960b-ea703a3fdccc",
+    "title": "Liệu AI có thể chọn lựa cho bạn sản phẩm làm đẹp yêu thích tiếp theo không ?",
+    "date": "2024-03-07T13:01:00.000Z",
+    "excerpt": null,
+    "coverImage": {
+      "_type": "image",
+      "asset": {
+        "_ref": "image-1b688c86c11cc8136f56f6f856f703588b00ad7e-563x375-png",
+        "_type": "reference"
+      }
+    }
+  },
+  {
+    "_id": "8cdf9224-71f2-46f0-b1eb-42df33d4f229",
+    "description": "Theo các khách mời như Olivia Wilde và Zoë Kravitz, hở ngực đang là mốt.",
+    "date": "2024-02-28T16:26:00.000Z",
+    "excerpt": null,
+    "coverVideo": null,
+    "slug": "khong-ai-mac-ao-nguc-den-buoi-tinh-dien-saint-laurent-fw-2024",
+    "title": "Không ai mặc áo ngực đến buổi trình diễn Saint Laurent FW 2024",
+    "_updatedAt": "2024-07-02T20:17:14Z",
+    "coverImage": {
+      "_type": "image",
+      "asset": {
+        "_ref": "image-73200b7dfad00f7bc4ef77e8f1bae8aa3fbb6ef8-700x394-png",
+        "_type": "reference"
+      }
+    },
+    "author": {
+      "name": "Camille Pham",
+      "picture": null
+    },
+    "category": {
+      "name": "Style",
+      "slug": "style"
+    }
+  },
+  {
+    "title": "Jennie gợi cảm trong chiến dịch quảng cáo mùa xuân mới của Calvin Klein",
+    "description": null,
+    "date": "2024-02-22T21:11:00.000Z",
+    "_updatedAt": "2024-07-23T20:13:00Z",
+    "coverImage": {
+      "_type": "image",
+      "asset": {
+        "_ref": "image-683bcf1994b08f0b049e11b3d03bfd48ae586111-1080x1350-webp",
+        "_type": "reference"
+      }
+    },
+    "slug": "jennie-goi-cam-trong-chien-dich-quang-cao-mua-xuan-moi-cua-calvin-klein",
+    "_id": "47f6e941-cfb6-4ba0-b146-23a9a662ce2f",
+    "excerpt": null,
+    "coverVideo": null,
+    "author": {
+      "name": "Thanh Thảo",
+      "picture": {
+        "_type": "image",
+        "asset": {
+          "_ref": "image-3a3fd4f9d0beca93afd039f32e2309aec1037152-771x1024-jpg",
+          "_type": "reference"
+        }
+      }
+    },
+    "category": {
+      "name": "Celebrity",
+      "slug": "celebrity"
+    }
+  },
+  {
+    "_updatedAt": "2024-07-19T06:46:54Z",
+    "author": {
+      "name": "Camille Pham",
+      "picture": null
+    },
+    "_id": "8fcf3943-f963-464f-9a1d-c5e1ff35ab95",
+    "description": "Ngôi nhà Chaumet đang đại diện cho sự tinh tế của Paris với các huy chương vàng, bạc và đồng mà họ đã tạo ra cho Thế vận hội Olympic 2024",
+    "excerpt": null,
+    "coverImage": {
+      "_type": "image",
+      "asset": {
+        "_ref": "image-2d0d4fd69e0c18d429f9337893dafa46949ed955-680x1020-png",
+        "_type": "reference"
+      }
+    },
+    "coverVideo": null,
+    "slug": "olympic-paris-2024-mot-thuong-hieu-trang-suc-cao-cap-dung-sau-nhung-tam-huy-chuong",
+    "category": {
+      "name": "Culture",
+      "slug": "culture"
+    },
+    "title": "Olympic Paris 2024: Một thương hiệu trang sức cao cấp đứng sau những tấm huy chương",
+    "date": "2024-02-17T06:40:00.000Z"
+  },
+  {
+    "title": "\"Nổi bật nhưng không phô trương\" - Piaget Polo 79 huyền thoại đang được mang trở lại thị trường nhằm tăng cường cho mảng đồng hồ của thương hiệu",
+    "date": "2024-02-04T22:00:00.000Z",
+    "excerpt": null,
+    "slug": "noi-bat-nhung-khong-pho-truong-do-la-nhung-gi-piaget-noi-ve-mau-dong-ho-polo-79-huyen-thoai-dang",
+    "author": {
+      "name": "Camille Pham",
+      "picture": null
+    },
+    "category": {
+      "name": "Watches & Jewelry",
+      "slug": "watches-and-jewelry"
+    },
+    "_id": "c10c9413-33f6-4373-9492-5e1780cb63c8",
+    "description": "Piaget, thuộc sở hữu của Richemont, đang đưa trở lại một trong những chiếc đồng hồ nổi tiếng nhất của mình nhằm khơi dậy bộ phận đồng hồ sang trọng",
+    "_updatedAt": "2024-07-02T03:29:10Z",
+    "coverImage": {
+      "_type": "image",
+      "asset": {
+        "_ref": "image-7a45437487f16392a13739a36579372d9aa2d784-1200x675-png",
+        "_type": "reference"
+      }
+    },
+    "coverVideo": null
+  },
+  {
+    "title": "Một cuộc triển lãm đồng hồ Cartier lưu trữ quý hiếm đang diễn ra",
+    "_updatedAt": "2024-07-19T09:54:30Z",
+    "coverImage": {
+      "_type": "image",
+      "asset": {
+        "_ref": "image-de4155f68c0d520cbc0551f9b659325f23c24392-680x1020-png",
+        "_type": "reference"
+      }
+    },
+    "slug": "mot-cuoc-trien-lam-dong-ho-cartier-luu-tru-quy-hiem-dang-dien-ra",
+    "author": {
+      "name": "Naomi ",
+      "picture": null
+    },
+    "category": {
+      "name": "Watches & Jewelry",
+      "slug": "watches-and-jewelry"
+    },
+    "_id": "91dcbbae-82f3-45a2-a7d1-d19afd773822",
+    "description": "Ngôi nhà Paris đã chuyển đến 23 chiếc đồng hồ lịch sử quý hiếm từ kho lưu trữ của mình để trưng bày trong một tuần tại không gian Le Salon Cartier ở Ion Orchard",
+    "date": "2024-01-27T09:47:00.000Z",
+    "excerpt": null,
+    "coverVideo": null
+  },
+  {
+    "author": {
+      "name": "Naomi ",
+      "picture": null
+    },
+    "category": {
+      "name": "Watches & Jewelry",
+      "slug": "watches-and-jewelry"
+    },
+    "_id": "52e8dbcc-c7b5-478b-b715-e7644b832f58",
+    "title": "Nhà kim hoàn ngọc bích Choo Yilin đang tạo ra một bước tiến hiếm có và độc quyền hơn với sự trở lại của cô",
+    "date": "2024-01-23T09:35:00.000Z",
+    "excerpt": null,
+    "slug": "nha-kim-hoan-ngoc-bich-choo-yilin-dang-tao-ra-mot-buoc-tien-hiem-co-va-doc-quyen-hon-voi-su-tro",
+    "description": "Nhà kim hoàn Singapore đã giúp tái tạo ngọc bích cho khách hàng hiện đại đang quay trở lại, giờ đây với tầm nhìn sâu sắc hơn về di sản và kể chuyện",
+    "_updatedAt": "2024-07-19T09:42:48Z",
+    "coverImage": {
+      "asset": {
+        "_ref": "image-64c2bf631ae362b175374a5d576c2b4539ccb6e0-680x1020-png",
+        "_type": "reference"
+      },
+      "_type": "image"
+    },
+    "coverVideo": null
+  },
+  {
+    "author": {
+      "name": "Camille Pham",
+      "picture": null
+    },
+    "_updatedAt": "2024-07-19T08:48:45Z",
+    "excerpt": null,
+    "description": "Không chỉ dừng lại ở những thiết kế đơn thuần, thương hiệu xa xỉ của Pháp này đang cho ra mắt bộ sưu tập trang sức cao cấp với những viên đá quý cắt độc quyền của riêng mình  ",
+    "date": "2024-01-19T08:44:00.000Z",
+    "coverImage": {
+      "_type": "image",
+      "asset": {
+        "_ref": "image-b337a8146c831e70cfd8414b8e29093288836c12-680x1020-png",
+        "_type": "reference"
+      }
+    },
+    "coverVideo": null,
+    "slug": "louis-vuitton-dang-ra-mat-nhung-vien-kim-cuong-cat-theo-yeu-cau-cua-rieng-minh",
+    "category": {
+      "name": "Watches & Jewelry",
+      "slug": "watches-and-jewelry"
+    },
+    "_id": "f00313f2-48ab-4ab9-8e03-63b1c272ec9f",
+    "title": "Louis Vuitton đang ra mắt những viên kim cương cắt theo yêu cầu của riêng mình"
+  },
+  {
+    "_id": "245dc445-fd42-42f8-b07b-6f5665d76550",
+    "description": "Hãy nghĩ đến màu hồng! Sản phẩm mới nhất của thương hiệu xa xỉ Pháp bổ sung vào bộ sưu tập đồng hồ Ballon Bleu nổi tiếng của hãng có tông màu hồng với mặt đồng hồ hình tia nắng",
+    "coverImage": {
+      "_type": "image",
+      "asset": {
+        "_ref": "image-d9bd911d61925107e5267631dc8ac87ed20203ae-680x1020-png",
+        "_type": "reference"
+      }
+    },
+    "slug": "ballon-bleu-de-cartier-duoc-khoac-len-minh-lop-ao-hong-moi",
+    "title": "Ballon Bleu de Cartier được khoác lên mình lớp áo hồng mới",
+    "date": "2024-01-12T09:42:00.000Z",
+    "_updatedAt": "2024-07-19T09:47:22Z",
+    "excerpt": null,
+    "coverVideo": null,
+    "author": {
+      "name": "Camille Pham",
+      "picture": null
+    },
+    "category": {
+      "name": "Watches & Jewelry",
+      "slug": "watches-and-jewelry"
+    }
+  },
+  {
+    "description": "Trong bộ sưu tập trang sức cao cấp Ode to Milan, giám đốc sáng tạo của Pomellato, Vincenzo Castaldo, kỷ niệm 20 năm thành lập thương hiệu bằng cái nhìn sâu sắc về các biểu tượng kiến ​​trúc của thành phố",
+    "date": "2024-01-06T08:34:00.000Z",
+    "coverImage": {
+      "_type": "image",
+      "asset": {
+        "_ref": "image-12e0e4703adfc87adb166365f9e53a6d827e83a1-680x1020-png",
+        "_type": "reference"
+      }
+    },
+    "slug": "buc-thu-tinh-cua-pomellato-gui-milan",
+    "author": {
+      "name": "Tùng Linh",
+      "picture": null
+    },
+    "category": {
+      "name": "Watches & Jewelry",
+      "slug": "watches-and-jewelry"
+    },
+    "_id": "1407fc96-3e75-416e-8fc5-e9320878b7ed",
+    "title": "Bức thư tình của Pomellato gửi Milan",
+    "_updatedAt": "2024-07-19T08:44:29Z",
+    "excerpt": null,
+    "coverVideo": null
+  },
+  {
+    "description": "Cô ấy thực sự có thân hình như một vận động viên.",
+    "_updatedAt": "2024-07-02T18:26:04Z",
+    "excerpt": null,
+    "coverImage": {
+      "_type": "image",
+      "asset": {
+        "_ref": "image-214398987e2f370b8f6e10b474715fd3cd20e792-700x875-png",
+        "_type": "reference"
+      }
+    },
+    "coverVideo": null,
+    "category": {
+      "name": "Celebrity",
+      "slug": "celebrity"
+    },
+    "_id": "45206bc5-d578-4d47-a739-5c8b90525d87",
+    "date": "2023-11-08T16:18:00.000Z",
+    "slug": "kendall-jenner-khoe-nhieu-hon-la-chi-vong-ba-trong-chien-dich-quang-cao-moi-cua-jacquemus",
+    "author": {
+      "name": "Camille Pham",
+      "picture": null
+    },
+    "title": "Kendall Jenner khoe nhiều hơn là chỉ vòng ba trong chiến dịch quảng cáo mới của Jacquemus Holiday"
+  },
+  {
+    "_id": "ef5398e2-e352-440d-8df5-d46cfaadf14b",
+    "title": "Galaxy Z Flip5 và Galaxy Tab S9 mới của Samsung được thiết kế dành cho những người sáng tạo",
+    "description": "Sự thể hiện bản thân sáng tạo kết hợp với hiệu suất mạnh mẽ trong dòng sản phẩm Galaxy Z Flip5 và Galaxy Tab S9 mới của Samsung - ra mắt tại Galaxy Unpacked, được tổ chức lần đầu tiên tại Seoul trong năm nay",
+    "_updatedAt": "2024-07-19T12:25:11Z",
+    "excerpt": null,
+    "coverImage": {
+      "_type": "image",
+      "asset": {
+        "_ref": "image-38342c93838121baebb9509a35e9389deef923d4-680x1020-png",
+        "_type": "reference"
+      }
+    },
+    "coverVideo": null,
+    "slug": "galaxy-z-flip5-va-galaxy-tab-s9-moi-cua-samsung-duoc-thiet-ke-danh-cho-nhung-nguoi-sang-tao",
+    "author": {
+      "name": "Camille Pham",
+      "picture": null
+    },
+    "category": {
+      "name": "Technology",
+      "slug": "technology"
+    },
+    "date": "2023-08-19T12:18:00.000Z"
+  }
+]

@@ -25,6 +25,7 @@ import { cn } from '@/lib/utils'
 import HoverCard from './HoverCard'
 import AdsBlock from './AdsBlock'
 import LatestPost from './LatestPost'
+import axios from 'axios'
 
 export interface IndexPageProps {
   preview?: boolean
@@ -50,6 +51,7 @@ export default function IndexPage(props: IndexPageProps) {
           setAllPosts(posts)
           setPosts(posts.slice(0, 3))
           setLoading(false) // Set loading to false after data is fetched
+          savePostsToFile(posts) // Save posts to JSON file
         }, 1000)
       } catch (error) {
         console.error('Error fetching posts:', error)
@@ -60,6 +62,15 @@ export default function IndexPage(props: IndexPageProps) {
 
     fetchPosts()
   }, [])
+
+  const savePostsToFile = async (posts: Post[]) => {
+    try {
+      await axios.post('/api/savePosts', posts)
+      console.log('Posts data saved successfully')
+    } catch (error) {
+      console.error('Error saving posts data:', error)
+    }
+  }
 
   const [heroPost, ...suggestPosts] = allPosts || []
 
