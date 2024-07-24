@@ -4,6 +4,7 @@ import { cn } from '@/lib/utils'
 import Layout from 'app/layout'
 import AdsBlock from 'components/AdsBlock'
 import BlogContainer, { Container } from 'components/BlogContainer'
+import BodyLayoutPost from 'components/BodyLayoutPost'
 import Footer from 'components/Footer'
 import HeroPost from 'components/HeroPost'
 import HoverCard from 'components/HoverCard'
@@ -57,6 +58,7 @@ export default function CategoryPosts({
 
   const headerPosts = posts.slice(0, 2) || []
   const bodyPosts = posts || []
+  bodyPosts.splice(0, 2)
 
   return (
     <>
@@ -114,39 +116,13 @@ export default function CategoryPosts({
           <BlogContainer>
             <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-1 gap-10 sm:gap-8 sm:gap-y-16 xl:gap-[136px] my-10">
               {bodyPosts.map((_, id) => {
-                if (id > 1) {
-                  return (
-                    <>
-                      <div key={id}>
-                        <Link href={`/posts/${_.slug}`}>
-                          <div
-                            className={cn(
-                              id % 2 == 0 ? '' : 'flex-row-reverse',
-                              'xl:flex gap-8 h-full',
-                            )}
-                          >
-                            <div className="sm:w-1/2">
-                              <ImagePost coverImage={_.coverImage} />
-                            </div>
-
-                            <div className="w-full xl:w-1/2 xl:h-full flex flex-col justify-center items-center xl:text-center xl:px-8 ">
-                              <div className="mt-8 sm:mt-10 xl:mt-0 w-full">
-                                <CategoryNameComponent category={_.category} />
-                              </div>
-                              <div className="mt-4">
-                                <p className="text-[32px] xl:text-[40px] xl:text-5xl leading-none sfu-font">
-                                  {_.title}
-                                </p>
-                              </div>
-                            </div>
-                          </div>
-                        </Link>
-                      </div>
-                      {(id - 1) % ADS_PER_POSTS == 0 &&
-                        id - 1 >= ADS_PER_POSTS && <AdsBlock />}
-                    </>
-                  )
-                }
+                return (
+                  <>
+                    <BodyLayoutPost post={_} id={id} />
+                    {(id - 1) % ADS_PER_POSTS == 0 &&
+                      id - 1 >= ADS_PER_POSTS && <AdsBlock />}
+                  </>
+                )
               })}
             </div>
           </BlogContainer>

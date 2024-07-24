@@ -61,7 +61,7 @@ const ScrollPage: React.FC<ScrollPageProps> = ({ moreposts, typeLoader }) => {
               return (
                 <>
                   <div
-                    className="w-full  text-white flex items-center justify-center text-4xl uppercase  border"
+                    className="w-full  text-white flex items-center justify-center text-4xl uppercase  xl:border-t-[1px]"
                     key={post.id}
                     ref={ref}
                   />

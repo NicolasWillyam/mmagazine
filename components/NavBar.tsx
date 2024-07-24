@@ -90,7 +90,7 @@ const NavBar = ({ state, category }: { state: string; category: string }) => {
 
   const MenuBar = ({ inActive }: { inActive: String }) => {
     return (
-      <div className="block">
+      <div className="block min-h-[70vh]">
         <ul className="text-[32px]  leading-[42px]  lg:text-[38px] w-full  xl:w-[365px] lg:leading-[48px] mt-20 xl:mt-28 pr-10 sfu-font tracking-tighter">
           {menuList.map((_, id) => {
             if (_.slug == category) {

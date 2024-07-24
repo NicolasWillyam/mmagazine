@@ -15,7 +15,7 @@ const BodyLayoutPost = ({ id, post }: { id: number; post: Post }) => {
             'xl:flex gap-8 h-full',
           )}
         >
-          <div className="w-1/2">
+          <div className="xl:w-1/2">
             <ImagePost coverImage={post.coverImage} />
           </div>
 
