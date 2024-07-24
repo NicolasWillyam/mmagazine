@@ -42,7 +42,7 @@ export const SuggestPostInPostBody = ({ posts }: { posts: Post[] }) => {
         Có thể bạn sẽ thích
       </p>
       <div className="mt-6 w-full grid grid-cols-2 gap-6  sfu-font">
-        {posts.map((post) => (
+        {posts?.map((post) => (
           <PostSuggested
             key={post._id}
             title={post.title}

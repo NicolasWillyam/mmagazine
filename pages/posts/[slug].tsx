@@ -18,6 +18,7 @@ import { Category, Post, Settings } from 'lib/sanity.queries'
 import { GetStaticProps } from 'next'
 import Head from 'next/head'
 import type { SharedPageProps } from 'pages/_app'
+import ScrollPage from 'pages/page'
 import { useEffect, useState } from 'react'
 
 interface PageProps extends SharedPageProps {
@@ -85,7 +86,7 @@ export default function ProjectSlugRoute(props: PageProps) {
     return () => clearTimeout(timer)
   }, [])
 
-  // console.log(categoriesWithPosts)
+  console.log(categoriesWithPosts)
 
   // Show loading message while fetching data
   if (loading) {
@@ -108,18 +109,8 @@ export default function ProjectSlugRoute(props: PageProps) {
           setLoadedStatus={setLoadedStatus} // Update loadedStatus to false
           order={0}
         />
-        {categoriesWithPosts?.slice(0, 5)?.map((post, index) => (
-          <div key={index}>
-            <PostPage
-              order={1}
-              post={post}
-              morePosts={morePosts}
-              settings={{}} // Pass your settings here
-              loadedStatus={loadedStatus}
-              setLoadedStatus={setLoadedStatus} // Update loadedStatus to false
-            />
-          </div>
-        ))}
+
+        <ScrollPage moreposts={categoriesWithPosts} typeLoader="article" />
       </>
     )
   }

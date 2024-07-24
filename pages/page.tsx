@@ -3,43 +3,27 @@ import React, { useEffect, useRef } from 'react'
 
 import { useInfiniteQuery } from '@tanstack/react-query'
 import { useIntersection } from '@mantine/hooks'
-import { root } from 'postcss'
+import { Post } from 'lib/sanity.queries'
+import BodyLayoutPost from 'components/BodyLayoutPost'
+import PostPage from 'components/PostPage'
 
-const posts = [
-  { id: 1, title: 'post 1' },
-  { id: 2, title: 'post 2' },
-  { id: 3, title: 'post 3' },
-  { id: 4, title: 'post 4' },
-  { id: 5, title: 'post 5' },
-  { id: 6, title: 'post 6' },
-  { id: 7, title: 'post 7' },
-  { id: 8, title: 'post 8' },
-  { id: 9, title: 'post 9' },
-  { id: 10, title: 'post 10' },
-]
-
-const fetchPost = async (page: number) => {
-  await new Promise((resolve) => setTimeout(resolve, 1000))
-  return posts.slice((page - 1) * 2, page * 2)
+interface ScrollPageProps {
+  moreposts: Post[] // Example prop for initial posts
+  typeLoader: string
 }
+// for example: if page =
 
-const Page = () => {
-  //   const { data, fetchNextPage, isFetchingNextPage } = useInfiniteQuery(
-  //     'query',
-  //     async ({ pageParam = 1 }) => {
-  //       const response = await fetchPost(pageParam)
-  //       return response
-  //     },
-  //     {
-  //       getNextPageParam: (_, pages) => {
-  //         return pages.length + 1
-  //       },
-  //       initialData: {
-  //         pages: [posts.slice(0, 2)],
-  //         pageParams: [1],
-  //       },
-  //     },
-  //   )
+const ScrollPage: React.FC<ScrollPageProps> = ({ moreposts, typeLoader }) => {
+  const postsWithId = moreposts.map((post, index) => ({
+    id: index + 1, // id starts from 1
+    ...post,
+  }))
+
+  const fetchPost = async (page: number) => {
+    await new Promise((resolve) => setTimeout(resolve, 500))
+    const currentPage = page - 1
+    return postsWithId.slice(currentPage, currentPage + 1)
+  }
   const { data, fetchNextPage, isFetchingNextPage } = useInfiniteQuery({
     queryKey: ['query'],
     queryFn: async ({ pageParam = 1 }) => {
@@ -51,7 +35,7 @@ const Page = () => {
     },
     initialPageParam: 1, // This is the missing property
     initialData: {
-      pages: [posts.slice(0, 2)],
+      pages: [postsWithId.slice(0, 1)],
       pageParams: [1],
     },
   })
@@ -66,38 +50,72 @@ const Page = () => {
     if (entry?.isIntersecting) fetchNextPage()
   }, [entry])
 
-  const _posts = data?.pages.flatMap((page) => page)
+  const _posts = [...(data?.pages.flatMap((page) => page) ?? [])]
 
-  return (
-    <div>
-      Page:
-      {_posts?.map((post, i) => {
-        if (i === _posts.length - 1)
-          return (
-            <div
-              className="w-full h-[90vh] text-white flex items-center justify-center text-4xl uppercase  bg-black border"
-              key={post.id}
-              ref={ref}
-            ></div>
-          )
-        return (
-          <div
-            className="w-full h-[90vh] text-white flex items-center justify-center text-4xl uppercase  bg-black border"
-            key={post.id}
-          >
-            {post.title}
-          </div>
-        )
-      })}
-      <button onClick={() => fetchNextPage()} disabled={isFetchingNextPage}>
-        {isFetchingNextPage
-          ? 'Loading more...'
-          : (data?.pages.map.length ?? 0) < 3
-            ? 'Load more'
-            : 'Nothing more to load'}
-      </button>
-    </div>
-  )
+  if (typeLoader === 'body-post') {
+    return (
+      <>
+        <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-1 gap-10 sm:gap-8 sm:gap-y-16 xl:gap-[136px] my-10">
+          {_posts?.map((post, i) => {
+            if (i === _posts.length - 1) {
+              return (
+                <>
+                  <div
+                    className="w-full  text-white flex items-center justify-center text-4xl uppercase  border"
+                    key={post.id}
+                    ref={ref}
+                  />
+                </>
+              )
+            }
+
+            return <BodyLayoutPost key={post.id} id={i} post={post} />
+          })}
+        </div>
+        <button onClick={() => fetchNextPage()} disabled={isFetchingNextPage}>
+          {/* {isFetchingNextPage ? 'Loading more...' : 'Load more'} */}
+        </button>
+      </>
+    )
+  }
+
+  if (typeLoader === 'article') {
+    return (
+      <>
+        <div>
+          {_posts?.map((post, i) => {
+            if (i === _posts.length - 1) {
+              return (
+                <>
+                  <div
+                    className="w-full text-white flex items-center justify-center text-4xl uppercase"
+                    key={post.id}
+                    ref={ref}
+                  />
+                </>
+              )
+            }
+
+            return (
+              <article key={i}>
+                <PostPage
+                  post={post}
+                  morePosts={null}
+                  settings={{}} // Pass your settings here
+                  loadedStatus={true}
+                  setLoadedStatus={() => {}} // Update loadedStatus to false
+                  order={0}
+                />
+              </article>
+            )
+          })}
+        </div>
+        <button onClick={() => fetchNextPage()} disabled={isFetchingNextPage}>
+          {/* {isFetchingNextPage ? 'Loading more...' : 'Load more'} */}
+        </button>
+      </>
+    )
+  }
 }
 
-export default Page
+export default ScrollPage

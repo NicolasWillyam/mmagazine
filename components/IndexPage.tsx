@@ -26,6 +26,7 @@ import HoverCard from './HoverCard'
 import AdsBlock from './AdsBlock'
 import LatestPost from './LatestPost'
 import axios from 'axios'
+import ScrollPage from 'pages/page'
 
 export interface IndexPageProps {
   preview?: boolean
@@ -66,9 +67,9 @@ export default function IndexPage(props: IndexPageProps) {
   const savePostsToFile = async (posts: Post[]) => {
     try {
       await axios.post('/api/savePosts', posts)
-      console.log('Posts data saved successfully')
+      // console.log('Posts data saved successfully')
     } catch (error) {
-      console.error('Error saving posts data:', error)
+      // console.error('Error saving posts data:', error)
     }
   }
 
