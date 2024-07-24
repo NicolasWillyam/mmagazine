@@ -26,7 +26,6 @@ import HoverCard from './HoverCard'
 import AdsBlock from './AdsBlock'
 import LatestPost from './LatestPost'
 import axios from 'axios'
-import ScrollPage from 'pages/page'
 
 export interface IndexPageProps {
   preview?: boolean

@@ -3,6 +3,7 @@ import LoadingSpinner from 'components/LoadingSpinner'
 import PostPage from 'components/PostPage'
 import PostPageHead from 'components/PostPageHead'
 import PreviewPostPage from 'components/PreviewPostPage'
+import ScrollPage from 'components/ScroolPage'
 import { readToken } from 'lib/sanity.api'
 import {
   getAllPostsByCategory,
@@ -18,7 +19,7 @@ import { Category, Post, Settings } from 'lib/sanity.queries'
 import { GetStaticProps } from 'next'
 import Head from 'next/head'
 import type { SharedPageProps } from 'pages/_app'
-import ScrollPage from 'pages/page'
+
 import { useEffect, useState } from 'react'
 
 interface PageProps extends SharedPageProps {
@@ -85,8 +86,6 @@ export default function ProjectSlugRoute(props: PageProps) {
 
     return () => clearTimeout(timer)
   }, [])
-
-  console.log(categoriesWithPosts)
 
   // Show loading message while fetching data
   if (loading) {

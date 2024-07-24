@@ -1,6 +1,6 @@
 import { Post } from 'lib/sanity.queries'
 import React from 'react'
-import ScrollPage from 'pages/page'
+import ScrollPage from './ScroolPage'
 
 const LatestPost = ({ posts }: { posts: Post[] }) => {
   return (
