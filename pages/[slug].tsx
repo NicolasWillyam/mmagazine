@@ -125,7 +125,7 @@ export default function CategoryPosts({
                               'xl:flex gap-8 h-full',
                             )}
                           >
-                            <div className="w-1/2">
+                            <div className="sm:w-1/2">
                               <ImagePost coverImage={_.coverImage} />
                             </div>
 
