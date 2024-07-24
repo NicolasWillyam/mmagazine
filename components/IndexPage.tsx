@@ -73,6 +73,7 @@ export default function IndexPage(props: IndexPageProps) {
   }
 
   const [heroPost, ...suggestPosts] = allPosts || []
+  allPosts.splice(0, 3)
 
   if (loading) {
     // Show loading spinner while waiting for data
