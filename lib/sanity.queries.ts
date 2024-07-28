@@ -8,6 +8,7 @@ export const postFields = groq`
   _updatedAt,
   excerpt,
   coverImage,
+  coverVideo,
   "slug": slug.current,
   "author": author->{name, picture},
   "category": category->{name, slug},
@@ -23,16 +24,7 @@ export const settingsQuery = groq`*[_type == "settings"][0]`
 // Config by William
 export const indexQuery = groq`
 *[_type == "post"] | order(date desc, _updatedAt desc) {
-   _id,
-  title,
-  description,
-  date,
-  _updatedAt,
-  excerpt,
-  coverImage,
-  "slug": slug.current,
-  "author": author->{name, picture},
-  "category": category->{name, slug},
+  ${postFields}
 }
   `
 
@@ -81,6 +73,7 @@ export interface Post {
   title?: string
   description?: string
   coverImage?: any
+  coverVideo?: any
   date?: string
   _updatedAt?: string
   excerpt?: string

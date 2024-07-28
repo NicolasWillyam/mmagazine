@@ -1,9 +1,7 @@
 {
   "extends": "next",
-  "plugins": ["simple-import-sort"],
   "rules": {
-    "simple-import-sort/imports": "warn",
-    "simple-import-sort/exports": "warn",
-    "react-hooks/exhaustive-deps": "error"
+    "react/no-unescaped-entities": "off",
+    "@next/next/no-page-custom-font": "off"
   }
 }

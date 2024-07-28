@@ -1,0 +1,71 @@
+/* styles/fonts.css */
+  @import url('https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100..900;1,100..900&display=swap');
+  @font-face {
+    font-family: 'SFUGoudyMedium';
+    src: url('/fonts/SFUGoudyMedium.TTF') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: 'SFUGoudyTimesTenRoman';
+    src: url('/fonts/SFUTimesTenRoman.TTF') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: 'EpilogueExtralight';
+    src: url('/fonts/EpilogueExtralight.TTF') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: 'EpilogueLight';
+    src: url('/fonts/EpilogueLight.TTF') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: 'ShelleyLTStd-Script';
+    src: url('/fonts/ShelleyLTStd-Script.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  
+
+  body {
+    /* font-family: 'SFUGoudyMedium'; */
+  }
+
+  .custom-selection::selection {
+    @apply text-white; /* Màu nền đen và màu văn bản trắng khi được bôi đen */
+    background-color: #EE0000;
+}
+
+  .sfu-font {
+    font-family: 'SFUGoudyTimesTenRoman';
+    letter-spacing: -0.05em;
+  }
+
+  .shelley-font {
+    font-family: 'ShelleyLTStd-Script';
+  }
+
+  .arial-font {
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  .epilogue {
+    font-family: "EpilogueLight";
+  }
+
+  .epilogue-400 {
+    font-family: "Epilogue";
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  

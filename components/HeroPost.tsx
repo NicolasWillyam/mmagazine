@@ -1,61 +1,55 @@
-import AuthorAvatar from 'components/AuthorAvatar'
-import CoverImage from 'components/CoverImage'
-import Date from 'components/PostDate'
-import { urlForImage } from 'lib/sanity.image'
 import type { Post } from 'lib/sanity.queries'
 import Link from 'next/link'
+import { useEffect, useState } from 'react'
 
-import { CategoryNameComponent } from './PostDetailComponents'
+import { CategoryNameComponent, TitleComponent } from './PostDetailComponents'
+import MenuBar from './MenuBar'
+import HoverCard from './HoverCard'
+import { IMAGE_RATIO } from 'utils/constant'
+import ImagePost from './ImagePost'
 
-export default function HeroPost({ posts }: { posts: Post }) {
-  const img = urlForImage(posts?.coverImage).height(1000).width(2000).url()
-
+export default function HeroPost({ posts }: { posts: Post[] }) {
   return (
     <section>
-      <div
-        style={{
-          backgroundImage: `url('${img}')`,
-        }}
-        className="w-full xl:h-[800px] md:h-[500px]  h-[300px] bg-cover bg-no-repeat bg-center"
-      >
-        <div className="hidden md:flex w-full h-full bg-black/30 items-end xl:items-center justify-center">
-          <div className="w-[580px] text-center text-white py-6 grid grid-cols-1 gap-3">
-            <CategoryNameComponent category={posts.category} />
-            <Link href={`/posts/${posts.slug}`}>
-              <p className="text-4xl xl:text-[45px] xl:leading-[54px]">
-                {posts.title}
-              </p>
-              <p className="text-base mt-4">
-                <span>
-                  {' '}
-                  <Date dateString={posts.date} />
-                </span>{' '}
-                by <span>{posts.author.name}</span>
-              </p>
-            </Link>
+      <div className="w-full sm:flex items-start mb-12">
+        <MenuBar inActive={null} />
+        <div className="w-full grid xl:grid-cols-2 xl:gap-16 gap-10">
+          <BigHeroPostLayout id={0} post={posts[0]} />
+          <div className="grid lg:grid-cols-2 xl:grid-cols-1 sm:gap-16 gap-10 lg:gap-8 xl:gap-10">
+            <SmallHeroPostLayout id={1} post={posts[1]} />
+            <SmallHeroPostLayout id={2} post={posts[2]} />
           </div>
         </div>
       </div>
-      <div className="md:hidden w-full h-full flex items-center justify-center">
-        <div className="w-full py-6 grid grid-cols-1 gap-3 px-4">
-          <Link href={`/${posts.category.slug}`}>
-            <p className="uppercase text-base underline underline-offset-2">
-              {posts.category.name}
-            </p>
-          </Link>
-          <Link href={`/posts/${posts.slug}`}>
-            <p className="text-[20px] leading-[24px]">{posts.title}</p>
-            <p className="text-base">{posts.description}</p>
-            <p className="text-sm font-light">
-              <span>
-                {' '}
-                <Date dateString={posts.date} />
-              </span>{' '}
-              by <span>{posts.author.name}</span>
-            </p>
-          </Link>
+    </section>
+  )
+}
+export const BigHeroPostLayout = ({ post, id }: { post: Post; id: number }) => {
+  return (
+    <Link href={`/posts/${post.slug}`}>
+      <div className="w-full h-auto">
+        <ImagePost coverImage={post.coverImage} />
+        <div className="mt-8">
+          <CategoryNameComponent category={post.category} />
+        </div>
+        <TitleComponent title={post.title} fontSize={32} />
+      </div>
+    </Link>
+  )
+}
+
+const SmallHeroPostLayout = ({ post, id }: { post: Post; id: number }) => {
+  return (
+    <Link href={`/posts/${post.slug}`}>
+      <div className="w-full sm:flex lg:block xl:flex ">
+        <div className="w-full px-12 sm:px-0 sm:w-3/5 lg:w-full xl:w-3/5">
+          <ImagePost coverImage={post.coverImage} />
+        </div>
+        <div className="w-full sm:w-2/5 lg:w-full xl:w-2/5 mt-8 sm:pl-6 lg:pl-0 xl:pl-6 lg:mt-6 xl:mt-0">
+          <CategoryNameComponent category={post.category} />
+          <TitleComponent title={post.title} fontSize={24} />
         </div>
       </div>
-    </section>
+    </Link>
   )
 }

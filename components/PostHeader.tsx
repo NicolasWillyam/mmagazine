@@ -25,63 +25,60 @@ import { TbMailFilled } from 'react-icons/tb'
 import category from 'schemas/category'
 
 import { CategoryNameComponent } from './PostDetailComponents'
+import { useEffect, useState } from 'react'
+import { client } from 'lib/sanity'
+import PortraitPostHead from './PortraitPostHead'
+import LandscapePostHead from './LandscapePostHead'
 
 export default function PostHeader(props: Post) {
   const { title, description, category, coverImage, date, author, slug } = props
-  const postImage = urlForImage(coverImage).height(1500).width(1000).url()
+  const postImage = urlForImage(coverImage).url()
+
   const pathname = usePathname()
   const url = `${process.env.NEXT_PUBLIC_BASE_URL}${pathname}`
 
-  return (
-    <>
-      <div className="max-w-[1560px] mx-auto sm:flex">
-        <div className="w-full sm:w-[42%] h-auto sm:mt-48 mt-24 flex items-center">
-          <div className="sm:text-center py-auto sm:px-16 px-4">
-            <CategoryNameComponent category={category} />
-            <p className=" mt-4 sm:mt-8  mr-8 sm:mr-0 text-2xl leading-[30px] sm:text-[52px] sm:leading-[54px]">
-              {title}
-            </p>
-            <p className="text-lg my-4 sm:my-6 sm:text-xl">{description}</p>
-            <div className="flex flex-row-reverse gap-1 justify-end sm:block">
-              <p>
-                <span className="text-sm italic mr-1">by</span>
-                <span className="text-base font-bold">{author.name}</span>
-              </p>
-              <p className="text-base font-light italic">
-                <Date dateString={date} />
-              </p>
-            </div>
-            <div className="sm:mx-auto flex items-center w-fit sm:mt-8 sm:mb-0 my-4 gap-4">
-              {/* <AiOutlineMail size={20} /> */}
-              <FacebookShareButton url={url}>
-                <RiFacebookFill size={24} />
-              </FacebookShareButton>
-              <PinterestShareButton url={url} media="">
-                <FaPinterest size={20} />
-              </PinterestShareButton>
-              <LinkedinShareButton url={url}>
-                <FaLinkedinIn size={20} />
-              </LinkedinShareButton>
-              <WhatsappShareButton url={url}>
-                <FaWhatsapp size={20} />
-              </WhatsappShareButton>
-              <TelegramShareButton url={url}>
-                <LiaTelegram size={20} />
-              </TelegramShareButton>
-            </div>
-          </div>
-        </div>
+  const [postLayout, setPostLayout] = useState<String>('')
 
-        <div className="w-full sm:w-[58%]">
-          <img src={postImage} alt="image" className="w-full h-auto" />
-          {/* <div
-            style={{
-              backgroundImage: `url('${postImage}')`,
-            }}
-            className="w-full h-full bg-cover bg-no-repeat bg-center"
-          ></div> */}
-        </div>
-      </div>
-    </>
+  useEffect(() => {
+    // Fetch image asset metadata
+    client
+      .getDocument(coverImage.asset._ref)
+      .then((asset) => {
+        if (asset && asset.metadata && asset.metadata.dimensions) {
+          const imgWidth = asset.metadata.dimensions.width
+          const imgHeigh = asset.metadata.dimensions.height
+          if (imgWidth > imgHeigh) {
+            setPostLayout('landscape')
+          } else {
+            setPostLayout('portrait')
+          }
+        }
+      })
+      .catch((error) => console.error('Error fetching asset metadata:', error))
+  }, [coverImage])
+
+  return (
+    <div className="mb-6">
+      {postLayout == 'portrait' && (
+        <PortraitPostHead
+          title={title}
+          description={description}
+          category={category}
+          coverImage={coverImage}
+          date={date}
+          author={author}
+        />
+      )}
+      {postLayout == 'landscape' && (
+        <LandscapePostHead
+          title={title}
+          description={description}
+          category={category}
+          coverImage={coverImage}
+          date={date}
+          author={author}
+        />
+      )}
+    </div>
   )
 }

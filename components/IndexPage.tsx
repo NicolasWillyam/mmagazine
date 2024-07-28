@@ -18,6 +18,16 @@ import LoadingSpinner from './LoadingSpinner'
 // import MoreBlogs from './MoreBlogs'
 import NavBar from './NavBar'
 import { SuggestPost } from './SuggestPost'
+import MenuBar from './MenuBar'
+import CategoryPostsLayout from './CategoryPostsLayout'
+import CategoryContainer from './CategoryContainer'
+import Link from 'next/link'
+import { urlForImage } from 'lib/sanity.image'
+import { cn } from '@/lib/utils'
+import HoverCard from './HoverCard'
+import AdsBlock from './AdsBlock'
+import LatestPost from './LatestPost'
+import axios from 'axios'
 
 const MoreBlogs = dynamic(() => import('./MoreBlogs'), { ssr: false })
 
@@ -35,6 +45,7 @@ export default function IndexPage(props: IndexPageProps) {
   const { settings } = props
   const { title = demo.title, description = demo.description } = settings || {}
   const [allPosts, setAllPosts] = useState<Post[]>([])
+  const [posts, setPosts] = useState<Post[]>([])
 
   const onScroll = useCallback((event) => {
     if (typeof window === 'undefined') return
@@ -52,7 +63,9 @@ export default function IndexPage(props: IndexPageProps) {
 
         setTimeout(() => {
           setAllPosts(posts)
+          setPosts(posts.slice(0, 3))
           setLoading(false) // Set loading to false after data is fetched
+          savePostsToFile(posts) // Save posts to JSON file
         }, 1000)
       } catch (error) {
         console.error('Error fetching posts:', error)
@@ -64,7 +77,17 @@ export default function IndexPage(props: IndexPageProps) {
     fetchPosts()
   }, [])
 
+  const savePostsToFile = async (posts: Post[]) => {
+    try {
+      await axios.post('/api/savePosts', posts)
+      // console.log('Posts data saved successfully')
+    } catch (error) {
+      // console.error('Error saving posts data:', error)
+    }
+  }
+
   const [heroPost, ...suggestPosts] = allPosts || []
+  allPosts.splice(0, 3)
 
   if (loading) {
     // Show loading spinner while waiting for data
@@ -77,27 +100,16 @@ export default function IndexPage(props: IndexPageProps) {
 
   return (
     <>
-      <NavBar state="black" />
+      <NavBar state="black" category={null} />
       <IndexPageHead settings={settings} />
 
-      <div className="min-h-screen w-full mx-auto">
+      <div className="w-full mx-auto pt-24 px-5 sm:px-0">
         <BlogContainer>
-          {/* Render HeroPost if exists */}
-          {heroPost && <HeroPost posts={heroPost} />}
-
-          {/* Render SuggestPost with suggestPosts */}
-          <SuggestPost posts={suggestPosts} />
-
-          <div className="xl:max-w-[1440px] 2xl:max-w-[1920px] mx-auto">
-            {/* Render MoreBlogs component if suggestPosts exist */}
-            {suggestPosts.length > 0 && isShow && (
-              <MoreBlogs posts={suggestPosts} />
-            )}
-          </div>
+          <HeroPost posts={posts} />
+          <AdsBlock />
+          <CategoryContainer posts={allPosts} />
         </BlogContainer>
       </div>
-
-      <Footer />
     </>
   )
 }

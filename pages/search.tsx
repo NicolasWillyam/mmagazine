@@ -1,4 +1,4 @@
-import { Container } from 'components/BlogContainer'
+import BlogContainer, { Container } from 'components/BlogContainer'
 import Footer from 'components/Footer'
 import NavBar from 'components/NavBar'
 import { PostPreview } from 'components/PostPreview'
@@ -70,9 +70,9 @@ const SearchPage = () => {
 
   return (
     <>
-      <NavBar state="black" />
+      <NavBar state="black" category={null} />
       <Container>
-        <div className="pt-20 sm:pt-48 w-full text-center">
+        <div className="pt-20 sm:pt-48 w-full text-center sfu-font">
           <form
             onSubmit={handleSubmit}
             className="max-w-[800px] mx-4 sm:mx-auto flex items-center border p-2 py-4 sm:p-4 sm:py-6 gap-4"
@@ -90,7 +90,7 @@ const SearchPage = () => {
           </form>
           {searchQuery != '' && (
             <>
-              <div className="text-xl uppercase mt-6 underline underline-offset-2 decoration-1">
+              <div className="text-xl uppercase mt-6 decoration-1">
                 SEARCH RESULTS FOR
               </div>
               <p className="text-3xl sm:text-[55px] sm:leading-[66px] mt-3">
@@ -106,8 +106,8 @@ const SearchPage = () => {
           )}
         </div>
 
-        <div className="max-w-[1920px] mx-auto sm:px-9 my-10 sm:my-20 grid grid-cols-1 gap-y-20">
-          <div className="grid grid-cols-1 gap-y-20 sm:grid-cols-3 gap-4">
+        <BlogContainer>
+          <div className="mx-5 sm:mx-0 grid grid-cols-1 gap-y-16 sm:grid-cols-3 gap-14 my-10 mb-20">
             {searchResults.map((post) => (
               <PostPreview
                 key={post._id}
@@ -121,9 +121,8 @@ const SearchPage = () => {
               />
             ))}
           </div>
-        </div>
+        </BlogContainer>
       </Container>
-      <Footer />
     </>
   )
 }

@@ -3,6 +3,7 @@ import LoadingSpinner from 'components/LoadingSpinner'
 import PostPage from 'components/PostPage'
 import PostPageHead from 'components/PostPageHead'
 import PreviewPostPage from 'components/PreviewPostPage'
+import ScrollPage from 'components/ScroolPage'
 import { readToken } from 'lib/sanity.api'
 import {
   getAllPostsByCategory,
@@ -18,6 +19,7 @@ import { Category, Post, Settings } from 'lib/sanity.queries'
 import { GetStaticProps } from 'next'
 import Head from 'next/head'
 import type { SharedPageProps } from 'pages/_app'
+
 import { useEffect, useState } from 'react'
 
 interface PageProps extends SharedPageProps {
@@ -30,13 +32,12 @@ interface Query {
   [key: string]: string
 }
 
-const fetchPostsByCategory = async (
+export const fetchPostsByCategory = async (
   categoryName: string,
   title: string,
   setCategoriesWithPosts: Function,
 ) => {
   try {
-    console.log(categoryName, title)
     const result = await getAllPostsByCategory({ categoryName, title })
     if (result?.posts?.length > 0) {
       setCategoriesWithPosts(result.posts)
@@ -95,33 +96,23 @@ export default function ProjectSlugRoute(props: PageProps) {
         </div>
       </div>
     )
+  } else {
+    return (
+      <>
+        <PostPageHead post={post} />
+        <PostPage
+          post={post}
+          morePosts={morePosts}
+          settings={{}} // Pass your settings here
+          loadedStatus={loadedStatus}
+          setLoadedStatus={setLoadedStatus} // Update loadedStatus to false
+          order={0}
+        />
+
+        <ScrollPage moreposts={categoriesWithPosts} typeLoader="article" />
+      </>
+    )
   }
-
-  console.log(categoriesWithPosts)
-
-  return (
-    <>
-      <PostPageHead post={post} />
-      <PostPage
-        post={post}
-        morePosts={morePosts}
-        settings={{}} // Pass your settings here
-        loadedStatus={loadedStatus}
-        setLoadedStatus={setLoadedStatus} // Update loadedStatus to false
-      />
-      {categoriesWithPosts?.slice(0, 5)?.map((post, index) => (
-        <div key={index}>
-          <PostPage
-            post={post}
-            morePosts={morePosts}
-            settings={{}} // Pass your settings here
-            loadedStatus={loadedStatus}
-            setLoadedStatus={setLoadedStatus} // Update loadedStatus to false
-          />
-        </div>
-      ))}
-    </>
-  )
 }
 
 export const getStaticProps: GetStaticProps<PageProps, Query> = async (ctx) => {

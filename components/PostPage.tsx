@@ -31,8 +31,12 @@ import { HiArrowLongRight } from 'react-icons/hi2'
 
 import BlogContainer from './BlogContainer'
 import { Button } from './ui/button'
+import PortraitPost from './PortraitPostHead'
+import AdsBlock from './AdsBlock'
+import { useRouter } from 'next/router'
 
 export interface PostPageProps {
+  order: number
   preview?: boolean
   loading?: boolean
   post: Post
@@ -46,6 +50,7 @@ const NO_POSTS: Post[] = []
 
 export default function PostPage(props: PostPageProps) {
   const {
+    order,
     preview,
     loading,
     morePosts = NO_POSTS,
@@ -73,45 +78,61 @@ export default function PostPage(props: PostPageProps) {
     }
   }, [setLoadedStatus])
 
+  const router = useRouter()
   const slug = post?.slug
+
+  useEffect(() => {
+    if (slug) {
+      router.replace(`/posts/${slug}`, undefined, { shallow: true })
+    }
+  }, [slug])
 
   if (!slug && !preview) {
     return <Error statusCode={404} />
   }
 
-  if (loadedStatus == true) {
-    return (
-      <>
-        <NavBar state="black" />
-        <Layout preview={preview} loading={loading}>
-          <BlogContainer>
-            {preview && !post ? (
-              <PostTitle>
-                <div className="w-full h-screen flex items-center justify-center text-2xl">
-                  Loading…
+  return (
+    <>
+      <Head>
+        <title>{post.title}</title>
+        <meta name="description" content={post.description} />
+        {/* Add other meta tags as needed */}
+      </Head>
+      <NavBar state="black" category={post.category.slug} />
+      <Layout preview={preview} loading={loading}>
+        <BlogContainer>
+          {preview && !post ? (
+            <PostTitle>
+              <div className="w-full h-screen flex items-center justify-center text-2xl">
+                Loading…
+              </div>
+            </PostTitle>
+          ) : (
+            <>
+              <article className="grid grid-cols-1 gap-6">
+                <PostHeader
+                  title={post.title}
+                  description={post.description}
+                  category={post.category}
+                  coverImage={post.coverImage}
+                  date={post.date}
+                  author={post.author}
+                />
+                <div className="px-4">
+                  <AdsBlock />
                 </div>
-              </PostTitle>
-            ) : (
-              <>
-                <article>
-                  <PostHeader
-                    title={post.title}
-                    description={post.description}
-                    category={post.category}
-                    coverImage={post.coverImage}
-                    date={post.date}
-                    author={post.author}
-                  />
 
-                  <PostBody content={post.content} posts={morePosts} />
-                </article>
-                <SectionSeparator />
-                {/* {morePosts?.length > 0 && <MoreStories posts={morePosts} />} */}
-              </>
-            )}
-          </BlogContainer>
-        </Layout>
-      </>
-    )
-  }
+                <PostBody
+                  order={order}
+                  content={post.content}
+                  posts={morePosts}
+                />
+              </article>
+              <SectionSeparator />
+            </>
+          )}
+        </BlogContainer>
+      </Layout>
+    </>
+  )
 }

@@ -1,8 +1,13 @@
 import 'tailwindcss/tailwind.css'
+import '../styles/fonts.css'
+import '../styles/globals.css'
+import { QueryClient, QueryClientProvider } from '@tanstack/react-query'
 
 import { VisualEditing } from '@sanity/visual-editing/next-pages-router'
 import { AppProps } from 'next/app'
 import dynamic from 'next/dynamic'
+
+const queryClient = new QueryClient()
 
 export interface SharedPageProps {
   draftMode: boolean
@@ -18,14 +23,17 @@ export default function App({
   const { draftMode, token } = pageProps
   return (
     <>
-      {draftMode ? (
-        <PreviewProvider token={token}>
+      <QueryClientProvider client={queryClient}>
+        {' '}
+        {draftMode ? (
+          <PreviewProvider token={token}>
+            <Component {...pageProps} />
+          </PreviewProvider>
+        ) : (
           <Component {...pageProps} />
-        </PreviewProvider>
-      ) : (
-        <Component {...pageProps} />
-      )}
-      {draftMode && <VisualEditing />}
+        )}
+        {draftMode && <VisualEditing />}
+      </QueryClientProvider>
     </>
   )
 }

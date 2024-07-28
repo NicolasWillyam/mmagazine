@@ -1,29 +1,30 @@
 // pages/[slug].tsx
 
+import { cn } from '@/lib/utils'
 import Layout from 'app/layout'
-import { Container } from 'components/BlogContainer'
+import AdsBlock from 'components/AdsBlock'
+import BlogContainer, { Container } from 'components/BlogContainer'
+import BodyLayoutPost from 'components/BodyLayoutPost'
 import Footer from 'components/Footer'
 import HeroPost from 'components/HeroPost'
+import HoverCard from 'components/HoverCard'
+import ImagePost from 'components/ImagePost'
 import LoadingSpinner from 'components/LoadingSpinner'
-import NavBar from 'components/v1/NavBar'
+import MenuBar from 'components/MenuBar'
+import MoreBlogInCategory from 'components/MoreBlogInCategory'
+import NavBar from 'components/NavBar'
+import { CategoryNameComponent } from 'components/PostDetailComponents'
 import { SuggestPost } from 'components/SuggestPost'
-import Overview from 'components/v1/Overview'
-import useEventListener from 'hooks/userEventListener'
 import { fetchCategories, getPostsByCategory } from 'lib/sanity.client' // Adjust import path as per your project structure
+import { urlForImage } from 'lib/sanity.image'
 import { Post } from 'lib/sanity.queries'
 import { GetStaticPaths, GetStaticProps } from 'next'
-import dynamic from 'next/dynamic'
 import Head from 'next/head'
+import Link from 'next/link'
 import { useRouter } from 'next/router'
-import { useCallback, useEffect, useState } from 'react'
+import { useEffect, useState } from 'react'
+import { ADS_PER_POSTS } from 'utils/constant'
 import { slugToCategory } from 'utils/function'
-import { List } from 'lucide-react'
-import ListLatestPost from 'components/v1/LatestPost'
-
-const MoreBlogInCategory = dynamic(
-  () => import('components/MoreBlogInCategory'),
-  { ssr: false },
-)
 
 export default function CategoryPosts({
   category,
@@ -34,15 +35,6 @@ export default function CategoryPosts({
 }) {
   const router = useRouter()
   const [loading, setLoading] = useState(true) // Loading state
-  const [isShow, setIsShow] = useState(false)
-  const onScroll = useCallback((event) => {
-    if (typeof window === 'undefined') return
-    if (Math.round(window.scrollY) > 100) {
-      setIsShow(true)
-    }
-  }, [])
-
-  useEventListener('scroll', onScroll)
 
   useEffect(() => {
     const timer = setTimeout(() => {
@@ -64,8 +56,12 @@ export default function CategoryPosts({
   }
   const [heroPost, ...morePosts] = posts || []
 
+  const headerPosts = posts.slice(0, 2) || []
+  const bodyPosts = posts || []
+  bodyPosts.splice(0, 2)
+
   return (
-    <div className='flex flex-col justify-center'>
+    <>
       <Head>
         <title>{slugToCategory(category)}</title>
         <meta
@@ -74,27 +70,62 @@ export default function CategoryPosts({
         />
         <meta name="description" content={'M MAGAZINE Vietnam'} />
       </Head>
-      {/* <NavBar state="black" /> */}
-      <div className="w-full max-w-[1920px] justify-self-center space-y-16">
-        <NavBar state="black"/>
-        <div className="w-full flex justify-center">
-          <Overview category={slugToCategory(category)} isOverview/>
-        </div>
-      </div>
-      
+      <NavBar state="black" category={category} />
 
       {posts.length > 0 ? (
-        <div className="w-full flex flex-col items-center my-8">
-          {/* <BlogHeader title={title} description={description} level={1} /> */}
-          {/* {heroPost && <HeroPost posts={posts[0]} />}
+        <div className="w-full mx-auto pt-24 sm:px-0 px-5">
+          <BlogContainer>
+            {/* <HeroPost posts={posts} /> */}
 
-          <Container>
-            <SuggestPost posts={morePosts} />
-            {morePosts.length > 3 && isShow && (
-              <MoreBlogInCategory posts={morePosts} />
-            )}
-          </Container> */}
-          <ListLatestPost posts={posts}/>
+            <div className="w-full flex items-start mb-12">
+              <MenuBar inActive={category} />
+              <div className="w-full">
+                <div className="w-fit ml-auto text-right capitalize leading-none tracking-tighter text-[50px] sm:text-[86px] xl:text-[116px]  sm:-mt-4 sfu-font hover:text-[#EE0000] hover:italic  cursor-pointer transition duration-100">
+                  {slugToCategory(category)}
+                </div>
+                <div className="w-full grid xl:grid-cols-2 gap-12 mt-6 lg:mt-10 xl:mt-16">
+                  {headerPosts.map((_, id) => (
+                    <div key={id}>
+                      <Link href={`/posts/${_.slug}`}>
+                        <div
+                          style={{
+                            backgroundImage: `url('${urlForImage(_.coverImage).url()}')`,
+                          }}
+                          className="w-full h-[506px] sm:h-[590px] lg:h-[860px] xl:h-[590px] bg-cover bg-no-repeat bg-center"
+                        >
+                          <HoverCard />
+                        </div>
+
+                        <div className="mt-8">
+                          <CategoryNameComponent category={_.category} />
+                        </div>
+                        <div className="mt-4">
+                          <p className="text-[32px] leading-none sfu-font">
+                            {_.title}
+                          </p>
+                        </div>
+                      </Link>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            </div>
+          </BlogContainer>
+          <AdsBlock />
+
+          <BlogContainer>
+            <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-1 gap-10 sm:gap-8 sm:gap-y-16 xl:gap-[136px] my-10">
+              {bodyPosts.map((_, id) => {
+                return (
+                  <>
+                    <BodyLayoutPost post={_} id={id} />
+                    {(id - 1) % ADS_PER_POSTS == 0 &&
+                      id - 1 >= ADS_PER_POSTS && <AdsBlock />}
+                  </>
+                )
+              })}
+            </div>
+          </BlogContainer>
         </div>
       ) : (
         <div className="min-h-screen w-full flex items-center justify-center">
@@ -105,9 +136,7 @@ export default function CategoryPosts({
           </div>
         </div>
       )}
-
-      <Footer />
-    </div>
+    </>
   )
 }
 // Assuming you have a function to fetch all categories for dynamic paths

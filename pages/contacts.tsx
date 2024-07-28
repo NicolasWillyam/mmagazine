@@ -20,13 +20,13 @@ const PrivacyPolicy = () => {
           content={'Contacts - M MAGAZINE Vietnam'}
         />
       </Head>
-      <NavBar state="black" />
-      <div className="py-48 grid grid-cols-1 gap-24">
+      <NavBar state="black" category={null} />
+      <div className="py-48 grid grid-cols-1 gap-24 sfu-font">
         <p className="text-3xl leading-[36px] sm:text-[55px] sm:leading-[66px] text-black text-center uppercase">
           Contacts
         </p>
-        <div className="max-w-[960px] mx-auto text-base text-center grid grid-cols-1 gap-2 px-4">
-          <p className="font-bold text-lg">
+        <div className="max-w-[960px] mx-auto text-xl text-center grid grid-cols-1 gap-2 px-4">
+          <p className="font-bold text-xl">
             Mọi thông tin quảng cáo, xin vui lòng liên hệ:
           </p>
           <p>Mrs. Trần Thanh Thảo</p>
@@ -35,7 +35,6 @@ const PrivacyPolicy = () => {
           <p>108 Mai Thị Lựu, phường Đa Kao, quận 1, thành phố Hồ Chí Minh</p>
         </div>
       </div>
-      <Footer />
     </>
   )
 }

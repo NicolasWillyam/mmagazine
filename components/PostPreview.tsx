@@ -11,6 +11,7 @@ import {
   PostedComponent,
   TitleComponent,
 } from './PostDetailComponents'
+import ImagePost from './ImagePost'
 
 export function PostPreview({
   title,
@@ -23,27 +24,15 @@ export function PostPreview({
   slug,
 }: Omit<Post, '_id'>) {
   return (
-    <div className="w-full">
-      <Link href={`/posts/${slug}`}>
-        <div
-          style={{
-            backgroundImage: `url('${urlForImage(coverImage).url()}')`,
-          }}
-          className="w-full h-[300px] md:h-[170px] xl:h-[230px] 2xl:h-[380px] bg-cover bg-no-repeat bg-center"
-        />
-      </Link>
-
-      <div className="grid grid-cols-1 gap-3 py-6 px-4">
-        <PostDetails
-          category={category}
-          title={title}
-          description={description}
-          slug={slug}
-          date={date}
-          author={author.name}
-        />
+    <Link href={`/posts/${slug}`}>
+      <div className="w-full h-auto">
+        <ImagePost coverImage={coverImage} />
+        <div className="mt-8">
+          <CategoryNameComponent category={category} />
+        </div>
+        <TitleComponent title={title} fontSize={32} />
       </div>
-    </div>
+    </Link>
   )
 }
 

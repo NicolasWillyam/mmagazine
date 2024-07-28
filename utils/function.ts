@@ -3,19 +3,27 @@ export const slugToCategory = (slug: string) => {
   return slug
     .replace(/-/g, ' ')
     .split(' ')
-    .map((word) => word.charAt(0).toUpperCase() + word.slice(1))
+    .map((word) => {
+      if (word.toLowerCase() === 'and') {
+        return '&'
+      } else {
+        return word.charAt(0).toUpperCase() + word.slice(1)
+      }
+    })
     .join(' ')
 }
 
-export const slugify = (text: string) => {
-  return text
-    .toString() // Cast to string (optional)
-    .normalize('NFKD') // The normalize() using NFKD method returns the Unicode Normalization Form of a given string.
-    .toLowerCase() // Convert the string to lowercase letters
-    .trim() // Remove whitespace from both sides of a string (optional)
-    .replace(/\s+/g, '-') // Replace spaces with -
-    .replace(/[^\w\-]+/g, '') // Remove all non-word chars
-    .replace(/\_/g, '-') // Replace _ with -
-    .replace(/\-\-+/g, '-') // Replace multiple - with single -
-    .replace(/\-$/g, '') // Remove trailing -
+export function nameToSlug(name: String) {
+  return name
+    .toLowerCase() // Convert to lowercase
+    .replace(/&/g, 'and') // Replace '&' with 'and'
+    .replace(/[^a-z0-9\s]/g, '') // Remove special characters
+    .replace(/\s+/g, '-') // Replace spaces with hyphens
+    .trim() // Remove leading/trailing whitespace
+}
+
+export const getTikTokVideoId = (url: string): string | null => {
+  const regex = /\/video\/(\d+)/
+  const match = url.match(regex)
+  return match ? match[1] : null
 }

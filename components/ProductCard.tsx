@@ -10,7 +10,8 @@ import { Button } from './ui/button'
 interface Props {
   name: string
   brand: string
-  price: number
+  currency: string
+  price: string
   product_link?: string
   order_link?: string
   image: {
@@ -20,10 +21,20 @@ interface Props {
       _type: string
     }
   }
+  type: string
   // Add other fields as needed
 }
 const ProductCard = (props: Props) => {
-  const { name, brand, price, product_link, order_link, image } = props
+  const {
+    name,
+    brand,
+    currency,
+    price,
+    product_link,
+    order_link,
+    image,
+    type,
+  } = props
 
   // Check if image is defined and has the asset property
   if (!image || !image.asset) {
@@ -36,28 +47,100 @@ const ProductCard = (props: Props) => {
   return (
     <>
       <div className="w-full border-black/50 my-3 sm:my-6 h-auto">
-        <div className="grid grid-cols-1 gap-6">
-          <Link href={product_link} target="blank">
-            <Image src={img} alt={'alt'} width={500} height={500} />
-          </Link>
-          <div>
-            <p className="text-base mb-3 h-12">{name}</p>
-            <p className="font-medium">${price}</p>
+        <div
+          className={
+            type == 'group'
+              ? `grid grid-cols-1 gap-6`
+              : `grid xl:grid-cols-2 gap-6`
+          }
+        >
+          {product_link ? (
             <Link href={product_link} target="blank">
-              <p className="text-sm font-semibold uppercase underline underline-offset-2">
-                {brand}
-              </p>
+              <Image
+                src={img}
+                alt={'alt'}
+                width={500}
+                height={500}
+                className="mx-auto"
+              />
             </Link>
+          ) : (
+            <Image
+              src={img}
+              alt={'alt'}
+              width={500}
+              height={500}
+              className="mx-auto"
+            />
+          )}
+
+          <div
+            className={
+              type == 'group'
+                ? ''
+                : 'h-full flex flex-col items-center justify-center'
+            }
+          >
+            <div className="w-4/5 mx-auto">
+              <div className="">
+                <div className="text-xl mb-3 text-left">
+                  {name},
+                  <span className="font-semibold arial-font ml-2">{price}</span>
+                </div>
+              </div>
+              <div className="mt-5">
+                {product_link ? (
+                  <Link href={product_link} target="_blank">
+                    <Button
+                      variant={'outline'}
+                      className="w-full flex items-center justify-between"
+                    >
+                      <p className="text-sm arial-font tracking-normal">
+                        See On {brand}
+                      </p>
+                      <HiArrowLongRight size={20} />
+                    </Button>
+                  </Link>
+                ) : (
+                  <Button
+                    variant={'outline'}
+                    className="w-full flex items-center justify-between"
+                  >
+                    <p className="text-sm arial-font tracking-normal">
+                      See On {brand}
+                    </p>
+                    <HiArrowLongRight size={20} />
+                  </Button>
+                )}
+              </div>
+
+              <div className="mt-2">
+                {order_link ? (
+                  <Link href={order_link} target="_blank">
+                    <Button
+                      variant={'outline'}
+                      className="w-full flex items-center justify-between"
+                    >
+                      <p className="text-sm arial-font tracking-normal truncate">
+                        Chat with a Personal Shopper
+                      </p>
+                      <HiArrowLongRight size={20} />
+                    </Button>
+                  </Link>
+                ) : (
+                  <Button
+                    variant={'outline'}
+                    className="w-full flex items-center justify-between"
+                  >
+                    <p className="text-sm arial-font tracking-normal truncate">
+                      Chat with a Personal Shopper
+                    </p>
+                    <HiArrowLongRight size={20} />
+                  </Button>
+                )}
+              </div>
+            </div>
           </div>
-          <Link href={order_link} target="blank">
-            <Button
-              variant={'outline'}
-              className="w-full flex items-center justify-between"
-            >
-              <p className="text-sm underline underline-offset-4 ">Order Now</p>
-              <HiArrowLongRight size={20} />
-            </Button>
-          </Link>
         </div>
       </div>
     </>

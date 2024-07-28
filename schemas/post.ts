@@ -60,29 +60,6 @@ export default defineType({
           ],
         },
         {
-          name: 'video',
-          type: 'file',
-          title: 'Video',
-          description: 'Upload a video file.',
-          options: {
-            accept: 'video/*', // Specify accepted file types, e.g., 'video/mp4'
-          },
-          fields: [
-            {
-              name: 'caption',
-              type: 'string',
-              title: 'Video Caption',
-              description: 'Caption displayed below the video.',
-            },
-            {
-              name: 'alt',
-              type: 'string',
-              title: 'Alternative text',
-              description: 'Important for SEO and accessibility.',
-            },
-          ],
-        },
-        {
           type: 'document',
           name: 'product',
           title: 'Product',
@@ -115,13 +92,7 @@ export default defineType({
                         ],
                       },
                     },
-                    // {
-                    //   name: 'image',
-                    //   type: 'image',
-                    //   title: 'Image',
-                    //   hidden: ({ parent }) => parent.type !== 'image', // Only show if type is 'image'
-                    // },
-                    // Add fields specific to each type of content item
+
                     {
                       name: 'image',
                       type: 'image',
@@ -130,24 +101,28 @@ export default defineType({
                         hotspot: true,
                       },
                       hidden: ({ parent }) => parent.type !== 'product', // Only show if type is 'product'
+                      validation: (rule) => rule.required(),
                     },
                     {
                       name: 'name',
                       type: 'string',
                       title: 'Name',
                       hidden: ({ parent }) => parent.type !== 'product', // Only show if type is 'product'
+                      validation: (rule) => rule.required(),
                     },
                     {
                       name: 'brand',
                       type: 'string',
                       title: 'Brand',
                       hidden: ({ parent }) => parent.type !== 'product', // Only show if type is 'product'
+                      validation: (rule) => rule.required(),
                     },
                     {
                       name: 'price',
-                      type: 'number',
+                      type: 'string',
                       title: 'Price',
                       hidden: ({ parent }) => parent.type !== 'product', // Only show if type is 'product'
+                      validation: (rule) => rule.required(),
                     },
                     {
                       name: 'product_link',
@@ -155,6 +130,7 @@ export default defineType({
                       title: 'Product link',
                       description: 'URL product link to the product.',
                       hidden: ({ parent }) => parent.type !== 'product', // Only show if type is 'product'
+                      validation: (rule) => rule.required(),
                     },
                     {
                       name: 'order_link',
@@ -171,6 +147,48 @@ export default defineType({
                       hidden: ({ parent }) => parent.type !== 'product', // Only show if type is 'product'
                     },
                     // Add more fields as needed for other content types
+                  ],
+                },
+              ],
+            },
+          ],
+        },
+        {
+          type: 'document',
+          name: 'embed-post',
+          title: 'Embed Post',
+          fields: [
+            {
+              type: 'array',
+              name: 'post',
+              title: 'Post',
+              of: [
+                {
+                  type: 'object',
+                  name: 'social-media',
+                  title: 'Social Media',
+                  fields: [
+                    {
+                      name: 'type',
+                      type: 'string',
+                      title: 'Type',
+                      options: {
+                        list: [
+                          // { title: 'Image', value: 'image' },
+                          { title: 'FaceBook', value: 'facebook' },
+                          { title: 'Instagram', value: 'instagram' },
+                          { title: 'TikTok', value: 'tiktok' },
+                          { title: 'Twitter', value: 'twitter' },
+                          { title: 'Pinterest', value: 'pinterest' },
+                          // Add other content types as needed
+                        ],
+                      },
+                    },
+                    {
+                      name: 'post_link',
+                      type: 'url',
+                      title: 'Post Link',
+                    },
                   ],
                 },
               ],
@@ -210,6 +228,29 @@ export default defineType({
         hotspot: true,
       },
       validation: (rule) => rule.required(),
+    }),
+
+    defineField({
+      name: 'coverVideo',
+      title: 'Cover Video',
+      type: 'file',
+      options: {
+        accept: 'video/*', // Ensures that only video files can be uploaded
+      },
+      fields: [
+        {
+          name: 'caption',
+          type: 'string',
+          title: 'Video Caption',
+          description: 'Caption displayed below the video.',
+        },
+        {
+          name: 'alt',
+          type: 'string',
+          title: 'Alternative text',
+          description: 'Important for SEO and accessibility.',
+        },
+      ],
     }),
     defineField({
       name: 'date',

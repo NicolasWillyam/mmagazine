@@ -14,7 +14,8 @@ export interface ProductProps {
   type?: string
   name: string
   brand: string
-  price: number
+  currency?: string
+  price: string
   product_link?: string
   order_link?: string
   image: {
@@ -46,16 +47,18 @@ export const ProductComponent = (props: Props) => {
           </div>
         )}
         {product.length == 1 ? (
-          <div className="w-full sm:w-1/2 mx-auto grid grid-cols-1 gap-6">
+          <div className="w-full grid grid-cols-1 gap-6">
             {product.map((product) => (
               <div key={product._key}>
                 <ProductCard
                   name={product.name}
                   brand={product.brand}
+                  currency={product.currency}
                   price={product.price}
-                  product_link={product.product_link}
-                  order_link={product.order_link}
-                  image={product.image}
+                  product_link={product?.product_link}
+                  order_link={product?.order_link}
+                  image={product?.image}
+                  type="one"
                 />
               </div>
             ))}
@@ -67,10 +70,12 @@ export const ProductComponent = (props: Props) => {
                 <ProductCard
                   name={product.name}
                   brand={product.brand}
+                  currency={product.currency}
                   price={product.price}
-                  product_link={product.product_link}
-                  order_link={product.order_link}
-                  image={product.image}
+                  product_link={product?.product_link}
+                  order_link={product?.order_link}
+                  image={product?.image}
+                  type="group"
                 />
               </div>
             ))}

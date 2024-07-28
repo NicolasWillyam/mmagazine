@@ -15,12 +15,16 @@ export default function IndexPageHead({ settings }: IndexPageHeadProps) {
     ogImage = {},
   } = settings
   const ogImageTitle = ogImage?.title || demo.ogImageTitle
+  const logoImg = '/logo-black.png'
 
-  const logoImg = '/logo-black.svg'
   return (
     <Head>
       <title>{title}</title>
       <meta charSet="UTF-8" />
+      <meta
+        name="google-adsense-account"
+        content="ca-pub-6460957180122693"
+      ></meta>
       <meta name="viewport" content="width=device-width, initial-scale=1" />
       <meta name="description" content={ogImageTitle} />
       <link rel="icon" href={logoImg} />
@@ -39,6 +43,11 @@ export default function IndexPageHead({ settings }: IndexPageHeadProps) {
       <meta name="twitter:description" content={title} />
       <meta name="twitter:image" content={logoImg} /> {/* URL of your logo */}
       <BlogMeta />
+      <script
+        async
+        src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6460957180122693"
+        crossOrigin="anonymous"
+      ></script>
     </Head>
   )
 }
